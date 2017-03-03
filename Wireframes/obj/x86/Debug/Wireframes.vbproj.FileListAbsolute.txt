@@ -1,0 +1,42 @@
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\bin\Debug\Wireframes.exe
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\bin\Debug\Wireframes.pdb
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\bin\Debug\Wireframes.xml
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Accounting.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ViewEmployees.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ManageEmployees.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Masterlist.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.EditPassword.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Homepage.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Login.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Resources.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.vbproj.GenerateResource.Cache
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.exe
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.xml
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.pdb
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.EditEmployee.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ManageTerminatedEmployees.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ViewTerminatedEmployee.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.CreateEmployee201.resources
+C:\Users\G\Documents\School\4th Yr\PM 2nd Sem\Thesis\Wireframes\Wireframes\Wireframes\obj\x86\Debug\Wireframes.CustomizedReport.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.exe
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.xml
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.pdb
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.vbprojResolveAssemblyReference.cache
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Accounting.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.CustomizedReport.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.CreateEmployee201.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ViewTerminatedEmployee.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ManageTerminatedEmployees.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.EditEmployee.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ViewEmployees.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ManageEmployees.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Masterlist.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.EditPassword.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Homepage.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Resources.resources
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.vbproj.GenerateResource.Cache
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\bin\Debug\Wireframes.exe
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\bin\Debug\Wireframes.pdb
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\bin\Debug\Wireframes.xml
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\bin\Debug\MySql.Data.dll
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Login.resources
