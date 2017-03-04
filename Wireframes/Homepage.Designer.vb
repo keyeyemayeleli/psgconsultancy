@@ -108,7 +108,8 @@ Partial Class Homepage
         Me.activityDGV.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.activityDGV.Name = "activityDGV"
         Me.activityDGV.ReadOnly = True
-        Me.activityDGV.Size = New System.Drawing.Size(666, 369)
+        Me.activityDGV.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.activityDGV.Size = New System.Drawing.Size(668, 369)
         Me.activityDGV.TabIndex = 9
         Me.activityDGV.TabStop = False
         '

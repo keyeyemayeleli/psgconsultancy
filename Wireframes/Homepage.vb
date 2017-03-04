@@ -9,7 +9,7 @@ Public Class Homepage
         currentuser_label.Text = User
 
         Dim connectionString As String = "Data Source=DESKTOP-2J5TEUE\SQLEXPRESS;Database=201File;Integrated Security=True"
-        Dim sql As String = "SELECT time_stamp, activity_name FROM logs"
+        Dim sql As String = "SELECT logs.time_stamp, logs.activity_name, accounts.username FROM logs JOIN accounts ON logs.account_id = accounts.account_id"
         Dim connection As New SqlConnection(connectionString)
         Dim dataadapter As New SqlDataAdapter(sql, connection)
         Dim ds As New DataSet()
@@ -23,6 +23,9 @@ Public Class Homepage
         activityDGV.Columns("activity_name").HeaderCell.Value = "Activity"
         activityDGV.Columns("time_stamp").HeaderCell.Value = "Date"
         activityDGV.Columns("username").HeaderCell.Value = "User"
+        activityDGV.Columns("activity_name").Width = 420
+        activityDGV.Columns("username").Width = 200
+        activityDGV.Columns("time_stamp").Width = 140
 
         Me.DateTimePicker1.Format = DateTimePickerFormat.Custom
         DateTimePicker1.CustomFormat = "MMMM d, yyyy"
@@ -64,5 +67,13 @@ Public Class Homepage
     Private Sub editpasswordButton_Click(sender As Object, e As EventArgs) Handles editpasswordButton.Click
         Me.Hide()
         EditPassword.Show()
+    End Sub
+
+    Private Sub logoutButton_Click(sender As Object, e As EventArgs) Handles logoutButton.Click
+        If MsgBox("Are you sure you want to logout?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+            User = ""
+            Me.Hide()
+            Login.Show()
+        End If
     End Sub
 End Class

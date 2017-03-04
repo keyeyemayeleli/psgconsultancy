@@ -11,12 +11,7 @@ Public Class Login
 
 
 
-    Private Sub Login_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
-
-
-
-    End Sub
 
 
     Private Sub exitButton_Click(sender As System.Object, e As System.EventArgs) Handles exitButton.Click
@@ -59,6 +54,9 @@ Public Class Login
             Else
                 MessageBox.Show("Logged in successfully as " & userText.Text & "", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 User = userText.Text
+                cmd.Parameters.Clear()
+                userText.Clear()
+                passwordText.Clear()
                 Homepage.Show()
                 Me.Hide()
             End If
