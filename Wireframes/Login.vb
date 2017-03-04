@@ -46,6 +46,7 @@ Public Class Login
             cmd.Parameters.Add(New SqlParameter("user", userText.Text))
             cmd.Parameters.Add(New SqlParameter("pass", passwordText.Text))
 
+
             Try
                 strResult = cmd.ExecuteScalar
             Catch ex As Exception
@@ -57,6 +58,7 @@ Public Class Login
                 cmd.Parameters.Clear()
             Else
                 MessageBox.Show("Logged in successfully as " & userText.Text & "", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                User = userText.Text
                 Homepage.Show()
                 Me.Hide()
             End If

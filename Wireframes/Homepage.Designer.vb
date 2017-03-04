@@ -23,15 +23,11 @@ Partial Class Homepage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Homepage))
         Me.manageButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.activityDGV = New System.Windows.Forms.DataGridView()
-        Me.ActivityDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Activity = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Account = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.masterlistButton = New System.Windows.Forms.Button()
         Me.accountingButton = New System.Windows.Forms.Button()
         Me.customizableButton = New System.Windows.Forms.Button()
@@ -46,6 +42,8 @@ Partial Class Homepage
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.currentuser_label = New System.Windows.Forms.Label()
         CType(Me.activityDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,7 +54,7 @@ Partial Class Homepage
         '
         Me.manageButton.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.manageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.manageButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.manageButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.manageButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.manageButton.Location = New System.Drawing.Point(38, 135)
         Me.manageButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -72,12 +70,12 @@ Partial Class Homepage
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Oswald", 15.75!, System.Drawing.FontStyle.Italic)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label1.Location = New System.Drawing.Point(64, 31)
         Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(218, 31)
+        Me.Label1.Size = New System.Drawing.Size(267, 25)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Employee 201 File System"
         '
@@ -91,22 +89,21 @@ Partial Class Homepage
         Me.activityDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.activityDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.activityDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.activityDGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ActivityDate, Me.Activity, Me.Account})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.activityDGV.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.activityDGV.DefaultCellStyle = DataGridViewCellStyle2
         Me.activityDGV.Location = New System.Drawing.Point(455, 146)
         Me.activityDGV.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.activityDGV.Name = "activityDGV"
@@ -115,33 +112,11 @@ Partial Class Homepage
         Me.activityDGV.TabIndex = 9
         Me.activityDGV.TabStop = False
         '
-        'ActivityDate
-        '
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ActivityDate.DefaultCellStyle = DataGridViewCellStyle2
-        Me.ActivityDate.HeaderText = "Date of Activity"
-        Me.ActivityDate.Name = "ActivityDate"
-        Me.ActivityDate.ReadOnly = True
-        Me.ActivityDate.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Activity
-        '
-        Me.Activity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Activity.HeaderText = "Activity"
-        Me.Activity.Name = "Activity"
-        Me.Activity.ReadOnly = True
-        '
-        'Account
-        '
-        Me.Account.HeaderText = "Account"
-        Me.Account.Name = "Account"
-        Me.Account.ReadOnly = True
-        '
         'masterlistButton
         '
         Me.masterlistButton.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.masterlistButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.masterlistButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.masterlistButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.masterlistButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.masterlistButton.Location = New System.Drawing.Point(38, 309)
         Me.masterlistButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -155,7 +130,7 @@ Partial Class Homepage
         '
         Me.accountingButton.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.accountingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.accountingButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.accountingButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.accountingButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.accountingButton.Location = New System.Drawing.Point(38, 384)
         Me.accountingButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -169,7 +144,7 @@ Partial Class Homepage
         '
         Me.customizableButton.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.customizableButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.customizableButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.customizableButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.customizableButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.customizableButton.Location = New System.Drawing.Point(38, 460)
         Me.customizableButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -185,12 +160,12 @@ Partial Class Homepage
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Oswald", 15.75!, System.Drawing.FontStyle.Italic)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic)
         Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label3.Location = New System.Drawing.Point(449, 106)
         Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 31)
+        Me.Label3.Size = New System.Drawing.Size(123, 25)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Activity Log"
         '
@@ -198,7 +173,7 @@ Partial Class Homepage
         '
         Me.editpasswordButton.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.editpasswordButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.editpasswordButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.editpasswordButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.editpasswordButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.editpasswordButton.Location = New System.Drawing.Point(38, 531)
         Me.editpasswordButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -214,18 +189,18 @@ Partial Class Homepage
         Me.DateTimePicker1.Location = New System.Drawing.Point(769, 106)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(201, 29)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(201, 26)
         Me.DateTimePicker1.TabIndex = 17
         '
         'Label2
         '
         Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveBorder
         Me.Label2.Location = New System.Drawing.Point(783, 84)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(193, 21)
+        Me.Label2.Size = New System.Drawing.Size(203, 20)
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "Search Activity Log by Date"
         '
@@ -234,7 +209,7 @@ Partial Class Homepage
         Me.searchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.searchButton.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.searchButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.searchButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.searchButton.Location = New System.Drawing.Point(977, 103)
         Me.searchButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -249,7 +224,7 @@ Partial Class Homepage
         Me.retrieveButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.retrieveButton.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.retrieveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.retrieveButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.retrieveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.retrieveButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.retrieveButton.Location = New System.Drawing.Point(911, 534)
         Me.retrieveButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -264,7 +239,7 @@ Partial Class Homepage
         Me.logoutButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.logoutButton.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.logoutButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.logoutButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.logoutButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.logoutButton.Location = New System.Drawing.Point(911, 622)
         Me.logoutButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -315,7 +290,7 @@ Partial Class Homepage
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Location = New System.Drawing.Point(38, 210)
         Me.Button1.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -324,6 +299,36 @@ Partial Class Homepage
         Me.Button1.TabIndex = 22
         Me.Button1.Text = "Manage Terminated Employee 201 Files"
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Label4.Location = New System.Drawing.Point(449, 79)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(136, 25)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "Logged in as"
+        '
+        'currentuser_label
+        '
+        Me.currentuser_label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.currentuser_label.AutoSize = True
+        Me.currentuser_label.BackColor = System.Drawing.Color.Transparent
+        Me.currentuser_label.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.currentuser_label.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.currentuser_label.Location = New System.Drawing.Point(582, 80)
+        Me.currentuser_label.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.currentuser_label.Name = "currentuser_label"
+        Me.currentuser_label.Size = New System.Drawing.Size(121, 25)
+        Me.currentuser_label.TabIndex = 14
+        Me.currentuser_label.Text = "currentuser"
         '
         'Homepage
         '
@@ -338,6 +343,8 @@ Partial Class Homepage
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.editpasswordButton)
+        Me.Controls.Add(Me.currentuser_label)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.customizableButton)
         Me.Controls.Add(Me.accountingButton)
@@ -347,7 +354,7 @@ Partial Class Homepage
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.manageButton)
-        Me.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -380,9 +387,7 @@ Partial Class Homepage
     Friend WithEvents searchButton As System.Windows.Forms.Button
     Friend WithEvents retrieveButton As System.Windows.Forms.Button
     Friend WithEvents logoutButton As System.Windows.Forms.Button
-    Friend WithEvents ActivityDate As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Activity As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Account As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Button1 As System.Windows.Forms.Button
-
+    Friend WithEvents Label4 As Label
+    Friend WithEvents currentuser_label As Label
 End Class
