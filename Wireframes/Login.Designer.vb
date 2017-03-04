@@ -28,8 +28,8 @@ Partial Class Login
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.exitButton = New System.Windows.Forms.Button()
-        Me.userText = New Wireframes.WatermarkTextBox()
         Me.passwordText = New Wireframes.WatermarkTextBox()
+        Me.userText = New Wireframes.WatermarkTextBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -97,6 +97,16 @@ Partial Class Login
         Me.exitButton.Text = "Exit"
         Me.exitButton.UseVisualStyleBackColor = False
         '
+        'passwordText
+        '
+        Me.passwordText.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
+        Me.passwordText.Location = New System.Drawing.Point(59, 228)
+        Me.passwordText.Name = "passwordText"
+        Me.passwordText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.passwordText.Size = New System.Drawing.Size(335, 35)
+        Me.passwordText.TabIndex = 11
+        Me.passwordText.Watermark = "Password"
+        '
         'userText
         '
         Me.userText.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
@@ -105,15 +115,6 @@ Partial Class Login
         Me.userText.Size = New System.Drawing.Size(335, 35)
         Me.userText.TabIndex = 10
         Me.userText.Watermark = "Username"
-        '
-        'passwordText
-        '
-        Me.passwordText.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.passwordText.Location = New System.Drawing.Point(59, 228)
-        Me.passwordText.Name = "passwordText"
-        Me.passwordText.Size = New System.Drawing.Size(335, 35)
-        Me.passwordText.TabIndex = 11
-        Me.passwordText.Watermark = "Password"
         '
         'Login
         '

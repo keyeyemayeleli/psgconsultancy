@@ -35,15 +35,14 @@ Public Class Login
 
         Try
 
-            Dim user = userText.Text()
-            Dim pass = passwordText.Text()
+
             Dim strResult As String
             con.ConnectionString = "Data Source=DESKTOP-2J5TEUE\SQLEXPRESS;Database=201File;Integrated Security=True"
             con.Open()
 
             cmd.Connection = con
 
-            cmd.CommandText = "SELECT * FROM accounts WHERE account_name = @user  AND account_pass = @pass "
+            cmd.CommandText = "SELECT * FROM accounts WHERE username = @user  AND password = @pass "
             cmd.Parameters.Add(New SqlParameter("user", userText.Text))
             cmd.Parameters.Add(New SqlParameter("pass", passwordText.Text))
 
@@ -55,6 +54,7 @@ Public Class Login
 
             If strResult = "" Then
                 MessageBox.Show("Username and Password is not valid", "Authentication Failure", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                cmd.Parameters.Clear()
             Else
                 MessageBox.Show("Logged in successfully as " & userText.Text & "", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Homepage.Show()
