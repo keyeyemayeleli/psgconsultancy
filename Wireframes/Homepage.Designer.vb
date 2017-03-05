@@ -134,9 +134,9 @@ Partial Class Homepage
         'searchButton
         '
         Me.searchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.searchButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.searchButton.BackColor = System.Drawing.Color.SteelBlue
         Me.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.searchButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.searchButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.searchButton.Location = New System.Drawing.Point(977, 103)
         Me.searchButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
