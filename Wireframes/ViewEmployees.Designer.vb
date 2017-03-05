@@ -23,81 +23,137 @@ Partial Class ViewEmployees
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewEmployees))
-        Me.nameLabel = New System.Windows.Forms.Label()
+        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
         Me.editButton = New System.Windows.Forms.Button()
-        Me.backButton = New System.Windows.Forms.Button()
-        Me.terminateButton = New System.Windows.Forms.Button()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.personalinfoTab = New System.Windows.Forms.TabPage()
-        Me.telephonenumberLabel = New System.Windows.Forms.Label()
-        Me.contactnumberLabel = New System.Windows.Forms.Label()
-        Me.emailaddressLabel = New System.Windows.Forms.Label()
-        Me.permanentaddressLabel = New System.Windows.Forms.Label()
-        Me.presentaddressLabel = New System.Windows.Forms.Label()
-        Me.civilstatusLabel = New System.Windows.Forms.Label()
-        Me.birthplaceLabel = New System.Windows.Forms.Label()
-        Me.bdayLabel = New System.Windows.Forms.Label()
-        Me.familyinfoTab = New System.Windows.Forms.TabPage()
-        Me.childrenbdayLabel = New System.Windows.Forms.Label()
-        Me.childrennameLabel = New System.Windows.Forms.Label()
-        Me.spousebdayLabel = New System.Windows.Forms.Label()
-        Me.spousenameLabel = New System.Windows.Forms.Label()
-        Me.mothernameLabel = New System.Windows.Forms.Label()
-        Me.fathernameLabel = New System.Windows.Forms.Label()
+        Me.hdmfnumberLabel = New System.Windows.Forms.Label()
+        Me.rtnLabel = New System.Windows.Forms.Label()
+        Me.pagibignumberLabel = New System.Windows.Forms.Label()
+        Me.otherTab = New System.Windows.Forms.TabPage()
+        Me.beneficiaryrelationLabelfour = New System.Windows.Forms.Label()
+        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
+        Me.beneficiaryrelationLabelthree = New System.Windows.Forms.Label()
+        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
+        Me.beneficiaryrelationLabeltwo = New System.Windows.Forms.Label()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
+        Me.beneficiaryrelationLabelone = New System.Windows.Forms.Label()
+        Me.beneficiarybdayLabelfour = New System.Windows.Forms.Label()
+        Me.beneficiarybdayLabelthree = New System.Windows.Forms.Label()
+        Me.beneficiarynameLabelfour = New System.Windows.Forms.Label()
+        Me.beneficiarybdayLabeltwo = New System.Windows.Forms.Label()
+        Me.beneficiarynameLabelthree = New System.Windows.Forms.Label()
+        Me.beneficiarybdayLabelone = New System.Windows.Forms.Label()
+        Me.beneficiarynameLabeltwo = New System.Windows.Forms.Label()
+        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
+        Me.nextofkinbdayLabel = New System.Windows.Forms.Label()
+        Me.nextofkinnameLabel = New System.Windows.Forms.Label()
+        Me.beneficiarynameLabelone = New System.Windows.Forms.Label()
+        Me.philhealthnumberLabel = New System.Windows.Forms.Label()
+        Me.sssnumberLabel = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
+        Me.statusdateLabel = New System.Windows.Forms.Label()
+        Me.statusreasonLabel = New System.Windows.Forms.Label()
+        Me.govtinfoTab = New System.Windows.Forms.TabPage()
+        Me.tinnumberLabel = New System.Windows.Forms.Label()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
+        Me.month = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.yearlyremarks = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monthlyDatagrid = New System.Windows.Forms.DataGridView()
+        Me.score = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.remarks = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monthlyTab = New System.Windows.Forms.TabPage()
+        Me.yearlyscore = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.yearlyTab = New System.Windows.Forms.TabPage()
+        Me.yearlyDatadrid = New System.Windows.Forms.DataGridView()
+        Me.year = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.workinfoTab = New System.Windows.Forms.TabPage()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
         Me.rankLabel = New System.Windows.Forms.Label()
         Me.positionLabel = New System.Windows.Forms.Label()
         Me.departmentLabel = New System.Windows.Forms.Label()
         Me.groupLabel = New System.Windows.Forms.Label()
         Me.datehiredLabel = New System.Windows.Forms.Label()
-        Me.govtinfoTab = New System.Windows.Forms.TabPage()
-        Me.documentsTab = New System.Windows.Forms.TabPage()
-        Me.employeenumberLabel = New System.Windows.Forms.Label()
-        Me.rtnLabel = New System.Windows.Forms.Label()
-        Me.pagibignumberLabel = New System.Windows.Forms.Label()
-        Me.philhealthnumberLabel = New System.Windows.Forms.Label()
-        Me.sssnumberLabel = New System.Windows.Forms.Label()
-        Me.tinnumberLabel = New System.Windows.Forms.Label()
-        Me.hdmfnumberLabel = New System.Windows.Forms.Label()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.fathernameLabel = New System.Windows.Forms.Label()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.mothernameLabel = New System.Windows.Forms.Label()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.emailaddressLabel = New System.Windows.Forms.Label()
+        Me.permanentaddressLabel = New System.Windows.Forms.Label()
+        Me.personalinfoTab = New System.Windows.Forms.TabPage()
+        Me.telephonenumberLabel = New System.Windows.Forms.Label()
+        Me.contactnumberLabel = New System.Windows.Forms.Label()
+        Me.presentaddressLabel = New System.Windows.Forms.Label()
+        Me.civilstatusLabel = New System.Windows.Forms.Label()
+        Me.birthplaceLabel = New System.Windows.Forms.Label()
+        Me.bdayLabel = New System.Windows.Forms.Label()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.familyinfoTab = New System.Windows.Forms.TabPage()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.childrenbdayLabel = New System.Windows.Forms.Label()
+        Me.childrennameLabel = New System.Windows.Forms.Label()
+        Me.spousebdayLabel = New System.Windows.Forms.Label()
+        Me.spousenameLabel = New System.Windows.Forms.Label()
+        Me.documentsTab = New System.Windows.Forms.TabPage()
+        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
+        Me.statusLabel = New System.Windows.Forms.Label()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.employeenumberLabel = New System.Windows.Forms.Label()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.nameLabel = New System.Windows.Forms.Label()
+        Me.adddocumentsButton = New System.Windows.Forms.Button()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.picbox = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.backButton = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.adddocumentsButton = New System.Windows.Forms.Button()
-        Me.TabControl1.SuspendLayout()
-        Me.personalinfoTab.SuspendLayout()
-        Me.familyinfoTab.SuspendLayout()
-        Me.workinfoTab.SuspendLayout()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.otherTab.SuspendLayout()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.govtinfoTab.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.monthlyDatagrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.monthlyTab.SuspendLayout()
+        Me.yearlyTab.SuspendLayout()
+        CType(Me.yearlyDatadrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.workinfoTab.SuspendLayout()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,349 +162,386 @@ Partial Class ViewEmployees
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.personalinfoTab.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.familyinfoTab.SuspendLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picbox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'nameLabel
+        'PictureBox30
         '
-        Me.nameLabel.AutoSize = True
-        Me.nameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nameLabel.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.nameLabel.Location = New System.Drawing.Point(37, 270)
-        Me.nameLabel.Name = "nameLabel"
-        Me.nameLabel.Size = New System.Drawing.Size(239, 56)
-        Me.nameLabel.TabIndex = 18
-        Me.nameLabel.Text = "Last Name, Given Name," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Middle Initial"
+        Me.PictureBox30.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox30.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox30.Location = New System.Drawing.Point(51, 441)
+        Me.PictureBox30.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox30.Name = "PictureBox30"
+        Me.PictureBox30.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox30.TabIndex = 61
+        Me.PictureBox30.TabStop = False
         '
         'editButton
         '
-        Me.editButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.editButton.BackColor = System.Drawing.Color.SteelBlue
         Me.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.editButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.editButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.editButton.Location = New System.Drawing.Point(42, 405)
+        Me.editButton.Location = New System.Drawing.Point(40, 466)
         Me.editButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.editButton.Name = "editButton"
         Me.editButton.Size = New System.Drawing.Size(234, 48)
-        Me.editButton.TabIndex = 19
+        Me.editButton.TabIndex = 48
         Me.editButton.Text = "Edit Employee Info"
         Me.editButton.UseVisualStyleBackColor = False
         '
-        'backButton
+        'hdmfnumberLabel
         '
-        Me.backButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.backButton.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.backButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.backButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.backButton.Location = New System.Drawing.Point(931, 590)
-        Me.backButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.backButton.Name = "backButton"
-        Me.backButton.Size = New System.Drawing.Size(210, 45)
-        Me.backButton.TabIndex = 21
-        Me.backButton.Text = "Back"
-        Me.backButton.UseVisualStyleBackColor = False
+        Me.hdmfnumberLabel.AutoSize = True
+        Me.hdmfnumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.hdmfnumberLabel.ForeColor = System.Drawing.Color.Gray
+        Me.hdmfnumberLabel.Location = New System.Drawing.Point(47, 411)
+        Me.hdmfnumberLabel.Name = "hdmfnumberLabel"
+        Me.hdmfnumberLabel.Size = New System.Drawing.Size(268, 26)
+        Me.hdmfnumberLabel.TabIndex = 60
+        Me.hdmfnumberLabel.Text = "HDMF Number: HDMF Number"
         '
-        'terminateButton
+        'rtnLabel
         '
-        Me.terminateButton.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.terminateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.terminateButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.terminateButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.terminateButton.Location = New System.Drawing.Point(42, 531)
-        Me.terminateButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.terminateButton.Name = "terminateButton"
-        Me.terminateButton.Size = New System.Drawing.Size(234, 52)
-        Me.terminateButton.TabIndex = 30
-        Me.terminateButton.Text = "Terminate Employee File"
-        Me.terminateButton.UseVisualStyleBackColor = False
+        Me.rtnLabel.AutoSize = True
+        Me.rtnLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtnLabel.ForeColor = System.Drawing.Color.Gray
+        Me.rtnLabel.Location = New System.Drawing.Point(47, 336)
+        Me.rtnLabel.Name = "rtnLabel"
+        Me.rtnLabel.Size = New System.Drawing.Size(91, 26)
+        Me.rtnLabel.TabIndex = 54
+        Me.rtnLabel.Text = "RTN: RTN"
         '
-        'TabControl1
+        'pagibignumberLabel
         '
-        Me.TabControl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.pagibignumberLabel.AutoSize = True
+        Me.pagibignumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pagibignumberLabel.ForeColor = System.Drawing.Color.Gray
+        Me.pagibignumberLabel.Location = New System.Drawing.Point(45, 260)
+        Me.pagibignumberLabel.Name = "pagibignumberLabel"
+        Me.pagibignumberLabel.Size = New System.Drawing.Size(304, 26)
+        Me.pagibignumberLabel.TabIndex = 53
+        Me.pagibignumberLabel.Text = "Pag-Ibig Number: Pag-Ibig Number"
+        '
+        'otherTab
+        '
+        Me.otherTab.Controls.Add(Me.beneficiaryrelationLabelfour)
+        Me.otherTab.Controls.Add(Me.PictureBox36)
+        Me.otherTab.Controls.Add(Me.beneficiaryrelationLabelthree)
+        Me.otherTab.Controls.Add(Me.PictureBox35)
+        Me.otherTab.Controls.Add(Me.beneficiaryrelationLabeltwo)
+        Me.otherTab.Controls.Add(Me.PictureBox34)
+        Me.otherTab.Controls.Add(Me.beneficiaryrelationLabelone)
+        Me.otherTab.Controls.Add(Me.beneficiarybdayLabelfour)
+        Me.otherTab.Controls.Add(Me.beneficiarybdayLabelthree)
+        Me.otherTab.Controls.Add(Me.beneficiarynameLabelfour)
+        Me.otherTab.Controls.Add(Me.beneficiarybdayLabeltwo)
+        Me.otherTab.Controls.Add(Me.beneficiarynameLabelthree)
+        Me.otherTab.Controls.Add(Me.beneficiarybdayLabelone)
+        Me.otherTab.Controls.Add(Me.beneficiarynameLabeltwo)
+        Me.otherTab.Controls.Add(Me.PictureBox33)
+        Me.otherTab.Controls.Add(Me.nextofkinbdayLabel)
+        Me.otherTab.Controls.Add(Me.nextofkinnameLabel)
+        Me.otherTab.Controls.Add(Me.beneficiarynameLabelone)
+        Me.otherTab.Location = New System.Drawing.Point(4, 30)
+        Me.otherTab.Name = "otherTab"
+        Me.otherTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.otherTab.Size = New System.Drawing.Size(839, 482)
+        Me.otherTab.TabIndex = 5
+        Me.otherTab.Text = "Other"
+        Me.otherTab.UseVisualStyleBackColor = True
+        '
+        'beneficiaryrelationLabelfour
+        '
+        Me.beneficiaryrelationLabelfour.AutoSize = True
+        Me.beneficiaryrelationLabelfour.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationLabelfour.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationLabelfour.Location = New System.Drawing.Point(33, 377)
+        Me.beneficiaryrelationLabelfour.Name = "beneficiaryrelationLabelfour"
+        Me.beneficiaryrelationLabelfour.Size = New System.Drawing.Size(363, 26)
+        Me.beneficiaryrelationLabelfour.TabIndex = 59
+        Me.beneficiaryrelationLabelfour.Text = "Beneficiary's Relation: Beneficiary's Relation"
+        '
+        'PictureBox36
+        '
+        Me.PictureBox36.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TabControl1.Controls.Add(Me.personalinfoTab)
-        Me.TabControl1.Controls.Add(Me.familyinfoTab)
-        Me.TabControl1.Controls.Add(Me.workinfoTab)
-        Me.TabControl1.Controls.Add(Me.govtinfoTab)
-        Me.TabControl1.Controls.Add(Me.documentsTab)
-        Me.TabControl1.Location = New System.Drawing.Point(294, 67)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(847, 516)
-        Me.TabControl1.TabIndex = 31
+        Me.PictureBox36.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox36.Location = New System.Drawing.Point(38, 303)
+        Me.PictureBox36.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox36.Name = "PictureBox36"
+        Me.PictureBox36.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox36.TabIndex = 58
+        Me.PictureBox36.TabStop = False
         '
-        'personalinfoTab
+        'beneficiaryrelationLabelthree
         '
-        Me.personalinfoTab.Controls.Add(Me.PictureBox16)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox17)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox18)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox19)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox12)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox13)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox14)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox15)
-        Me.personalinfoTab.Controls.Add(Me.telephonenumberLabel)
-        Me.personalinfoTab.Controls.Add(Me.contactnumberLabel)
-        Me.personalinfoTab.Controls.Add(Me.emailaddressLabel)
-        Me.personalinfoTab.Controls.Add(Me.permanentaddressLabel)
-        Me.personalinfoTab.Controls.Add(Me.presentaddressLabel)
-        Me.personalinfoTab.Controls.Add(Me.civilstatusLabel)
-        Me.personalinfoTab.Controls.Add(Me.birthplaceLabel)
-        Me.personalinfoTab.Controls.Add(Me.bdayLabel)
-        Me.personalinfoTab.Location = New System.Drawing.Point(4, 30)
-        Me.personalinfoTab.Name = "personalinfoTab"
-        Me.personalinfoTab.Size = New System.Drawing.Size(839, 482)
-        Me.personalinfoTab.TabIndex = 3
-        Me.personalinfoTab.Text = "Personal Information"
-        Me.personalinfoTab.UseVisualStyleBackColor = True
+        Me.beneficiaryrelationLabelthree.AutoSize = True
+        Me.beneficiaryrelationLabelthree.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationLabelthree.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationLabelthree.Location = New System.Drawing.Point(33, 273)
+        Me.beneficiaryrelationLabelthree.Name = "beneficiaryrelationLabelthree"
+        Me.beneficiaryrelationLabelthree.Size = New System.Drawing.Size(363, 26)
+        Me.beneficiaryrelationLabelthree.TabIndex = 57
+        Me.beneficiaryrelationLabelthree.Text = "Beneficiary's Relation: Beneficiary's Relation"
         '
-        'telephonenumberLabel
+        'PictureBox35
         '
-        Me.telephonenumberLabel.AutoSize = True
-        Me.telephonenumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.telephonenumberLabel.Location = New System.Drawing.Point(43, 430)
-        Me.telephonenumberLabel.Name = "telephonenumberLabel"
-        Me.telephonenumberLabel.Size = New System.Drawing.Size(334, 26)
-        Me.telephonenumberLabel.TabIndex = 12
-        Me.telephonenumberLabel.Text = "Telephone Number: Telephone Number"
+        Me.PictureBox35.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox35.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox35.Location = New System.Drawing.Point(38, 199)
+        Me.PictureBox35.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox35.Name = "PictureBox35"
+        Me.PictureBox35.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox35.TabIndex = 56
+        Me.PictureBox35.TabStop = False
         '
-        'contactnumberLabel
+        'beneficiaryrelationLabeltwo
         '
-        Me.contactnumberLabel.AutoSize = True
-        Me.contactnumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.contactnumberLabel.Location = New System.Drawing.Point(43, 369)
-        Me.contactnumberLabel.Name = "contactnumberLabel"
-        Me.contactnumberLabel.Size = New System.Drawing.Size(294, 26)
-        Me.contactnumberLabel.TabIndex = 11
-        Me.contactnumberLabel.Text = "Contact Number: Contact Number"
+        Me.beneficiaryrelationLabeltwo.AutoSize = True
+        Me.beneficiaryrelationLabeltwo.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationLabeltwo.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationLabeltwo.Location = New System.Drawing.Point(33, 169)
+        Me.beneficiaryrelationLabeltwo.Name = "beneficiaryrelationLabeltwo"
+        Me.beneficiaryrelationLabeltwo.Size = New System.Drawing.Size(363, 26)
+        Me.beneficiaryrelationLabeltwo.TabIndex = 55
+        Me.beneficiaryrelationLabeltwo.Text = "Beneficiary's Relation: Beneficiary's Relation"
         '
-        'emailaddressLabel
+        'PictureBox34
         '
-        Me.emailaddressLabel.AutoSize = True
-        Me.emailaddressLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.emailaddressLabel.Location = New System.Drawing.Point(43, 308)
-        Me.emailaddressLabel.Name = "emailaddressLabel"
-        Me.emailaddressLabel.Size = New System.Drawing.Size(251, 26)
-        Me.emailaddressLabel.TabIndex = 10
-        Me.emailaddressLabel.Text = "Email Address: Email Address"
+        Me.PictureBox34.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox34.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox34.Location = New System.Drawing.Point(38, 95)
+        Me.PictureBox34.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox34.TabIndex = 54
+        Me.PictureBox34.TabStop = False
         '
-        'permanentaddressLabel
+        'beneficiaryrelationLabelone
         '
-        Me.permanentaddressLabel.AutoSize = True
-        Me.permanentaddressLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.permanentaddressLabel.Location = New System.Drawing.Point(43, 254)
-        Me.permanentaddressLabel.Name = "permanentaddressLabel"
-        Me.permanentaddressLabel.Size = New System.Drawing.Size(337, 26)
-        Me.permanentaddressLabel.TabIndex = 9
-        Me.permanentaddressLabel.Text = "Permanent Address: Permanent Address"
+        Me.beneficiaryrelationLabelone.AutoSize = True
+        Me.beneficiaryrelationLabelone.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationLabelone.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationLabelone.Location = New System.Drawing.Point(34, 65)
+        Me.beneficiaryrelationLabelone.Name = "beneficiaryrelationLabelone"
+        Me.beneficiaryrelationLabelone.Size = New System.Drawing.Size(363, 26)
+        Me.beneficiaryrelationLabelone.TabIndex = 53
+        Me.beneficiaryrelationLabelone.Text = "Beneficiary's Relation: Beneficiary's Relation"
         '
-        'presentaddressLabel
+        'beneficiarybdayLabelfour
         '
-        Me.presentaddressLabel.AutoSize = True
-        Me.presentaddressLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.presentaddressLabel.Location = New System.Drawing.Point(43, 194)
-        Me.presentaddressLabel.Name = "presentaddressLabel"
-        Me.presentaddressLabel.Size = New System.Drawing.Size(283, 26)
-        Me.presentaddressLabel.TabIndex = 8
-        Me.presentaddressLabel.Text = "Present Address: Present Address"
+        Me.beneficiarybdayLabelfour.AutoSize = True
+        Me.beneficiarybdayLabelfour.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarybdayLabelfour.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarybdayLabelfour.Location = New System.Drawing.Point(437, 343)
+        Me.beneficiarybdayLabelfour.Name = "beneficiarybdayLabelfour"
+        Me.beneficiarybdayLabelfour.Size = New System.Drawing.Size(369, 26)
+        Me.beneficiarybdayLabelfour.TabIndex = 52
+        Me.beneficiarybdayLabelfour.Text = "Beneficiary's Birthday: Beneficiary's Birthday"
         '
-        'civilstatusLabel
+        'beneficiarybdayLabelthree
         '
-        Me.civilstatusLabel.AutoSize = True
-        Me.civilstatusLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.civilstatusLabel.Location = New System.Drawing.Point(43, 130)
-        Me.civilstatusLabel.Name = "civilstatusLabel"
-        Me.civilstatusLabel.Size = New System.Drawing.Size(195, 26)
-        Me.civilstatusLabel.TabIndex = 7
-        Me.civilstatusLabel.Text = "Civil Status: Civil Status"
+        Me.beneficiarybdayLabelthree.AutoSize = True
+        Me.beneficiarybdayLabelthree.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarybdayLabelthree.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarybdayLabelthree.Location = New System.Drawing.Point(436, 238)
+        Me.beneficiarybdayLabelthree.Name = "beneficiarybdayLabelthree"
+        Me.beneficiarybdayLabelthree.Size = New System.Drawing.Size(369, 26)
+        Me.beneficiarybdayLabelthree.TabIndex = 51
+        Me.beneficiarybdayLabelthree.Text = "Beneficiary's Birthday: Beneficiary's Birthday"
         '
-        'birthplaceLabel
+        'beneficiarynameLabelfour
         '
-        Me.birthplaceLabel.AutoSize = True
-        Me.birthplaceLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.birthplaceLabel.Location = New System.Drawing.Point(43, 76)
-        Me.birthplaceLabel.Name = "birthplaceLabel"
-        Me.birthplaceLabel.Size = New System.Drawing.Size(185, 26)
-        Me.birthplaceLabel.TabIndex = 6
-        Me.birthplaceLabel.Text = "Birthplace: Birthplace"
+        Me.beneficiarynameLabelfour.AutoSize = True
+        Me.beneficiarynameLabelfour.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameLabelfour.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameLabelfour.Location = New System.Drawing.Point(33, 343)
+        Me.beneficiarynameLabelfour.Name = "beneficiarynameLabelfour"
+        Me.beneficiarynameLabelfour.Size = New System.Drawing.Size(333, 26)
+        Me.beneficiarynameLabelfour.TabIndex = 50
+        Me.beneficiarynameLabelfour.Text = "Beneficiary's Name: Beneficiary's Name"
         '
-        'bdayLabel
+        'beneficiarybdayLabeltwo
         '
-        Me.bdayLabel.AutoSize = True
-        Me.bdayLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bdayLabel.Location = New System.Drawing.Point(43, 23)
-        Me.bdayLabel.Name = "bdayLabel"
-        Me.bdayLabel.Size = New System.Drawing.Size(157, 26)
-        Me.bdayLabel.TabIndex = 5
-        Me.bdayLabel.Text = "Birthday: Birthday"
+        Me.beneficiarybdayLabeltwo.AutoSize = True
+        Me.beneficiarybdayLabeltwo.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarybdayLabeltwo.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarybdayLabeltwo.Location = New System.Drawing.Point(436, 129)
+        Me.beneficiarybdayLabeltwo.Name = "beneficiarybdayLabeltwo"
+        Me.beneficiarybdayLabeltwo.Size = New System.Drawing.Size(369, 26)
+        Me.beneficiarybdayLabeltwo.TabIndex = 49
+        Me.beneficiarybdayLabeltwo.Text = "Beneficiary's Birthday: Beneficiary's Birthday"
         '
-        'familyinfoTab
+        'beneficiarynameLabelthree
         '
-        Me.familyinfoTab.Controls.Add(Me.PictureBox10)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox11)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox9)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox8)
-        Me.familyinfoTab.Controls.Add(Me.childrenbdayLabel)
-        Me.familyinfoTab.Controls.Add(Me.childrennameLabel)
-        Me.familyinfoTab.Controls.Add(Me.spousebdayLabel)
-        Me.familyinfoTab.Controls.Add(Me.spousenameLabel)
-        Me.familyinfoTab.Controls.Add(Me.mothernameLabel)
-        Me.familyinfoTab.Controls.Add(Me.fathernameLabel)
-        Me.familyinfoTab.Location = New System.Drawing.Point(4, 22)
-        Me.familyinfoTab.Name = "familyinfoTab"
-        Me.familyinfoTab.Size = New System.Drawing.Size(839, 490)
-        Me.familyinfoTab.TabIndex = 4
-        Me.familyinfoTab.Text = "Family Information"
-        Me.familyinfoTab.UseVisualStyleBackColor = True
+        Me.beneficiarynameLabelthree.AutoSize = True
+        Me.beneficiarynameLabelthree.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameLabelthree.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameLabelthree.Location = New System.Drawing.Point(33, 238)
+        Me.beneficiarynameLabelthree.Name = "beneficiarynameLabelthree"
+        Me.beneficiarynameLabelthree.Size = New System.Drawing.Size(333, 26)
+        Me.beneficiarynameLabelthree.TabIndex = 48
+        Me.beneficiarynameLabelthree.Text = "Beneficiary's Name: Beneficiary's Name"
         '
-        'childrenbdayLabel
+        'beneficiarybdayLabelone
         '
-        Me.childrenbdayLabel.AutoSize = True
-        Me.childrenbdayLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.childrenbdayLabel.Location = New System.Drawing.Point(440, 254)
-        Me.childrenbdayLabel.Name = "childrenbdayLabel"
-        Me.childrenbdayLabel.Size = New System.Drawing.Size(365, 26)
-        Me.childrenbdayLabel.TabIndex = 20
-        Me.childrenbdayLabel.Text = "Child/ren's Birthday/s: Child/ren's Birthday/s"
+        Me.beneficiarybdayLabelone.AutoSize = True
+        Me.beneficiarybdayLabelone.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarybdayLabelone.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarybdayLabelone.Location = New System.Drawing.Point(437, 22)
+        Me.beneficiarybdayLabelone.Name = "beneficiarybdayLabelone"
+        Me.beneficiarybdayLabelone.Size = New System.Drawing.Size(369, 26)
+        Me.beneficiarybdayLabelone.TabIndex = 47
+        Me.beneficiarybdayLabelone.Text = "Beneficiary's Birthday: Beneficiary's Birthday"
         '
-        'childrennameLabel
+        'beneficiarynameLabeltwo
         '
-        Me.childrennameLabel.AutoSize = True
-        Me.childrennameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.childrennameLabel.Location = New System.Drawing.Point(37, 254)
-        Me.childrennameLabel.Name = "childrennameLabel"
-        Me.childrennameLabel.Size = New System.Drawing.Size(329, 26)
-        Me.childrennameLabel.TabIndex = 19
-        Me.childrennameLabel.Text = "Child/ren's Name/s: Child/ren's Name/s"
+        Me.beneficiarynameLabeltwo.AutoSize = True
+        Me.beneficiarynameLabeltwo.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameLabeltwo.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameLabeltwo.Location = New System.Drawing.Point(33, 129)
+        Me.beneficiarynameLabeltwo.Name = "beneficiarynameLabeltwo"
+        Me.beneficiarynameLabeltwo.Size = New System.Drawing.Size(333, 26)
+        Me.beneficiarynameLabeltwo.TabIndex = 46
+        Me.beneficiarynameLabeltwo.Text = "Beneficiary's Name: Beneficiary's Name"
         '
-        'spousebdayLabel
+        'PictureBox33
         '
-        Me.spousebdayLabel.AutoSize = True
-        Me.spousebdayLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.spousebdayLabel.Location = New System.Drawing.Point(43, 199)
-        Me.spousebdayLabel.Name = "spousebdayLabel"
-        Me.spousebdayLabel.Size = New System.Drawing.Size(307, 26)
-        Me.spousebdayLabel.TabIndex = 18
-        Me.spousebdayLabel.Text = "Spouse's Birthday: Spouse's Birthday"
+        Me.PictureBox33.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox33.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox33.Location = New System.Drawing.Point(38, 407)
+        Me.PictureBox33.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox33.Name = "PictureBox33"
+        Me.PictureBox33.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox33.TabIndex = 43
+        Me.PictureBox33.TabStop = False
         '
-        'spousenameLabel
+        'nextofkinbdayLabel
         '
-        Me.spousenameLabel.AutoSize = True
-        Me.spousenameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.spousenameLabel.Location = New System.Drawing.Point(40, 133)
-        Me.spousenameLabel.Name = "spousenameLabel"
-        Me.spousenameLabel.Size = New System.Drawing.Size(271, 26)
-        Me.spousenameLabel.TabIndex = 17
-        Me.spousenameLabel.Text = "Spouse's Name: Spouse's Name"
+        Me.nextofkinbdayLabel.AutoSize = True
+        Me.nextofkinbdayLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nextofkinbdayLabel.ForeColor = System.Drawing.Color.Gray
+        Me.nextofkinbdayLabel.Location = New System.Drawing.Point(437, 435)
+        Me.nextofkinbdayLabel.Name = "nextofkinbdayLabel"
+        Me.nextofkinbdayLabel.Size = New System.Drawing.Size(347, 26)
+        Me.nextofkinbdayLabel.TabIndex = 42
+        Me.nextofkinbdayLabel.Text = "Next of Kin Birthday: Next of Kin Birthday"
         '
-        'mothernameLabel
+        'nextofkinnameLabel
         '
-        Me.mothernameLabel.AutoSize = True
-        Me.mothernameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mothernameLabel.Location = New System.Drawing.Point(37, 78)
-        Me.mothernameLabel.Name = "mothernameLabel"
-        Me.mothernameLabel.Size = New System.Drawing.Size(337, 26)
-        Me.mothernameLabel.TabIndex = 15
-        Me.mothernameLabel.Text = "Mother's Maiden Name: Mother's Name"
+        Me.nextofkinnameLabel.AutoSize = True
+        Me.nextofkinnameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nextofkinnameLabel.ForeColor = System.Drawing.Color.Gray
+        Me.nextofkinnameLabel.Location = New System.Drawing.Point(33, 435)
+        Me.nextofkinnameLabel.Name = "nextofkinnameLabel"
+        Me.nextofkinnameLabel.Size = New System.Drawing.Size(311, 26)
+        Me.nextofkinnameLabel.TabIndex = 41
+        Me.nextofkinnameLabel.Text = "Next of Kin Name: Next of Kin Name"
         '
-        'fathernameLabel
+        'beneficiarynameLabelone
         '
-        Me.fathernameLabel.AutoSize = True
-        Me.fathernameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fathernameLabel.Location = New System.Drawing.Point(40, 24)
-        Me.fathernameLabel.Name = "fathernameLabel"
-        Me.fathernameLabel.Size = New System.Drawing.Size(253, 26)
-        Me.fathernameLabel.TabIndex = 13
-        Me.fathernameLabel.Text = "Father's Name: Father's Name"
+        Me.beneficiarynameLabelone.AutoSize = True
+        Me.beneficiarynameLabelone.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameLabelone.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameLabelone.Location = New System.Drawing.Point(34, 22)
+        Me.beneficiarynameLabelone.Name = "beneficiarynameLabelone"
+        Me.beneficiarynameLabelone.Size = New System.Drawing.Size(333, 26)
+        Me.beneficiarynameLabelone.TabIndex = 40
+        Me.beneficiarynameLabelone.Text = "Beneficiary's Name: Beneficiary's Name"
         '
-        'workinfoTab
+        'philhealthnumberLabel
         '
-        Me.workinfoTab.Controls.Add(Me.PictureBox20)
-        Me.workinfoTab.Controls.Add(Me.PictureBox21)
-        Me.workinfoTab.Controls.Add(Me.PictureBox22)
-        Me.workinfoTab.Controls.Add(Me.PictureBox23)
-        Me.workinfoTab.Controls.Add(Me.PictureBox24)
-        Me.workinfoTab.Controls.Add(Me.rankLabel)
-        Me.workinfoTab.Controls.Add(Me.positionLabel)
-        Me.workinfoTab.Controls.Add(Me.departmentLabel)
-        Me.workinfoTab.Controls.Add(Me.groupLabel)
-        Me.workinfoTab.Controls.Add(Me.datehiredLabel)
-        Me.workinfoTab.Location = New System.Drawing.Point(4, 22)
-        Me.workinfoTab.Name = "workinfoTab"
-        Me.workinfoTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.workinfoTab.Size = New System.Drawing.Size(839, 490)
-        Me.workinfoTab.TabIndex = 0
-        Me.workinfoTab.Text = "Work Information"
-        Me.workinfoTab.UseVisualStyleBackColor = True
+        Me.philhealthnumberLabel.AutoSize = True
+        Me.philhealthnumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.philhealthnumberLabel.ForeColor = System.Drawing.Color.Gray
+        Me.philhealthnumberLabel.Location = New System.Drawing.Point(45, 185)
+        Me.philhealthnumberLabel.Name = "philhealthnumberLabel"
+        Me.philhealthnumberLabel.Size = New System.Drawing.Size(322, 26)
+        Me.philhealthnumberLabel.TabIndex = 52
+        Me.philhealthnumberLabel.Text = "Philhealth Number: Philhealth Number"
         '
-        'rankLabel
+        'sssnumberLabel
         '
-        Me.rankLabel.AutoSize = True
-        Me.rankLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rankLabel.Location = New System.Drawing.Point(50, 331)
-        Me.rankLabel.Name = "rankLabel"
-        Me.rankLabel.Size = New System.Drawing.Size(102, 26)
-        Me.rankLabel.TabIndex = 4
-        Me.rankLabel.Text = "Rank: Rank"
+        Me.sssnumberLabel.AutoSize = True
+        Me.sssnumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sssnumberLabel.ForeColor = System.Drawing.Color.Gray
+        Me.sssnumberLabel.Location = New System.Drawing.Point(45, 109)
+        Me.sssnumberLabel.Name = "sssnumberLabel"
+        Me.sssnumberLabel.Size = New System.Drawing.Size(226, 26)
+        Me.sssnumberLabel.TabIndex = 51
+        Me.sssnumberLabel.Text = "SSS Number: SSS Number"
         '
-        'positionLabel
+        'PictureBox4
         '
-        Me.positionLabel.AutoSize = True
-        Me.positionLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.positionLabel.Location = New System.Drawing.Point(48, 255)
-        Me.positionLabel.Name = "positionLabel"
-        Me.positionLabel.Size = New System.Drawing.Size(147, 26)
-        Me.positionLabel.TabIndex = 3
-        Me.positionLabel.Text = "Position: Position"
+        Me.PictureBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox4.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox4.Location = New System.Drawing.Point(55, 455)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 53
+        Me.PictureBox4.TabStop = False
         '
-        'departmentLabel
+        'PictureBox32
         '
-        Me.departmentLabel.AutoSize = True
-        Me.departmentLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.departmentLabel.Location = New System.Drawing.Point(48, 180)
-        Me.departmentLabel.Name = "departmentLabel"
-        Me.departmentLabel.Size = New System.Drawing.Size(259, 26)
-        Me.departmentLabel.TabIndex = 2
-        Me.departmentLabel.Text = "Department/Unit: Department"
+        Me.PictureBox32.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox32.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox32.Location = New System.Drawing.Point(56, 390)
+        Me.PictureBox32.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox32.Name = "PictureBox32"
+        Me.PictureBox32.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox32.TabIndex = 52
+        Me.PictureBox32.TabStop = False
         '
-        'groupLabel
+        'statusdateLabel
         '
-        Me.groupLabel.AutoSize = True
-        Me.groupLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.groupLabel.Location = New System.Drawing.Point(48, 104)
-        Me.groupLabel.Name = "groupLabel"
-        Me.groupLabel.Size = New System.Drawing.Size(123, 26)
-        Me.groupLabel.TabIndex = 1
-        Me.groupLabel.Text = "Group: Group"
+        Me.statusdateLabel.AutoSize = True
+        Me.statusdateLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusdateLabel.ForeColor = System.Drawing.Color.Gray
+        Me.statusdateLabel.Location = New System.Drawing.Point(50, 360)
+        Me.statusdateLabel.Name = "statusdateLabel"
+        Me.statusdateLabel.Size = New System.Drawing.Size(207, 26)
+        Me.statusdateLabel.TabIndex = 50
+        Me.statusdateLabel.Text = "Status Date: Status Date"
         '
-        'datehiredLabel
+        'statusreasonLabel
         '
-        Me.datehiredLabel.AutoSize = True
-        Me.datehiredLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.datehiredLabel.Location = New System.Drawing.Point(48, 35)
-        Me.datehiredLabel.Name = "datehiredLabel"
-        Me.datehiredLabel.Size = New System.Drawing.Size(148, 26)
-        Me.datehiredLabel.TabIndex = 0
-        Me.datehiredLabel.Text = "Date Hired: Date"
+        Me.statusreasonLabel.AutoSize = True
+        Me.statusreasonLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusreasonLabel.ForeColor = System.Drawing.Color.Gray
+        Me.statusreasonLabel.Location = New System.Drawing.Point(51, 425)
+        Me.statusreasonLabel.Name = "statusreasonLabel"
+        Me.statusreasonLabel.Size = New System.Drawing.Size(291, 26)
+        Me.statusreasonLabel.TabIndex = 51
+        Me.statusreasonLabel.Text = "Reason of Status: Reason of Status"
         '
         'govtinfoTab
         '
@@ -464,126 +557,327 @@ Partial Class ViewEmployees
         Me.govtinfoTab.Controls.Add(Me.PictureBox27)
         Me.govtinfoTab.Controls.Add(Me.PictureBox28)
         Me.govtinfoTab.Controls.Add(Me.PictureBox29)
-        Me.govtinfoTab.Location = New System.Drawing.Point(4, 22)
+        Me.govtinfoTab.Location = New System.Drawing.Point(4, 30)
         Me.govtinfoTab.Name = "govtinfoTab"
-        Me.govtinfoTab.Size = New System.Drawing.Size(839, 490)
+        Me.govtinfoTab.Size = New System.Drawing.Size(839, 482)
         Me.govtinfoTab.TabIndex = 2
         Me.govtinfoTab.Text = "Government Information"
         Me.govtinfoTab.UseVisualStyleBackColor = True
-        '
-        'documentsTab
-        '
-        Me.documentsTab.Location = New System.Drawing.Point(4, 22)
-        Me.documentsTab.Name = "documentsTab"
-        Me.documentsTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.documentsTab.Size = New System.Drawing.Size(839, 490)
-        Me.documentsTab.TabIndex = 1
-        Me.documentsTab.Text = "Scanned Documents"
-        Me.documentsTab.UseVisualStyleBackColor = True
-        '
-        'employeenumberLabel
-        '
-        Me.employeenumberLabel.AutoSize = True
-        Me.employeenumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.employeenumberLabel.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.employeenumberLabel.Location = New System.Drawing.Point(37, 344)
-        Me.employeenumberLabel.Name = "employeenumberLabel"
-        Me.employeenumberLabel.Size = New System.Drawing.Size(183, 28)
-        Me.employeenumberLabel.TabIndex = 34
-        Me.employeenumberLabel.Text = "Employee Number"
-        '
-        'rtnLabel
-        '
-        Me.rtnLabel.AutoSize = True
-        Me.rtnLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtnLabel.Location = New System.Drawing.Point(47, 336)
-        Me.rtnLabel.Name = "rtnLabel"
-        Me.rtnLabel.Size = New System.Drawing.Size(91, 26)
-        Me.rtnLabel.TabIndex = 54
-        Me.rtnLabel.Text = "RTN: RTN"
-        '
-        'pagibignumberLabel
-        '
-        Me.pagibignumberLabel.AutoSize = True
-        Me.pagibignumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pagibignumberLabel.Location = New System.Drawing.Point(45, 260)
-        Me.pagibignumberLabel.Name = "pagibignumberLabel"
-        Me.pagibignumberLabel.Size = New System.Drawing.Size(304, 26)
-        Me.pagibignumberLabel.TabIndex = 53
-        Me.pagibignumberLabel.Text = "Pag-Ibig Number: Pag-Ibig Number"
-        '
-        'philhealthnumberLabel
-        '
-        Me.philhealthnumberLabel.AutoSize = True
-        Me.philhealthnumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.philhealthnumberLabel.Location = New System.Drawing.Point(45, 185)
-        Me.philhealthnumberLabel.Name = "philhealthnumberLabel"
-        Me.philhealthnumberLabel.Size = New System.Drawing.Size(322, 26)
-        Me.philhealthnumberLabel.TabIndex = 52
-        Me.philhealthnumberLabel.Text = "Philhealth Number: Philhealth Number"
-        '
-        'sssnumberLabel
-        '
-        Me.sssnumberLabel.AutoSize = True
-        Me.sssnumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sssnumberLabel.Location = New System.Drawing.Point(45, 109)
-        Me.sssnumberLabel.Name = "sssnumberLabel"
-        Me.sssnumberLabel.Size = New System.Drawing.Size(226, 26)
-        Me.sssnumberLabel.TabIndex = 51
-        Me.sssnumberLabel.Text = "SSS Number: SSS Number"
         '
         'tinnumberLabel
         '
         Me.tinnumberLabel.AutoSize = True
         Me.tinnumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tinnumberLabel.ForeColor = System.Drawing.Color.Gray
         Me.tinnumberLabel.Location = New System.Drawing.Point(45, 40)
         Me.tinnumberLabel.Name = "tinnumberLabel"
         Me.tinnumberLabel.Size = New System.Drawing.Size(224, 26)
         Me.tinnumberLabel.TabIndex = 50
         Me.tinnumberLabel.Text = "TIN Number: TIN Number"
         '
-        'hdmfnumberLabel
+        'PictureBox25
         '
-        Me.hdmfnumberLabel.AutoSize = True
-        Me.hdmfnumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.hdmfnumberLabel.Location = New System.Drawing.Point(47, 411)
-        Me.hdmfnumberLabel.Name = "hdmfnumberLabel"
-        Me.hdmfnumberLabel.Size = New System.Drawing.Size(268, 26)
-        Me.hdmfnumberLabel.TabIndex = 60
-        Me.hdmfnumberLabel.Text = "HDMF Number: HDMF Number"
+        Me.PictureBox25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox25.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox25.Location = New System.Drawing.Point(51, 366)
+        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox25.TabIndex = 59
+        Me.PictureBox25.TabStop = False
         '
-        'PictureBox7
+        'PictureBox26
         '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(42, 381)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(229, 10)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 35
-        Me.PictureBox7.TabStop = False
+        Me.PictureBox26.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox26.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox26.Location = New System.Drawing.Point(51, 290)
+        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox26.TabIndex = 58
+        Me.PictureBox26.TabStop = False
         '
-        'PictureBox6
+        'PictureBox27
         '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(42, 330)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(229, 10)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 33
-        Me.PictureBox6.TabStop = False
+        Me.PictureBox27.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox27.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox27.Location = New System.Drawing.Point(50, 215)
+        Me.PictureBox27.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox27.Name = "PictureBox27"
+        Me.PictureBox27.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox27.TabIndex = 57
+        Me.PictureBox27.TabStop = False
         '
-        'PictureBox5
+        'PictureBox28
         '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(42, 256)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(229, 10)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 32
-        Me.PictureBox5.TabStop = False
+        Me.PictureBox28.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox28.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox28.Location = New System.Drawing.Point(50, 137)
+        Me.PictureBox28.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox28.Name = "PictureBox28"
+        Me.PictureBox28.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox28.TabIndex = 56
+        Me.PictureBox28.TabStop = False
+        '
+        'PictureBox29
+        '
+        Me.PictureBox29.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox29.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox29.Location = New System.Drawing.Point(50, 70)
+        Me.PictureBox29.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox29.Name = "PictureBox29"
+        Me.PictureBox29.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox29.TabIndex = 55
+        Me.PictureBox29.TabStop = False
+        '
+        'month
+        '
+        Me.month.HeaderText = "Month"
+        Me.month.Name = "month"
+        Me.month.ReadOnly = True
+        Me.month.Width = 150
+        '
+        'yearlyremarks
+        '
+        Me.yearlyremarks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.yearlyremarks.HeaderText = "Remarks"
+        Me.yearlyremarks.Name = "yearlyremarks"
+        Me.yearlyremarks.ReadOnly = True
+        '
+        'monthlyDatagrid
+        '
+        Me.monthlyDatagrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.monthlyDatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.monthlyDatagrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.month, Me.score, Me.remarks})
+        Me.monthlyDatagrid.Location = New System.Drawing.Point(20, 18)
+        Me.monthlyDatagrid.Name = "monthlyDatagrid"
+        Me.monthlyDatagrid.ReadOnly = True
+        Me.monthlyDatagrid.Size = New System.Drawing.Size(798, 446)
+        Me.monthlyDatagrid.TabIndex = 1
+        '
+        'score
+        '
+        Me.score.HeaderText = "Score"
+        Me.score.Name = "score"
+        Me.score.ReadOnly = True
+        '
+        'remarks
+        '
+        Me.remarks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.remarks.HeaderText = "Remarks"
+        Me.remarks.Name = "remarks"
+        Me.remarks.ReadOnly = True
+        '
+        'monthlyTab
+        '
+        Me.monthlyTab.Controls.Add(Me.monthlyDatagrid)
+        Me.monthlyTab.Location = New System.Drawing.Point(4, 30)
+        Me.monthlyTab.Name = "monthlyTab"
+        Me.monthlyTab.Size = New System.Drawing.Size(839, 482)
+        Me.monthlyTab.TabIndex = 6
+        Me.monthlyTab.Text = "Monthly Evaluations"
+        Me.monthlyTab.UseVisualStyleBackColor = True
+        '
+        'yearlyscore
+        '
+        Me.yearlyscore.HeaderText = "Score"
+        Me.yearlyscore.Name = "yearlyscore"
+        Me.yearlyscore.ReadOnly = True
+        '
+        'yearlyTab
+        '
+        Me.yearlyTab.Controls.Add(Me.yearlyDatadrid)
+        Me.yearlyTab.Location = New System.Drawing.Point(4, 30)
+        Me.yearlyTab.Name = "yearlyTab"
+        Me.yearlyTab.Size = New System.Drawing.Size(839, 482)
+        Me.yearlyTab.TabIndex = 7
+        Me.yearlyTab.Text = "Yearly Evaluations"
+        Me.yearlyTab.UseVisualStyleBackColor = True
+        '
+        'yearlyDatadrid
+        '
+        Me.yearlyDatadrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.yearlyDatadrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.yearlyDatadrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.year, Me.yearlyscore, Me.yearlyremarks})
+        Me.yearlyDatadrid.Location = New System.Drawing.Point(20, 18)
+        Me.yearlyDatadrid.Name = "yearlyDatadrid"
+        Me.yearlyDatadrid.ReadOnly = True
+        Me.yearlyDatadrid.Size = New System.Drawing.Size(798, 446)
+        Me.yearlyDatadrid.TabIndex = 2
+        '
+        'year
+        '
+        Me.year.HeaderText = "Year"
+        Me.year.Name = "year"
+        Me.year.ReadOnly = True
+        Me.year.Width = 150
+        '
+        'workinfoTab
+        '
+        Me.workinfoTab.Controls.Add(Me.PictureBox4)
+        Me.workinfoTab.Controls.Add(Me.PictureBox32)
+        Me.workinfoTab.Controls.Add(Me.statusreasonLabel)
+        Me.workinfoTab.Controls.Add(Me.statusdateLabel)
+        Me.workinfoTab.Controls.Add(Me.PictureBox20)
+        Me.workinfoTab.Controls.Add(Me.PictureBox21)
+        Me.workinfoTab.Controls.Add(Me.PictureBox22)
+        Me.workinfoTab.Controls.Add(Me.PictureBox23)
+        Me.workinfoTab.Controls.Add(Me.PictureBox24)
+        Me.workinfoTab.Controls.Add(Me.rankLabel)
+        Me.workinfoTab.Controls.Add(Me.positionLabel)
+        Me.workinfoTab.Controls.Add(Me.departmentLabel)
+        Me.workinfoTab.Controls.Add(Me.groupLabel)
+        Me.workinfoTab.Controls.Add(Me.datehiredLabel)
+        Me.workinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.workinfoTab.Name = "workinfoTab"
+        Me.workinfoTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.workinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.workinfoTab.TabIndex = 0
+        Me.workinfoTab.Text = "Work Information"
+        Me.workinfoTab.UseVisualStyleBackColor = True
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox20.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox20.Location = New System.Drawing.Point(53, 319)
+        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox20.TabIndex = 49
+        Me.PictureBox20.TabStop = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox21.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox21.Location = New System.Drawing.Point(54, 252)
+        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox21.TabIndex = 48
+        Me.PictureBox21.TabStop = False
+        '
+        'PictureBox22
+        '
+        Me.PictureBox22.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox22.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox22.Location = New System.Drawing.Point(53, 173)
+        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox22.TabIndex = 47
+        Me.PictureBox22.TabStop = False
+        '
+        'PictureBox23
+        '
+        Me.PictureBox23.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox23.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox23.Location = New System.Drawing.Point(53, 110)
+        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox23.TabIndex = 46
+        Me.PictureBox23.TabStop = False
+        '
+        'PictureBox24
+        '
+        Me.PictureBox24.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox24.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox24.Location = New System.Drawing.Point(53, 50)
+        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox24.TabIndex = 45
+        Me.PictureBox24.TabStop = False
+        '
+        'rankLabel
+        '
+        Me.rankLabel.AutoSize = True
+        Me.rankLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rankLabel.ForeColor = System.Drawing.Color.Gray
+        Me.rankLabel.Location = New System.Drawing.Point(49, 289)
+        Me.rankLabel.Name = "rankLabel"
+        Me.rankLabel.Size = New System.Drawing.Size(102, 26)
+        Me.rankLabel.TabIndex = 4
+        Me.rankLabel.Text = "Rank: Rank"
+        '
+        'positionLabel
+        '
+        Me.positionLabel.AutoSize = True
+        Me.positionLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.positionLabel.ForeColor = System.Drawing.Color.Gray
+        Me.positionLabel.Location = New System.Drawing.Point(48, 222)
+        Me.positionLabel.Name = "positionLabel"
+        Me.positionLabel.Size = New System.Drawing.Size(147, 26)
+        Me.positionLabel.TabIndex = 3
+        Me.positionLabel.Text = "Position: Position"
+        '
+        'departmentLabel
+        '
+        Me.departmentLabel.AutoSize = True
+        Me.departmentLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.departmentLabel.ForeColor = System.Drawing.Color.Gray
+        Me.departmentLabel.Location = New System.Drawing.Point(48, 143)
+        Me.departmentLabel.Name = "departmentLabel"
+        Me.departmentLabel.Size = New System.Drawing.Size(259, 26)
+        Me.departmentLabel.TabIndex = 2
+        Me.departmentLabel.Text = "Department/Unit: Department"
+        '
+        'groupLabel
+        '
+        Me.groupLabel.AutoSize = True
+        Me.groupLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.groupLabel.ForeColor = System.Drawing.Color.Gray
+        Me.groupLabel.Location = New System.Drawing.Point(48, 82)
+        Me.groupLabel.Name = "groupLabel"
+        Me.groupLabel.Size = New System.Drawing.Size(123, 26)
+        Me.groupLabel.TabIndex = 1
+        Me.groupLabel.Text = "Group: Group"
+        '
+        'datehiredLabel
+        '
+        Me.datehiredLabel.AutoSize = True
+        Me.datehiredLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.datehiredLabel.ForeColor = System.Drawing.Color.Gray
+        Me.datehiredLabel.Location = New System.Drawing.Point(48, 20)
+        Me.datehiredLabel.Name = "datehiredLabel"
+        Me.datehiredLabel.Size = New System.Drawing.Size(148, 26)
+        Me.datehiredLabel.TabIndex = 0
+        Me.datehiredLabel.Text = "Date Hired: Date"
+        '
+        'fathernameLabel
+        '
+        Me.fathernameLabel.AutoSize = True
+        Me.fathernameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fathernameLabel.ForeColor = System.Drawing.Color.Gray
+        Me.fathernameLabel.Location = New System.Drawing.Point(40, 24)
+        Me.fathernameLabel.Name = "fathernameLabel"
+        Me.fathernameLabel.Size = New System.Drawing.Size(253, 26)
+        Me.fathernameLabel.TabIndex = 13
+        Me.fathernameLabel.Text = "Father's Name: Father's Name"
         '
         'PictureBox16
         '
@@ -610,6 +904,17 @@ Partial Class ViewEmployees
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox17.TabIndex = 46
         Me.PictureBox17.TabStop = False
+        '
+        'mothernameLabel
+        '
+        Me.mothernameLabel.AutoSize = True
+        Me.mothernameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mothernameLabel.ForeColor = System.Drawing.Color.Gray
+        Me.mothernameLabel.Location = New System.Drawing.Point(37, 84)
+        Me.mothernameLabel.Name = "mothernameLabel"
+        Me.mothernameLabel.Size = New System.Drawing.Size(337, 26)
+        Me.mothernameLabel.TabIndex = 15
+        Me.mothernameLabel.Text = "Mother's Maiden Name: Mother's Name"
         '
         'PictureBox18
         '
@@ -689,12 +994,234 @@ Partial Class ViewEmployees
         Me.PictureBox15.TabIndex = 40
         Me.PictureBox15.TabStop = False
         '
+        'emailaddressLabel
+        '
+        Me.emailaddressLabel.AutoSize = True
+        Me.emailaddressLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailaddressLabel.ForeColor = System.Drawing.Color.Gray
+        Me.emailaddressLabel.Location = New System.Drawing.Point(43, 308)
+        Me.emailaddressLabel.Name = "emailaddressLabel"
+        Me.emailaddressLabel.Size = New System.Drawing.Size(251, 26)
+        Me.emailaddressLabel.TabIndex = 10
+        Me.emailaddressLabel.Text = "Email Address: Email Address"
+        '
+        'permanentaddressLabel
+        '
+        Me.permanentaddressLabel.AutoSize = True
+        Me.permanentaddressLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.permanentaddressLabel.ForeColor = System.Drawing.Color.Gray
+        Me.permanentaddressLabel.Location = New System.Drawing.Point(43, 254)
+        Me.permanentaddressLabel.Name = "permanentaddressLabel"
+        Me.permanentaddressLabel.Size = New System.Drawing.Size(337, 26)
+        Me.permanentaddressLabel.TabIndex = 9
+        Me.permanentaddressLabel.Text = "Permanent Address: Permanent Address"
+        '
+        'personalinfoTab
+        '
+        Me.personalinfoTab.Controls.Add(Me.PictureBox16)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox17)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox18)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox19)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox12)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox13)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox14)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox15)
+        Me.personalinfoTab.Controls.Add(Me.telephonenumberLabel)
+        Me.personalinfoTab.Controls.Add(Me.contactnumberLabel)
+        Me.personalinfoTab.Controls.Add(Me.emailaddressLabel)
+        Me.personalinfoTab.Controls.Add(Me.permanentaddressLabel)
+        Me.personalinfoTab.Controls.Add(Me.presentaddressLabel)
+        Me.personalinfoTab.Controls.Add(Me.civilstatusLabel)
+        Me.personalinfoTab.Controls.Add(Me.birthplaceLabel)
+        Me.personalinfoTab.Controls.Add(Me.bdayLabel)
+        Me.personalinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.personalinfoTab.Name = "personalinfoTab"
+        Me.personalinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.personalinfoTab.TabIndex = 3
+        Me.personalinfoTab.Text = "Personal Information"
+        Me.personalinfoTab.UseVisualStyleBackColor = True
+        '
+        'telephonenumberLabel
+        '
+        Me.telephonenumberLabel.AutoSize = True
+        Me.telephonenumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.telephonenumberLabel.ForeColor = System.Drawing.Color.Gray
+        Me.telephonenumberLabel.Location = New System.Drawing.Point(43, 430)
+        Me.telephonenumberLabel.Name = "telephonenumberLabel"
+        Me.telephonenumberLabel.Size = New System.Drawing.Size(334, 26)
+        Me.telephonenumberLabel.TabIndex = 12
+        Me.telephonenumberLabel.Text = "Telephone Number: Telephone Number"
+        '
+        'contactnumberLabel
+        '
+        Me.contactnumberLabel.AutoSize = True
+        Me.contactnumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.contactnumberLabel.ForeColor = System.Drawing.Color.Gray
+        Me.contactnumberLabel.Location = New System.Drawing.Point(43, 369)
+        Me.contactnumberLabel.Name = "contactnumberLabel"
+        Me.contactnumberLabel.Size = New System.Drawing.Size(294, 26)
+        Me.contactnumberLabel.TabIndex = 11
+        Me.contactnumberLabel.Text = "Contact Number: Contact Number"
+        '
+        'presentaddressLabel
+        '
+        Me.presentaddressLabel.AutoSize = True
+        Me.presentaddressLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.presentaddressLabel.ForeColor = System.Drawing.Color.Gray
+        Me.presentaddressLabel.Location = New System.Drawing.Point(43, 194)
+        Me.presentaddressLabel.Name = "presentaddressLabel"
+        Me.presentaddressLabel.Size = New System.Drawing.Size(283, 26)
+        Me.presentaddressLabel.TabIndex = 8
+        Me.presentaddressLabel.Text = "Present Address: Present Address"
+        '
+        'civilstatusLabel
+        '
+        Me.civilstatusLabel.AutoSize = True
+        Me.civilstatusLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.civilstatusLabel.ForeColor = System.Drawing.Color.Gray
+        Me.civilstatusLabel.Location = New System.Drawing.Point(43, 130)
+        Me.civilstatusLabel.Name = "civilstatusLabel"
+        Me.civilstatusLabel.Size = New System.Drawing.Size(195, 26)
+        Me.civilstatusLabel.TabIndex = 7
+        Me.civilstatusLabel.Text = "Civil Status: Civil Status"
+        '
+        'birthplaceLabel
+        '
+        Me.birthplaceLabel.AutoSize = True
+        Me.birthplaceLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.birthplaceLabel.ForeColor = System.Drawing.Color.Gray
+        Me.birthplaceLabel.Location = New System.Drawing.Point(43, 76)
+        Me.birthplaceLabel.Name = "birthplaceLabel"
+        Me.birthplaceLabel.Size = New System.Drawing.Size(185, 26)
+        Me.birthplaceLabel.TabIndex = 6
+        Me.birthplaceLabel.Text = "Birthplace: Birthplace"
+        '
+        'bdayLabel
+        '
+        Me.bdayLabel.AutoSize = True
+        Me.bdayLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bdayLabel.ForeColor = System.Drawing.Color.Gray
+        Me.bdayLabel.Location = New System.Drawing.Point(43, 23)
+        Me.bdayLabel.Name = "bdayLabel"
+        Me.bdayLabel.Size = New System.Drawing.Size(157, 26)
+        Me.bdayLabel.TabIndex = 5
+        Me.bdayLabel.Text = "Birthday: Birthday"
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TabControl1.Controls.Add(Me.personalinfoTab)
+        Me.TabControl1.Controls.Add(Me.familyinfoTab)
+        Me.TabControl1.Controls.Add(Me.workinfoTab)
+        Me.TabControl1.Controls.Add(Me.govtinfoTab)
+        Me.TabControl1.Controls.Add(Me.otherTab)
+        Me.TabControl1.Controls.Add(Me.monthlyTab)
+        Me.TabControl1.Controls.Add(Me.yearlyTab)
+        Me.TabControl1.Controls.Add(Me.documentsTab)
+        Me.TabControl1.Location = New System.Drawing.Point(292, 67)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(847, 516)
+        Me.TabControl1.TabIndex = 60
+        '
+        'familyinfoTab
+        '
+        Me.familyinfoTab.Controls.Add(Me.Label6)
+        Me.familyinfoTab.Controls.Add(Me.Label7)
+        Me.familyinfoTab.Controls.Add(Me.Label8)
+        Me.familyinfoTab.Controls.Add(Me.Label9)
+        Me.familyinfoTab.Controls.Add(Me.Label4)
+        Me.familyinfoTab.Controls.Add(Me.Label5)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox10)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox11)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox9)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox8)
+        Me.familyinfoTab.Controls.Add(Me.childrenbdayLabel)
+        Me.familyinfoTab.Controls.Add(Me.childrennameLabel)
+        Me.familyinfoTab.Controls.Add(Me.spousebdayLabel)
+        Me.familyinfoTab.Controls.Add(Me.spousenameLabel)
+        Me.familyinfoTab.Controls.Add(Me.mothernameLabel)
+        Me.familyinfoTab.Controls.Add(Me.fathernameLabel)
+        Me.familyinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.familyinfoTab.Name = "familyinfoTab"
+        Me.familyinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.familyinfoTab.TabIndex = 4
+        Me.familyinfoTab.Text = "Family Information"
+        Me.familyinfoTab.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Gray
+        Me.Label6.Location = New System.Drawing.Point(443, 391)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(365, 26)
+        Me.Label6.TabIndex = 45
+        Me.Label6.Text = "Child/ren's Birthday/s: Child/ren's Birthday/s"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Gray
+        Me.Label7.Location = New System.Drawing.Point(43, 391)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(329, 26)
+        Me.Label7.TabIndex = 44
+        Me.Label7.Text = "Child/ren's Name/s: Child/ren's Name/s"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Gray
+        Me.Label8.Location = New System.Drawing.Point(443, 331)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(365, 26)
+        Me.Label8.TabIndex = 43
+        Me.Label8.Text = "Child/ren's Birthday/s: Child/ren's Birthday/s"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.Gray
+        Me.Label9.Location = New System.Drawing.Point(40, 331)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(329, 26)
+        Me.Label9.TabIndex = 42
+        Me.Label9.Text = "Child/ren's Name/s: Child/ren's Name/s"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Gray
+        Me.Label4.Location = New System.Drawing.Point(443, 277)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(365, 26)
+        Me.Label4.TabIndex = 41
+        Me.Label4.Text = "Child/ren's Birthday/s: Child/ren's Birthday/s"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Gray
+        Me.Label5.Location = New System.Drawing.Point(40, 277)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(329, 26)
+        Me.Label5.TabIndex = 40
+        Me.Label5.Text = "Child/ren's Name/s: Child/ren's Name/s"
+        '
         'PictureBox10
         '
         Me.PictureBox10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox10.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox10.Location = New System.Drawing.Point(42, 229)
+        Me.PictureBox10.Location = New System.Drawing.Point(45, 438)
         Me.PictureBox10.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(763, 10)
@@ -707,7 +1234,7 @@ Partial Class ViewEmployees
         Me.PictureBox11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox11.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox11.Location = New System.Drawing.Point(42, 163)
+        Me.PictureBox11.Location = New System.Drawing.Point(42, 173)
         Me.PictureBox11.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(763, 10)
@@ -720,7 +1247,7 @@ Partial Class ViewEmployees
         Me.PictureBox9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox9.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox9.Location = New System.Drawing.Point(42, 108)
+        Me.PictureBox9.Location = New System.Drawing.Point(42, 114)
         Me.PictureBox9.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(763, 10)
@@ -741,227 +1268,231 @@ Partial Class ViewEmployees
         Me.PictureBox8.TabIndex = 36
         Me.PictureBox8.TabStop = False
         '
-        'PictureBox20
+        'childrenbdayLabel
         '
-        Me.PictureBox20.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox20.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox20.Location = New System.Drawing.Point(54, 361)
-        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox20.TabIndex = 49
-        Me.PictureBox20.TabStop = False
+        Me.childrenbdayLabel.AutoSize = True
+        Me.childrenbdayLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childrenbdayLabel.ForeColor = System.Drawing.Color.Gray
+        Me.childrenbdayLabel.Location = New System.Drawing.Point(443, 222)
+        Me.childrenbdayLabel.Name = "childrenbdayLabel"
+        Me.childrenbdayLabel.Size = New System.Drawing.Size(365, 26)
+        Me.childrenbdayLabel.TabIndex = 20
+        Me.childrenbdayLabel.Text = "Child/ren's Birthday/s: Child/ren's Birthday/s"
         '
-        'PictureBox21
+        'childrennameLabel
         '
-        Me.PictureBox21.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox21.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox21.Location = New System.Drawing.Point(54, 285)
-        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox21.TabIndex = 48
-        Me.PictureBox21.TabStop = False
+        Me.childrennameLabel.AutoSize = True
+        Me.childrennameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childrennameLabel.ForeColor = System.Drawing.Color.Gray
+        Me.childrennameLabel.Location = New System.Drawing.Point(40, 222)
+        Me.childrennameLabel.Name = "childrennameLabel"
+        Me.childrennameLabel.Size = New System.Drawing.Size(329, 26)
+        Me.childrennameLabel.TabIndex = 19
+        Me.childrennameLabel.Text = "Child/ren's Name/s: Child/ren's Name/s"
         '
-        'PictureBox22
+        'spousebdayLabel
         '
-        Me.PictureBox22.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox22.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox22.Location = New System.Drawing.Point(53, 210)
-        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox22.TabIndex = 47
-        Me.PictureBox22.TabStop = False
+        Me.spousebdayLabel.AutoSize = True
+        Me.spousebdayLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.spousebdayLabel.ForeColor = System.Drawing.Color.Gray
+        Me.spousebdayLabel.Location = New System.Drawing.Point(440, 143)
+        Me.spousebdayLabel.Name = "spousebdayLabel"
+        Me.spousebdayLabel.Size = New System.Drawing.Size(307, 26)
+        Me.spousebdayLabel.TabIndex = 18
+        Me.spousebdayLabel.Text = "Spouse's Birthday: Spouse's Birthday"
         '
-        'PictureBox23
+        'spousenameLabel
         '
-        Me.PictureBox23.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox23.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox23.Location = New System.Drawing.Point(53, 132)
-        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox23.TabIndex = 46
-        Me.PictureBox23.TabStop = False
+        Me.spousenameLabel.AutoSize = True
+        Me.spousenameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.spousenameLabel.ForeColor = System.Drawing.Color.Gray
+        Me.spousenameLabel.Location = New System.Drawing.Point(40, 143)
+        Me.spousenameLabel.Name = "spousenameLabel"
+        Me.spousenameLabel.Size = New System.Drawing.Size(271, 26)
+        Me.spousenameLabel.TabIndex = 17
+        Me.spousenameLabel.Text = "Spouse's Name: Spouse's Name"
         '
-        'PictureBox24
+        'documentsTab
         '
-        Me.PictureBox24.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox24.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox24.Location = New System.Drawing.Point(53, 65)
-        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox24.TabIndex = 45
-        Me.PictureBox24.TabStop = False
+        Me.documentsTab.Location = New System.Drawing.Point(4, 30)
+        Me.documentsTab.Name = "documentsTab"
+        Me.documentsTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.documentsTab.Size = New System.Drawing.Size(839, 482)
+        Me.documentsTab.TabIndex = 1
+        Me.documentsTab.Text = "Scanned Documents"
+        Me.documentsTab.UseVisualStyleBackColor = True
         '
-        'PictureBox30
+        'PictureBox31
         '
-        Me.PictureBox30.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox30.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox30.Location = New System.Drawing.Point(51, 441)
-        Me.PictureBox30.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox30.Name = "PictureBox30"
-        Me.PictureBox30.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox30.TabIndex = 61
-        Me.PictureBox30.TabStop = False
+        Me.PictureBox31.Image = CType(resources.GetObject("PictureBox31.Image"), System.Drawing.Image)
+        Me.PictureBox31.Location = New System.Drawing.Point(40, 442)
+        Me.PictureBox31.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox31.Name = "PictureBox31"
+        Me.PictureBox31.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox31.TabIndex = 59
+        Me.PictureBox31.TabStop = False
         '
-        'PictureBox25
+        'statusLabel
         '
-        Me.PictureBox25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox25.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox25.Location = New System.Drawing.Point(51, 366)
-        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox25.TabIndex = 59
-        Me.PictureBox25.TabStop = False
+        Me.statusLabel.AutoSize = True
+        Me.statusLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusLabel.ForeColor = System.Drawing.Color.Gray
+        Me.statusLabel.Location = New System.Drawing.Point(35, 410)
+        Me.statusLabel.Name = "statusLabel"
+        Me.statusLabel.Size = New System.Drawing.Size(68, 28)
+        Me.statusLabel.TabIndex = 58
+        Me.statusLabel.Text = "Status"
         '
-        'PictureBox26
+        'PictureBox7
         '
-        Me.PictureBox26.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox26.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox26.Location = New System.Drawing.Point(51, 290)
-        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox26.TabIndex = 58
-        Me.PictureBox26.TabStop = False
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(40, 386)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 57
+        Me.PictureBox7.TabStop = False
         '
-        'PictureBox27
+        'employeenumberLabel
         '
-        Me.PictureBox27.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox27.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox27.Location = New System.Drawing.Point(50, 215)
-        Me.PictureBox27.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox27.TabIndex = 57
-        Me.PictureBox27.TabStop = False
+        Me.employeenumberLabel.AutoSize = True
+        Me.employeenumberLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.employeenumberLabel.ForeColor = System.Drawing.Color.Gray
+        Me.employeenumberLabel.Location = New System.Drawing.Point(35, 356)
+        Me.employeenumberLabel.Name = "employeenumberLabel"
+        Me.employeenumberLabel.Size = New System.Drawing.Size(183, 28)
+        Me.employeenumberLabel.TabIndex = 56
+        Me.employeenumberLabel.Text = "Employee Number"
         '
-        'PictureBox28
+        'PictureBox6
         '
-        Me.PictureBox28.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox28.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox28.Location = New System.Drawing.Point(50, 137)
-        Me.PictureBox28.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox28.TabIndex = 56
-        Me.PictureBox28.TabStop = False
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(40, 335)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 55
+        Me.PictureBox6.TabStop = False
         '
-        'PictureBox29
+        'nameLabel
         '
-        Me.PictureBox29.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox29.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox29.Location = New System.Drawing.Point(50, 70)
-        Me.PictureBox29.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox29.TabIndex = 55
-        Me.PictureBox29.TabStop = False
+        Me.nameLabel.AutoSize = True
+        Me.nameLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nameLabel.ForeColor = System.Drawing.Color.Gray
+        Me.nameLabel.Location = New System.Drawing.Point(35, 275)
+        Me.nameLabel.Name = "nameLabel"
+        Me.nameLabel.Size = New System.Drawing.Size(239, 56)
+        Me.nameLabel.TabIndex = 54
+        Me.nameLabel.Text = "Last Name, Given Name," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Middle Initial"
         '
-        'PictureBox4
+        'adddocumentsButton
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.PictureBox4.Location = New System.Drawing.Point(42, 19)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(229, 220)
-        Me.PictureBox4.TabIndex = 29
-        Me.PictureBox4.TabStop = False
+        Me.adddocumentsButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.adddocumentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.adddocumentsButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.adddocumentsButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.adddocumentsButton.Location = New System.Drawing.Point(40, 535)
+        Me.adddocumentsButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.adddocumentsButton.Name = "adddocumentsButton"
+        Me.adddocumentsButton.Size = New System.Drawing.Size(234, 48)
+        Me.adddocumentsButton.TabIndex = 53
+        Me.adddocumentsButton.Text = "Add Scanned Documents"
+        Me.adddocumentsButton.UseVisualStyleBackColor = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(40, 256)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 52
+        Me.PictureBox5.TabStop = False
+        '
+        'picbox
+        '
+        Me.picbox.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.picbox.Location = New System.Drawing.Point(40, 19)
+        Me.picbox.Name = "picbox"
+        Me.picbox.Size = New System.Drawing.Size(229, 220)
+        Me.picbox.TabIndex = 51
+        Me.picbox.TabStop = False
         '
         'PictureBox2
         '
         Me.PictureBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox2.Location = New System.Drawing.Point(260, 643)
+        Me.PictureBox2.Location = New System.Drawing.Point(258, 643)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(912, 24)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 28
+        Me.PictureBox2.TabIndex = 50
         Me.PictureBox2.TabStop = False
+        '
+        'backButton
+        '
+        Me.backButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.backButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.backButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.backButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.backButton.Location = New System.Drawing.Point(929, 590)
+        Me.backButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.backButton.Name = "backButton"
+        Me.backButton.Size = New System.Drawing.Size(210, 45)
+        Me.backButton.TabIndex = 49
+        Me.backButton.Text = "Back"
+        Me.backButton.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
         Me.PictureBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox3.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox3.Location = New System.Drawing.Point(294, 19)
+        Me.PictureBox3.Location = New System.Drawing.Point(292, 19)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(878, 40)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 16
+        Me.PictureBox3.TabIndex = 47
         Me.PictureBox3.TabStop = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = Global.Wireframes.My.Resources.Resources.Logo_3
-        Me.PictureBox1.Location = New System.Drawing.Point(42, 619)
+        Me.PictureBox1.Location = New System.Drawing.Point(40, 619)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(208, 48)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabIndex = 46
         Me.PictureBox1.TabStop = False
-        '
-        'adddocumentsButton
-        '
-        Me.adddocumentsButton.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.adddocumentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.adddocumentsButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.adddocumentsButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.adddocumentsButton.Location = New System.Drawing.Point(42, 466)
-        Me.adddocumentsButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.adddocumentsButton.Name = "adddocumentsButton"
-        Me.adddocumentsButton.Size = New System.Drawing.Size(234, 48)
-        Me.adddocumentsButton.TabIndex = 36
-        Me.adddocumentsButton.Text = "Add Scanned Documents"
-        Me.adddocumentsButton.UseVisualStyleBackColor = False
         '
         'ViewEmployees
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1170, 680)
-        Me.Controls.Add(Me.adddocumentsButton)
+        Me.Controls.Add(Me.editButton)
+        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.PictureBox31)
+        Me.Controls.Add(Me.statusLabel)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.employeenumberLabel)
         Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.nameLabel)
+        Me.Controls.Add(Me.adddocumentsButton)
         Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.terminateButton)
-        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.picbox)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.backButton)
-        Me.Controls.Add(Me.editButton)
-        Me.Controls.Add(Me.nameLabel)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -973,18 +1504,33 @@ Partial Class ViewEmployees
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "View Employee"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.TabControl1.ResumeLayout(False)
-        Me.personalinfoTab.ResumeLayout(False)
-        Me.personalinfoTab.PerformLayout()
-        Me.familyinfoTab.ResumeLayout(False)
-        Me.familyinfoTab.PerformLayout()
-        Me.workinfoTab.ResumeLayout(False)
-        Me.workinfoTab.PerformLayout()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.otherTab.ResumeLayout(False)
+        Me.otherTab.PerformLayout()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
         Me.govtinfoTab.ResumeLayout(False)
         Me.govtinfoTab.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.monthlyDatagrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.monthlyTab.ResumeLayout(False)
+        Me.yearlyTab.ResumeLayout(False)
+        CType(Me.yearlyDatadrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.workinfoTab.ResumeLayout(False)
+        Me.workinfoTab.PerformLayout()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
@@ -993,22 +1539,20 @@ Partial Class ViewEmployees
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.personalinfoTab.ResumeLayout(False)
+        Me.personalinfoTab.PerformLayout()
+        Me.TabControl1.ResumeLayout(False)
+        Me.familyinfoTab.ResumeLayout(False)
+        Me.familyinfoTab.PerformLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picbox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1016,72 +1560,112 @@ Partial Class ViewEmployees
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents nameLabel As System.Windows.Forms.Label
+    Friend WithEvents PictureBox30 As System.Windows.Forms.PictureBox
     Friend WithEvents editButton As System.Windows.Forms.Button
-    Friend WithEvents backButton As System.Windows.Forms.Button
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents hdmfnumberLabel As System.Windows.Forms.Label
+    Friend WithEvents rtnLabel As System.Windows.Forms.Label
+    Friend WithEvents pagibignumberLabel As System.Windows.Forms.Label
+    Friend WithEvents otherTab As System.Windows.Forms.TabPage
+    Friend WithEvents beneficiaryrelationLabelfour As System.Windows.Forms.Label
+    Friend WithEvents PictureBox36 As System.Windows.Forms.PictureBox
+    Friend WithEvents beneficiaryrelationLabelthree As System.Windows.Forms.Label
+    Friend WithEvents PictureBox35 As System.Windows.Forms.PictureBox
+    Friend WithEvents beneficiaryrelationLabeltwo As System.Windows.Forms.Label
+    Friend WithEvents PictureBox34 As System.Windows.Forms.PictureBox
+    Friend WithEvents beneficiaryrelationLabelone As System.Windows.Forms.Label
+    Friend WithEvents beneficiarybdayLabelfour As System.Windows.Forms.Label
+    Friend WithEvents beneficiarybdayLabelthree As System.Windows.Forms.Label
+    Friend WithEvents beneficiarynameLabelfour As System.Windows.Forms.Label
+    Friend WithEvents beneficiarybdayLabeltwo As System.Windows.Forms.Label
+    Friend WithEvents beneficiarynameLabelthree As System.Windows.Forms.Label
+    Friend WithEvents beneficiarybdayLabelone As System.Windows.Forms.Label
+    Friend WithEvents beneficiarynameLabeltwo As System.Windows.Forms.Label
+    Friend WithEvents PictureBox33 As System.Windows.Forms.PictureBox
+    Friend WithEvents nextofkinbdayLabel As System.Windows.Forms.Label
+    Friend WithEvents nextofkinnameLabel As System.Windows.Forms.Label
+    Friend WithEvents beneficiarynameLabelone As System.Windows.Forms.Label
+    Friend WithEvents philhealthnumberLabel As System.Windows.Forms.Label
+    Friend WithEvents sssnumberLabel As System.Windows.Forms.Label
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents terminateButton As System.Windows.Forms.Button
-    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
-    Friend WithEvents workinfoTab As System.Windows.Forms.TabPage
+    Friend WithEvents PictureBox32 As System.Windows.Forms.PictureBox
+    Friend WithEvents statusdateLabel As System.Windows.Forms.Label
+    Friend WithEvents statusreasonLabel As System.Windows.Forms.Label
     Friend WithEvents govtinfoTab As System.Windows.Forms.TabPage
-    Friend WithEvents documentsTab As System.Windows.Forms.TabPage
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents employeenumberLabel As System.Windows.Forms.Label
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
-    Friend WithEvents datehiredLabel As System.Windows.Forms.Label
+    Friend WithEvents tinnumberLabel As System.Windows.Forms.Label
+    Friend WithEvents PictureBox25 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox26 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox28 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox29 As System.Windows.Forms.PictureBox
+    Friend WithEvents month As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents yearlyremarks As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents monthlyDatagrid As System.Windows.Forms.DataGridView
+    Friend WithEvents score As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents remarks As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents monthlyTab As System.Windows.Forms.TabPage
+    Friend WithEvents yearlyscore As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents yearlyTab As System.Windows.Forms.TabPage
+    Friend WithEvents yearlyDatadrid As System.Windows.Forms.DataGridView
+    Friend WithEvents year As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents workinfoTab As System.Windows.Forms.TabPage
+    Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox22 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox23 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox24 As System.Windows.Forms.PictureBox
     Friend WithEvents rankLabel As System.Windows.Forms.Label
     Friend WithEvents positionLabel As System.Windows.Forms.Label
     Friend WithEvents departmentLabel As System.Windows.Forms.Label
     Friend WithEvents groupLabel As System.Windows.Forms.Label
-    Friend WithEvents personalinfoTab As System.Windows.Forms.TabPage
-    Friend WithEvents permanentaddressLabel As System.Windows.Forms.Label
-    Friend WithEvents presentaddressLabel As System.Windows.Forms.Label
-    Friend WithEvents civilstatusLabel As System.Windows.Forms.Label
-    Friend WithEvents birthplaceLabel As System.Windows.Forms.Label
-    Friend WithEvents bdayLabel As System.Windows.Forms.Label
-    Friend WithEvents emailaddressLabel As System.Windows.Forms.Label
-    Friend WithEvents telephonenumberLabel As System.Windows.Forms.Label
-    Friend WithEvents contactnumberLabel As System.Windows.Forms.Label
-    Friend WithEvents familyinfoTab As System.Windows.Forms.TabPage
-    Friend WithEvents childrenbdayLabel As System.Windows.Forms.Label
-    Friend WithEvents childrennameLabel As System.Windows.Forms.Label
-    Friend WithEvents spousebdayLabel As System.Windows.Forms.Label
-    Friend WithEvents spousenameLabel As System.Windows.Forms.Label
-    Friend WithEvents mothernameLabel As System.Windows.Forms.Label
+    Friend WithEvents datehiredLabel As System.Windows.Forms.Label
     Friend WithEvents fathernameLabel As System.Windows.Forms.Label
-    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
+    Friend WithEvents mothernameLabel As System.Windows.Forms.Label
     Friend WithEvents PictureBox18 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox13 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox22 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox23 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox24 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox25 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox26 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox28 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox29 As System.Windows.Forms.PictureBox
-    Friend WithEvents rtnLabel As System.Windows.Forms.Label
-    Friend WithEvents pagibignumberLabel As System.Windows.Forms.Label
-    Friend WithEvents philhealthnumberLabel As System.Windows.Forms.Label
-    Friend WithEvents sssnumberLabel As System.Windows.Forms.Label
-    Friend WithEvents tinnumberLabel As System.Windows.Forms.Label
-    Friend WithEvents PictureBox30 As System.Windows.Forms.PictureBox
-    Friend WithEvents hdmfnumberLabel As System.Windows.Forms.Label
+    Friend WithEvents emailaddressLabel As System.Windows.Forms.Label
+    Friend WithEvents permanentaddressLabel As System.Windows.Forms.Label
+    Friend WithEvents personalinfoTab As System.Windows.Forms.TabPage
+    Friend WithEvents telephonenumberLabel As System.Windows.Forms.Label
+    Friend WithEvents contactnumberLabel As System.Windows.Forms.Label
+    Friend WithEvents presentaddressLabel As System.Windows.Forms.Label
+    Friend WithEvents civilstatusLabel As System.Windows.Forms.Label
+    Friend WithEvents birthplaceLabel As System.Windows.Forms.Label
+    Friend WithEvents bdayLabel As System.Windows.Forms.Label
+    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents familyinfoTab As System.Windows.Forms.TabPage
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents childrenbdayLabel As System.Windows.Forms.Label
+    Friend WithEvents childrennameLabel As System.Windows.Forms.Label
+    Friend WithEvents spousebdayLabel As System.Windows.Forms.Label
+    Friend WithEvents spousenameLabel As System.Windows.Forms.Label
+    Friend WithEvents documentsTab As System.Windows.Forms.TabPage
+    Friend WithEvents PictureBox31 As System.Windows.Forms.PictureBox
+    Friend WithEvents statusLabel As System.Windows.Forms.Label
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents employeenumberLabel As System.Windows.Forms.Label
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents nameLabel As System.Windows.Forms.Label
     Friend WithEvents adddocumentsButton As System.Windows.Forms.Button
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents picbox As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents backButton As System.Windows.Forms.Button
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class

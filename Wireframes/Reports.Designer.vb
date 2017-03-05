@@ -158,9 +158,9 @@ Partial Class Reports
         Me.customizedTab.Controls.Add(Me.PictureBox4)
         Me.customizedTab.Controls.Add(Me.Label5)
         Me.customizedTab.Controls.Add(Me.DataGridView3)
-        Me.customizedTab.Location = New System.Drawing.Point(4, 30)
+        Me.customizedTab.Location = New System.Drawing.Point(4, 22)
         Me.customizedTab.Name = "customizedTab"
-        Me.customizedTab.Size = New System.Drawing.Size(1138, 592)
+        Me.customizedTab.Size = New System.Drawing.Size(1138, 600)
         Me.customizedTab.TabIndex = 2
         Me.customizedTab.Text = "Customized Report"
         Me.customizedTab.UseVisualStyleBackColor = True
@@ -783,7 +783,7 @@ Partial Class Reports
         Me.cancelButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cancelButton4.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cancelButton4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.cancelButton4.Location = New System.Drawing.Point(904, 469)
+        Me.cancelButton4.Location = New System.Drawing.Point(904, 461)
         Me.cancelButton4.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cancelButton4.Name = "cancelButton4"
         Me.cancelButton4.Size = New System.Drawing.Size(210, 45)
@@ -798,7 +798,7 @@ Partial Class Reports
         Me.createButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.createButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.createButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.createButton.Location = New System.Drawing.Point(655, 469)
+        Me.createButton.Location = New System.Drawing.Point(655, 461)
         Me.createButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.createButton.Name = "createButton"
         Me.createButton.Size = New System.Drawing.Size(210, 45)
@@ -851,7 +851,7 @@ Partial Class Reports
         Me.activityDGV.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.activityDGV.Name = "activityDGV"
         Me.activityDGV.ReadOnly = True
-        Me.activityDGV.Size = New System.Drawing.Size(1094, 403)
+        Me.activityDGV.Size = New System.Drawing.Size(1094, 395)
         Me.activityDGV.TabIndex = 22
         Me.activityDGV.TabStop = False
         '
@@ -984,10 +984,10 @@ Partial Class Reports
         Me.accountingTab.Controls.Add(Me.Label1)
         Me.accountingTab.Controls.Add(Me.DataGridView2)
         Me.accountingTab.Controls.Add(Me.PictureBox1)
-        Me.accountingTab.Location = New System.Drawing.Point(4, 30)
+        Me.accountingTab.Location = New System.Drawing.Point(4, 22)
         Me.accountingTab.Name = "accountingTab"
         Me.accountingTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.accountingTab.Size = New System.Drawing.Size(1138, 592)
+        Me.accountingTab.Size = New System.Drawing.Size(1138, 600)
         Me.accountingTab.TabIndex = 1
         Me.accountingTab.Text = "Accounting Report"
         Me.accountingTab.UseVisualStyleBackColor = True
@@ -1097,7 +1097,7 @@ Partial Class Reports
         Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.Name = "Reports"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Create Masterlist Report"
+        Me.Text = "Reports"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.customizedTab.ResumeLayout(False)
         Me.customizedTab.PerformLayout()
