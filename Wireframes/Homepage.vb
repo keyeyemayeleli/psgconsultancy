@@ -32,14 +32,6 @@ Public Class Homepage
 
     End Sub
 
-    Private Sub activityDGV_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles activityDGV.CellContentClick
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click, currentuser_label.Click
-
-    End Sub
-
     Private Sub manageButton_Click(sender As Object, e As EventArgs) Handles manageButton.Click
         ManageEmployees.Show()
     End Sub

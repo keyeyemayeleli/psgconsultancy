@@ -147,6 +147,7 @@ Public Class CreateEmployee201
                         End If
                     Next
                     Me.Close()
+                    ManageEmployees.Show()
                 Catch ex As SqlException
                     MessageBox.Show(ex.Message.ToString(), "Error Message")
                 End Try
