@@ -1,18 +1,10 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 
-
-
-
 Public Class Login
 
     Dim con As New SqlConnection
     Dim cmd As New SqlCommand
-
-
-
-
-
 
     Private Sub exitButton_Click(sender As System.Object, e As System.EventArgs) Handles exitButton.Click
         If MsgBox("Are you sure you want to exit?", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then

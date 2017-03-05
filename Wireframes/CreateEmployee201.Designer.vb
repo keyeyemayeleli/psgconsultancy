@@ -595,10 +595,10 @@ Partial Class CreateEmployee201
         Me.workinfoTab.Controls.Add(Me.PictureBox22)
         Me.workinfoTab.Controls.Add(Me.PictureBox23)
         Me.workinfoTab.Controls.Add(Me.PictureBox24)
-        Me.workinfoTab.Location = New System.Drawing.Point(4, 29)
+        Me.workinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.workinfoTab.Name = "workinfoTab"
         Me.workinfoTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.workinfoTab.Size = New System.Drawing.Size(839, 483)
+        Me.workinfoTab.Size = New System.Drawing.Size(839, 490)
         Me.workinfoTab.TabIndex = 0
         Me.workinfoTab.Text = "Work Information"
         Me.workinfoTab.UseVisualStyleBackColor = True
@@ -754,9 +754,9 @@ Partial Class CreateEmployee201
         Me.govtinfoTab.Controls.Add(Me.PictureBox27)
         Me.govtinfoTab.Controls.Add(Me.PictureBox28)
         Me.govtinfoTab.Controls.Add(Me.PictureBox29)
-        Me.govtinfoTab.Location = New System.Drawing.Point(4, 29)
+        Me.govtinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.govtinfoTab.Name = "govtinfoTab"
-        Me.govtinfoTab.Size = New System.Drawing.Size(839, 483)
+        Me.govtinfoTab.Size = New System.Drawing.Size(839, 490)
         Me.govtinfoTab.TabIndex = 2
         Me.govtinfoTab.Text = "Government Information"
         Me.govtinfoTab.UseVisualStyleBackColor = True
@@ -1201,9 +1201,9 @@ Partial Class CreateEmployee201
         Me.familyinfoTab.Controls.Add(Me.PictureBox11)
         Me.familyinfoTab.Controls.Add(Me.PictureBox9)
         Me.familyinfoTab.Controls.Add(Me.PictureBox8)
-        Me.familyinfoTab.Location = New System.Drawing.Point(4, 29)
+        Me.familyinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.familyinfoTab.Name = "familyinfoTab"
-        Me.familyinfoTab.Size = New System.Drawing.Size(839, 483)
+        Me.familyinfoTab.Size = New System.Drawing.Size(839, 490)
         Me.familyinfoTab.TabIndex = 4
         Me.familyinfoTab.Text = "Family Information"
         Me.familyinfoTab.UseVisualStyleBackColor = True
@@ -1459,7 +1459,7 @@ Partial Class CreateEmployee201
         Me.adddocumentsButton.Location = New System.Drawing.Point(20, 532)
         Me.adddocumentsButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.adddocumentsButton.Name = "adddocumentsButton"
-        Me.adddocumentsButton.Size = New System.Drawing.Size(229, 48)
+        Me.adddocumentsButton.Size = New System.Drawing.Size(229, 66)
         Me.adddocumentsButton.TabIndex = 80
         Me.adddocumentsButton.Text = "Add Scanned Documents"
         Me.adddocumentsButton.UseVisualStyleBackColor = False

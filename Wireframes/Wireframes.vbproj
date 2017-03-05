@@ -94,7 +94,7 @@
     <Compile Include="CreateEmployee201.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginInfo.vb" />
+    <Compile Include="PassInfo.vb" />
     <Compile Include="ViewTerminatedEmployee.Designer.vb">
       <DependentUpon>ViewTerminatedEmployee.vb</DependentUpon>
     </Compile>
