@@ -30,7 +30,6 @@ C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Ma
 C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.EditEmployee.resources
 C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ViewEmployees.resources
 C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.ManageEmployees.resources
-C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Masterlist.resources
 C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.EditPassword.resources
 C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Homepage.resources
 C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Resources.resources
@@ -62,3 +61,4 @@ C:\Users\G\Desktop\Thesis Code\Wireframes\obj\x86\Debug\Wireframes.Homepage.reso
 C:\Users\G\Desktop\Thesis Code\Wireframes\obj\x86\Debug\Wireframes.Login.resources
 C:\Users\G\Desktop\Thesis Code\Wireframes\obj\x86\Debug\Wireframes.Resources.resources
 C:\Users\G\Desktop\Thesis Code\Wireframes\obj\x86\Debug\Wireframes.vbproj.GenerateResource.Cache
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Reports.resources

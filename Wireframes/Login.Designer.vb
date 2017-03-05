@@ -39,7 +39,7 @@ Partial Class Login
         Me.loginButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.loginButton.BackColor = System.Drawing.Color.SteelBlue
         Me.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.loginButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.loginButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.loginButton.Location = New System.Drawing.Point(80, 298)
         Me.loginButton.Name = "loginButton"
@@ -52,7 +52,7 @@ Partial Class Login
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Oswald", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.SteelBlue
         Me.Label1.Location = New System.Drawing.Point(142, 32)
         Me.Label1.Name = "Label1"
@@ -65,7 +65,7 @@ Partial Class Login
         Me.exitButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.exitButton.BackColor = System.Drawing.Color.SteelBlue
         Me.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.exitButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.exitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.exitButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.exitButton.Location = New System.Drawing.Point(80, 365)
         Me.exitButton.Name = "exitButton"
@@ -76,20 +76,20 @@ Partial Class Login
         '
         'passwordText
         '
-        Me.passwordText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.passwordText.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.passwordText.Location = New System.Drawing.Point(59, 228)
         Me.passwordText.Name = "passwordText"
         Me.passwordText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.passwordText.Size = New System.Drawing.Size(335, 39)
+        Me.passwordText.Size = New System.Drawing.Size(335, 35)
         Me.passwordText.TabIndex = 11
         Me.passwordText.Watermark = "Password"
         '
         'userText
         '
-        Me.userText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.userText.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.userText.Location = New System.Drawing.Point(59, 166)
         Me.userText.Name = "userText"
-        Me.userText.Size = New System.Drawing.Size(335, 39)
+        Me.userText.Size = New System.Drawing.Size(335, 35)
         Me.userText.TabIndex = 10
         Me.userText.Watermark = "Username"
         '

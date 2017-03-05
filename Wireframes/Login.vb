@@ -62,11 +62,15 @@ Public Class Login
             End If
 
         Catch ex As Exception
-            MessageBox.Show("Error while connecting to server" & ex.Message)
+            MessageBox.Show("Error while connecting to server " & ex.Message)
 
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
 

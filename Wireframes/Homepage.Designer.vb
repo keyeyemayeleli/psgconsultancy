@@ -50,7 +50,7 @@ Partial Class Homepage
         '
         Me.manageButton.BackColor = System.Drawing.Color.SteelBlue
         Me.manageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.manageButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.manageButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.manageButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.manageButton.Location = New System.Drawing.Point(38, 288)
         Me.manageButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -100,34 +100,34 @@ Partial Class Homepage
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Oswald", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.SteelBlue
         Me.Label3.Location = New System.Drawing.Point(449, 107)
         Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 31)
+        Me.Label3.Size = New System.Drawing.Size(123, 25)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Activity Log"
         '
         'DateTimePicker1
         '
         Me.DateTimePicker1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DateTimePicker1.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Location = New System.Drawing.Point(769, 106)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(201, 29)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(201, 26)
         Me.DateTimePicker1.TabIndex = 17
         '
         'Label2
         '
         Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gray
         Me.Label2.Location = New System.Drawing.Point(777, 81)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(193, 21)
+        Me.Label2.Size = New System.Drawing.Size(203, 20)
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "Search Activity Log by Date"
         '
@@ -136,7 +136,7 @@ Partial Class Homepage
         Me.searchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.searchButton.BackColor = System.Drawing.Color.SteelBlue
         Me.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.searchButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.searchButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.searchButton.Location = New System.Drawing.Point(977, 103)
         Me.searchButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -151,7 +151,7 @@ Partial Class Homepage
         Me.retrieveButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.retrieveButton.BackColor = System.Drawing.Color.SteelBlue
         Me.retrieveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.retrieveButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.retrieveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.retrieveButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.retrieveButton.Location = New System.Drawing.Point(911, 534)
         Me.retrieveButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -166,7 +166,7 @@ Partial Class Homepage
         Me.logoutButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.logoutButton.BackColor = System.Drawing.Color.SteelBlue
         Me.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.logoutButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.logoutButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.logoutButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.logoutButton.Location = New System.Drawing.Point(911, 622)
         Me.logoutButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -208,12 +208,12 @@ Partial Class Homepage
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.SteelBlue
         Me.Label4.Location = New System.Drawing.Point(878, 8)
         Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(135, 28)
+        Me.Label4.Size = New System.Drawing.Size(142, 25)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Logged in as:"
         '
@@ -223,12 +223,12 @@ Partial Class Homepage
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.currentuser_label.AutoSize = True
         Me.currentuser_label.BackColor = System.Drawing.Color.Transparent
-        Me.currentuser_label.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.currentuser_label.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.currentuser_label.ForeColor = System.Drawing.Color.SteelBlue
         Me.currentuser_label.Location = New System.Drawing.Point(1006, 8)
         Me.currentuser_label.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.currentuser_label.Name = "currentuser_label"
-        Me.currentuser_label.Size = New System.Drawing.Size(117, 28)
+        Me.currentuser_label.Size = New System.Drawing.Size(121, 25)
         Me.currentuser_label.TabIndex = 14
         Me.currentuser_label.Text = "currentuser"
         '
@@ -236,7 +236,7 @@ Partial Class Homepage
         '
         Me.reportsButton.BackColor = System.Drawing.Color.SteelBlue
         Me.reportsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.reportsButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.reportsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.reportsButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.reportsButton.Location = New System.Drawing.Point(38, 423)
         Me.reportsButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -252,12 +252,12 @@ Partial Class Homepage
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Oswald", 20.25!, System.Drawing.FontStyle.Italic)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Italic)
         Me.Label1.ForeColor = System.Drawing.Color.SteelBlue
-        Me.Label1.Location = New System.Drawing.Point(129, 134)
+        Me.Label1.Location = New System.Drawing.Point(104, 125)
         Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(281, 40)
+        Me.Label1.Size = New System.Drawing.Size(335, 31)
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "Employee 201 File System"
         '
