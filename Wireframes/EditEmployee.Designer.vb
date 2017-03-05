@@ -24,109 +24,168 @@ Partial Class EditEmployee
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EditEmployee))
         Me.backButton = New System.Windows.Forms.Button()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.personalinfoTab = New System.Windows.Forms.TabPage()
-        Me.telephonenumberText = New System.Windows.Forms.TextBox()
-        Me.contactnumberText = New System.Windows.Forms.TextBox()
-        Me.emailaddressText = New System.Windows.Forms.TextBox()
-        Me.permanentaddressText = New System.Windows.Forms.TextBox()
-        Me.presentaddressText = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.birthdayDate = New System.Windows.Forms.DateTimePicker()
-        Me.birthplaceText = New System.Windows.Forms.TextBox()
-        Me.familyinfoTab = New System.Windows.Forms.TabPage()
-        Me.addchildButton = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.childbdayDate = New System.Windows.Forms.DateTimePicker()
-        Me.childnameText = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.spousebdayDate = New System.Windows.Forms.DateTimePicker()
-        Me.spousenameText = New System.Windows.Forms.TextBox()
-        Me.mothernameText = New System.Windows.Forms.TextBox()
-        Me.fathernameText = New System.Windows.Forms.TextBox()
+        Me.nextofkinnameText = New Wireframes.WatermarkTextBox()
+        Me.rtnText = New Wireframes.WatermarkTextBox()
+        Me.hdmfnumberText = New Wireframes.WatermarkTextBox()
+        Me.beneficiaryrelationTextfour = New Wireframes.WatermarkTextBox()
+        Me.beneficiarynameTextfour = New Wireframes.WatermarkTextBox()
+        Me.pagibignumberText = New Wireframes.WatermarkTextBox()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
+        Me.philhealthnumberText = New Wireframes.WatermarkTextBox()
+        Me.beneficiarynameTextthree = New Wireframes.WatermarkTextBox()
+        Me.sssnumberText = New Wireframes.WatermarkTextBox()
+        Me.beneficiaryrelationTextthree = New Wireframes.WatermarkTextBox()
+        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
+        Me.otherTab = New System.Windows.Forms.TabPage()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.beneficiaryrelationTexttwo = New Wireframes.WatermarkTextBox()
+        Me.beneficiarynameTexttwo = New Wireframes.WatermarkTextBox()
+        Me.beneficiaryrelationTextone = New Wireframes.WatermarkTextBox()
+        Me.beneficiarynameTextone = New Wireframes.WatermarkTextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.beneficiarybdayDatefour = New System.Windows.Forms.DateTimePicker()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.beneficiarybdayDatethree = New System.Windows.Forms.DateTimePicker()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.beneficiarybdayDatetwo = New System.Windows.Forms.DateTimePicker()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.beneficiarybdayDateone = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.nextofkinbdayDate = New System.Windows.Forms.DateTimePicker()
+        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
+        Me.tinnumberText = New Wireframes.WatermarkTextBox()
+        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
+        Me.statusdateDate = New System.Windows.Forms.DateTimePicker()
+        Me.statusreasonText = New Wireframes.WatermarkTextBox()
+        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
+        Me.rankText = New Wireframes.WatermarkTextBox()
+        Me.govtinfoTab = New System.Windows.Forms.TabPage()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
+        Me.changepicButton = New System.Windows.Forms.Button()
+        Me.score = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.month = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monthlyDatagrid = New System.Windows.Forms.DataGridView()
+        Me.remarks = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monthlyevalTab = New System.Windows.Forms.TabPage()
+        Me.yearlyevalTab = New System.Windows.Forms.TabPage()
+        Me.yearlyDatadrid = New System.Windows.Forms.DataGridView()
+        Me.year = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.yearlyscore = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.yearlyremarks = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.documentsTab = New System.Windows.Forms.TabPage()
+        Me.statusdateLabel = New System.Windows.Forms.Label()
         Me.workinfoTab = New System.Windows.Forms.TabPage()
-        Me.rankText = New System.Windows.Forms.TextBox()
-        Me.positionText = New System.Windows.Forms.TextBox()
-        Me.departmentText = New System.Windows.Forms.TextBox()
-        Me.groupText = New System.Windows.Forms.TextBox()
+        Me.positionText = New Wireframes.WatermarkTextBox()
+        Me.departmentText = New Wireframes.WatermarkTextBox()
+        Me.groupText = New Wireframes.WatermarkTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.datehiredDate = New System.Windows.Forms.DateTimePicker()
-        Me.govtinfoTab = New System.Windows.Forms.TabPage()
-        Me.hdmfnumberText = New System.Windows.Forms.TextBox()
-        Me.rtnText = New System.Windows.Forms.TextBox()
-        Me.pagibigText = New System.Windows.Forms.TextBox()
-        Me.philhealthText = New System.Windows.Forms.TextBox()
-        Me.sssnumberText = New System.Windows.Forms.TextBox()
-        Me.tinnumberText = New System.Windows.Forms.TextBox()
-        Me.documentsTab = New System.Windows.Forms.TabPage()
-        Me.saveButton = New System.Windows.Forms.Button()
-        Me.lastnameText = New System.Windows.Forms.TextBox()
-        Me.givennameText = New System.Windows.Forms.TextBox()
-        Me.middlenameText = New System.Windows.Forms.TextBox()
-        Me.employeenumberText = New System.Windows.Forms.TextBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
+        Me.emailaddressText = New Wireframes.WatermarkTextBox()
+        Me.permanentaddressText = New Wireframes.WatermarkTextBox()
+        Me.presentaddressText = New Wireframes.WatermarkTextBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.telephonenumberText = New Wireframes.WatermarkTextBox()
+        Me.contactnumberText = New Wireframes.WatermarkTextBox()
+        Me.birthplaceText = New Wireframes.WatermarkTextBox()
+        Me.civilstatusCombobox = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.birthdayDate = New System.Windows.Forms.DateTimePicker()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.personalinfoTab = New System.Windows.Forms.TabPage()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.familyinfoTab = New System.Windows.Forms.TabPage()
+        Me.childnameTextfour = New Wireframes.WatermarkTextBox()
+        Me.childnameTextthree = New Wireframes.WatermarkTextBox()
+        Me.childnameTexttwo = New Wireframes.WatermarkTextBox()
+        Me.childnameTextone = New Wireframes.WatermarkTextBox()
+        Me.spousenameText = New Wireframes.WatermarkTextBox()
+        Me.mothersnameText = New Wireframes.WatermarkTextBox()
+        Me.fathersnameText = New Wireframes.WatermarkTextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.childbdayDatefour = New System.Windows.Forms.DateTimePicker()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.childbdayDatethree = New System.Windows.Forms.DateTimePicker()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.childbdayDatetwo = New System.Windows.Forms.DateTimePicker()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.childbdayDateone = New System.Windows.Forms.DateTimePicker()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.spousebdayDate = New System.Windows.Forms.DateTimePicker()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.statusCombobox = New System.Windows.Forms.ComboBox()
+        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
+        Me.middlenameText = New Wireframes.WatermarkTextBox()
+        Me.givennameText = New Wireframes.WatermarkTextBox()
+        Me.lastnameText = New Wireframes.WatermarkTextBox()
+        Me.adddocumentsButton = New System.Windows.Forms.Button()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.saveButton = New System.Windows.Forms.Button()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.picbox = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.civilstatusCombobox = New System.Windows.Forms.ComboBox()
-        Me.TabControl1.SuspendLayout()
-        Me.personalinfoTab.SuspendLayout()
-        Me.familyinfoTab.SuspendLayout()
-        Me.workinfoTab.SuspendLayout()
+        Me.employeenumberText = New System.Windows.Forms.Label()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.otherTab.SuspendLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.govtinfoTab.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.monthlyDatagrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.monthlyevalTab.SuspendLayout()
+        Me.yearlyevalTab.SuspendLayout()
+        CType(Me.yearlyDatadrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.workinfoTab.SuspendLayout()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.personalinfoTab.SuspendLayout()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabControl1.SuspendLayout()
+        Me.familyinfoTab.SuspendLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picbox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -135,7 +194,7 @@ Partial Class EditEmployee
         'backButton
         '
         Me.backButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.backButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.backButton.BackColor = System.Drawing.Color.SteelBlue
         Me.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.backButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.backButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -143,267 +202,598 @@ Partial Class EditEmployee
         Me.backButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.backButton.Name = "backButton"
         Me.backButton.Size = New System.Drawing.Size(210, 45)
-        Me.backButton.TabIndex = 21
+        Me.backButton.TabIndex = 72
         Me.backButton.Text = "Back"
         Me.backButton.UseVisualStyleBackColor = False
         '
-        'TabControl1
+        'nextofkinnameText
         '
-        Me.TabControl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.nextofkinnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nextofkinnameText.ForeColor = System.Drawing.Color.Gray
+        Me.nextofkinnameText.Location = New System.Drawing.Point(36, 428)
+        Me.nextofkinnameText.Name = "nextofkinnameText"
+        Me.nextofkinnameText.Size = New System.Drawing.Size(358, 33)
+        Me.nextofkinnameText.TabIndex = 89
+        Me.nextofkinnameText.Watermark = "Next of Kin"
+        '
+        'rtnText
+        '
+        Me.rtnText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtnText.ForeColor = System.Drawing.Color.Gray
+        Me.rtnText.Location = New System.Drawing.Point(51, 326)
+        Me.rtnText.Name = "rtnText"
+        Me.rtnText.Size = New System.Drawing.Size(566, 33)
+        Me.rtnText.TabIndex = 79
+        Me.rtnText.Watermark = "RTN"
+        '
+        'hdmfnumberText
+        '
+        Me.hdmfnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.hdmfnumberText.ForeColor = System.Drawing.Color.Gray
+        Me.hdmfnumberText.Location = New System.Drawing.Point(51, 401)
+        Me.hdmfnumberText.Name = "hdmfnumberText"
+        Me.hdmfnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.hdmfnumberText.TabIndex = 80
+        Me.hdmfnumberText.Watermark = "HDMF Number"
+        '
+        'beneficiaryrelationTextfour
+        '
+        Me.beneficiaryrelationTextfour.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTextfour.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationTextfour.Location = New System.Drawing.Point(36, 362)
+        Me.beneficiaryrelationTextfour.Name = "beneficiaryrelationTextfour"
+        Me.beneficiaryrelationTextfour.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiaryrelationTextfour.TabIndex = 88
+        Me.beneficiaryrelationTextfour.Watermark = "Beneficiary's Relation"
+        '
+        'beneficiarynameTextfour
+        '
+        Me.beneficiarynameTextfour.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTextfour.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameTextfour.Location = New System.Drawing.Point(36, 319)
+        Me.beneficiarynameTextfour.Name = "beneficiarynameTextfour"
+        Me.beneficiarynameTextfour.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiarynameTextfour.TabIndex = 87
+        Me.beneficiarynameTextfour.Watermark = "Beneficiary's Name"
+        '
+        'pagibignumberText
+        '
+        Me.pagibignumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pagibignumberText.ForeColor = System.Drawing.Color.Gray
+        Me.pagibignumberText.Location = New System.Drawing.Point(51, 250)
+        Me.pagibignumberText.Name = "pagibignumberText"
+        Me.pagibignumberText.Size = New System.Drawing.Size(566, 33)
+        Me.pagibignumberText.TabIndex = 78
+        Me.pagibignumberText.Watermark = "Pag-ibig Number"
+        '
+        'PictureBox34
+        '
+        Me.PictureBox34.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TabControl1.Controls.Add(Me.personalinfoTab)
-        Me.TabControl1.Controls.Add(Me.familyinfoTab)
-        Me.TabControl1.Controls.Add(Me.workinfoTab)
-        Me.TabControl1.Controls.Add(Me.govtinfoTab)
-        Me.TabControl1.Controls.Add(Me.documentsTab)
-        Me.TabControl1.Location = New System.Drawing.Point(294, 67)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(847, 516)
-        Me.TabControl1.TabIndex = 31
+        Me.PictureBox34.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox34.Location = New System.Drawing.Point(36, 298)
+        Me.PictureBox34.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox34.TabIndex = 86
+        Me.PictureBox34.TabStop = False
         '
-        'personalinfoTab
+        'PictureBox33
         '
-        Me.personalinfoTab.Controls.Add(Me.civilstatusCombobox)
-        Me.personalinfoTab.Controls.Add(Me.telephonenumberText)
-        Me.personalinfoTab.Controls.Add(Me.contactnumberText)
-        Me.personalinfoTab.Controls.Add(Me.emailaddressText)
-        Me.personalinfoTab.Controls.Add(Me.permanentaddressText)
-        Me.personalinfoTab.Controls.Add(Me.presentaddressText)
-        Me.personalinfoTab.Controls.Add(Me.Label1)
-        Me.personalinfoTab.Controls.Add(Me.birthdayDate)
-        Me.personalinfoTab.Controls.Add(Me.birthplaceText)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox16)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox17)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox18)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox19)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox12)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox13)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox14)
-        Me.personalinfoTab.Controls.Add(Me.PictureBox15)
-        Me.personalinfoTab.Location = New System.Drawing.Point(4, 30)
-        Me.personalinfoTab.Name = "personalinfoTab"
-        Me.personalinfoTab.Size = New System.Drawing.Size(839, 482)
-        Me.personalinfoTab.TabIndex = 3
-        Me.personalinfoTab.Text = "Personal Information"
-        Me.personalinfoTab.UseVisualStyleBackColor = True
+        Me.PictureBox33.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox33.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox33.Location = New System.Drawing.Point(36, 194)
+        Me.PictureBox33.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox33.Name = "PictureBox33"
+        Me.PictureBox33.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox33.TabIndex = 83
+        Me.PictureBox33.TabStop = False
         '
-        'telephonenumberText
+        'philhealthnumberText
         '
-        Me.telephonenumberText.BackColor = System.Drawing.SystemColors.Window
-        Me.telephonenumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.telephonenumberText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.telephonenumberText.Location = New System.Drawing.Point(48, 419)
-        Me.telephonenumberText.Name = "telephonenumberText"
-        Me.telephonenumberText.Size = New System.Drawing.Size(566, 33)
-        Me.telephonenumberText.TabIndex = 55
-        Me.telephonenumberText.TabStop = False
-        Me.telephonenumberText.Text = "Telephone Number"
+        Me.philhealthnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.philhealthnumberText.ForeColor = System.Drawing.Color.Gray
+        Me.philhealthnumberText.Location = New System.Drawing.Point(51, 175)
+        Me.philhealthnumberText.Name = "philhealthnumberText"
+        Me.philhealthnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.philhealthnumberText.TabIndex = 77
+        Me.philhealthnumberText.Watermark = "Philhealth Number"
         '
-        'contactnumberText
+        'beneficiarynameTextthree
         '
-        Me.contactnumberText.BackColor = System.Drawing.SystemColors.Window
-        Me.contactnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.contactnumberText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.contactnumberText.Location = New System.Drawing.Point(48, 359)
-        Me.contactnumberText.Name = "contactnumberText"
-        Me.contactnumberText.Size = New System.Drawing.Size(566, 33)
-        Me.contactnumberText.TabIndex = 54
-        Me.contactnumberText.TabStop = False
-        Me.contactnumberText.Text = "Contact Number"
+        Me.beneficiarynameTextthree.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTextthree.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameTextthree.Location = New System.Drawing.Point(36, 212)
+        Me.beneficiarynameTextthree.Name = "beneficiarynameTextthree"
+        Me.beneficiarynameTextthree.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiarynameTextthree.TabIndex = 84
+        Me.beneficiarynameTextthree.Watermark = "Beneficiary's Name"
         '
-        'emailaddressText
+        'sssnumberText
         '
-        Me.emailaddressText.BackColor = System.Drawing.SystemColors.Window
-        Me.emailaddressText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.emailaddressText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.emailaddressText.Location = New System.Drawing.Point(48, 298)
-        Me.emailaddressText.Name = "emailaddressText"
-        Me.emailaddressText.Size = New System.Drawing.Size(566, 33)
-        Me.emailaddressText.TabIndex = 53
-        Me.emailaddressText.TabStop = False
-        Me.emailaddressText.Text = "Email Address"
+        Me.sssnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sssnumberText.ForeColor = System.Drawing.Color.Gray
+        Me.sssnumberText.Location = New System.Drawing.Point(51, 97)
+        Me.sssnumberText.Name = "sssnumberText"
+        Me.sssnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.sssnumberText.TabIndex = 76
+        Me.sssnumberText.Watermark = "SSS Number"
         '
-        'permanentaddressText
+        'beneficiaryrelationTextthree
         '
-        Me.permanentaddressText.BackColor = System.Drawing.SystemColors.Window
-        Me.permanentaddressText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.permanentaddressText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.permanentaddressText.Location = New System.Drawing.Point(48, 244)
-        Me.permanentaddressText.Name = "permanentaddressText"
-        Me.permanentaddressText.Size = New System.Drawing.Size(566, 33)
-        Me.permanentaddressText.TabIndex = 52
-        Me.permanentaddressText.TabStop = False
-        Me.permanentaddressText.Text = "Permanent Address"
+        Me.beneficiaryrelationTextthree.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTextthree.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationTextthree.Location = New System.Drawing.Point(36, 258)
+        Me.beneficiaryrelationTextthree.Name = "beneficiaryrelationTextthree"
+        Me.beneficiaryrelationTextthree.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiaryrelationTextthree.TabIndex = 85
+        Me.beneficiaryrelationTextthree.Watermark = "Beneficiary's Relation"
         '
-        'presentaddressText
+        'PictureBox30
         '
-        Me.presentaddressText.BackColor = System.Drawing.SystemColors.Window
-        Me.presentaddressText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.presentaddressText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.presentaddressText.Location = New System.Drawing.Point(48, 184)
-        Me.presentaddressText.Name = "presentaddressText"
-        Me.presentaddressText.Size = New System.Drawing.Size(566, 33)
-        Me.presentaddressText.TabIndex = 51
-        Me.presentaddressText.TabStop = False
-        Me.presentaddressText.Text = "Present Address"
+        Me.PictureBox30.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox30.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox30.Location = New System.Drawing.Point(51, 441)
+        Me.PictureBox30.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox30.Name = "PictureBox30"
+        Me.PictureBox30.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox30.TabIndex = 61
+        Me.PictureBox30.TabStop = False
         '
-        'Label1
+        'otherTab
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(43, 19)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 26)
-        Me.Label1.TabIndex = 49
-        Me.Label1.Text = "Birthday: "
+        Me.otherTab.Controls.Add(Me.nextofkinnameText)
+        Me.otherTab.Controls.Add(Me.beneficiaryrelationTextfour)
+        Me.otherTab.Controls.Add(Me.beneficiarynameTextfour)
+        Me.otherTab.Controls.Add(Me.PictureBox34)
+        Me.otherTab.Controls.Add(Me.beneficiaryrelationTextthree)
+        Me.otherTab.Controls.Add(Me.beneficiarynameTextthree)
+        Me.otherTab.Controls.Add(Me.PictureBox33)
+        Me.otherTab.Controls.Add(Me.PictureBox10)
+        Me.otherTab.Controls.Add(Me.beneficiaryrelationTexttwo)
+        Me.otherTab.Controls.Add(Me.beneficiarynameTexttwo)
+        Me.otherTab.Controls.Add(Me.beneficiaryrelationTextone)
+        Me.otherTab.Controls.Add(Me.beneficiarynameTextone)
+        Me.otherTab.Controls.Add(Me.Label12)
+        Me.otherTab.Controls.Add(Me.beneficiarybdayDatefour)
+        Me.otherTab.Controls.Add(Me.Label11)
+        Me.otherTab.Controls.Add(Me.beneficiarybdayDatethree)
+        Me.otherTab.Controls.Add(Me.Label7)
+        Me.otherTab.Controls.Add(Me.beneficiarybdayDatetwo)
+        Me.otherTab.Controls.Add(Me.Label6)
+        Me.otherTab.Controls.Add(Me.beneficiarybdayDateone)
+        Me.otherTab.Controls.Add(Me.Label5)
+        Me.otherTab.Controls.Add(Me.nextofkinbdayDate)
+        Me.otherTab.Controls.Add(Me.PictureBox32)
+        Me.otherTab.Location = New System.Drawing.Point(4, 30)
+        Me.otherTab.Name = "otherTab"
+        Me.otherTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.otherTab.Size = New System.Drawing.Size(839, 482)
+        Me.otherTab.TabIndex = 5
+        Me.otherTab.Text = "Other"
+        Me.otherTab.UseVisualStyleBackColor = True
         '
-        'birthdayDate
+        'PictureBox10
         '
-        Me.birthdayDate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.birthdayDate.Location = New System.Drawing.Point(136, 17)
-        Me.birthdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.birthdayDate.Name = "birthdayDate"
-        Me.birthdayDate.Size = New System.Drawing.Size(201, 29)
-        Me.birthdayDate.TabIndex = 48
+        Me.PictureBox10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox10.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox10.Location = New System.Drawing.Point(36, 98)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox10.TabIndex = 82
+        Me.PictureBox10.TabStop = False
         '
-        'birthplaceText
+        'beneficiaryrelationTexttwo
         '
-        Me.birthplaceText.BackColor = System.Drawing.SystemColors.Window
-        Me.birthplaceText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.birthplaceText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.birthplaceText.Location = New System.Drawing.Point(48, 67)
-        Me.birthplaceText.Name = "birthplaceText"
-        Me.birthplaceText.Size = New System.Drawing.Size(566, 33)
-        Me.birthplaceText.TabIndex = 41
-        Me.birthplaceText.TabStop = False
-        Me.birthplaceText.Text = "Birthplace"
+        Me.beneficiaryrelationTexttwo.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTexttwo.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationTexttwo.Location = New System.Drawing.Point(36, 154)
+        Me.beneficiaryrelationTexttwo.Name = "beneficiaryrelationTexttwo"
+        Me.beneficiaryrelationTexttwo.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiaryrelationTexttwo.TabIndex = 81
+        Me.beneficiaryrelationTexttwo.Watermark = "Beneficiary's Relation"
         '
-        'familyinfoTab
+        'beneficiarynameTexttwo
         '
-        Me.familyinfoTab.Controls.Add(Me.addchildButton)
-        Me.familyinfoTab.Controls.Add(Me.Label3)
-        Me.familyinfoTab.Controls.Add(Me.childbdayDate)
-        Me.familyinfoTab.Controls.Add(Me.childnameText)
-        Me.familyinfoTab.Controls.Add(Me.Label2)
-        Me.familyinfoTab.Controls.Add(Me.spousebdayDate)
-        Me.familyinfoTab.Controls.Add(Me.spousenameText)
-        Me.familyinfoTab.Controls.Add(Me.mothernameText)
-        Me.familyinfoTab.Controls.Add(Me.fathernameText)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox10)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox11)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox9)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox8)
-        Me.familyinfoTab.Location = New System.Drawing.Point(4, 22)
-        Me.familyinfoTab.Name = "familyinfoTab"
-        Me.familyinfoTab.Size = New System.Drawing.Size(839, 490)
-        Me.familyinfoTab.TabIndex = 4
-        Me.familyinfoTab.Text = "Family Information"
-        Me.familyinfoTab.UseVisualStyleBackColor = True
+        Me.beneficiarynameTexttwo.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTexttwo.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameTexttwo.Location = New System.Drawing.Point(36, 115)
+        Me.beneficiarynameTexttwo.Name = "beneficiarynameTexttwo"
+        Me.beneficiarynameTexttwo.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiarynameTexttwo.TabIndex = 80
+        Me.beneficiarynameTexttwo.Watermark = "Beneficiary's Name"
         '
-        'addchildButton
+        'beneficiaryrelationTextone
         '
-        Me.addchildButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.addchildButton.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.addchildButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.addchildButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addchildButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.addchildButton.Location = New System.Drawing.Point(661, 432)
-        Me.addchildButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.addchildButton.Name = "addchildButton"
-        Me.addchildButton.Size = New System.Drawing.Size(144, 35)
-        Me.addchildButton.TabIndex = 61
-        Me.addchildButton.Text = "Add Child"
-        Me.addchildButton.UseVisualStyleBackColor = False
+        Me.beneficiaryrelationTextone.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTextone.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationTextone.Location = New System.Drawing.Point(36, 58)
+        Me.beneficiaryrelationTextone.Name = "beneficiaryrelationTextone"
+        Me.beneficiaryrelationTextone.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiaryrelationTextone.TabIndex = 79
+        Me.beneficiaryrelationTextone.Watermark = "Beneficiary's Relation"
         '
-        'Label3
+        'beneficiarynameTextone
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(452, 285)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(146, 26)
-        Me.Label3.TabIndex = 60
-        Me.Label3.Text = "Child's Birthday: "
+        Me.beneficiarynameTextone.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTextone.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameTextone.Location = New System.Drawing.Point(36, 19)
+        Me.beneficiarynameTextone.Name = "beneficiarynameTextone"
+        Me.beneficiarynameTextone.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiarynameTextone.TabIndex = 78
+        Me.beneficiarynameTextone.Watermark = "Beneficiary's Name"
         '
-        'childbdayDate
+        'Label12
         '
-        Me.childbdayDate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.childbdayDate.Location = New System.Drawing.Point(604, 282)
-        Me.childbdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.childbdayDate.Name = "childbdayDate"
-        Me.childbdayDate.Size = New System.Drawing.Size(201, 29)
-        Me.childbdayDate.TabIndex = 59
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Gray
+        Me.Label12.Location = New System.Drawing.Point(403, 322)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(190, 26)
+        Me.Label12.TabIndex = 77
+        Me.Label12.Text = "Beneficiary's Birthday:"
         '
-        'childnameText
+        'beneficiarybdayDatefour
         '
-        Me.childnameText.BackColor = System.Drawing.SystemColors.Window
-        Me.childnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.childnameText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.childnameText.Location = New System.Drawing.Point(42, 281)
-        Me.childnameText.Name = "childnameText"
-        Me.childnameText.Size = New System.Drawing.Size(385, 33)
-        Me.childnameText.TabIndex = 58
-        Me.childnameText.TabStop = False
-        Me.childnameText.Text = "Child's Name"
+        Me.beneficiarybdayDatefour.Location = New System.Drawing.Point(599, 320)
+        Me.beneficiarybdayDatefour.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.beneficiarybdayDatefour.Name = "beneficiarybdayDatefour"
+        Me.beneficiarybdayDatefour.Size = New System.Drawing.Size(200, 29)
+        Me.beneficiarybdayDatefour.TabIndex = 76
         '
-        'Label2
+        'Label11
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(37, 221)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(164, 26)
-        Me.Label2.TabIndex = 57
-        Me.Label2.Text = "Spouse's Birthday: "
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Gray
+        Me.Label11.Location = New System.Drawing.Point(403, 215)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(190, 26)
+        Me.Label11.TabIndex = 75
+        Me.Label11.Text = "Beneficiary's Birthday:"
         '
-        'spousebdayDate
+        'beneficiarybdayDatethree
         '
-        Me.spousebdayDate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.spousebdayDate.Location = New System.Drawing.Point(207, 218)
-        Me.spousebdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.spousebdayDate.Name = "spousebdayDate"
-        Me.spousebdayDate.Size = New System.Drawing.Size(201, 29)
-        Me.spousebdayDate.TabIndex = 56
+        Me.beneficiarybdayDatethree.Location = New System.Drawing.Point(599, 215)
+        Me.beneficiarybdayDatethree.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.beneficiarybdayDatethree.Name = "beneficiarybdayDatethree"
+        Me.beneficiarybdayDatethree.Size = New System.Drawing.Size(200, 29)
+        Me.beneficiarybdayDatethree.TabIndex = 74
         '
-        'spousenameText
+        'Label7
         '
-        Me.spousenameText.BackColor = System.Drawing.SystemColors.Window
-        Me.spousenameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.spousenameText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.spousenameText.Location = New System.Drawing.Point(42, 150)
-        Me.spousenameText.Name = "spousenameText"
-        Me.spousenameText.Size = New System.Drawing.Size(566, 33)
-        Me.spousenameText.TabIndex = 55
-        Me.spousenameText.TabStop = False
-        Me.spousenameText.Text = "Spouse's Name"
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Gray
+        Me.Label7.Location = New System.Drawing.Point(407, 115)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(190, 26)
+        Me.Label7.TabIndex = 73
+        Me.Label7.Text = "Beneficiary's Birthday:"
         '
-        'mothernameText
+        'beneficiarybdayDatetwo
         '
-        Me.mothernameText.BackColor = System.Drawing.SystemColors.Window
-        Me.mothernameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mothernameText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.mothernameText.Location = New System.Drawing.Point(42, 81)
-        Me.mothernameText.Name = "mothernameText"
-        Me.mothernameText.Size = New System.Drawing.Size(566, 33)
-        Me.mothernameText.TabIndex = 54
-        Me.mothernameText.TabStop = False
-        Me.mothernameText.Text = "Mother's Name"
+        Me.beneficiarybdayDatetwo.Location = New System.Drawing.Point(599, 115)
+        Me.beneficiarybdayDatetwo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.beneficiarybdayDatetwo.Name = "beneficiarybdayDatetwo"
+        Me.beneficiarybdayDatetwo.Size = New System.Drawing.Size(200, 29)
+        Me.beneficiarybdayDatetwo.TabIndex = 72
         '
-        'fathernameText
+        'Label6
         '
-        Me.fathernameText.BackColor = System.Drawing.SystemColors.Window
-        Me.fathernameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fathernameText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.fathernameText.Location = New System.Drawing.Point(42, 14)
-        Me.fathernameText.Name = "fathernameText"
-        Me.fathernameText.Size = New System.Drawing.Size(566, 33)
-        Me.fathernameText.TabIndex = 53
-        Me.fathernameText.TabStop = False
-        Me.fathernameText.Text = "Father's Name"
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Gray
+        Me.Label6.Location = New System.Drawing.Point(407, 26)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(190, 26)
+        Me.Label6.TabIndex = 71
+        Me.Label6.Text = "Beneficiary's Birthday:"
+        '
+        'beneficiarybdayDateone
+        '
+        Me.beneficiarybdayDateone.Location = New System.Drawing.Point(603, 26)
+        Me.beneficiarybdayDateone.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.beneficiarybdayDateone.Name = "beneficiarybdayDateone"
+        Me.beneficiarybdayDateone.Size = New System.Drawing.Size(200, 29)
+        Me.beneficiarybdayDateone.TabIndex = 70
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Gray
+        Me.Label5.Location = New System.Drawing.Point(403, 432)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(179, 26)
+        Me.Label5.TabIndex = 65
+        Me.Label5.Text = "Next of Kin Birthday:"
+        '
+        'nextofkinbdayDate
+        '
+        Me.nextofkinbdayDate.Location = New System.Drawing.Point(599, 429)
+        Me.nextofkinbdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.nextofkinbdayDate.Name = "nextofkinbdayDate"
+        Me.nextofkinbdayDate.Size = New System.Drawing.Size(200, 29)
+        Me.nextofkinbdayDate.TabIndex = 64
+        '
+        'PictureBox32
+        '
+        Me.PictureBox32.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox32.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox32.Location = New System.Drawing.Point(36, 402)
+        Me.PictureBox32.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox32.Name = "PictureBox32"
+        Me.PictureBox32.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox32.TabIndex = 61
+        Me.PictureBox32.TabStop = False
+        '
+        'tinnumberText
+        '
+        Me.tinnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tinnumberText.ForeColor = System.Drawing.Color.Gray
+        Me.tinnumberText.Location = New System.Drawing.Point(51, 30)
+        Me.tinnumberText.Name = "tinnumberText"
+        Me.tinnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.tinnumberText.TabIndex = 75
+        Me.tinnumberText.Watermark = "TIN Number"
+        '
+        'PictureBox28
+        '
+        Me.PictureBox28.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox28.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox28.Location = New System.Drawing.Point(50, 137)
+        Me.PictureBox28.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox28.Name = "PictureBox28"
+        Me.PictureBox28.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox28.TabIndex = 56
+        Me.PictureBox28.TabStop = False
+        '
+        'statusdateDate
+        '
+        Me.statusdateDate.Location = New System.Drawing.Point(242, 378)
+        Me.statusdateDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.statusdateDate.Name = "statusdateDate"
+        Me.statusdateDate.Size = New System.Drawing.Size(201, 29)
+        Me.statusdateDate.TabIndex = 80
+        '
+        'statusreasonText
+        '
+        Me.statusreasonText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusreasonText.ForeColor = System.Drawing.Color.Gray
+        Me.statusreasonText.Location = New System.Drawing.Point(47, 438)
+        Me.statusreasonText.Name = "statusreasonText"
+        Me.statusreasonText.Size = New System.Drawing.Size(566, 33)
+        Me.statusreasonText.TabIndex = 79
+        Me.statusreasonText.Watermark = "Status Reason"
+        '
+        'PictureBox35
+        '
+        Me.PictureBox35.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox35.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox35.Location = New System.Drawing.Point(48, 415)
+        Me.PictureBox35.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox35.Name = "PictureBox35"
+        Me.PictureBox35.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox35.TabIndex = 78
+        Me.PictureBox35.TabStop = False
+        '
+        'rankText
+        '
+        Me.rankText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rankText.ForeColor = System.Drawing.Color.Gray
+        Me.rankText.Location = New System.Drawing.Point(48, 308)
+        Me.rankText.Name = "rankText"
+        Me.rankText.Size = New System.Drawing.Size(566, 33)
+        Me.rankText.TabIndex = 77
+        Me.rankText.Watermark = "Rank"
+        '
+        'govtinfoTab
+        '
+        Me.govtinfoTab.Controls.Add(Me.hdmfnumberText)
+        Me.govtinfoTab.Controls.Add(Me.rtnText)
+        Me.govtinfoTab.Controls.Add(Me.pagibignumberText)
+        Me.govtinfoTab.Controls.Add(Me.philhealthnumberText)
+        Me.govtinfoTab.Controls.Add(Me.sssnumberText)
+        Me.govtinfoTab.Controls.Add(Me.tinnumberText)
+        Me.govtinfoTab.Controls.Add(Me.PictureBox30)
+        Me.govtinfoTab.Controls.Add(Me.PictureBox25)
+        Me.govtinfoTab.Controls.Add(Me.PictureBox26)
+        Me.govtinfoTab.Controls.Add(Me.PictureBox27)
+        Me.govtinfoTab.Controls.Add(Me.PictureBox28)
+        Me.govtinfoTab.Controls.Add(Me.PictureBox29)
+        Me.govtinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.govtinfoTab.Name = "govtinfoTab"
+        Me.govtinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.govtinfoTab.TabIndex = 2
+        Me.govtinfoTab.Text = "Government Information"
+        Me.govtinfoTab.UseVisualStyleBackColor = True
+        '
+        'PictureBox25
+        '
+        Me.PictureBox25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox25.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox25.Location = New System.Drawing.Point(51, 366)
+        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox25.TabIndex = 59
+        Me.PictureBox25.TabStop = False
+        '
+        'PictureBox26
+        '
+        Me.PictureBox26.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox26.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox26.Location = New System.Drawing.Point(51, 290)
+        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox26.TabIndex = 58
+        Me.PictureBox26.TabStop = False
+        '
+        'PictureBox27
+        '
+        Me.PictureBox27.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox27.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox27.Location = New System.Drawing.Point(50, 215)
+        Me.PictureBox27.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox27.Name = "PictureBox27"
+        Me.PictureBox27.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox27.TabIndex = 57
+        Me.PictureBox27.TabStop = False
+        '
+        'PictureBox29
+        '
+        Me.PictureBox29.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox29.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox29.Location = New System.Drawing.Point(50, 70)
+        Me.PictureBox29.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox29.Name = "PictureBox29"
+        Me.PictureBox29.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox29.TabIndex = 55
+        Me.PictureBox29.TabStop = False
+        '
+        'changepicButton
+        '
+        Me.changepicButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.changepicButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.changepicButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.changepicButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.changepicButton.Location = New System.Drawing.Point(170, 204)
+        Me.changepicButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.changepicButton.Name = "changepicButton"
+        Me.changepicButton.Size = New System.Drawing.Size(91, 25)
+        Me.changepicButton.TabIndex = 87
+        Me.changepicButton.Text = "Change Picture"
+        Me.changepicButton.UseVisualStyleBackColor = False
+        '
+        'score
+        '
+        Me.score.HeaderText = "Score"
+        Me.score.Name = "score"
+        '
+        'month
+        '
+        Me.month.HeaderText = "Month"
+        Me.month.Name = "month"
+        Me.month.Width = 150
+        '
+        'monthlyDatagrid
+        '
+        Me.monthlyDatagrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.monthlyDatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.monthlyDatagrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.month, Me.score, Me.remarks})
+        Me.monthlyDatagrid.Location = New System.Drawing.Point(22, 19)
+        Me.monthlyDatagrid.Name = "monthlyDatagrid"
+        Me.monthlyDatagrid.Size = New System.Drawing.Size(798, 446)
+        Me.monthlyDatagrid.TabIndex = 0
+        '
+        'remarks
+        '
+        Me.remarks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.remarks.HeaderText = "Remarks"
+        Me.remarks.Name = "remarks"
+        '
+        'monthlyevalTab
+        '
+        Me.monthlyevalTab.Controls.Add(Me.monthlyDatagrid)
+        Me.monthlyevalTab.Location = New System.Drawing.Point(4, 30)
+        Me.monthlyevalTab.Name = "monthlyevalTab"
+        Me.monthlyevalTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.monthlyevalTab.Size = New System.Drawing.Size(839, 482)
+        Me.monthlyevalTab.TabIndex = 6
+        Me.monthlyevalTab.Text = "Monthly Evaluations"
+        Me.monthlyevalTab.UseVisualStyleBackColor = True
+        '
+        'yearlyevalTab
+        '
+        Me.yearlyevalTab.Controls.Add(Me.yearlyDatadrid)
+        Me.yearlyevalTab.Location = New System.Drawing.Point(4, 30)
+        Me.yearlyevalTab.Name = "yearlyevalTab"
+        Me.yearlyevalTab.Size = New System.Drawing.Size(839, 482)
+        Me.yearlyevalTab.TabIndex = 7
+        Me.yearlyevalTab.Text = "Yearly Evaluations"
+        Me.yearlyevalTab.UseVisualStyleBackColor = True
+        '
+        'yearlyDatadrid
+        '
+        Me.yearlyDatadrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.yearlyDatadrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.yearlyDatadrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.year, Me.yearlyscore, Me.yearlyremarks})
+        Me.yearlyDatadrid.Location = New System.Drawing.Point(20, 18)
+        Me.yearlyDatadrid.Name = "yearlyDatadrid"
+        Me.yearlyDatadrid.Size = New System.Drawing.Size(798, 446)
+        Me.yearlyDatadrid.TabIndex = 1
+        '
+        'year
+        '
+        Me.year.HeaderText = "Year"
+        Me.year.Name = "year"
+        Me.year.Width = 150
+        '
+        'yearlyscore
+        '
+        Me.yearlyscore.HeaderText = "Score"
+        Me.yearlyscore.Name = "yearlyscore"
+        '
+        'yearlyremarks
+        '
+        Me.yearlyremarks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.yearlyremarks.HeaderText = "Remarks"
+        Me.yearlyremarks.Name = "yearlyremarks"
+        '
+        'documentsTab
+        '
+        Me.documentsTab.Location = New System.Drawing.Point(4, 30)
+        Me.documentsTab.Name = "documentsTab"
+        Me.documentsTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.documentsTab.Size = New System.Drawing.Size(839, 482)
+        Me.documentsTab.TabIndex = 1
+        Me.documentsTab.Text = "Scanned Documents"
+        Me.documentsTab.UseVisualStyleBackColor = True
+        '
+        'statusdateLabel
+        '
+        Me.statusdateLabel.AutoSize = True
+        Me.statusdateLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusdateLabel.ForeColor = System.Drawing.Color.Gray
+        Me.statusdateLabel.Location = New System.Drawing.Point(42, 381)
+        Me.statusdateLabel.Name = "statusdateLabel"
+        Me.statusdateLabel.Size = New System.Drawing.Size(109, 26)
+        Me.statusdateLabel.TabIndex = 81
+        Me.statusdateLabel.Text = "Status Date:"
         '
         'workinfoTab
         '
+        Me.workinfoTab.Controls.Add(Me.statusdateLabel)
+        Me.workinfoTab.Controls.Add(Me.statusdateDate)
+        Me.workinfoTab.Controls.Add(Me.statusreasonText)
+        Me.workinfoTab.Controls.Add(Me.PictureBox35)
         Me.workinfoTab.Controls.Add(Me.rankText)
         Me.workinfoTab.Controls.Add(Me.positionText)
         Me.workinfoTab.Controls.Add(Me.departmentText)
@@ -415,67 +805,50 @@ Partial Class EditEmployee
         Me.workinfoTab.Controls.Add(Me.PictureBox22)
         Me.workinfoTab.Controls.Add(Me.PictureBox23)
         Me.workinfoTab.Controls.Add(Me.PictureBox24)
-        Me.workinfoTab.Location = New System.Drawing.Point(4, 22)
+        Me.workinfoTab.Location = New System.Drawing.Point(4, 30)
         Me.workinfoTab.Name = "workinfoTab"
         Me.workinfoTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.workinfoTab.Size = New System.Drawing.Size(839, 490)
+        Me.workinfoTab.Size = New System.Drawing.Size(839, 482)
         Me.workinfoTab.TabIndex = 0
         Me.workinfoTab.Text = "Work Information"
         Me.workinfoTab.UseVisualStyleBackColor = True
         '
-        'rankText
-        '
-        Me.rankText.BackColor = System.Drawing.SystemColors.Window
-        Me.rankText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rankText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.rankText.Location = New System.Drawing.Point(53, 321)
-        Me.rankText.Name = "rankText"
-        Me.rankText.Size = New System.Drawing.Size(566, 33)
-        Me.rankText.TabIndex = 66
-        Me.rankText.TabStop = False
-        Me.rankText.Text = "Rank"
-        '
         'positionText
         '
-        Me.positionText.BackColor = System.Drawing.SystemColors.Window
         Me.positionText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.positionText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.positionText.Location = New System.Drawing.Point(53, 245)
+        Me.positionText.ForeColor = System.Drawing.Color.Gray
+        Me.positionText.Location = New System.Drawing.Point(48, 232)
         Me.positionText.Name = "positionText"
         Me.positionText.Size = New System.Drawing.Size(566, 33)
-        Me.positionText.TabIndex = 65
-        Me.positionText.TabStop = False
-        Me.positionText.Text = "Position"
+        Me.positionText.TabIndex = 76
+        Me.positionText.Watermark = "Position"
         '
         'departmentText
         '
-        Me.departmentText.BackColor = System.Drawing.SystemColors.Window
         Me.departmentText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.departmentText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.departmentText.Location = New System.Drawing.Point(53, 170)
+        Me.departmentText.ForeColor = System.Drawing.Color.Gray
+        Me.departmentText.Location = New System.Drawing.Point(48, 157)
         Me.departmentText.Name = "departmentText"
         Me.departmentText.Size = New System.Drawing.Size(566, 33)
-        Me.departmentText.TabIndex = 64
-        Me.departmentText.TabStop = False
-        Me.departmentText.Text = "Department/Unit"
+        Me.departmentText.TabIndex = 75
+        Me.departmentText.Watermark = "Department/Unit"
         '
         'groupText
         '
-        Me.groupText.BackColor = System.Drawing.SystemColors.Window
         Me.groupText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.groupText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.groupText.Location = New System.Drawing.Point(53, 92)
+        Me.groupText.ForeColor = System.Drawing.Color.Gray
+        Me.groupText.Location = New System.Drawing.Point(48, 79)
         Me.groupText.Name = "groupText"
         Me.groupText.Size = New System.Drawing.Size(566, 33)
-        Me.groupText.TabIndex = 63
-        Me.groupText.TabStop = False
-        Me.groupText.Text = "Group"
+        Me.groupText.TabIndex = 74
+        Me.groupText.Watermark = "Group"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(50, 30)
+        Me.Label4.ForeColor = System.Drawing.Color.Gray
+        Me.Label4.Location = New System.Drawing.Point(43, 22)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(104, 26)
         Me.Label4.TabIndex = 62
@@ -483,212 +856,181 @@ Partial Class EditEmployee
         '
         'datehiredDate
         '
-        Me.datehiredDate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.datehiredDate.Location = New System.Drawing.Point(160, 28)
+        Me.datehiredDate.Location = New System.Drawing.Point(160, 20)
         Me.datehiredDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.datehiredDate.Name = "datehiredDate"
         Me.datehiredDate.Size = New System.Drawing.Size(201, 29)
         Me.datehiredDate.TabIndex = 61
         '
-        'govtinfoTab
+        'PictureBox20
         '
-        Me.govtinfoTab.Controls.Add(Me.hdmfnumberText)
-        Me.govtinfoTab.Controls.Add(Me.rtnText)
-        Me.govtinfoTab.Controls.Add(Me.pagibigText)
-        Me.govtinfoTab.Controls.Add(Me.philhealthText)
-        Me.govtinfoTab.Controls.Add(Me.sssnumberText)
-        Me.govtinfoTab.Controls.Add(Me.tinnumberText)
-        Me.govtinfoTab.Controls.Add(Me.PictureBox30)
-        Me.govtinfoTab.Controls.Add(Me.PictureBox25)
-        Me.govtinfoTab.Controls.Add(Me.PictureBox26)
-        Me.govtinfoTab.Controls.Add(Me.PictureBox27)
-        Me.govtinfoTab.Controls.Add(Me.PictureBox28)
-        Me.govtinfoTab.Controls.Add(Me.PictureBox29)
-        Me.govtinfoTab.Location = New System.Drawing.Point(4, 22)
-        Me.govtinfoTab.Name = "govtinfoTab"
-        Me.govtinfoTab.Size = New System.Drawing.Size(839, 490)
-        Me.govtinfoTab.TabIndex = 2
-        Me.govtinfoTab.Text = "Government Information"
-        Me.govtinfoTab.UseVisualStyleBackColor = True
+        Me.PictureBox20.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox20.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox20.Location = New System.Drawing.Point(48, 348)
+        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox20.TabIndex = 49
+        Me.PictureBox20.TabStop = False
         '
-        'hdmfnumberText
+        'PictureBox21
         '
-        Me.hdmfnumberText.BackColor = System.Drawing.SystemColors.Window
-        Me.hdmfnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.hdmfnumberText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.hdmfnumberText.Location = New System.Drawing.Point(51, 401)
-        Me.hdmfnumberText.Name = "hdmfnumberText"
-        Me.hdmfnumberText.Size = New System.Drawing.Size(566, 33)
-        Me.hdmfnumberText.TabIndex = 72
-        Me.hdmfnumberText.TabStop = False
-        Me.hdmfnumberText.Text = "HDMF Number"
+        Me.PictureBox21.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox21.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox21.Location = New System.Drawing.Point(48, 272)
+        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox21.TabIndex = 48
+        Me.PictureBox21.TabStop = False
         '
-        'rtnText
+        'PictureBox22
         '
-        Me.rtnText.BackColor = System.Drawing.SystemColors.Window
-        Me.rtnText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtnText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.rtnText.Location = New System.Drawing.Point(51, 326)
-        Me.rtnText.Name = "rtnText"
-        Me.rtnText.Size = New System.Drawing.Size(566, 33)
-        Me.rtnText.TabIndex = 71
-        Me.rtnText.TabStop = False
-        Me.rtnText.Text = "RTN"
+        Me.PictureBox22.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox22.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox22.Location = New System.Drawing.Point(48, 197)
+        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox22.TabIndex = 47
+        Me.PictureBox22.TabStop = False
         '
-        'pagibigText
+        'PictureBox23
         '
-        Me.pagibigText.BackColor = System.Drawing.SystemColors.Window
-        Me.pagibigText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pagibigText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.pagibigText.Location = New System.Drawing.Point(51, 250)
-        Me.pagibigText.Name = "pagibigText"
-        Me.pagibigText.Size = New System.Drawing.Size(566, 33)
-        Me.pagibigText.TabIndex = 70
-        Me.pagibigText.TabStop = False
-        Me.pagibigText.Text = "Pag-Ibig Number"
+        Me.PictureBox23.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox23.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox23.Location = New System.Drawing.Point(48, 119)
+        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox23.TabIndex = 46
+        Me.PictureBox23.TabStop = False
         '
-        'philhealthText
+        'PictureBox24
         '
-        Me.philhealthText.BackColor = System.Drawing.SystemColors.Window
-        Me.philhealthText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.philhealthText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.philhealthText.Location = New System.Drawing.Point(50, 175)
-        Me.philhealthText.Name = "philhealthText"
-        Me.philhealthText.Size = New System.Drawing.Size(566, 33)
-        Me.philhealthText.TabIndex = 69
-        Me.philhealthText.TabStop = False
-        Me.philhealthText.Text = "Philhealth Number"
+        Me.PictureBox24.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox24.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox24.Location = New System.Drawing.Point(48, 57)
+        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox24.TabIndex = 45
+        Me.PictureBox24.TabStop = False
         '
-        'sssnumberText
+        'emailaddressText
         '
-        Me.sssnumberText.BackColor = System.Drawing.SystemColors.Window
-        Me.sssnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sssnumberText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.sssnumberText.Location = New System.Drawing.Point(51, 97)
-        Me.sssnumberText.Name = "sssnumberText"
-        Me.sssnumberText.Size = New System.Drawing.Size(566, 33)
-        Me.sssnumberText.TabIndex = 68
-        Me.sssnumberText.TabStop = False
-        Me.sssnumberText.Text = "SSS Number"
+        Me.emailaddressText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailaddressText.ForeColor = System.Drawing.Color.Gray
+        Me.emailaddressText.Location = New System.Drawing.Point(48, 301)
+        Me.emailaddressText.Name = "emailaddressText"
+        Me.emailaddressText.Size = New System.Drawing.Size(566, 33)
+        Me.emailaddressText.TabIndex = 61
+        Me.emailaddressText.Watermark = "Email Address"
         '
-        'tinnumberText
+        'permanentaddressText
         '
-        Me.tinnumberText.BackColor = System.Drawing.SystemColors.Window
-        Me.tinnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tinnumberText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.tinnumberText.Location = New System.Drawing.Point(51, 30)
-        Me.tinnumberText.Name = "tinnumberText"
-        Me.tinnumberText.Size = New System.Drawing.Size(566, 33)
-        Me.tinnumberText.TabIndex = 67
-        Me.tinnumberText.TabStop = False
-        Me.tinnumberText.Text = "TIN Number"
+        Me.permanentaddressText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.permanentaddressText.ForeColor = System.Drawing.Color.Gray
+        Me.permanentaddressText.Location = New System.Drawing.Point(48, 244)
+        Me.permanentaddressText.Name = "permanentaddressText"
+        Me.permanentaddressText.Size = New System.Drawing.Size(566, 33)
+        Me.permanentaddressText.TabIndex = 60
+        Me.permanentaddressText.Watermark = "Permanent Address"
         '
-        'documentsTab
+        'presentaddressText
         '
-        Me.documentsTab.Location = New System.Drawing.Point(4, 22)
-        Me.documentsTab.Name = "documentsTab"
-        Me.documentsTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.documentsTab.Size = New System.Drawing.Size(839, 490)
-        Me.documentsTab.TabIndex = 1
-        Me.documentsTab.Text = "Scanned Documents"
-        Me.documentsTab.UseVisualStyleBackColor = True
+        Me.presentaddressText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.presentaddressText.ForeColor = System.Drawing.Color.Gray
+        Me.presentaddressText.Location = New System.Drawing.Point(48, 184)
+        Me.presentaddressText.Name = "presentaddressText"
+        Me.presentaddressText.Size = New System.Drawing.Size(566, 33)
+        Me.presentaddressText.TabIndex = 59
+        Me.presentaddressText.Watermark = "Present Address"
         '
-        'saveButton
+        'PictureBox8
         '
-        Me.saveButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.saveButton.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.saveButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.saveButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.saveButton.Location = New System.Drawing.Point(702, 590)
-        Me.saveButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.saveButton.Name = "saveButton"
-        Me.saveButton.Size = New System.Drawing.Size(210, 45)
-        Me.saveButton.TabIndex = 36
-        Me.saveButton.Text = "Save Changes"
-        Me.saveButton.UseVisualStyleBackColor = False
+        Me.PictureBox8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox8.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox8.Location = New System.Drawing.Point(42, 64)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox8.TabIndex = 36
+        Me.PictureBox8.TabStop = False
         '
-        'lastnameText
+        'telephonenumberText
         '
-        Me.lastnameText.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.lastnameText.BackColor = System.Drawing.SystemColors.Window
-        Me.lastnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lastnameText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.lastnameText.Location = New System.Drawing.Point(42, 300)
-        Me.lastnameText.Name = "lastnameText"
-        Me.lastnameText.Size = New System.Drawing.Size(229, 33)
-        Me.lastnameText.TabIndex = 37
-        Me.lastnameText.TabStop = False
-        Me.lastnameText.Text = "Last Name"
+        Me.telephonenumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.telephonenumberText.ForeColor = System.Drawing.Color.Gray
+        Me.telephonenumberText.Location = New System.Drawing.Point(48, 419)
+        Me.telephonenumberText.Name = "telephonenumberText"
+        Me.telephonenumberText.Size = New System.Drawing.Size(566, 33)
+        Me.telephonenumberText.TabIndex = 63
+        Me.telephonenumberText.Watermark = "Telephone Number"
         '
-        'givennameText
+        'contactnumberText
         '
-        Me.givennameText.BackColor = System.Drawing.SystemColors.Window
-        Me.givennameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.givennameText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.givennameText.Location = New System.Drawing.Point(42, 351)
-        Me.givennameText.Name = "givennameText"
-        Me.givennameText.Size = New System.Drawing.Size(229, 33)
-        Me.givennameText.TabIndex = 38
-        Me.givennameText.TabStop = False
-        Me.givennameText.Text = "Given Name"
+        Me.contactnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.contactnumberText.ForeColor = System.Drawing.Color.Gray
+        Me.contactnumberText.Location = New System.Drawing.Point(48, 359)
+        Me.contactnumberText.Name = "contactnumberText"
+        Me.contactnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.contactnumberText.TabIndex = 62
+        Me.contactnumberText.Watermark = "Contact Number"
         '
-        'middlenameText
+        'birthplaceText
         '
-        Me.middlenameText.BackColor = System.Drawing.SystemColors.Window
-        Me.middlenameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.middlenameText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.middlenameText.Location = New System.Drawing.Point(42, 405)
-        Me.middlenameText.Name = "middlenameText"
-        Me.middlenameText.Size = New System.Drawing.Size(229, 33)
-        Me.middlenameText.TabIndex = 39
-        Me.middlenameText.TabStop = False
-        Me.middlenameText.Text = "Middle Name"
+        Me.birthplaceText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.birthplaceText.ForeColor = System.Drawing.Color.Gray
+        Me.birthplaceText.Location = New System.Drawing.Point(48, 67)
+        Me.birthplaceText.Name = "birthplaceText"
+        Me.birthplaceText.Size = New System.Drawing.Size(566, 33)
+        Me.birthplaceText.TabIndex = 58
+        Me.birthplaceText.Watermark = "Birthplace"
         '
-        'employeenumberText
+        'civilstatusCombobox
         '
-        Me.employeenumberText.BackColor = System.Drawing.SystemColors.Window
-        Me.employeenumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.employeenumberText.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.employeenumberText.Location = New System.Drawing.Point(42, 507)
-        Me.employeenumberText.Name = "employeenumberText"
-        Me.employeenumberText.Size = New System.Drawing.Size(229, 33)
-        Me.employeenumberText.TabIndex = 40
-        Me.employeenumberText.TabStop = False
-        Me.employeenumberText.Text = "Employee Number"
+        Me.civilstatusCombobox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.civilstatusCombobox.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.civilstatusCombobox.ForeColor = System.Drawing.Color.Gray
+        Me.civilstatusCombobox.FormattingEnabled = True
+        Me.civilstatusCombobox.Items.AddRange(New Object() {"Single", "Married", "Widowed", "Anulled"})
+        Me.civilstatusCombobox.Location = New System.Drawing.Point(48, 121)
+        Me.civilstatusCombobox.Name = "civilstatusCombobox"
+        Me.civilstatusCombobox.Size = New System.Drawing.Size(566, 34)
+        Me.civilstatusCombobox.TabIndex = 57
+        Me.civilstatusCombobox.Text = "Civil Status"
         '
-        'PictureBox7
+        'Label1
         '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(42, 569)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(229, 10)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 35
-        Me.PictureBox7.TabStop = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Gray
+        Me.Label1.Location = New System.Drawing.Point(43, 19)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(89, 26)
+        Me.Label1.TabIndex = 49
+        Me.Label1.Text = "Birthday: "
         '
-        'PictureBox6
+        'birthdayDate
         '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(42, 466)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(229, 10)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 33
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(42, 256)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(229, 10)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 32
-        Me.PictureBox5.TabStop = False
+        Me.birthdayDate.Location = New System.Drawing.Point(136, 17)
+        Me.birthdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.birthdayDate.Name = "birthdayDate"
+        Me.birthdayDate.Size = New System.Drawing.Size(201, 29)
+        Me.birthdayDate.TabIndex = 48
         '
         'PictureBox16
         '
@@ -715,6 +1057,32 @@ Partial Class EditEmployee
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox17.TabIndex = 46
         Me.PictureBox17.TabStop = False
+        '
+        'personalinfoTab
+        '
+        Me.personalinfoTab.Controls.Add(Me.telephonenumberText)
+        Me.personalinfoTab.Controls.Add(Me.contactnumberText)
+        Me.personalinfoTab.Controls.Add(Me.emailaddressText)
+        Me.personalinfoTab.Controls.Add(Me.permanentaddressText)
+        Me.personalinfoTab.Controls.Add(Me.presentaddressText)
+        Me.personalinfoTab.Controls.Add(Me.birthplaceText)
+        Me.personalinfoTab.Controls.Add(Me.civilstatusCombobox)
+        Me.personalinfoTab.Controls.Add(Me.Label1)
+        Me.personalinfoTab.Controls.Add(Me.birthdayDate)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox16)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox17)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox18)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox19)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox12)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox13)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox14)
+        Me.personalinfoTab.Controls.Add(Me.PictureBox15)
+        Me.personalinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.personalinfoTab.Name = "personalinfoTab"
+        Me.personalinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.personalinfoTab.TabIndex = 3
+        Me.personalinfoTab.Text = "Personal Information"
+        Me.personalinfoTab.UseVisualStyleBackColor = True
         '
         'PictureBox18
         '
@@ -794,25 +1162,224 @@ Partial Class EditEmployee
         Me.PictureBox15.TabIndex = 40
         Me.PictureBox15.TabStop = False
         '
-        'PictureBox10
+        'TabControl1
         '
-        Me.PictureBox10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.TabControl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox10.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox10.Location = New System.Drawing.Point(42, 256)
-        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox10.TabIndex = 39
-        Me.PictureBox10.TabStop = False
+        Me.TabControl1.Controls.Add(Me.personalinfoTab)
+        Me.TabControl1.Controls.Add(Me.familyinfoTab)
+        Me.TabControl1.Controls.Add(Me.workinfoTab)
+        Me.TabControl1.Controls.Add(Me.govtinfoTab)
+        Me.TabControl1.Controls.Add(Me.otherTab)
+        Me.TabControl1.Controls.Add(Me.monthlyevalTab)
+        Me.TabControl1.Controls.Add(Me.yearlyevalTab)
+        Me.TabControl1.Controls.Add(Me.documentsTab)
+        Me.TabControl1.Location = New System.Drawing.Point(294, 67)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(847, 516)
+        Me.TabControl1.TabIndex = 86
+        '
+        'familyinfoTab
+        '
+        Me.familyinfoTab.Controls.Add(Me.childnameTextfour)
+        Me.familyinfoTab.Controls.Add(Me.childnameTextthree)
+        Me.familyinfoTab.Controls.Add(Me.childnameTexttwo)
+        Me.familyinfoTab.Controls.Add(Me.childnameTextone)
+        Me.familyinfoTab.Controls.Add(Me.spousenameText)
+        Me.familyinfoTab.Controls.Add(Me.mothersnameText)
+        Me.familyinfoTab.Controls.Add(Me.fathersnameText)
+        Me.familyinfoTab.Controls.Add(Me.Label10)
+        Me.familyinfoTab.Controls.Add(Me.childbdayDatefour)
+        Me.familyinfoTab.Controls.Add(Me.Label9)
+        Me.familyinfoTab.Controls.Add(Me.childbdayDatethree)
+        Me.familyinfoTab.Controls.Add(Me.Label8)
+        Me.familyinfoTab.Controls.Add(Me.childbdayDatetwo)
+        Me.familyinfoTab.Controls.Add(Me.Label3)
+        Me.familyinfoTab.Controls.Add(Me.childbdayDateone)
+        Me.familyinfoTab.Controls.Add(Me.Label2)
+        Me.familyinfoTab.Controls.Add(Me.spousebdayDate)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox11)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox9)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox8)
+        Me.familyinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.familyinfoTab.Name = "familyinfoTab"
+        Me.familyinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.familyinfoTab.TabIndex = 4
+        Me.familyinfoTab.Text = "Family Information"
+        Me.familyinfoTab.UseVisualStyleBackColor = True
+        '
+        'childnameTextfour
+        '
+        Me.childnameTextfour.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTextfour.ForeColor = System.Drawing.Color.Gray
+        Me.childnameTextfour.Location = New System.Drawing.Point(41, 421)
+        Me.childnameTextfour.Name = "childnameTextfour"
+        Me.childnameTextfour.Size = New System.Drawing.Size(386, 33)
+        Me.childnameTextfour.TabIndex = 76
+        Me.childnameTextfour.Watermark = "Child's Name"
+        '
+        'childnameTextthree
+        '
+        Me.childnameTextthree.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTextthree.ForeColor = System.Drawing.Color.Gray
+        Me.childnameTextthree.Location = New System.Drawing.Point(42, 358)
+        Me.childnameTextthree.Name = "childnameTextthree"
+        Me.childnameTextthree.Size = New System.Drawing.Size(386, 33)
+        Me.childnameTextthree.TabIndex = 75
+        Me.childnameTextthree.Watermark = "Child's Name"
+        '
+        'childnameTexttwo
+        '
+        Me.childnameTexttwo.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTexttwo.ForeColor = System.Drawing.Color.Gray
+        Me.childnameTexttwo.Location = New System.Drawing.Point(41, 296)
+        Me.childnameTexttwo.Name = "childnameTexttwo"
+        Me.childnameTexttwo.Size = New System.Drawing.Size(386, 33)
+        Me.childnameTexttwo.TabIndex = 74
+        Me.childnameTexttwo.Watermark = "Child's Name"
+        '
+        'childnameTextone
+        '
+        Me.childnameTextone.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTextone.ForeColor = System.Drawing.Color.Gray
+        Me.childnameTextone.Location = New System.Drawing.Point(41, 236)
+        Me.childnameTextone.Name = "childnameTextone"
+        Me.childnameTextone.Size = New System.Drawing.Size(386, 33)
+        Me.childnameTextone.TabIndex = 73
+        Me.childnameTextone.Watermark = "Child's Name"
+        '
+        'spousenameText
+        '
+        Me.spousenameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.spousenameText.ForeColor = System.Drawing.Color.Gray
+        Me.spousenameText.Location = New System.Drawing.Point(41, 159)
+        Me.spousenameText.Name = "spousenameText"
+        Me.spousenameText.Size = New System.Drawing.Size(386, 33)
+        Me.spousenameText.TabIndex = 72
+        Me.spousenameText.Watermark = "Spouse's Name"
+        '
+        'mothersnameText
+        '
+        Me.mothersnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mothersnameText.ForeColor = System.Drawing.Color.Gray
+        Me.mothersnameText.Location = New System.Drawing.Point(42, 92)
+        Me.mothersnameText.Name = "mothersnameText"
+        Me.mothersnameText.Size = New System.Drawing.Size(566, 33)
+        Me.mothersnameText.TabIndex = 71
+        Me.mothersnameText.Watermark = "Mother's Name"
+        '
+        'fathersnameText
+        '
+        Me.fathersnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fathersnameText.ForeColor = System.Drawing.Color.Gray
+        Me.fathersnameText.Location = New System.Drawing.Point(42, 24)
+        Me.fathersnameText.Name = "fathersnameText"
+        Me.fathersnameText.Size = New System.Drawing.Size(566, 33)
+        Me.fathersnameText.TabIndex = 70
+        Me.fathersnameText.Watermark = "Father's Name"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.Gray
+        Me.Label10.Location = New System.Drawing.Point(452, 424)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(146, 26)
+        Me.Label10.TabIndex = 69
+        Me.Label10.Text = "Child's Birthday: "
+        '
+        'childbdayDatefour
+        '
+        Me.childbdayDatefour.Location = New System.Drawing.Point(604, 422)
+        Me.childbdayDatefour.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.childbdayDatefour.Name = "childbdayDatefour"
+        Me.childbdayDatefour.Size = New System.Drawing.Size(201, 29)
+        Me.childbdayDatefour.TabIndex = 68
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.Gray
+        Me.Label9.Location = New System.Drawing.Point(452, 361)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(146, 26)
+        Me.Label9.TabIndex = 66
+        Me.Label9.Text = "Child's Birthday: "
+        '
+        'childbdayDatethree
+        '
+        Me.childbdayDatethree.Location = New System.Drawing.Point(604, 359)
+        Me.childbdayDatethree.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.childbdayDatethree.Name = "childbdayDatethree"
+        Me.childbdayDatethree.Size = New System.Drawing.Size(201, 29)
+        Me.childbdayDatethree.TabIndex = 65
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Gray
+        Me.Label8.Location = New System.Drawing.Point(452, 303)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(146, 26)
+        Me.Label8.TabIndex = 63
+        Me.Label8.Text = "Child's Birthday: "
+        '
+        'childbdayDatetwo
+        '
+        Me.childbdayDatetwo.Location = New System.Drawing.Point(604, 301)
+        Me.childbdayDatetwo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.childbdayDatetwo.Name = "childbdayDatetwo"
+        Me.childbdayDatetwo.Size = New System.Drawing.Size(201, 29)
+        Me.childbdayDatetwo.TabIndex = 62
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Gray
+        Me.Label3.Location = New System.Drawing.Point(452, 239)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(146, 26)
+        Me.Label3.TabIndex = 60
+        Me.Label3.Text = "Child's Birthday: "
+        '
+        'childbdayDateone
+        '
+        Me.childbdayDateone.Location = New System.Drawing.Point(604, 237)
+        Me.childbdayDateone.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.childbdayDateone.Name = "childbdayDateone"
+        Me.childbdayDateone.Size = New System.Drawing.Size(201, 29)
+        Me.childbdayDateone.TabIndex = 59
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Gray
+        Me.Label2.Location = New System.Drawing.Point(434, 162)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(164, 26)
+        Me.Label2.TabIndex = 57
+        Me.Label2.Text = "Spouse's Birthday: "
+        '
+        'spousebdayDate
+        '
+        Me.spousebdayDate.Location = New System.Drawing.Point(604, 160)
+        Me.spousebdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.spousebdayDate.Name = "spousebdayDate"
+        Me.spousebdayDate.Size = New System.Drawing.Size(201, 29)
+        Me.spousebdayDate.TabIndex = 56
         '
         'PictureBox11
         '
         Me.PictureBox11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox11.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox11.Location = New System.Drawing.Point(42, 190)
+        Me.PictureBox11.Location = New System.Drawing.Point(42, 199)
         Me.PictureBox11.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(763, 10)
@@ -825,7 +1392,7 @@ Partial Class EditEmployee
         Me.PictureBox9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox9.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox9.Location = New System.Drawing.Point(42, 121)
+        Me.PictureBox9.Location = New System.Drawing.Point(42, 132)
         Me.PictureBox9.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(763, 10)
@@ -833,170 +1400,130 @@ Partial Class EditEmployee
         Me.PictureBox9.TabIndex = 37
         Me.PictureBox9.TabStop = False
         '
-        'PictureBox8
+        'statusCombobox
         '
-        Me.PictureBox8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox8.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox8.Location = New System.Drawing.Point(42, 54)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox8.TabIndex = 36
-        Me.PictureBox8.TabStop = False
+        Me.statusCombobox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.statusCombobox.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusCombobox.ForeColor = System.Drawing.Color.Gray
+        Me.statusCombobox.FormattingEnabled = True
+        Me.statusCombobox.Items.AddRange(New Object() {"Probationary", "Part-Time", "OJT", "Regular", "Resigned", "Terminated", "End of Contract"})
+        Me.statusCombobox.Location = New System.Drawing.Point(42, 475)
+        Me.statusCombobox.Name = "statusCombobox"
+        Me.statusCombobox.Size = New System.Drawing.Size(229, 34)
+        Me.statusCombobox.TabIndex = 85
+        Me.statusCombobox.Text = "Status"
         '
-        'PictureBox20
+        'PictureBox31
         '
-        Me.PictureBox20.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox20.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox20.Location = New System.Drawing.Point(53, 361)
-        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox20.TabIndex = 49
-        Me.PictureBox20.TabStop = False
+        Me.PictureBox31.Image = CType(resources.GetObject("PictureBox31.Image"), System.Drawing.Image)
+        Me.PictureBox31.Location = New System.Drawing.Point(42, 516)
+        Me.PictureBox31.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox31.Name = "PictureBox31"
+        Me.PictureBox31.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox31.TabIndex = 84
+        Me.PictureBox31.TabStop = False
         '
-        'PictureBox21
+        'middlenameText
         '
-        Me.PictureBox21.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox21.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox21.Location = New System.Drawing.Point(53, 285)
-        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox21.TabIndex = 48
-        Me.PictureBox21.TabStop = False
+        Me.middlenameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.middlenameText.ForeColor = System.Drawing.Color.Gray
+        Me.middlenameText.Location = New System.Drawing.Point(42, 355)
+        Me.middlenameText.Name = "middlenameText"
+        Me.middlenameText.Size = New System.Drawing.Size(229, 33)
+        Me.middlenameText.TabIndex = 83
+        Me.middlenameText.Watermark = "Middle Name"
         '
-        'PictureBox22
+        'givennameText
         '
-        Me.PictureBox22.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox22.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox22.Location = New System.Drawing.Point(53, 210)
-        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox22.TabIndex = 47
-        Me.PictureBox22.TabStop = False
+        Me.givennameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.givennameText.ForeColor = System.Drawing.Color.Gray
+        Me.givennameText.Location = New System.Drawing.Point(42, 312)
+        Me.givennameText.Name = "givennameText"
+        Me.givennameText.Size = New System.Drawing.Size(229, 33)
+        Me.givennameText.TabIndex = 81
+        Me.givennameText.Watermark = "Given Name"
         '
-        'PictureBox23
+        'lastnameText
         '
-        Me.PictureBox23.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox23.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox23.Location = New System.Drawing.Point(53, 132)
-        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox23.TabIndex = 46
-        Me.PictureBox23.TabStop = False
+        Me.lastnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lastnameText.ForeColor = System.Drawing.Color.Gray
+        Me.lastnameText.Location = New System.Drawing.Point(42, 273)
+        Me.lastnameText.Name = "lastnameText"
+        Me.lastnameText.Size = New System.Drawing.Size(229, 33)
+        Me.lastnameText.TabIndex = 80
+        Me.lastnameText.Watermark = "Last Name"
         '
-        'PictureBox24
+        'adddocumentsButton
         '
-        Me.PictureBox24.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox24.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox24.Location = New System.Drawing.Point(53, 65)
-        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox24.TabIndex = 45
-        Me.PictureBox24.TabStop = False
+        Me.adddocumentsButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.adddocumentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.adddocumentsButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.adddocumentsButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.adddocumentsButton.Location = New System.Drawing.Point(42, 535)
+        Me.adddocumentsButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.adddocumentsButton.Name = "adddocumentsButton"
+        Me.adddocumentsButton.Size = New System.Drawing.Size(229, 48)
+        Me.adddocumentsButton.TabIndex = 79
+        Me.adddocumentsButton.Text = "Add Scanned Documents"
+        Me.adddocumentsButton.UseVisualStyleBackColor = False
         '
-        'PictureBox30
+        'PictureBox7
         '
-        Me.PictureBox30.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox30.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox30.Location = New System.Drawing.Point(51, 441)
-        Me.PictureBox30.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox30.Name = "PictureBox30"
-        Me.PictureBox30.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox30.TabIndex = 61
-        Me.PictureBox30.TabStop = False
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(42, 456)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 78
+        Me.PictureBox7.TabStop = False
         '
-        'PictureBox25
+        'PictureBox6
         '
-        Me.PictureBox25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox25.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox25.Location = New System.Drawing.Point(51, 366)
-        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox25.TabIndex = 59
-        Me.PictureBox25.TabStop = False
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(42, 395)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 77
+        Me.PictureBox6.TabStop = False
         '
-        'PictureBox26
+        'saveButton
         '
-        Me.PictureBox26.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox26.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox26.Location = New System.Drawing.Point(51, 290)
-        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox26.TabIndex = 58
-        Me.PictureBox26.TabStop = False
+        Me.saveButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.saveButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.saveButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.saveButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.saveButton.Location = New System.Drawing.Point(702, 590)
+        Me.saveButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.saveButton.Name = "saveButton"
+        Me.saveButton.Size = New System.Drawing.Size(210, 45)
+        Me.saveButton.TabIndex = 76
+        Me.saveButton.Text = "Save Changes"
+        Me.saveButton.UseVisualStyleBackColor = False
         '
-        'PictureBox27
+        'PictureBox5
         '
-        Me.PictureBox27.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox27.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox27.Location = New System.Drawing.Point(50, 215)
-        Me.PictureBox27.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox27.TabIndex = 57
-        Me.PictureBox27.TabStop = False
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(42, 256)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 75
+        Me.PictureBox5.TabStop = False
         '
-        'PictureBox28
+        'picbox
         '
-        Me.PictureBox28.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox28.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox28.Location = New System.Drawing.Point(50, 137)
-        Me.PictureBox28.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox28.TabIndex = 56
-        Me.PictureBox28.TabStop = False
-        '
-        'PictureBox29
-        '
-        Me.PictureBox29.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox29.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox29.Location = New System.Drawing.Point(50, 70)
-        Me.PictureBox29.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox29.TabIndex = 55
-        Me.PictureBox29.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.PictureBox4.Location = New System.Drawing.Point(42, 19)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(229, 220)
-        Me.PictureBox4.TabIndex = 29
-        Me.PictureBox4.TabStop = False
+        Me.picbox.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.picbox.Location = New System.Drawing.Point(42, 19)
+        Me.picbox.Name = "picbox"
+        Me.picbox.Size = New System.Drawing.Size(229, 220)
+        Me.picbox.TabIndex = 74
+        Me.picbox.TabStop = False
         '
         'PictureBox2
         '
@@ -1008,7 +1535,7 @@ Partial Class EditEmployee
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(912, 24)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 28
+        Me.PictureBox2.TabIndex = 73
         Me.PictureBox2.TabStop = False
         '
         'PictureBox3
@@ -1021,7 +1548,7 @@ Partial Class EditEmployee
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(878, 40)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 16
+        Me.PictureBox3.TabIndex = 71
         Me.PictureBox3.TabStop = False
         '
         'PictureBox1
@@ -1033,41 +1560,43 @@ Partial Class EditEmployee
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(208, 48)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabIndex = 70
         Me.PictureBox1.TabStop = False
         '
-        'civilstatusCombobox
+        'employeenumberText
         '
-        Me.civilstatusCombobox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.civilstatusCombobox.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.civilstatusCombobox.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.civilstatusCombobox.FormattingEnabled = True
-        Me.civilstatusCombobox.Items.AddRange(New Object() {"Single", "Married", "Widowed"})
-        Me.civilstatusCombobox.Location = New System.Drawing.Point(48, 121)
-        Me.civilstatusCombobox.Name = "civilstatusCombobox"
-        Me.civilstatusCombobox.Size = New System.Drawing.Size(566, 34)
-        Me.civilstatusCombobox.TabIndex = 56
-        Me.civilstatusCombobox.Text = "Civil Status"
+        Me.employeenumberText.AutoSize = True
+        Me.employeenumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.employeenumberText.ForeColor = System.Drawing.Color.Gray
+        Me.employeenumberText.Location = New System.Drawing.Point(37, 419)
+        Me.employeenumberText.Name = "employeenumberText"
+        Me.employeenumberText.Size = New System.Drawing.Size(165, 26)
+        Me.employeenumberText.TabIndex = 82
+        Me.employeenumberText.Text = "Employee Number"
         '
         'EditEmployee
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1170, 680)
-        Me.Controls.Add(Me.employeenumberText)
+        Me.Controls.Add(Me.backButton)
+        Me.Controls.Add(Me.changepicButton)
+        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.statusCombobox)
+        Me.Controls.Add(Me.PictureBox31)
         Me.Controls.Add(Me.middlenameText)
         Me.Controls.Add(Me.givennameText)
         Me.Controls.Add(Me.lastnameText)
-        Me.Controls.Add(Me.saveButton)
+        Me.Controls.Add(Me.adddocumentsButton)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.saveButton)
         Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.picbox)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.backButton)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.employeenumberText)
         Me.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -1077,42 +1606,53 @@ Partial Class EditEmployee
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Edit Employee"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.TabControl1.ResumeLayout(False)
-        Me.personalinfoTab.ResumeLayout(False)
-        Me.personalinfoTab.PerformLayout()
-        Me.familyinfoTab.ResumeLayout(False)
-        Me.familyinfoTab.PerformLayout()
-        Me.workinfoTab.ResumeLayout(False)
-        Me.workinfoTab.PerformLayout()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.otherTab.ResumeLayout(False)
+        Me.otherTab.PerformLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
         Me.govtinfoTab.ResumeLayout(False)
         Me.govtinfoTab.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.monthlyDatagrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.monthlyevalTab.ResumeLayout(False)
+        Me.yearlyevalTab.ResumeLayout(False)
+        CType(Me.yearlyDatadrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.workinfoTab.ResumeLayout(False)
+        Me.workinfoTab.PerformLayout()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.personalinfoTab.ResumeLayout(False)
+        Me.personalinfoTab.PerformLayout()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabControl1.ResumeLayout(False)
+        Me.familyinfoTab.ResumeLayout(False)
+        Me.familyinfoTab.PerformLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picbox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1120,77 +1660,126 @@ Partial Class EditEmployee
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents backButton As System.Windows.Forms.Button
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
-    Friend WithEvents workinfoTab As System.Windows.Forms.TabPage
-    Friend WithEvents govtinfoTab As System.Windows.Forms.TabPage
-    Friend WithEvents documentsTab As System.Windows.Forms.TabPage
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
-    Friend WithEvents personalinfoTab As System.Windows.Forms.TabPage
-    Friend WithEvents familyinfoTab As System.Windows.Forms.TabPage
-    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents nextofkinnameText As Wireframes.WatermarkTextBox
+    Friend WithEvents rtnText As Wireframes.WatermarkTextBox
+    Friend WithEvents hdmfnumberText As Wireframes.WatermarkTextBox
+    Friend WithEvents beneficiaryrelationTextfour As Wireframes.WatermarkTextBox
+    Friend WithEvents beneficiarynameTextfour As Wireframes.WatermarkTextBox
+    Friend WithEvents pagibignumberText As Wireframes.WatermarkTextBox
+    Friend WithEvents PictureBox34 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox33 As System.Windows.Forms.PictureBox
+    Friend WithEvents philhealthnumberText As Wireframes.WatermarkTextBox
+    Friend WithEvents beneficiarynameTextthree As Wireframes.WatermarkTextBox
+    Friend WithEvents sssnumberText As Wireframes.WatermarkTextBox
+    Friend WithEvents beneficiaryrelationTextthree As Wireframes.WatermarkTextBox
+    Friend WithEvents PictureBox30 As System.Windows.Forms.PictureBox
+    Friend WithEvents otherTab As System.Windows.Forms.TabPage
     Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents beneficiaryrelationTexttwo As Wireframes.WatermarkTextBox
+    Friend WithEvents beneficiarynameTexttwo As Wireframes.WatermarkTextBox
+    Friend WithEvents beneficiaryrelationTextone As Wireframes.WatermarkTextBox
+    Friend WithEvents beneficiarynameTextone As Wireframes.WatermarkTextBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents beneficiarybdayDatefour As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents beneficiarybdayDatethree As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents beneficiarybdayDatetwo As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents beneficiarybdayDateone As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents nextofkinbdayDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents PictureBox32 As System.Windows.Forms.PictureBox
+    Friend WithEvents tinnumberText As Wireframes.WatermarkTextBox
+    Friend WithEvents PictureBox28 As System.Windows.Forms.PictureBox
+    Friend WithEvents statusdateDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents statusreasonText As Wireframes.WatermarkTextBox
+    Friend WithEvents PictureBox35 As System.Windows.Forms.PictureBox
+    Friend WithEvents rankText As Wireframes.WatermarkTextBox
+    Friend WithEvents govtinfoTab As System.Windows.Forms.TabPage
+    Friend WithEvents PictureBox25 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox26 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox29 As System.Windows.Forms.PictureBox
+    Friend WithEvents changepicButton As System.Windows.Forms.Button
+    Friend WithEvents score As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents month As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents monthlyDatagrid As System.Windows.Forms.DataGridView
+    Friend WithEvents remarks As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents monthlyevalTab As System.Windows.Forms.TabPage
+    Friend WithEvents yearlyevalTab As System.Windows.Forms.TabPage
+    Friend WithEvents yearlyDatadrid As System.Windows.Forms.DataGridView
+    Friend WithEvents year As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents yearlyscore As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents yearlyremarks As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents documentsTab As System.Windows.Forms.TabPage
+    Friend WithEvents statusdateLabel As System.Windows.Forms.Label
+    Friend WithEvents workinfoTab As System.Windows.Forms.TabPage
+    Friend WithEvents positionText As Wireframes.WatermarkTextBox
+    Friend WithEvents departmentText As Wireframes.WatermarkTextBox
+    Friend WithEvents groupText As Wireframes.WatermarkTextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents datehiredDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox22 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox23 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox24 As System.Windows.Forms.PictureBox
+    Friend WithEvents emailaddressText As Wireframes.WatermarkTextBox
+    Friend WithEvents permanentaddressText As Wireframes.WatermarkTextBox
+    Friend WithEvents presentaddressText As Wireframes.WatermarkTextBox
+    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents telephonenumberText As Wireframes.WatermarkTextBox
+    Friend WithEvents contactnumberText As Wireframes.WatermarkTextBox
+    Friend WithEvents birthplaceText As Wireframes.WatermarkTextBox
+    Friend WithEvents civilstatusCombobox As System.Windows.Forms.ComboBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents birthdayDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
+    Friend WithEvents personalinfoTab As System.Windows.Forms.TabPage
     Friend WithEvents PictureBox18 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox13 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox22 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox23 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox24 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox25 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox26 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox28 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox29 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox30 As System.Windows.Forms.PictureBox
-    Friend WithEvents saveButton As System.Windows.Forms.Button
-    Friend WithEvents lastnameText As System.Windows.Forms.TextBox
-    Friend WithEvents givennameText As System.Windows.Forms.TextBox
-    Friend WithEvents middlenameText As System.Windows.Forms.TextBox
-    Friend WithEvents employeenumberText As System.Windows.Forms.TextBox
-    Friend WithEvents birthplaceText As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents birthdayDate As System.Windows.Forms.DateTimePicker
-    Friend WithEvents telephonenumberText As System.Windows.Forms.TextBox
-    Friend WithEvents contactnumberText As System.Windows.Forms.TextBox
-    Friend WithEvents emailaddressText As System.Windows.Forms.TextBox
-    Friend WithEvents permanentaddressText As System.Windows.Forms.TextBox
-    Friend WithEvents presentaddressText As System.Windows.Forms.TextBox
+    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents familyinfoTab As System.Windows.Forms.TabPage
+    Friend WithEvents childnameTextfour As Wireframes.WatermarkTextBox
+    Friend WithEvents childnameTextthree As Wireframes.WatermarkTextBox
+    Friend WithEvents childnameTexttwo As Wireframes.WatermarkTextBox
+    Friend WithEvents childnameTextone As Wireframes.WatermarkTextBox
+    Friend WithEvents spousenameText As Wireframes.WatermarkTextBox
+    Friend WithEvents mothersnameText As Wireframes.WatermarkTextBox
+    Friend WithEvents fathersnameText As Wireframes.WatermarkTextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents childbdayDatefour As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents childbdayDatethree As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents childbdayDatetwo As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents childbdayDate As System.Windows.Forms.DateTimePicker
-    Friend WithEvents childnameText As System.Windows.Forms.TextBox
+    Friend WithEvents childbdayDateone As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents spousebdayDate As System.Windows.Forms.DateTimePicker
-    Friend WithEvents spousenameText As System.Windows.Forms.TextBox
-    Friend WithEvents mothernameText As System.Windows.Forms.TextBox
-    Friend WithEvents fathernameText As System.Windows.Forms.TextBox
-    Friend WithEvents addchildButton As System.Windows.Forms.Button
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents datehiredDate As System.Windows.Forms.DateTimePicker
-    Friend WithEvents rankText As System.Windows.Forms.TextBox
-    Friend WithEvents positionText As System.Windows.Forms.TextBox
-    Friend WithEvents departmentText As System.Windows.Forms.TextBox
-    Friend WithEvents groupText As System.Windows.Forms.TextBox
-    Friend WithEvents hdmfnumberText As System.Windows.Forms.TextBox
-    Friend WithEvents rtnText As System.Windows.Forms.TextBox
-    Friend WithEvents pagibigText As System.Windows.Forms.TextBox
-    Friend WithEvents philhealthText As System.Windows.Forms.TextBox
-    Friend WithEvents sssnumberText As System.Windows.Forms.TextBox
-    Friend WithEvents tinnumberText As System.Windows.Forms.TextBox
-    Friend WithEvents civilstatusCombobox As System.Windows.Forms.ComboBox
+    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents statusCombobox As System.Windows.Forms.ComboBox
+    Friend WithEvents PictureBox31 As System.Windows.Forms.PictureBox
+    Friend WithEvents middlenameText As Wireframes.WatermarkTextBox
+    Friend WithEvents givennameText As Wireframes.WatermarkTextBox
+    Friend WithEvents lastnameText As Wireframes.WatermarkTextBox
+    Friend WithEvents adddocumentsButton As System.Windows.Forms.Button
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents saveButton As System.Windows.Forms.Button
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents picbox As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents employeenumberText As System.Windows.Forms.Label
 
 End Class

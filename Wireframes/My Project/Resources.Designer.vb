@@ -129,5 +129,95 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property Oswald_Bold() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Oswald_Bold", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property Oswald_Light() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Oswald_Light", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property Oswald_Regular() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Oswald_Regular", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property weblysleekuil() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("weblysleekuil", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property weblysleekuili() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("weblysleekuili", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property weblysleekuisb() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("weblysleekuisb", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property weblysleekuisbi() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("weblysleekuisbi", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property weblysleekuisl() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("weblysleekuisl", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property weblysleekuisli() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("weblysleekuisli", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
     End Module
 End Namespace

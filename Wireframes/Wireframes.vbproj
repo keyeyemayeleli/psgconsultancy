@@ -125,10 +125,10 @@
     <Compile Include="ManageEmployees.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Masterlist.Designer.vb">
-      <DependentUpon>Masterlist.vb</DependentUpon>
+    <Compile Include="Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
     </Compile>
-    <Compile Include="Masterlist.vb">
+    <Compile Include="Reports.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditPassword.Designer.vb">
@@ -199,8 +199,8 @@
     <EmbeddedResource Include="ManageEmployees.resx">
       <DependentUpon>ManageEmployees.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Masterlist.resx">
-      <DependentUpon>Masterlist.vb</DependentUpon>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditPassword.resx">
       <DependentUpon>EditPassword.vb</DependentUpon>
@@ -228,6 +228,15 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Resources\Oswald-Bold.otf" />
+    <None Include="Resources\Oswald-Light.otf" />
+    <None Include="Resources\Oswald-Regular.otf" />
+    <None Include="Resources\weblysleekuil.ttf" />
+    <None Include="Resources\weblysleekuili.ttf" />
+    <None Include="Resources\weblysleekuisb.ttf" />
+    <None Include="Resources\weblysleekuisbi.ttf" />
+    <None Include="Resources\weblysleekuisl.ttf" />
+    <None Include="Resources\weblysleekuisli.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo 2.png" />

@@ -44,27 +44,27 @@ Public Class Homepage
         ManageEmployees.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Hide()
         ManageTerminatedEmployees.Show()
     End Sub
 
-    Private Sub masterlistButton_Click(sender As Object, e As EventArgs) Handles masterlistButton.Click
+    Private Sub masterlistButton_Click(sender As Object, e As EventArgs)
         Me.Hide()
-        Masterlist.Show()
+        Reports.Show()
     End Sub
 
-    Private Sub accountingButton_Click(sender As Object, e As EventArgs) Handles accountingButton.Click
+    Private Sub accountingButton_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Accounting.Show()
     End Sub
 
-    Private Sub customizableButton_Click(sender As Object, e As EventArgs) Handles customizableButton.Click
+    Private Sub customizableButton_Click(sender As Object, e As EventArgs)
         Me.Hide()
         CustomizedReport.Show()
     End Sub
 
-    Private Sub editpasswordButton_Click(sender As Object, e As EventArgs) Handles editpasswordButton.Click
+    Private Sub editpasswordButton_Click(sender As Object, e As EventArgs)
         Me.Hide()
         EditPassword.Show()
     End Sub
@@ -75,5 +75,16 @@ Public Class Homepage
             Me.Hide()
             Login.Show()
         End If
+    End Sub
+
+    Private Sub reportsButton_Click(sender As System.Object, e As System.EventArgs) Handles reportsButton.Click
+
+        Dim NewForm As Reports
+        NewForm = New Reports()
+        NewForm.Show()
+        NewForm = Nothing
+        Me.Hide()
+
+
     End Sub
 End Class

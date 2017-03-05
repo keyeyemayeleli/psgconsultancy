@@ -139,4 +139,31 @@
   <data name="line_full" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\line full.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Oswald_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oswald-Bold.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Oswald_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oswald-Light.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Oswald_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oswald-Regular.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="weblysleekuil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weblysleekuil.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="weblysleekuili" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weblysleekuili.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="weblysleekuisb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weblysleekuisb.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="weblysleekuisbi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weblysleekuisbi.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="weblysleekuisl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weblysleekuisl.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="weblysleekuisli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weblysleekuisli.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
