@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data.Common
+Imports System.IO
 Public Class ViewEmployees
     Private Sub ViewEmployees_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -67,5 +68,28 @@ Public Class ViewEmployees
         NewForm.Show()
         NewForm = Nothing
         Me.Close()
+    End Sub
+
+    Private Sub adddocumentsButton_Click(sender As Object, e As EventArgs) Handles adddocumentsButton.Click
+
+        Dim open As New OpenFileDialog()
+
+        open.InitialDirectory = "c:\"
+        open.Filter = "All files (*.*)|*.*"
+        open.FilterIndex = 1
+        open.Multiselect = False
+        open.RestoreDirectory = True
+
+        If open.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Try
+                Dim file_name As String = open.FileName
+                MsgBox(file_name)
+            Catch Ex As Exception
+                MessageBox.Show("Cannot read file from disk. Original error: " & Ex.Message)
+            Finally
+                ' Check this again, since we need to make sure we didn't throw an exception on open.
+
+            End Try
+        End If
     End Sub
 End Class
