@@ -60,4 +60,12 @@ Public Class ViewEmployees
         ManageEmployees.Show()
 
     End Sub
+
+    Private Sub editButton_Click(sender As Object, e As EventArgs) Handles editButton.Click
+        Dim NewForm As EditEmployee
+        NewForm = New EditEmployee()
+        NewForm.Show()
+        NewForm = Nothing
+        Me.Close()
+    End Sub
 End Class

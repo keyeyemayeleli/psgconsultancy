@@ -284,10 +284,10 @@ Partial Class ViewEmployees
         Me.otherTab.Controls.Add(Me.nextofkinbdayLabel)
         Me.otherTab.Controls.Add(Me.nextofkinnameLabel)
         Me.otherTab.Controls.Add(Me.beneficiarynameLabelone)
-        Me.otherTab.Location = New System.Drawing.Point(4, 29)
+        Me.otherTab.Location = New System.Drawing.Point(4, 22)
         Me.otherTab.Name = "otherTab"
         Me.otherTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.otherTab.Size = New System.Drawing.Size(839, 483)
+        Me.otherTab.Size = New System.Drawing.Size(839, 490)
         Me.otherTab.TabIndex = 5
         Me.otherTab.Text = "Other"
         Me.otherTab.UseVisualStyleBackColor = True
@@ -588,9 +588,9 @@ Partial Class ViewEmployees
         Me.govtinfoTab.Controls.Add(Me.PictureBox27)
         Me.govtinfoTab.Controls.Add(Me.PictureBox28)
         Me.govtinfoTab.Controls.Add(Me.PictureBox29)
-        Me.govtinfoTab.Location = New System.Drawing.Point(4, 29)
+        Me.govtinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.govtinfoTab.Name = "govtinfoTab"
-        Me.govtinfoTab.Size = New System.Drawing.Size(839, 483)
+        Me.govtinfoTab.Size = New System.Drawing.Size(839, 490)
         Me.govtinfoTab.TabIndex = 2
         Me.govtinfoTab.Text = "Government Information"
         Me.govtinfoTab.UseVisualStyleBackColor = True
@@ -779,9 +779,9 @@ Partial Class ViewEmployees
         'monthlyTab
         '
         Me.monthlyTab.Controls.Add(Me.monthlyDatagrid)
-        Me.monthlyTab.Location = New System.Drawing.Point(4, 29)
+        Me.monthlyTab.Location = New System.Drawing.Point(4, 22)
         Me.monthlyTab.Name = "monthlyTab"
-        Me.monthlyTab.Size = New System.Drawing.Size(839, 483)
+        Me.monthlyTab.Size = New System.Drawing.Size(839, 490)
         Me.monthlyTab.TabIndex = 6
         Me.monthlyTab.Text = "Monthly Evaluations"
         Me.monthlyTab.UseVisualStyleBackColor = True
@@ -795,9 +795,9 @@ Partial Class ViewEmployees
         'yearlyTab
         '
         Me.yearlyTab.Controls.Add(Me.yearlyDatadrid)
-        Me.yearlyTab.Location = New System.Drawing.Point(4, 29)
+        Me.yearlyTab.Location = New System.Drawing.Point(4, 22)
         Me.yearlyTab.Name = "yearlyTab"
-        Me.yearlyTab.Size = New System.Drawing.Size(839, 483)
+        Me.yearlyTab.Size = New System.Drawing.Size(839, 490)
         Me.yearlyTab.TabIndex = 7
         Me.yearlyTab.Text = "Yearly Evaluations"
         Me.yearlyTab.UseVisualStyleBackColor = True
@@ -844,10 +844,10 @@ Partial Class ViewEmployees
         Me.workinfoTab.Controls.Add(Me.groupLabel)
         Me.workinfoTab.Controls.Add(Me.Label19)
         Me.workinfoTab.Controls.Add(Me.datehiredLabel)
-        Me.workinfoTab.Location = New System.Drawing.Point(4, 29)
+        Me.workinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.workinfoTab.Name = "workinfoTab"
         Me.workinfoTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.workinfoTab.Size = New System.Drawing.Size(839, 483)
+        Me.workinfoTab.Size = New System.Drawing.Size(839, 490)
         Me.workinfoTab.TabIndex = 0
         Me.workinfoTab.Text = "Work Information"
         Me.workinfoTab.UseVisualStyleBackColor = True
@@ -1424,9 +1424,9 @@ Partial Class ViewEmployees
         Me.familyinfoTab.Controls.Add(Me.mothernameLabel)
         Me.familyinfoTab.Controls.Add(Me.Label15)
         Me.familyinfoTab.Controls.Add(Me.fathernameLabel)
-        Me.familyinfoTab.Location = New System.Drawing.Point(4, 29)
+        Me.familyinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.familyinfoTab.Name = "familyinfoTab"
-        Me.familyinfoTab.Size = New System.Drawing.Size(839, 483)
+        Me.familyinfoTab.Size = New System.Drawing.Size(839, 490)
         Me.familyinfoTab.TabIndex = 4
         Me.familyinfoTab.Text = "Family Information"
         Me.familyinfoTab.UseVisualStyleBackColor = True
@@ -1639,10 +1639,10 @@ Partial Class ViewEmployees
         '
         'documentsTab
         '
-        Me.documentsTab.Location = New System.Drawing.Point(4, 29)
+        Me.documentsTab.Location = New System.Drawing.Point(4, 22)
         Me.documentsTab.Name = "documentsTab"
         Me.documentsTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.documentsTab.Size = New System.Drawing.Size(839, 483)
+        Me.documentsTab.Size = New System.Drawing.Size(839, 490)
         Me.documentsTab.TabIndex = 1
         Me.documentsTab.Text = "Scanned Documents"
         Me.documentsTab.UseVisualStyleBackColor = True

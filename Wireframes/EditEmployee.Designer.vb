@@ -196,7 +196,7 @@ Partial Class EditEmployee
         Me.backButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.backButton.BackColor = System.Drawing.Color.SteelBlue
         Me.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.backButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.backButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.backButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.backButton.Location = New System.Drawing.Point(931, 590)
         Me.backButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -208,61 +208,61 @@ Partial Class EditEmployee
         '
         'nextofkinnameText
         '
-        Me.nextofkinnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nextofkinnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nextofkinnameText.ForeColor = System.Drawing.Color.Gray
         Me.nextofkinnameText.Location = New System.Drawing.Point(36, 428)
         Me.nextofkinnameText.Name = "nextofkinnameText"
-        Me.nextofkinnameText.Size = New System.Drawing.Size(358, 33)
+        Me.nextofkinnameText.Size = New System.Drawing.Size(358, 29)
         Me.nextofkinnameText.TabIndex = 89
         Me.nextofkinnameText.Watermark = "Next of Kin"
         '
         'rtnText
         '
-        Me.rtnText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtnText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtnText.ForeColor = System.Drawing.Color.Gray
         Me.rtnText.Location = New System.Drawing.Point(51, 326)
         Me.rtnText.Name = "rtnText"
-        Me.rtnText.Size = New System.Drawing.Size(566, 33)
+        Me.rtnText.Size = New System.Drawing.Size(566, 29)
         Me.rtnText.TabIndex = 79
         Me.rtnText.Watermark = "RTN"
         '
         'hdmfnumberText
         '
-        Me.hdmfnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.hdmfnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.hdmfnumberText.ForeColor = System.Drawing.Color.Gray
         Me.hdmfnumberText.Location = New System.Drawing.Point(51, 401)
         Me.hdmfnumberText.Name = "hdmfnumberText"
-        Me.hdmfnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.hdmfnumberText.Size = New System.Drawing.Size(566, 29)
         Me.hdmfnumberText.TabIndex = 80
         Me.hdmfnumberText.Watermark = "HDMF Number"
         '
         'beneficiaryrelationTextfour
         '
-        Me.beneficiaryrelationTextfour.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTextfour.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.beneficiaryrelationTextfour.ForeColor = System.Drawing.Color.Gray
         Me.beneficiaryrelationTextfour.Location = New System.Drawing.Point(36, 362)
         Me.beneficiaryrelationTextfour.Name = "beneficiaryrelationTextfour"
-        Me.beneficiaryrelationTextfour.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiaryrelationTextfour.Size = New System.Drawing.Size(358, 29)
         Me.beneficiaryrelationTextfour.TabIndex = 88
         Me.beneficiaryrelationTextfour.Watermark = "Beneficiary's Relation"
         '
         'beneficiarynameTextfour
         '
-        Me.beneficiarynameTextfour.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTextfour.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.beneficiarynameTextfour.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarynameTextfour.Location = New System.Drawing.Point(36, 319)
         Me.beneficiarynameTextfour.Name = "beneficiarynameTextfour"
-        Me.beneficiarynameTextfour.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiarynameTextfour.Size = New System.Drawing.Size(358, 29)
         Me.beneficiarynameTextfour.TabIndex = 87
         Me.beneficiarynameTextfour.Watermark = "Beneficiary's Name"
         '
         'pagibignumberText
         '
-        Me.pagibignumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pagibignumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pagibignumberText.ForeColor = System.Drawing.Color.Gray
         Me.pagibignumberText.Location = New System.Drawing.Point(51, 250)
         Me.pagibignumberText.Name = "pagibignumberText"
-        Me.pagibignumberText.Size = New System.Drawing.Size(566, 33)
+        Me.pagibignumberText.Size = New System.Drawing.Size(566, 29)
         Me.pagibignumberText.TabIndex = 78
         Me.pagibignumberText.Watermark = "Pag-ibig Number"
         '
@@ -294,41 +294,41 @@ Partial Class EditEmployee
         '
         'philhealthnumberText
         '
-        Me.philhealthnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.philhealthnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.philhealthnumberText.ForeColor = System.Drawing.Color.Gray
         Me.philhealthnumberText.Location = New System.Drawing.Point(51, 175)
         Me.philhealthnumberText.Name = "philhealthnumberText"
-        Me.philhealthnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.philhealthnumberText.Size = New System.Drawing.Size(566, 29)
         Me.philhealthnumberText.TabIndex = 77
         Me.philhealthnumberText.Watermark = "Philhealth Number"
         '
         'beneficiarynameTextthree
         '
-        Me.beneficiarynameTextthree.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTextthree.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.beneficiarynameTextthree.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarynameTextthree.Location = New System.Drawing.Point(36, 212)
         Me.beneficiarynameTextthree.Name = "beneficiarynameTextthree"
-        Me.beneficiarynameTextthree.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiarynameTextthree.Size = New System.Drawing.Size(358, 29)
         Me.beneficiarynameTextthree.TabIndex = 84
         Me.beneficiarynameTextthree.Watermark = "Beneficiary's Name"
         '
         'sssnumberText
         '
-        Me.sssnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sssnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sssnumberText.ForeColor = System.Drawing.Color.Gray
         Me.sssnumberText.Location = New System.Drawing.Point(51, 97)
         Me.sssnumberText.Name = "sssnumberText"
-        Me.sssnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.sssnumberText.Size = New System.Drawing.Size(566, 29)
         Me.sssnumberText.TabIndex = 76
         Me.sssnumberText.Watermark = "SSS Number"
         '
         'beneficiaryrelationTextthree
         '
-        Me.beneficiaryrelationTextthree.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTextthree.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.beneficiaryrelationTextthree.ForeColor = System.Drawing.Color.Gray
         Me.beneficiaryrelationTextthree.Location = New System.Drawing.Point(36, 258)
         Me.beneficiaryrelationTextthree.Name = "beneficiaryrelationTextthree"
-        Me.beneficiaryrelationTextthree.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiaryrelationTextthree.Size = New System.Drawing.Size(358, 29)
         Me.beneficiaryrelationTextthree.TabIndex = 85
         Me.beneficiaryrelationTextthree.Watermark = "Beneficiary's Relation"
         '
@@ -370,10 +370,10 @@ Partial Class EditEmployee
         Me.otherTab.Controls.Add(Me.Label5)
         Me.otherTab.Controls.Add(Me.nextofkinbdayDate)
         Me.otherTab.Controls.Add(Me.PictureBox32)
-        Me.otherTab.Location = New System.Drawing.Point(4, 30)
+        Me.otherTab.Location = New System.Drawing.Point(4, 22)
         Me.otherTab.Name = "otherTab"
         Me.otherTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.otherTab.Size = New System.Drawing.Size(839, 482)
+        Me.otherTab.Size = New System.Drawing.Size(839, 490)
         Me.otherTab.TabIndex = 5
         Me.otherTab.Text = "Other"
         Me.otherTab.UseVisualStyleBackColor = True
@@ -393,52 +393,52 @@ Partial Class EditEmployee
         '
         'beneficiaryrelationTexttwo
         '
-        Me.beneficiaryrelationTexttwo.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTexttwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.beneficiaryrelationTexttwo.ForeColor = System.Drawing.Color.Gray
         Me.beneficiaryrelationTexttwo.Location = New System.Drawing.Point(36, 154)
         Me.beneficiaryrelationTexttwo.Name = "beneficiaryrelationTexttwo"
-        Me.beneficiaryrelationTexttwo.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiaryrelationTexttwo.Size = New System.Drawing.Size(358, 29)
         Me.beneficiaryrelationTexttwo.TabIndex = 81
         Me.beneficiaryrelationTexttwo.Watermark = "Beneficiary's Relation"
         '
         'beneficiarynameTexttwo
         '
-        Me.beneficiarynameTexttwo.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTexttwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.beneficiarynameTexttwo.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarynameTexttwo.Location = New System.Drawing.Point(36, 115)
         Me.beneficiarynameTexttwo.Name = "beneficiarynameTexttwo"
-        Me.beneficiarynameTexttwo.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiarynameTexttwo.Size = New System.Drawing.Size(358, 29)
         Me.beneficiarynameTexttwo.TabIndex = 80
         Me.beneficiarynameTexttwo.Watermark = "Beneficiary's Name"
         '
         'beneficiaryrelationTextone
         '
-        Me.beneficiaryrelationTextone.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTextone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.beneficiaryrelationTextone.ForeColor = System.Drawing.Color.Gray
         Me.beneficiaryrelationTextone.Location = New System.Drawing.Point(36, 58)
         Me.beneficiaryrelationTextone.Name = "beneficiaryrelationTextone"
-        Me.beneficiaryrelationTextone.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiaryrelationTextone.Size = New System.Drawing.Size(358, 29)
         Me.beneficiaryrelationTextone.TabIndex = 79
         Me.beneficiaryrelationTextone.Watermark = "Beneficiary's Relation"
         '
         'beneficiarynameTextone
         '
-        Me.beneficiarynameTextone.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTextone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.beneficiarynameTextone.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarynameTextone.Location = New System.Drawing.Point(36, 19)
         Me.beneficiarynameTextone.Name = "beneficiarynameTextone"
-        Me.beneficiarynameTextone.Size = New System.Drawing.Size(358, 33)
+        Me.beneficiarynameTextone.Size = New System.Drawing.Size(358, 29)
         Me.beneficiarynameTextone.TabIndex = 78
         Me.beneficiarynameTextone.Watermark = "Beneficiary's Name"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Gray
         Me.Label12.Location = New System.Drawing.Point(403, 322)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(190, 26)
+        Me.Label12.Size = New System.Drawing.Size(192, 24)
         Me.Label12.TabIndex = 77
         Me.Label12.Text = "Beneficiary's Birthday:"
         '
@@ -447,17 +447,17 @@ Partial Class EditEmployee
         Me.beneficiarybdayDatefour.Location = New System.Drawing.Point(599, 320)
         Me.beneficiarybdayDatefour.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.beneficiarybdayDatefour.Name = "beneficiarybdayDatefour"
-        Me.beneficiarybdayDatefour.Size = New System.Drawing.Size(200, 29)
+        Me.beneficiarybdayDatefour.Size = New System.Drawing.Size(200, 26)
         Me.beneficiarybdayDatefour.TabIndex = 76
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Gray
         Me.Label11.Location = New System.Drawing.Point(403, 215)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(190, 26)
+        Me.Label11.Size = New System.Drawing.Size(192, 24)
         Me.Label11.TabIndex = 75
         Me.Label11.Text = "Beneficiary's Birthday:"
         '
@@ -466,17 +466,17 @@ Partial Class EditEmployee
         Me.beneficiarybdayDatethree.Location = New System.Drawing.Point(599, 215)
         Me.beneficiarybdayDatethree.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.beneficiarybdayDatethree.Name = "beneficiarybdayDatethree"
-        Me.beneficiarybdayDatethree.Size = New System.Drawing.Size(200, 29)
+        Me.beneficiarybdayDatethree.Size = New System.Drawing.Size(200, 26)
         Me.beneficiarybdayDatethree.TabIndex = 74
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Gray
         Me.Label7.Location = New System.Drawing.Point(407, 115)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(190, 26)
+        Me.Label7.Size = New System.Drawing.Size(192, 24)
         Me.Label7.TabIndex = 73
         Me.Label7.Text = "Beneficiary's Birthday:"
         '
@@ -485,17 +485,17 @@ Partial Class EditEmployee
         Me.beneficiarybdayDatetwo.Location = New System.Drawing.Point(599, 115)
         Me.beneficiarybdayDatetwo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.beneficiarybdayDatetwo.Name = "beneficiarybdayDatetwo"
-        Me.beneficiarybdayDatetwo.Size = New System.Drawing.Size(200, 29)
+        Me.beneficiarybdayDatetwo.Size = New System.Drawing.Size(200, 26)
         Me.beneficiarybdayDatetwo.TabIndex = 72
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Gray
         Me.Label6.Location = New System.Drawing.Point(407, 26)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(190, 26)
+        Me.Label6.Size = New System.Drawing.Size(192, 24)
         Me.Label6.TabIndex = 71
         Me.Label6.Text = "Beneficiary's Birthday:"
         '
@@ -504,17 +504,17 @@ Partial Class EditEmployee
         Me.beneficiarybdayDateone.Location = New System.Drawing.Point(603, 26)
         Me.beneficiarybdayDateone.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.beneficiarybdayDateone.Name = "beneficiarybdayDateone"
-        Me.beneficiarybdayDateone.Size = New System.Drawing.Size(200, 29)
+        Me.beneficiarybdayDateone.Size = New System.Drawing.Size(200, 26)
         Me.beneficiarybdayDateone.TabIndex = 70
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Gray
         Me.Label5.Location = New System.Drawing.Point(403, 432)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(179, 26)
+        Me.Label5.Size = New System.Drawing.Size(178, 24)
         Me.Label5.TabIndex = 65
         Me.Label5.Text = "Next of Kin Birthday:"
         '
@@ -523,7 +523,7 @@ Partial Class EditEmployee
         Me.nextofkinbdayDate.Location = New System.Drawing.Point(599, 429)
         Me.nextofkinbdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.nextofkinbdayDate.Name = "nextofkinbdayDate"
-        Me.nextofkinbdayDate.Size = New System.Drawing.Size(200, 29)
+        Me.nextofkinbdayDate.Size = New System.Drawing.Size(200, 26)
         Me.nextofkinbdayDate.TabIndex = 64
         '
         'PictureBox32
@@ -541,11 +541,11 @@ Partial Class EditEmployee
         '
         'tinnumberText
         '
-        Me.tinnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tinnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tinnumberText.ForeColor = System.Drawing.Color.Gray
         Me.tinnumberText.Location = New System.Drawing.Point(51, 30)
         Me.tinnumberText.Name = "tinnumberText"
-        Me.tinnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.tinnumberText.Size = New System.Drawing.Size(566, 29)
         Me.tinnumberText.TabIndex = 75
         Me.tinnumberText.Watermark = "TIN Number"
         '
@@ -567,16 +567,16 @@ Partial Class EditEmployee
         Me.statusdateDate.Location = New System.Drawing.Point(242, 378)
         Me.statusdateDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.statusdateDate.Name = "statusdateDate"
-        Me.statusdateDate.Size = New System.Drawing.Size(201, 29)
+        Me.statusdateDate.Size = New System.Drawing.Size(201, 26)
         Me.statusdateDate.TabIndex = 80
         '
         'statusreasonText
         '
-        Me.statusreasonText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusreasonText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.statusreasonText.ForeColor = System.Drawing.Color.Gray
         Me.statusreasonText.Location = New System.Drawing.Point(47, 438)
         Me.statusreasonText.Name = "statusreasonText"
-        Me.statusreasonText.Size = New System.Drawing.Size(566, 33)
+        Me.statusreasonText.Size = New System.Drawing.Size(566, 29)
         Me.statusreasonText.TabIndex = 79
         Me.statusreasonText.Watermark = "Status Reason"
         '
@@ -595,11 +595,11 @@ Partial Class EditEmployee
         '
         'rankText
         '
-        Me.rankText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rankText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rankText.ForeColor = System.Drawing.Color.Gray
         Me.rankText.Location = New System.Drawing.Point(48, 308)
         Me.rankText.Name = "rankText"
-        Me.rankText.Size = New System.Drawing.Size(566, 33)
+        Me.rankText.Size = New System.Drawing.Size(566, 29)
         Me.rankText.TabIndex = 77
         Me.rankText.Watermark = "Rank"
         '
@@ -617,9 +617,9 @@ Partial Class EditEmployee
         Me.govtinfoTab.Controls.Add(Me.PictureBox27)
         Me.govtinfoTab.Controls.Add(Me.PictureBox28)
         Me.govtinfoTab.Controls.Add(Me.PictureBox29)
-        Me.govtinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.govtinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.govtinfoTab.Name = "govtinfoTab"
-        Me.govtinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.govtinfoTab.Size = New System.Drawing.Size(839, 490)
         Me.govtinfoTab.TabIndex = 2
         Me.govtinfoTab.Text = "Government Information"
         Me.govtinfoTab.UseVisualStyleBackColor = True
@@ -680,7 +680,7 @@ Partial Class EditEmployee
         '
         Me.changepicButton.BackColor = System.Drawing.Color.SteelBlue
         Me.changepicButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.changepicButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.changepicButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.changepicButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.changepicButton.Location = New System.Drawing.Point(170, 204)
         Me.changepicButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -721,10 +721,10 @@ Partial Class EditEmployee
         'monthlyevalTab
         '
         Me.monthlyevalTab.Controls.Add(Me.monthlyDatagrid)
-        Me.monthlyevalTab.Location = New System.Drawing.Point(4, 30)
+        Me.monthlyevalTab.Location = New System.Drawing.Point(4, 22)
         Me.monthlyevalTab.Name = "monthlyevalTab"
         Me.monthlyevalTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.monthlyevalTab.Size = New System.Drawing.Size(839, 482)
+        Me.monthlyevalTab.Size = New System.Drawing.Size(839, 490)
         Me.monthlyevalTab.TabIndex = 6
         Me.monthlyevalTab.Text = "Monthly Evaluations"
         Me.monthlyevalTab.UseVisualStyleBackColor = True
@@ -732,9 +732,9 @@ Partial Class EditEmployee
         'yearlyevalTab
         '
         Me.yearlyevalTab.Controls.Add(Me.yearlyDatadrid)
-        Me.yearlyevalTab.Location = New System.Drawing.Point(4, 30)
+        Me.yearlyevalTab.Location = New System.Drawing.Point(4, 22)
         Me.yearlyevalTab.Name = "yearlyevalTab"
-        Me.yearlyevalTab.Size = New System.Drawing.Size(839, 482)
+        Me.yearlyevalTab.Size = New System.Drawing.Size(839, 490)
         Me.yearlyevalTab.TabIndex = 7
         Me.yearlyevalTab.Text = "Yearly Evaluations"
         Me.yearlyevalTab.UseVisualStyleBackColor = True
@@ -769,10 +769,10 @@ Partial Class EditEmployee
         '
         'documentsTab
         '
-        Me.documentsTab.Location = New System.Drawing.Point(4, 30)
+        Me.documentsTab.Location = New System.Drawing.Point(4, 22)
         Me.documentsTab.Name = "documentsTab"
         Me.documentsTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.documentsTab.Size = New System.Drawing.Size(839, 482)
+        Me.documentsTab.Size = New System.Drawing.Size(839, 490)
         Me.documentsTab.TabIndex = 1
         Me.documentsTab.Text = "Scanned Documents"
         Me.documentsTab.UseVisualStyleBackColor = True
@@ -780,11 +780,11 @@ Partial Class EditEmployee
         'statusdateLabel
         '
         Me.statusdateLabel.AutoSize = True
-        Me.statusdateLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusdateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.statusdateLabel.ForeColor = System.Drawing.Color.Gray
         Me.statusdateLabel.Location = New System.Drawing.Point(42, 381)
         Me.statusdateLabel.Name = "statusdateLabel"
-        Me.statusdateLabel.Size = New System.Drawing.Size(109, 26)
+        Me.statusdateLabel.Size = New System.Drawing.Size(108, 24)
         Me.statusdateLabel.TabIndex = 81
         Me.statusdateLabel.Text = "Status Date:"
         '
@@ -805,52 +805,52 @@ Partial Class EditEmployee
         Me.workinfoTab.Controls.Add(Me.PictureBox22)
         Me.workinfoTab.Controls.Add(Me.PictureBox23)
         Me.workinfoTab.Controls.Add(Me.PictureBox24)
-        Me.workinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.workinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.workinfoTab.Name = "workinfoTab"
         Me.workinfoTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.workinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.workinfoTab.Size = New System.Drawing.Size(839, 490)
         Me.workinfoTab.TabIndex = 0
         Me.workinfoTab.Text = "Work Information"
         Me.workinfoTab.UseVisualStyleBackColor = True
         '
         'positionText
         '
-        Me.positionText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.positionText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.positionText.ForeColor = System.Drawing.Color.Gray
         Me.positionText.Location = New System.Drawing.Point(48, 232)
         Me.positionText.Name = "positionText"
-        Me.positionText.Size = New System.Drawing.Size(566, 33)
+        Me.positionText.Size = New System.Drawing.Size(566, 29)
         Me.positionText.TabIndex = 76
         Me.positionText.Watermark = "Position"
         '
         'departmentText
         '
-        Me.departmentText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.departmentText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.departmentText.ForeColor = System.Drawing.Color.Gray
         Me.departmentText.Location = New System.Drawing.Point(48, 157)
         Me.departmentText.Name = "departmentText"
-        Me.departmentText.Size = New System.Drawing.Size(566, 33)
+        Me.departmentText.Size = New System.Drawing.Size(566, 29)
         Me.departmentText.TabIndex = 75
         Me.departmentText.Watermark = "Department/Unit"
         '
         'groupText
         '
-        Me.groupText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.groupText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.groupText.ForeColor = System.Drawing.Color.Gray
         Me.groupText.Location = New System.Drawing.Point(48, 79)
         Me.groupText.Name = "groupText"
-        Me.groupText.Size = New System.Drawing.Size(566, 33)
+        Me.groupText.Size = New System.Drawing.Size(566, 29)
         Me.groupText.TabIndex = 74
         Me.groupText.Watermark = "Group"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Gray
         Me.Label4.Location = New System.Drawing.Point(43, 22)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(104, 26)
+        Me.Label4.Size = New System.Drawing.Size(104, 24)
         Me.Label4.TabIndex = 62
         Me.Label4.Text = "Date Hired:"
         '
@@ -859,7 +859,7 @@ Partial Class EditEmployee
         Me.datehiredDate.Location = New System.Drawing.Point(160, 20)
         Me.datehiredDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.datehiredDate.Name = "datehiredDate"
-        Me.datehiredDate.Size = New System.Drawing.Size(201, 29)
+        Me.datehiredDate.Size = New System.Drawing.Size(201, 26)
         Me.datehiredDate.TabIndex = 61
         '
         'PictureBox20
@@ -929,31 +929,31 @@ Partial Class EditEmployee
         '
         'emailaddressText
         '
-        Me.emailaddressText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailaddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.emailaddressText.ForeColor = System.Drawing.Color.Gray
         Me.emailaddressText.Location = New System.Drawing.Point(48, 301)
         Me.emailaddressText.Name = "emailaddressText"
-        Me.emailaddressText.Size = New System.Drawing.Size(566, 33)
+        Me.emailaddressText.Size = New System.Drawing.Size(566, 29)
         Me.emailaddressText.TabIndex = 61
         Me.emailaddressText.Watermark = "Email Address"
         '
         'permanentaddressText
         '
-        Me.permanentaddressText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.permanentaddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.permanentaddressText.ForeColor = System.Drawing.Color.Gray
         Me.permanentaddressText.Location = New System.Drawing.Point(48, 244)
         Me.permanentaddressText.Name = "permanentaddressText"
-        Me.permanentaddressText.Size = New System.Drawing.Size(566, 33)
+        Me.permanentaddressText.Size = New System.Drawing.Size(566, 29)
         Me.permanentaddressText.TabIndex = 60
         Me.permanentaddressText.Watermark = "Permanent Address"
         '
         'presentaddressText
         '
-        Me.presentaddressText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.presentaddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.presentaddressText.ForeColor = System.Drawing.Color.Gray
         Me.presentaddressText.Location = New System.Drawing.Point(48, 184)
         Me.presentaddressText.Name = "presentaddressText"
-        Me.presentaddressText.Size = New System.Drawing.Size(566, 33)
+        Me.presentaddressText.Size = New System.Drawing.Size(566, 29)
         Me.presentaddressText.TabIndex = 59
         Me.presentaddressText.Watermark = "Present Address"
         '
@@ -972,55 +972,55 @@ Partial Class EditEmployee
         '
         'telephonenumberText
         '
-        Me.telephonenumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.telephonenumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.telephonenumberText.ForeColor = System.Drawing.Color.Gray
         Me.telephonenumberText.Location = New System.Drawing.Point(48, 419)
         Me.telephonenumberText.Name = "telephonenumberText"
-        Me.telephonenumberText.Size = New System.Drawing.Size(566, 33)
+        Me.telephonenumberText.Size = New System.Drawing.Size(566, 29)
         Me.telephonenumberText.TabIndex = 63
         Me.telephonenumberText.Watermark = "Telephone Number"
         '
         'contactnumberText
         '
-        Me.contactnumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.contactnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.contactnumberText.ForeColor = System.Drawing.Color.Gray
         Me.contactnumberText.Location = New System.Drawing.Point(48, 359)
         Me.contactnumberText.Name = "contactnumberText"
-        Me.contactnumberText.Size = New System.Drawing.Size(566, 33)
+        Me.contactnumberText.Size = New System.Drawing.Size(566, 29)
         Me.contactnumberText.TabIndex = 62
         Me.contactnumberText.Watermark = "Contact Number"
         '
         'birthplaceText
         '
-        Me.birthplaceText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.birthplaceText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.birthplaceText.ForeColor = System.Drawing.Color.Gray
         Me.birthplaceText.Location = New System.Drawing.Point(48, 67)
         Me.birthplaceText.Name = "birthplaceText"
-        Me.birthplaceText.Size = New System.Drawing.Size(566, 33)
+        Me.birthplaceText.Size = New System.Drawing.Size(566, 29)
         Me.birthplaceText.TabIndex = 58
         Me.birthplaceText.Watermark = "Birthplace"
         '
         'civilstatusCombobox
         '
         Me.civilstatusCombobox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.civilstatusCombobox.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.civilstatusCombobox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.civilstatusCombobox.ForeColor = System.Drawing.Color.Gray
         Me.civilstatusCombobox.FormattingEnabled = True
         Me.civilstatusCombobox.Items.AddRange(New Object() {"Single", "Married", "Widowed", "Anulled"})
         Me.civilstatusCombobox.Location = New System.Drawing.Point(48, 121)
         Me.civilstatusCombobox.Name = "civilstatusCombobox"
-        Me.civilstatusCombobox.Size = New System.Drawing.Size(566, 34)
+        Me.civilstatusCombobox.Size = New System.Drawing.Size(566, 32)
         Me.civilstatusCombobox.TabIndex = 57
         Me.civilstatusCombobox.Text = "Civil Status"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Gray
         Me.Label1.Location = New System.Drawing.Point(43, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 26)
+        Me.Label1.Size = New System.Drawing.Size(87, 24)
         Me.Label1.TabIndex = 49
         Me.Label1.Text = "Birthday: "
         '
@@ -1029,7 +1029,7 @@ Partial Class EditEmployee
         Me.birthdayDate.Location = New System.Drawing.Point(136, 17)
         Me.birthdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.birthdayDate.Name = "birthdayDate"
-        Me.birthdayDate.Size = New System.Drawing.Size(201, 29)
+        Me.birthdayDate.Size = New System.Drawing.Size(201, 26)
         Me.birthdayDate.TabIndex = 48
         '
         'PictureBox16
@@ -1077,9 +1077,9 @@ Partial Class EditEmployee
         Me.personalinfoTab.Controls.Add(Me.PictureBox13)
         Me.personalinfoTab.Controls.Add(Me.PictureBox14)
         Me.personalinfoTab.Controls.Add(Me.PictureBox15)
-        Me.personalinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.personalinfoTab.Location = New System.Drawing.Point(4, 29)
         Me.personalinfoTab.Name = "personalinfoTab"
-        Me.personalinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.personalinfoTab.Size = New System.Drawing.Size(839, 483)
         Me.personalinfoTab.TabIndex = 3
         Me.personalinfoTab.Text = "Personal Information"
         Me.personalinfoTab.UseVisualStyleBackColor = True
@@ -1202,91 +1202,91 @@ Partial Class EditEmployee
         Me.familyinfoTab.Controls.Add(Me.PictureBox11)
         Me.familyinfoTab.Controls.Add(Me.PictureBox9)
         Me.familyinfoTab.Controls.Add(Me.PictureBox8)
-        Me.familyinfoTab.Location = New System.Drawing.Point(4, 30)
+        Me.familyinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.familyinfoTab.Name = "familyinfoTab"
-        Me.familyinfoTab.Size = New System.Drawing.Size(839, 482)
+        Me.familyinfoTab.Size = New System.Drawing.Size(839, 490)
         Me.familyinfoTab.TabIndex = 4
         Me.familyinfoTab.Text = "Family Information"
         Me.familyinfoTab.UseVisualStyleBackColor = True
         '
         'childnameTextfour
         '
-        Me.childnameTextfour.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTextfour.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.childnameTextfour.ForeColor = System.Drawing.Color.Gray
         Me.childnameTextfour.Location = New System.Drawing.Point(41, 421)
         Me.childnameTextfour.Name = "childnameTextfour"
-        Me.childnameTextfour.Size = New System.Drawing.Size(386, 33)
+        Me.childnameTextfour.Size = New System.Drawing.Size(386, 29)
         Me.childnameTextfour.TabIndex = 76
         Me.childnameTextfour.Watermark = "Child's Name"
         '
         'childnameTextthree
         '
-        Me.childnameTextthree.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTextthree.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.childnameTextthree.ForeColor = System.Drawing.Color.Gray
         Me.childnameTextthree.Location = New System.Drawing.Point(42, 358)
         Me.childnameTextthree.Name = "childnameTextthree"
-        Me.childnameTextthree.Size = New System.Drawing.Size(386, 33)
+        Me.childnameTextthree.Size = New System.Drawing.Size(386, 29)
         Me.childnameTextthree.TabIndex = 75
         Me.childnameTextthree.Watermark = "Child's Name"
         '
         'childnameTexttwo
         '
-        Me.childnameTexttwo.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTexttwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.childnameTexttwo.ForeColor = System.Drawing.Color.Gray
         Me.childnameTexttwo.Location = New System.Drawing.Point(41, 296)
         Me.childnameTexttwo.Name = "childnameTexttwo"
-        Me.childnameTexttwo.Size = New System.Drawing.Size(386, 33)
+        Me.childnameTexttwo.Size = New System.Drawing.Size(386, 29)
         Me.childnameTexttwo.TabIndex = 74
         Me.childnameTexttwo.Watermark = "Child's Name"
         '
         'childnameTextone
         '
-        Me.childnameTextone.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTextone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.childnameTextone.ForeColor = System.Drawing.Color.Gray
         Me.childnameTextone.Location = New System.Drawing.Point(41, 236)
         Me.childnameTextone.Name = "childnameTextone"
-        Me.childnameTextone.Size = New System.Drawing.Size(386, 33)
+        Me.childnameTextone.Size = New System.Drawing.Size(386, 29)
         Me.childnameTextone.TabIndex = 73
         Me.childnameTextone.Watermark = "Child's Name"
         '
         'spousenameText
         '
-        Me.spousenameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.spousenameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.spousenameText.ForeColor = System.Drawing.Color.Gray
         Me.spousenameText.Location = New System.Drawing.Point(41, 159)
         Me.spousenameText.Name = "spousenameText"
-        Me.spousenameText.Size = New System.Drawing.Size(386, 33)
+        Me.spousenameText.Size = New System.Drawing.Size(386, 29)
         Me.spousenameText.TabIndex = 72
         Me.spousenameText.Watermark = "Spouse's Name"
         '
         'mothersnameText
         '
-        Me.mothersnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mothersnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mothersnameText.ForeColor = System.Drawing.Color.Gray
         Me.mothersnameText.Location = New System.Drawing.Point(42, 92)
         Me.mothersnameText.Name = "mothersnameText"
-        Me.mothersnameText.Size = New System.Drawing.Size(566, 33)
+        Me.mothersnameText.Size = New System.Drawing.Size(566, 29)
         Me.mothersnameText.TabIndex = 71
         Me.mothersnameText.Watermark = "Mother's Name"
         '
         'fathersnameText
         '
-        Me.fathersnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fathersnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fathersnameText.ForeColor = System.Drawing.Color.Gray
         Me.fathersnameText.Location = New System.Drawing.Point(42, 24)
         Me.fathersnameText.Name = "fathersnameText"
-        Me.fathersnameText.Size = New System.Drawing.Size(566, 33)
+        Me.fathersnameText.Size = New System.Drawing.Size(566, 29)
         Me.fathersnameText.TabIndex = 70
         Me.fathersnameText.Watermark = "Father's Name"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Gray
         Me.Label10.Location = New System.Drawing.Point(452, 424)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(146, 26)
+        Me.Label10.Size = New System.Drawing.Size(148, 24)
         Me.Label10.TabIndex = 69
         Me.Label10.Text = "Child's Birthday: "
         '
@@ -1295,17 +1295,17 @@ Partial Class EditEmployee
         Me.childbdayDatefour.Location = New System.Drawing.Point(604, 422)
         Me.childbdayDatefour.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.childbdayDatefour.Name = "childbdayDatefour"
-        Me.childbdayDatefour.Size = New System.Drawing.Size(201, 29)
+        Me.childbdayDatefour.Size = New System.Drawing.Size(201, 26)
         Me.childbdayDatefour.TabIndex = 68
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Gray
         Me.Label9.Location = New System.Drawing.Point(452, 361)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(146, 26)
+        Me.Label9.Size = New System.Drawing.Size(148, 24)
         Me.Label9.TabIndex = 66
         Me.Label9.Text = "Child's Birthday: "
         '
@@ -1314,17 +1314,17 @@ Partial Class EditEmployee
         Me.childbdayDatethree.Location = New System.Drawing.Point(604, 359)
         Me.childbdayDatethree.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.childbdayDatethree.Name = "childbdayDatethree"
-        Me.childbdayDatethree.Size = New System.Drawing.Size(201, 29)
+        Me.childbdayDatethree.Size = New System.Drawing.Size(201, 26)
         Me.childbdayDatethree.TabIndex = 65
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Gray
         Me.Label8.Location = New System.Drawing.Point(452, 303)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(146, 26)
+        Me.Label8.Size = New System.Drawing.Size(148, 24)
         Me.Label8.TabIndex = 63
         Me.Label8.Text = "Child's Birthday: "
         '
@@ -1333,17 +1333,17 @@ Partial Class EditEmployee
         Me.childbdayDatetwo.Location = New System.Drawing.Point(604, 301)
         Me.childbdayDatetwo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.childbdayDatetwo.Name = "childbdayDatetwo"
-        Me.childbdayDatetwo.Size = New System.Drawing.Size(201, 29)
+        Me.childbdayDatetwo.Size = New System.Drawing.Size(201, 26)
         Me.childbdayDatetwo.TabIndex = 62
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Gray
         Me.Label3.Location = New System.Drawing.Point(452, 239)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(146, 26)
+        Me.Label3.Size = New System.Drawing.Size(148, 24)
         Me.Label3.TabIndex = 60
         Me.Label3.Text = "Child's Birthday: "
         '
@@ -1352,17 +1352,17 @@ Partial Class EditEmployee
         Me.childbdayDateone.Location = New System.Drawing.Point(604, 237)
         Me.childbdayDateone.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.childbdayDateone.Name = "childbdayDateone"
-        Me.childbdayDateone.Size = New System.Drawing.Size(201, 29)
+        Me.childbdayDateone.Size = New System.Drawing.Size(201, 26)
         Me.childbdayDateone.TabIndex = 59
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gray
         Me.Label2.Location = New System.Drawing.Point(434, 162)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(164, 26)
+        Me.Label2.Size = New System.Drawing.Size(170, 24)
         Me.Label2.TabIndex = 57
         Me.Label2.Text = "Spouse's Birthday: "
         '
@@ -1371,7 +1371,7 @@ Partial Class EditEmployee
         Me.spousebdayDate.Location = New System.Drawing.Point(604, 160)
         Me.spousebdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.spousebdayDate.Name = "spousebdayDate"
-        Me.spousebdayDate.Size = New System.Drawing.Size(201, 29)
+        Me.spousebdayDate.Size = New System.Drawing.Size(201, 26)
         Me.spousebdayDate.TabIndex = 56
         '
         'PictureBox11
@@ -1403,13 +1403,13 @@ Partial Class EditEmployee
         'statusCombobox
         '
         Me.statusCombobox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.statusCombobox.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusCombobox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.statusCombobox.ForeColor = System.Drawing.Color.Gray
         Me.statusCombobox.FormattingEnabled = True
         Me.statusCombobox.Items.AddRange(New Object() {"Probationary", "Part-Time", "OJT", "Regular", "Resigned", "Terminated", "End of Contract"})
         Me.statusCombobox.Location = New System.Drawing.Point(42, 475)
         Me.statusCombobox.Name = "statusCombobox"
-        Me.statusCombobox.Size = New System.Drawing.Size(229, 34)
+        Me.statusCombobox.Size = New System.Drawing.Size(229, 32)
         Me.statusCombobox.TabIndex = 85
         Me.statusCombobox.Text = "Status"
         '
@@ -1426,31 +1426,31 @@ Partial Class EditEmployee
         '
         'middlenameText
         '
-        Me.middlenameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.middlenameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.middlenameText.ForeColor = System.Drawing.Color.Gray
         Me.middlenameText.Location = New System.Drawing.Point(42, 355)
         Me.middlenameText.Name = "middlenameText"
-        Me.middlenameText.Size = New System.Drawing.Size(229, 33)
+        Me.middlenameText.Size = New System.Drawing.Size(229, 29)
         Me.middlenameText.TabIndex = 83
         Me.middlenameText.Watermark = "Middle Name"
         '
         'givennameText
         '
-        Me.givennameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.givennameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.givennameText.ForeColor = System.Drawing.Color.Gray
         Me.givennameText.Location = New System.Drawing.Point(42, 312)
         Me.givennameText.Name = "givennameText"
-        Me.givennameText.Size = New System.Drawing.Size(229, 33)
+        Me.givennameText.Size = New System.Drawing.Size(229, 29)
         Me.givennameText.TabIndex = 81
         Me.givennameText.Watermark = "Given Name"
         '
         'lastnameText
         '
-        Me.lastnameText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lastnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lastnameText.ForeColor = System.Drawing.Color.Gray
         Me.lastnameText.Location = New System.Drawing.Point(42, 273)
         Me.lastnameText.Name = "lastnameText"
-        Me.lastnameText.Size = New System.Drawing.Size(229, 33)
+        Me.lastnameText.Size = New System.Drawing.Size(229, 29)
         Me.lastnameText.TabIndex = 80
         Me.lastnameText.Watermark = "Last Name"
         '
@@ -1458,7 +1458,7 @@ Partial Class EditEmployee
         '
         Me.adddocumentsButton.BackColor = System.Drawing.Color.SteelBlue
         Me.adddocumentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.adddocumentsButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.adddocumentsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.adddocumentsButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.adddocumentsButton.Location = New System.Drawing.Point(42, 535)
         Me.adddocumentsButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -1495,7 +1495,7 @@ Partial Class EditEmployee
         Me.saveButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.saveButton.BackColor = System.Drawing.Color.SteelBlue
         Me.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.saveButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.saveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.saveButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.saveButton.Location = New System.Drawing.Point(702, 590)
         Me.saveButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -1566,11 +1566,11 @@ Partial Class EditEmployee
         'employeenumberText
         '
         Me.employeenumberText.AutoSize = True
-        Me.employeenumberText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.employeenumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.employeenumberText.ForeColor = System.Drawing.Color.Gray
         Me.employeenumberText.Location = New System.Drawing.Point(37, 419)
         Me.employeenumberText.Name = "employeenumberText"
-        Me.employeenumberText.Size = New System.Drawing.Size(165, 26)
+        Me.employeenumberText.Size = New System.Drawing.Size(170, 24)
         Me.employeenumberText.TabIndex = 82
         Me.employeenumberText.Text = "Employee Number"
         '
@@ -1597,7 +1597,7 @@ Partial Class EditEmployee
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.employeenumberText)
-        Me.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
