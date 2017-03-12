@@ -52,7 +52,6 @@ Public Class ManageEmployees
     Private Sub viewEmployee_Click(sender As Object, e As EventArgs) Handles viewEmployee.Click
         If manageemployeesDGV.SelectedRows.Count() = 1 Then
             Employee = manageemployeesDGV.SelectedRows(0).Cells(0).Value.ToString
-            MessageBox.Show(Employee)
             Dim NewForm As ViewEmployees
             NewForm = New ViewEmployees()
             NewForm.Show()

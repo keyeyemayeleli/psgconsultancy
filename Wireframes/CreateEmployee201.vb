@@ -68,7 +68,9 @@ Public Class CreateEmployee201
 
 
         Dim connectionString As String = "Data Source=DESKTOP-2J5TEUE\SQLEXPRESS;Database=201File;Integrated Security=True"
-        Dim sql As String = "INSERT INTO employee201files (last_name, first_name, middle_name, status, tin_number, sss_number, philhealth_number, pagibig_number, RTN, HDMF_MID_number, date_hired, company_group, department, position, rank, birthday, birth_place, civil_status, present_address, permanent_address, email, contact_number, telephone_number, fathers_name, mothers_name, spouse_name, spouse_birthday, nextofkin_name, nextofkin_birthday, status_reason, statusreason_date) VALUES (@lastname, @firstname, @middlename, @status, @tin, @sss, @philhealth, @pagibig, @rtn, @hdmf, @hiredate, @grp, @dept, @pos, @rank, @bday, @bplace, @civil, @presentadd, @permanentadd, @emailadd, @contactnum, @telnum, @father, @mother, @spouse, @spousebday, @nokname, @nokbday, @statreason, @statreasondate)"
+        Dim sql As String = "SET IDENTITY_INSERT employee201files ON; INSERT INTO employee201files (employee_id, last_name, first_name, middle_name, status, tin_number, sss_number, philhealth_number, pagibig_number, RTN, HDMF_MID_number, date_hired, company_group, department, position, rank, birthday, birth_place, civil_status, present_address, permanent_address, email, contact_number, telephone_number, fathers_name, mothers_name, spouse_name, spouse_birthday, nextofkin_name, nextofkin_birthday, status_reason, statusreason_date) VALUES (@employeeid, @lastname, @firstname, @middlename, @status, @tin, @sss, @philhealth, @pagibig, @rtn, @hdmf, @hiredate, @grp, @dept, @pos, @rank, @bday, @bplace, @civil, @presentadd, @permanentadd, @emailadd, @contactnum, @telnum, @father, @mother, @spouse, @spousebday, @nokname, @nokbday, @statreason, @statreasondate); SET IDENTITY_INSERT employee201files OFF"
+        Dim sql2 As String = "INSERT INTO children (employee_id, child_name, child_birthday) VALUES (@empid, @cname, @cbday)"
+        Dim sql3 As String = "INSERT INTO beneficiaries (employee_id, ben_name, ben_birthday, ben_relation) VALUES (@empid, @bname, @bbday, @brel)"
 
         Using conn As New SqlConnection(connectionString)
             Using cmd As New SqlCommand()
@@ -76,6 +78,7 @@ Public Class CreateEmployee201
                     .Connection = conn
                     .CommandType = CommandType.Text
                     .CommandText = sql
+                    .Parameters.AddWithValue("employeeid", employeenumberText.Text)
                     .Parameters.AddWithValue("lastname", lastnameText.Text)
                     .Parameters.AddWithValue("firstname", givennameText.Text)
                     .Parameters.AddWithValue("middlename", middlenameText.Text)
@@ -109,13 +112,169 @@ Public Class CreateEmployee201
                     .Parameters.AddWithValue("statreasondate", statusdateDate.Text)
                 End With
 
-
-
                 Try
-                    conn.open()
+                    conn.Open()
                     cmd.ExecuteNonQuery()
-                    MessageBox.Show("Employee 201 file of " & givennameText.Text & " " & lastnameText.Text & " successfully added!", "Create 201 file", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     cmd.Parameters.Clear()
+
+                    MessageBox.Show("Employee 201 file of " & givennameText.Text & " " & lastnameText.Text & " successfully added!", "Create 201 file", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+
+                    If childnameTextone.Text IsNot "" Then
+                        Using cmd2 As New SqlCommand()
+                            With cmd2
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql2
+                                .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                .Parameters.AddWithValue("cname", childnameTextone.Text)
+                                .Parameters.AddWithValue("cbday", childbdayDateone.Text)
+                            End With
+                            Try
+                                cmd2.ExecuteNonQuery()
+                                cmd2.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End If
+
+                    If childnameTexttwo.Text IsNot "" Then
+                        Using cmd3 As New SqlCommand()
+                            With cmd3
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql2
+                                .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                .Parameters.AddWithValue("cname", childnameTexttwo.Text)
+                                .Parameters.AddWithValue("cbday", childbdayDatetwo.Text)
+                            End With
+                            Try
+                                cmd3.ExecuteNonQuery()
+                                cmd3.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End If
+
+                    If childnameTextthree.Text IsNot "" Then
+                        Using cmd4 As New SqlCommand()
+                            With cmd4
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql2
+                                .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                .Parameters.AddWithValue("cname", childnameTextthree.Text)
+                                .Parameters.AddWithValue("cbday", childbdayDatethree.Text)
+                            End With
+                            Try
+                                cmd4.ExecuteNonQuery()
+                                cmd4.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End If
+
+                    If childnameTextfour.Text IsNot "" Then
+                        Using cmd5 As New SqlCommand()
+                            With cmd5
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql2
+                                .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                .Parameters.AddWithValue("cname", childnameTextfour.Text)
+                                .Parameters.AddWithValue("cbday", childbdayDatefour.Text)
+                            End With
+                            Try
+                                cmd5.ExecuteNonQuery()
+                                cmd5.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End If
+
+                    If beneficiarynameTextone.Text IsNot "" Then
+                        Using cmd6 As New SqlCommand()
+                            With cmd6
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql3
+                                .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                .Parameters.AddWithValue("bname", beneficiarynameTextone.Text)
+                                .Parameters.AddWithValue("bbday", beneficiarybdayDateone.Text)
+                                .Parameters.AddWithValue("brel", beneficiaryrelationTextone.Text)
+                            End With
+                            Try
+                                cmd6.ExecuteNonQuery()
+                                cmd6.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End If
+
+                    If beneficiarynameTexttwo.Text IsNot "" Then
+                        Using cmd7 As New SqlCommand()
+                            With cmd7
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql3
+                                .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                .Parameters.AddWithValue("bname", beneficiarynameTexttwo.Text)
+                                .Parameters.AddWithValue("bbday", beneficiarybdayDatetwo.Text)
+                                .Parameters.AddWithValue("brel", beneficiaryrelationTexttwo.Text)
+                            End With
+                            Try
+                                cmd7.ExecuteNonQuery()
+                                cmd7.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End If
+
+                    If beneficiarynameTextthree.Text IsNot "" Then
+                        Using cmd6 As New SqlCommand()
+                            With cmd6
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql3
+                                .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                .Parameters.AddWithValue("bname", beneficiarynameTextthree.Text)
+                                .Parameters.AddWithValue("bbday", beneficiarybdayDatethree.Text)
+                                .Parameters.AddWithValue("brel", beneficiaryrelationTextthree.Text)
+                            End With
+                            Try
+                                cmd6.ExecuteNonQuery()
+                                cmd6.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End If
+
+                    If beneficiarynameTextfour.Text IsNot "" Then
+                        Using cmd6 As New SqlCommand()
+                            With cmd6
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql3
+                                .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                .Parameters.AddWithValue("bname", beneficiarynameTextfour.Text)
+                                .Parameters.AddWithValue("bbday", beneficiarybdayDatefour.Text)
+                                .Parameters.AddWithValue("brel", beneficiaryrelationTextfour.Text)
+                            End With
+                            Try
+                                cmd6.ExecuteNonQuery()
+                                cmd6.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End If
 
                     Dim a As Control
 
@@ -133,6 +292,7 @@ Public Class CreateEmployee201
                 End Try
             End Using
         End Using
+
 
 
 
