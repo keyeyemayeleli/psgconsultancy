@@ -6,100 +6,82 @@ Wireframes
 </name>
 </assembly>
 <members>
-<member name="T:Wireframes.My.Resources.Resources">
-<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member>
 <member name="P:Wireframes.My.Resources.Resources.ResourceManager">
-<summary>
+	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.Culture">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.Culture">
+	<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.line_full">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.line_full">
+	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.line_horizontal">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.line_horizontal">
+	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.line_left">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.line_left">
+	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.line_up">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.line_up">
+	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.Logo">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.Logo">
+	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.Logo_2">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.Logo_2">
+	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.Logo_3">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.Logo_3">
+	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.Oswald_Bold">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.Oswald_Bold">
+	<summary>
   Looks up a localized resource of type System.Byte[].
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.Oswald_Light">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.Oswald_Light">
+	<summary>
   Looks up a localized resource of type System.Byte[].
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.Oswald_Regular">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.Oswald_Regular">
+	<summary>
   Looks up a localized resource of type System.Byte[].
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.weblysleekuil">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.weblysleekuil">
+	<summary>
   Looks up a localized resource of type System.Byte[].
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.weblysleekuili">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.weblysleekuili">
+	<summary>
   Looks up a localized resource of type System.Byte[].
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.weblysleekuisb">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.weblysleekuisb">
+	<summary>
   Looks up a localized resource of type System.Byte[].
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.weblysleekuisbi">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.weblysleekuisbi">
+	<summary>
   Looks up a localized resource of type System.Byte[].
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.weblysleekuisl">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.weblysleekuisl">
+	<summary>
   Looks up a localized resource of type System.Byte[].
 </summary>
-</member>
-<member name="P:Wireframes.My.Resources.Resources.weblysleekuisli">
-<summary>
+</member><member name="P:Wireframes.My.Resources.Resources.weblysleekuisli">
+	<summary>
   Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="T:Wireframes.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
 </member>
 </members>
