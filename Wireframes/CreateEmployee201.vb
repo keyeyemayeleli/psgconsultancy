@@ -58,28 +58,8 @@ Public Class CreateEmployee201
 
 
     Private Sub statusCombobox_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles statusCombobox.SelectedIndexChanged
-        If statusCombobox.Text = "Resigned" Then
-            statusreasonText.Show()
-            statusdateLabel.Show()
-            statusdateDate.Show()
-            statusreasonText.Watermark = "Reason for Resignation"
-            statusdateLabel.Text = "Resignation Date:"
-        ElseIf statusCombobox.Text = "Terminated" Then
-            statusreasonText.Show()
-            statusdateLabel.Show()
-            statusdateDate.Show()
-            statusreasonText.Watermark = "Reason for Termination"
-            statusdateLabel.Text = "Termination Date:"
-        ElseIf statusCombobox.Text = "End of Contract" Then
-            statusreasonText.Hide()
-            statusdateLabel.Show()
-            statusdateDate.Show()
-            statusdateLabel.Text = "End of Contract Date:"
-        Else
-            statusreasonText.Hide()
-            statusdateLabel.Hide()
-            statusdateDate.Hide()
-        End If
+        statusreasonText.Watermark = "Reason for " & statusCombobox.GetItemText(statusCombobox.SelectedItem) & "  Status"
+        statusdateLabel.Text = "" & statusCombobox.GetItemText(statusCombobox.SelectedItem) & " Date:"
 
     End Sub
 
