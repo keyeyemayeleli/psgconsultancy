@@ -73,21 +73,43 @@ Public Class ViewEmployees
     Private Sub adddocumentsButton_Click(sender As Object, e As EventArgs) Handles adddocumentsButton.Click
 
         Dim open As New OpenFileDialog()
+        Dim sql As String = "INSERT INTO documents (employee_id, document_name, document_address) VALUES (@empid, @dname, @dadd)"
 
         open.InitialDirectory = "c:\"
         open.Filter = "All files (*.*)|*.*"
         open.FilterIndex = 1
-        open.Multiselect = False
+        open.Multiselect = True
         open.RestoreDirectory = True
 
         If open.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
             Try
-                Dim file_name As String = open.FileName
-                MsgBox(file_name)
+                For Each file In open.FileNames
+
+                    Using conn As New SqlConnection(connectionString)
+                        Using cmd2 As New SqlCommand()
+                            With cmd2
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql
+                                .Parameters.AddWithValue("empid", Employee)
+                                .Parameters.AddWithValue("dadd", file)
+                                .Parameters.AddWithValue("dname", Path.GetFileNameWithoutExtension(file))
+                            End With
+                            Try
+                                conn.Open()
+                                cmd2.ExecuteNonQuery()
+                                cmd2.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End Using
+
+                Next
+
             Catch Ex As Exception
                 MessageBox.Show("Cannot read file from disk. Original error: " & Ex.Message)
-            Finally
-                ' Check this again, since we need to make sure we didn't throw an exception on open.
+
 
             End Try
         End If

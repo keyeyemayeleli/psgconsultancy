@@ -405,4 +405,8 @@ Public Class EditEmployee
 
         End Try
     End Sub
+
+    Private Sub adddocumentsButton_Click(sender As Object, e As EventArgs) Handles adddocumentsButton.Click
+
+    End Sub
 End Class

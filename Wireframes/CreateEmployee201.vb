@@ -5,6 +5,9 @@ Public Class CreateEmployee201
 
     Private Sub CreateEmployee201_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
+
+
+
         Me.birthdayDate.Format = DateTimePickerFormat.Custom
         birthdayDate.CustomFormat = "MMMM d, yyyy"
 
@@ -72,6 +75,7 @@ Public Class CreateEmployee201
         Dim sql As String = "SET IDENTITY_INSERT employee201files ON; INSERT INTO employee201files (employee_id, last_name, first_name, middle_name, status, tin_number, sss_number, philhealth_number, pagibig_number, RTN, HDMF_MID_number, date_hired, company_group, department, position, rank, birthday, birth_place, civil_status, present_address, permanent_address, email, contact_number, telephone_number, fathers_name, mothers_name, spouse_name, spouse_birthday, nextofkin_name, nextofkin_birthday, status_reason, statusreason_date) VALUES (@employeeid, @lastname, @firstname, @middlename, @status, @tin, @sss, @philhealth, @pagibig, @rtn, @hdmf, @hiredate, @grp, @dept, @pos, @rank, @bday, @bplace, @civil, @presentadd, @permanentadd, @emailadd, @contactnum, @telnum, @father, @mother, @spouse, @spousebday, @nokname, @nokbday, @statreason, @statreasondate); SET IDENTITY_INSERT employee201files OFF"
         Dim sql2 As String = "INSERT INTO children (employee_id, child_name, child_birthday) VALUES (@empid, @cname, @cbday)"
         Dim sql3 As String = "INSERT INTO beneficiaries (employee_id, ben_name, ben_birthday, ben_relation) VALUES (@empid, @bname, @bbday, @brel)"
+        Dim sql4 As String = "INSERT INTO employee_ym_evals (employee_id, score, date, status, remarks) VALUES (@empid, @score, @date, @status, @remark)"
 
 
         Using conn As New SqlConnection(connectionString)
@@ -119,7 +123,7 @@ Public Class CreateEmployee201
                     cmd.ExecuteNonQuery()
                     cmd.Parameters.Clear()
 
-                    MessageBox.Show("Employee 201 file of " & givennameText.Text & " " & lastnameText.Text & " successfully added!", "Create 201 file", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
 
 
                     If childnameTextone.Text IsNot "" Then
@@ -277,6 +281,56 @@ Public Class CreateEmployee201
                             End Try
                         End Using
                     End If
+
+                    If monthlyDatagrid.Rows.Count > 1 Then
+                        For X As Integer = 0 To monthlyDatagrid.Rows.Count - 2
+                            Using cmd7 As New SqlCommand()
+                                With cmd7
+                                    .Connection = conn
+                                    .CommandType = CommandType.Text
+                                    .CommandText = sql4
+                                    .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                    .Parameters.AddWithValue("status", "monthly")
+                                    .Parameters.AddWithValue("score", monthlyDatagrid.Rows(X).Cells(1).Value)
+                                    .Parameters.AddWithValue("remark", monthlyDatagrid.Rows(X).Cells(2).Value)
+                                    .Parameters.AddWithValue("date", monthlyDatagrid.Rows(X).Cells(0).Value)
+                                End With
+
+                                Try
+                                    cmd7.ExecuteNonQuery()
+                                    cmd7.Parameters.Clear()
+                                Catch ex As Exception
+                                    MessageBox.Show(ex.Message.ToString(), "Error Message")
+                                End Try
+                            End Using
+                        Next
+                    End If
+
+                    If yearlyDatadrid.Rows.Count > 1 Then
+                        For X As Integer = 0 To yearlyDatadrid.Rows.Count - 2
+                            Using cmd7 As New SqlCommand()
+                                With cmd7
+                                    .Connection = conn
+                                    .CommandType = CommandType.Text
+                                    .CommandText = sql4
+                                    .Parameters.AddWithValue("empid", employeenumberText.Text)
+                                    .Parameters.AddWithValue("status", "yearly")
+                                    .Parameters.AddWithValue("score", yearlyDatadrid.Rows(X).Cells(1).Value)
+                                    .Parameters.AddWithValue("remark", yearlyDatadrid.Rows(X).Cells(2).Value)
+                                    .Parameters.AddWithValue("date", yearlyDatadrid.Rows(X).Cells(0).Value)
+                                End With
+
+                                Try
+                                    cmd7.ExecuteNonQuery()
+                                    cmd7.Parameters.Clear()
+                                Catch ex As Exception
+                                    MessageBox.Show(ex.Message.ToString(), "Error Message")
+                                End Try
+                            End Using
+                        Next
+                    End If
+
+                    MessageBox.Show("Employee 201 file of " & givennameText.Text & " " & lastnameText.Text & " successfully added!", "Create 201 file", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                     Dim a As Control
 
