@@ -13,7 +13,7 @@ Public Class Reports
     Private Sub Reports_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
         Try
-            Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
             Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name, tin_number, sss_number, philhealth_number, pagibig_number, RTN, HDMF_MID_number, date_hired, company_group, department, position, rank, birthday, birth_place, civil_status, present_address, email, contact_number, telephone_number, fathers_name, mothers_name, spouse_name, spouse_birthday FROM employee201files"
             'Dim sql As String = "SELECT e.employee_id, e.last_name, e.first_name, e.middle_name, e.tin_number, e.sss_number, e.philhealth_number, e.pagibig_number, e.RTN, e.HDMF_MID_number, e.date_hired, e.group, e.department, e.position, e.rank, e.birthday, e.birth_place, e.civil_status, e.present_address, e.email, e.contact_number, e.telephone_number, e.fathers_name, e.mothers_name, e.spouse_name,e.spouse_birthday, c.child_name, c.child_birthday FROM employee201files e, children c WHERE e.employee_id = c.employee_id"
             Dim connection As New SqlConnection(connectionString)
@@ -62,7 +62,7 @@ Public Class Reports
         End Try
 
         Try
-            Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
             Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name FROM employee201files"
             Dim connection As New SqlConnection(connectionString)
             Dim dataadapter As New SqlDataAdapter(sql, connection)
@@ -95,7 +95,7 @@ Public Class Reports
         Else
             Dim mreader As SqlDataReader
 
-            Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
             Dim mcon As New SqlConnection(connectionString)
 
             Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name FROM employee201files WHERE last_name LIKE @search OR first_name LIKE @search OR middle_name LIKE @search"
@@ -133,7 +133,7 @@ Public Class Reports
 
             Dim mreader As SqlDataReader
 
-            Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
             Dim mcon As New SqlConnection(connectionString)
 
             Dim sql As String = "SELECT last_name, first_name, middle_name, sss_number, philhealth_number, pagibig_number, tin_number, date_hired, birthday, employee_id FROM employee201files WHERE employee_id = @id"
@@ -184,7 +184,7 @@ Public Class Reports
                     Try
                         Dim mreader As SqlDataReader
 
-                        Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
                         Dim mcon As New SqlConnection(connectionString)
 
                         Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name, position FROM employee201files WHERE position = @position"
@@ -224,7 +224,7 @@ Public Class Reports
                     Try
                         Dim mreader As SqlDataReader
 
-                        Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
                         Dim mcon As New SqlConnection(connectionString)
 
                         Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name, department FROM employee201files WHERE department = @department"
@@ -263,7 +263,7 @@ Public Class Reports
                     Try
                         Dim mreader As SqlDataReader
 
-                        Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
                         Dim mcon As New SqlConnection(connectionString)
 
                         Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name, company_group FROM employee201files WHERE company_group = @group"
@@ -302,7 +302,7 @@ Public Class Reports
                     Try
                         Dim mreader As SqlDataReader
 
-                        Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
                         Dim mcon As New SqlConnection(connectionString)
 
                         Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name, rank FROM employee201files WHERE rank = @rank"
@@ -341,7 +341,7 @@ Public Class Reports
                     Try
                         Dim mreader As SqlDataReader
 
-                        Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
                         Dim mcon As New SqlConnection(connectionString)
 
                         Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name, status FROM employee201files WHERE status = @status"
@@ -378,10 +378,10 @@ Public Class Reports
                     Try
                         Dim mreader As SqlDataReader
 
-                        Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
-                        Dim mcon As New SqlConnection(connectionString)
 
-                        Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name, date_hired FROM employee201files WHERE date_hired BETWEEN @fromdate and @todate"
+                    Dim mcon As New SqlConnection(connectionString)
+
+                    Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name, date_hired FROM employee201files WHERE date_hired BETWEEN @fromdate and @todate"
 
                         Dim cmd As New SqlCommand(sql, mcon)
 
@@ -530,7 +530,7 @@ Public Class Reports
             Try
                 Dim mreader As SqlDataReader
 
-                Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
                 Dim mcon As New SqlConnection(connectionString)
 
                 Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name, date_hired, position, rank FROM employee201files WHERE date_hired BETWEEN @fromdate and @todate AND position = @position AND rank = @rank"

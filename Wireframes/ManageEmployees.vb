@@ -7,7 +7,7 @@ Public Class ManageEmployees
         DateTimePicker1.CustomFormat = "MMMM d, yyyy"
 
         Try
-            Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
             Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name FROM employee201files"
             Dim connection As New SqlConnection(connectionString)
             Dim dataadapter As New SqlDataAdapter(sql, connection)

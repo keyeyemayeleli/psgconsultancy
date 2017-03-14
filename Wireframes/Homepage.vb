@@ -8,7 +8,7 @@ Public Class Homepage
     Private Sub Homepage_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         currentuser_label.Text = User
 
-        Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
+
         Dim sql As String = "SELECT logs.time_stamp, logs.activity_name, accounts.username FROM logs JOIN accounts ON logs.account_id = accounts.account_id"
         Dim connection As New SqlConnection(connectionString)
         Dim dataadapter As New SqlDataAdapter(sql, connection)

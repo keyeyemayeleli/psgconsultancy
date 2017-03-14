@@ -6,7 +6,7 @@ Public Class ViewEmployees
 
         Try
             Dim dt As New DataTable()
-            Dim connectionString As String = "Data Source=DESKTOP-2J5TEUE\SQLEXPRESS;Database=201File;Integrated Security=True"
+
             Dim connection As New SqlConnection(connectionString)
             connection.Open()
             Dim sqlCmd As New SqlCommand("SELECT * FROM employee201files WHERE employee_ID = @eid", connection)

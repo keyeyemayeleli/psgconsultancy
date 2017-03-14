@@ -46,7 +46,7 @@ Public Class EditEmployee
 
         Try
             Dim dt As New DataTable()
-            Dim connectionString As String = "Data Source=DESKTOP-2J5TEUE\SQLEXPRESS;Database=201File;Integrated Security=True"
+
             Dim connection As New SqlConnection(connectionString)
             connection.Open()
             Dim sqlCmd As New SqlCommand("SELECT * FROM employee201files WHERE employee_ID = @eid", connection)
@@ -156,7 +156,7 @@ Public Class EditEmployee
 
     Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click
         Try
-            Dim connectionString As String = "Data Source=DESKTOP-2J5TEUE\SQLEXPRESS;Database=201File;Integrated Security=True"
+
             Dim sql As String = "UPDATE employee201files SET last_name= @lastname, first_name= @firstname, middle_name= @middlename, status= @status, tin_number=@tin, sss_number= @sss, philhealth_number = @philhealth, pagibig_number= @pagibig, RTN= @rtn, HDMF_MID_number= @grp, date_hired= @hiredate, company_group= @grp, department= @dept, position= @pos, rank= @rank, birthday= @bday, birth_place= @bplace, civil_status= @civil, present_address= @presentadd, permanent_address= @permanentadd, email= @emailadd, contact_number= @contactnum, telephone_number= @telnum, fathers_name= @father, mothers_name= @mother, spouse_name= @spouse, spouse_birthday= @spousebday, nextofkin_name= @nokname, nextofkin_birthday= @nokbday, status_reason= @statreason, statusreason_date= @statreasondate WHERE employee_id = @eid "
             Dim sql2 As String = "INSERT INTO children (employee_id, child_name, child_birthday) VALUES (@empid, @cname, @cbday)"
             Dim sql3 As String = "INSERT INTO beneficiaries (employee_id, ben_name, ben_birthday, ben_relation) VALUES (@empid, @bname, @bbday, @brel)"

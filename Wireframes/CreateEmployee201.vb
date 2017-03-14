@@ -67,15 +67,12 @@ Public Class CreateEmployee201
 
 
 
-<<<<<<< HEAD
-        Dim connectionString As String = "Data Source=DESKTOP-2J5TEUE\SQLEXPRESS;Database=201File;Integrated Security=True"
+
+
         Dim sql As String = "SET IDENTITY_INSERT employee201files ON; INSERT INTO employee201files (employee_id, last_name, first_name, middle_name, status, tin_number, sss_number, philhealth_number, pagibig_number, RTN, HDMF_MID_number, date_hired, company_group, department, position, rank, birthday, birth_place, civil_status, present_address, permanent_address, email, contact_number, telephone_number, fathers_name, mothers_name, spouse_name, spouse_birthday, nextofkin_name, nextofkin_birthday, status_reason, statusreason_date) VALUES (@employeeid, @lastname, @firstname, @middlename, @status, @tin, @sss, @philhealth, @pagibig, @rtn, @hdmf, @hiredate, @grp, @dept, @pos, @rank, @bday, @bplace, @civil, @presentadd, @permanentadd, @emailadd, @contactnum, @telnum, @father, @mother, @spouse, @spousebday, @nokname, @nokbday, @statreason, @statreasondate); SET IDENTITY_INSERT employee201files OFF"
         Dim sql2 As String = "INSERT INTO children (employee_id, child_name, child_birthday) VALUES (@empid, @cname, @cbday)"
         Dim sql3 As String = "INSERT INTO beneficiaries (employee_id, ben_name, ben_birthday, ben_relation) VALUES (@empid, @bname, @bbday, @brel)"
-=======
-       
 
->>>>>>> 6f1d5a1553f2bdeb21b271e4b4e2f3d252f5ae54
 
         Using conn As New SqlConnection(connectionString)
             Using cmd As New SqlCommand()
