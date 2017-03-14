@@ -25,14 +25,16 @@ Public Class Login
 
             Dim strResult As String
             con.ConnectionString = "Data Source=DESKTOP-2J5TEUE\SQLEXPRESS;Database=201File;Integrated Security=True"
+
             con.Open()
 
             cmd.Connection = con
 
+
+
             cmd.CommandText = "SELECT * FROM accounts WHERE username = @user  AND password = @pass "
             cmd.Parameters.Add(New SqlParameter("user", userText.Text))
             cmd.Parameters.Add(New SqlParameter("pass", passwordText.Text))
-
 
             Try
                 strResult = cmd.ExecuteScalar

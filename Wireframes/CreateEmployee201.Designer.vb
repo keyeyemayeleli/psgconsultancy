@@ -444,7 +444,7 @@ Partial Class CreateEmployee201
         Me.beneficiarybdayDatefour.Location = New System.Drawing.Point(599, 320)
         Me.beneficiarybdayDatefour.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.beneficiarybdayDatefour.Name = "beneficiarybdayDatefour"
-        Me.beneficiarybdayDatefour.Size = New System.Drawing.Size(200, 26)
+        Me.beneficiarybdayDatefour.Size = New System.Drawing.Size(200, 29)
         Me.beneficiarybdayDatefour.TabIndex = 76
         '
         'Label11
@@ -463,7 +463,7 @@ Partial Class CreateEmployee201
         Me.beneficiarybdayDatethree.Location = New System.Drawing.Point(599, 215)
         Me.beneficiarybdayDatethree.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.beneficiarybdayDatethree.Name = "beneficiarybdayDatethree"
-        Me.beneficiarybdayDatethree.Size = New System.Drawing.Size(200, 26)
+        Me.beneficiarybdayDatethree.Size = New System.Drawing.Size(200, 29)
         Me.beneficiarybdayDatethree.TabIndex = 74
         '
         'Label7
@@ -482,7 +482,7 @@ Partial Class CreateEmployee201
         Me.beneficiarybdayDatetwo.Location = New System.Drawing.Point(599, 115)
         Me.beneficiarybdayDatetwo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.beneficiarybdayDatetwo.Name = "beneficiarybdayDatetwo"
-        Me.beneficiarybdayDatetwo.Size = New System.Drawing.Size(200, 26)
+        Me.beneficiarybdayDatetwo.Size = New System.Drawing.Size(200, 29)
         Me.beneficiarybdayDatetwo.TabIndex = 72
         '
         'Label6
@@ -501,7 +501,7 @@ Partial Class CreateEmployee201
         Me.beneficiarybdayDateone.Location = New System.Drawing.Point(603, 26)
         Me.beneficiarybdayDateone.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.beneficiarybdayDateone.Name = "beneficiarybdayDateone"
-        Me.beneficiarybdayDateone.Size = New System.Drawing.Size(200, 26)
+        Me.beneficiarybdayDateone.Size = New System.Drawing.Size(200, 29)
         Me.beneficiarybdayDateone.TabIndex = 70
         '
         'Label5
@@ -520,7 +520,7 @@ Partial Class CreateEmployee201
         Me.nextofkinbdayDate.Location = New System.Drawing.Point(599, 429)
         Me.nextofkinbdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.nextofkinbdayDate.Name = "nextofkinbdayDate"
-        Me.nextofkinbdayDate.Size = New System.Drawing.Size(200, 26)
+        Me.nextofkinbdayDate.Size = New System.Drawing.Size(200, 29)
         Me.nextofkinbdayDate.TabIndex = 64
         '
         'PictureBox32
@@ -562,7 +562,7 @@ Partial Class CreateEmployee201
         Me.statusdateDate.Location = New System.Drawing.Point(251, 366)
         Me.statusdateDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.statusdateDate.Name = "statusdateDate"
-        Me.statusdateDate.Size = New System.Drawing.Size(201, 26)
+        Me.statusdateDate.Size = New System.Drawing.Size(201, 29)
         Me.statusdateDate.TabIndex = 84
         '
         'PictureBox25
@@ -672,7 +672,7 @@ Partial Class CreateEmployee201
         Me.datehiredDate.Location = New System.Drawing.Point(158, 19)
         Me.datehiredDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.datehiredDate.Name = "datehiredDate"
-        Me.datehiredDate.Size = New System.Drawing.Size(201, 26)
+        Me.datehiredDate.Size = New System.Drawing.Size(201, 29)
         Me.datehiredDate.TabIndex = 61
         '
         'PictureBox20
@@ -1028,7 +1028,7 @@ Partial Class CreateEmployee201
         Me.birthdayDate.Location = New System.Drawing.Point(136, 17)
         Me.birthdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.birthdayDate.Name = "birthdayDate"
-        Me.birthdayDate.Size = New System.Drawing.Size(201, 26)
+        Me.birthdayDate.Size = New System.Drawing.Size(201, 29)
         Me.birthdayDate.TabIndex = 48
         '
         'PictureBox16
@@ -1076,9 +1076,9 @@ Partial Class CreateEmployee201
         Me.personalinfoTab.Controls.Add(Me.PictureBox13)
         Me.personalinfoTab.Controls.Add(Me.PictureBox14)
         Me.personalinfoTab.Controls.Add(Me.PictureBox15)
-        Me.personalinfoTab.Location = New System.Drawing.Point(4, 29)
+        Me.personalinfoTab.Location = New System.Drawing.Point(4, 30)
         Me.personalinfoTab.Name = "personalinfoTab"
-        Me.personalinfoTab.Size = New System.Drawing.Size(839, 483)
+        Me.personalinfoTab.Size = New System.Drawing.Size(839, 482)
         Me.personalinfoTab.TabIndex = 3
         Me.personalinfoTab.Text = "Personal Information"
         Me.personalinfoTab.UseVisualStyleBackColor = True
@@ -1294,7 +1294,7 @@ Partial Class CreateEmployee201
         Me.childbdayDatefour.Location = New System.Drawing.Point(604, 422)
         Me.childbdayDatefour.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.childbdayDatefour.Name = "childbdayDatefour"
-        Me.childbdayDatefour.Size = New System.Drawing.Size(201, 26)
+        Me.childbdayDatefour.Size = New System.Drawing.Size(201, 29)
         Me.childbdayDatefour.TabIndex = 68
         '
         'Label9
@@ -1313,7 +1313,7 @@ Partial Class CreateEmployee201
         Me.childbdayDatethree.Location = New System.Drawing.Point(604, 359)
         Me.childbdayDatethree.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.childbdayDatethree.Name = "childbdayDatethree"
-        Me.childbdayDatethree.Size = New System.Drawing.Size(201, 26)
+        Me.childbdayDatethree.Size = New System.Drawing.Size(201, 29)
         Me.childbdayDatethree.TabIndex = 65
         '
         'Label8
@@ -1332,7 +1332,7 @@ Partial Class CreateEmployee201
         Me.childbdayDatetwo.Location = New System.Drawing.Point(604, 301)
         Me.childbdayDatetwo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.childbdayDatetwo.Name = "childbdayDatetwo"
-        Me.childbdayDatetwo.Size = New System.Drawing.Size(201, 26)
+        Me.childbdayDatetwo.Size = New System.Drawing.Size(201, 29)
         Me.childbdayDatetwo.TabIndex = 62
         '
         'Label3
@@ -1351,7 +1351,7 @@ Partial Class CreateEmployee201
         Me.childbdayDateone.Location = New System.Drawing.Point(604, 237)
         Me.childbdayDateone.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.childbdayDateone.Name = "childbdayDateone"
-        Me.childbdayDateone.Size = New System.Drawing.Size(201, 26)
+        Me.childbdayDateone.Size = New System.Drawing.Size(201, 29)
         Me.childbdayDateone.TabIndex = 59
         '
         'Label2
@@ -1370,7 +1370,7 @@ Partial Class CreateEmployee201
         Me.spousebdayDate.Location = New System.Drawing.Point(604, 160)
         Me.spousebdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.spousebdayDate.Name = "spousebdayDate"
-        Me.spousebdayDate.Size = New System.Drawing.Size(201, 26)
+        Me.spousebdayDate.Size = New System.Drawing.Size(201, 29)
         Me.spousebdayDate.TabIndex = 56
         '
         'PictureBox11
@@ -1596,7 +1596,7 @@ Partial Class CreateEmployee201
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.changepicButton)
         Me.Controls.Add(Me.picbox)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

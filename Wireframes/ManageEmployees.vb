@@ -7,7 +7,7 @@ Public Class ManageEmployees
         DateTimePicker1.CustomFormat = "MMMM d, yyyy"
 
         Try
-            Dim connectionString As String = "Data Source=DESKTOP-2J5TEUE\SQLEXPRESS;Database=201File;Integrated Security=True"
+            Dim connectionString As String = "Data Source=HP\SQLEXPRESS;Database=201File;Integrated Security=True"
             Dim sql As String = "SELECT employee_id, last_name, first_name, middle_name FROM employee201files"
             Dim connection As New SqlConnection(connectionString)
             Dim dataadapter As New SqlDataAdapter(sql, connection)
@@ -60,5 +60,11 @@ Public Class ManageEmployees
         Else
             MessageBox.Show("You need to select one record.", "View Employee Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
+    End Sub
+
+    Private Sub searchButton_Click(sender As System.Object, e As System.EventArgs) Handles searchButton.Click
+
+
+
     End Sub
 End Class

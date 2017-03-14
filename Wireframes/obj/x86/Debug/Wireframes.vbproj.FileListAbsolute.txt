@@ -62,3 +62,5 @@ C:\Users\G\Desktop\Thesis Code\Wireframes\obj\x86\Debug\Wireframes.Login.resourc
 C:\Users\G\Desktop\Thesis Code\Wireframes\obj\x86\Debug\Wireframes.Resources.resources
 C:\Users\G\Desktop\Thesis Code\Wireframes\obj\x86\Debug\Wireframes.vbproj.GenerateResource.Cache
 C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.Reports.resources
+C:\Users\G\Desktop\Thesis Code\Wireframes\obj\x86\Debug\Wireframes.vbproj.ResolveComReference.cache
+C:\Users\Kamille Ramos\Desktop\Wireframes\Wireframes\obj\x86\Debug\Wireframes.vbproj.ResolveComReference.cache

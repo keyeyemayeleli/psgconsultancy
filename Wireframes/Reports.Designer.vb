@@ -27,143 +27,131 @@ Partial Class Reports
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Reports))
         Me.customizedTab = New System.Windows.Forms.TabPage()
+        Me.statusCombobox = New System.Windows.Forms.ComboBox()
         Me.previewButton = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.birthdayDate = New System.Windows.Forms.DateTimePicker()
+        Me.toDate = New System.Windows.Forms.DateTimePicker()
+        Me.fromLabel = New System.Windows.Forms.Label()
+        Me.fromDate = New System.Windows.Forms.DateTimePicker()
         Me.evalscoreText = New System.Windows.Forms.TextBox()
-        Me.evalscoreRadio = New System.Windows.Forms.RadioButton()
-        Me.datehiredRadio = New System.Windows.Forms.RadioButton()
-        Me.civilstatusCombobox = New System.Windows.Forms.ComboBox()
-        Me.civilstatusRadio = New System.Windows.Forms.RadioButton()
         Me.groupText = New System.Windows.Forms.TextBox()
-        Me.groupRadio = New System.Windows.Forms.RadioButton()
         Me.rankText = New System.Windows.Forms.TextBox()
-        Me.rankRadio = New System.Windows.Forms.RadioButton()
         Me.departmentText = New System.Windows.Forms.TextBox()
         Me.positionText = New System.Windows.Forms.TextBox()
-        Me.departmentRadio = New System.Windows.Forms.RadioButton()
         Me.presentaddressLabel = New System.Windows.Forms.Label()
-        Me.positionRadio = New System.Windows.Forms.RadioButton()
         Me.cancelButton2 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.createcustomizedButton = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.customizedDGV = New System.Windows.Forms.DataGridView()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.EmployeeNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Birthday = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GivenName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userText = New System.Windows.Forms.TextBox()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PHICNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.loginButton = New System.Windows.Forms.Button()
-        Me.Philhealth = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SSSNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PagibigNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TINNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RTN = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Department = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.HDMFIDNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Group = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MiddleName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DateHired = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.accountingsearchDGV = New System.Windows.Forms.DataGridView()
+        Me.searchButton = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.FirstName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.masterlistTab = New System.Windows.Forms.TabPage()
         Me.cancelButton4 = New System.Windows.Forms.Button()
         Me.createButton = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.activityDGV = New System.Windows.Forms.DataGridView()
-        Me.IDnumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LastName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Position = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Rank = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Bday = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Birthplace = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CivilStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PresentAddress = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmailAddress = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContactNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TelephoneNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FathersName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MothersMaidenName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SpouseName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SpousesBirthday = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ChildrensName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ChildrensBirthday = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.masterlistDGV = New System.Windows.Forms.DataGridView()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.accountingTab = New System.Windows.Forms.TabPage()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.chooseButton = New System.Windows.Forms.Button()
         Me.cancelButton1 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.createaccountingButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.accountingDGV = New System.Windows.Forms.DataGridView()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.dprTab = New System.Windows.Forms.TabPage()
+        Me.dprpreviewButton = New System.Windows.Forms.Button()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.dprtoDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.dprfromDate = New System.Windows.Forms.DateTimePicker()
+        Me.dprrankText = New System.Windows.Forms.TextBox()
+        Me.dprpositionText = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.dprcreateButton = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.dprDGV = New System.Windows.Forms.DataGridView()
+        Me.dateCheck = New System.Windows.Forms.RadioButton()
+        Me.positionCheck = New System.Windows.Forms.RadioButton()
+        Me.departmentCheck = New System.Windows.Forms.RadioButton()
+        Me.groupCheck = New System.Windows.Forms.RadioButton()
+        Me.scoreCheck = New System.Windows.Forms.RadioButton()
+        Me.rankCheck = New System.Windows.Forms.RadioButton()
+        Me.statusCheck = New System.Windows.Forms.RadioButton()
+        Me.searchText = New Wireframes.WatermarkTextBox()
         Me.customizedTab.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.customizedDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.accountingsearchDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.masterlistTab.SuspendLayout()
-        CType(Me.activityDGV, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.masterlistDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.accountingTab.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.accountingDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dprTab.SuspendLayout()
+        CType(Me.dprDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'customizedTab
         '
+        Me.customizedTab.Controls.Add(Me.statusCheck)
+        Me.customizedTab.Controls.Add(Me.rankCheck)
+        Me.customizedTab.Controls.Add(Me.scoreCheck)
+        Me.customizedTab.Controls.Add(Me.groupCheck)
+        Me.customizedTab.Controls.Add(Me.departmentCheck)
+        Me.customizedTab.Controls.Add(Me.positionCheck)
+        Me.customizedTab.Controls.Add(Me.dateCheck)
+        Me.customizedTab.Controls.Add(Me.statusCombobox)
         Me.customizedTab.Controls.Add(Me.previewButton)
         Me.customizedTab.Controls.Add(Me.Label2)
-        Me.customizedTab.Controls.Add(Me.DateTimePicker1)
-        Me.customizedTab.Controls.Add(Me.Label4)
-        Me.customizedTab.Controls.Add(Me.birthdayDate)
+        Me.customizedTab.Controls.Add(Me.toDate)
+        Me.customizedTab.Controls.Add(Me.fromLabel)
+        Me.customizedTab.Controls.Add(Me.fromDate)
         Me.customizedTab.Controls.Add(Me.evalscoreText)
-        Me.customizedTab.Controls.Add(Me.evalscoreRadio)
-        Me.customizedTab.Controls.Add(Me.datehiredRadio)
-        Me.customizedTab.Controls.Add(Me.civilstatusCombobox)
-        Me.customizedTab.Controls.Add(Me.civilstatusRadio)
         Me.customizedTab.Controls.Add(Me.groupText)
-        Me.customizedTab.Controls.Add(Me.groupRadio)
         Me.customizedTab.Controls.Add(Me.rankText)
-        Me.customizedTab.Controls.Add(Me.rankRadio)
         Me.customizedTab.Controls.Add(Me.departmentText)
         Me.customizedTab.Controls.Add(Me.positionText)
-        Me.customizedTab.Controls.Add(Me.departmentRadio)
         Me.customizedTab.Controls.Add(Me.presentaddressLabel)
-        Me.customizedTab.Controls.Add(Me.positionRadio)
         Me.customizedTab.Controls.Add(Me.cancelButton2)
-        Me.customizedTab.Controls.Add(Me.Button2)
+        Me.customizedTab.Controls.Add(Me.createcustomizedButton)
         Me.customizedTab.Controls.Add(Me.PictureBox4)
         Me.customizedTab.Controls.Add(Me.Label5)
-        Me.customizedTab.Controls.Add(Me.DataGridView3)
-        Me.customizedTab.Location = New System.Drawing.Point(4, 22)
+        Me.customizedTab.Controls.Add(Me.customizedDGV)
+        Me.customizedTab.Location = New System.Drawing.Point(4, 30)
         Me.customizedTab.Name = "customizedTab"
-        Me.customizedTab.Size = New System.Drawing.Size(1138, 600)
+        Me.customizedTab.Size = New System.Drawing.Size(1138, 592)
         Me.customizedTab.TabIndex = 2
         Me.customizedTab.Text = "Customized Report"
         Me.customizedTab.UseVisualStyleBackColor = True
+        '
+        'statusCombobox
+        '
+        Me.statusCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.statusCombobox.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusCombobox.ForeColor = System.Drawing.Color.Gray
+        Me.statusCombobox.FormattingEnabled = True
+        Me.statusCombobox.Items.AddRange(New Object() {"Probationary", "Part-Time", "OJT", "Regular", "Resigned", "Terminated", "End of Contract"})
+        Me.statusCombobox.Location = New System.Drawing.Point(884, 182)
+        Me.statusCombobox.Name = "statusCombobox"
+        Me.statusCombobox.Size = New System.Drawing.Size(233, 34)
+        Me.statusCombobox.TabIndex = 7
         '
         'previewButton
         '
@@ -172,10 +160,10 @@ Partial Class Reports
         Me.previewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.previewButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.previewButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.previewButton.Location = New System.Drawing.Point(959, 256)
+        Me.previewButton.Location = New System.Drawing.Point(959, 226)
         Me.previewButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.previewButton.Name = "previewButton"
-        Me.previewButton.Size = New System.Drawing.Size(158, 35)
+        Me.previewButton.Size = New System.Drawing.Size(158, 33)
         Me.previewButton.TabIndex = 92
         Me.previewButton.Text = "Preview"
         Me.previewButton.UseVisualStyleBackColor = False
@@ -191,32 +179,33 @@ Partial Class Reports
         Me.Label2.TabIndex = 91
         Me.Label2.Text = "To:"
         '
-        'DateTimePicker1
+        'toDate
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(497, 65)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(201, 29)
-        Me.DateTimePicker1.TabIndex = 90
+        Me.toDate.Location = New System.Drawing.Point(497, 65)
+        Me.toDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.toDate.Name = "toDate"
+        Me.toDate.Size = New System.Drawing.Size(201, 29)
+        Me.toDate.TabIndex = 90
         '
-        'Label4
+        'fromLabel
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Gray
-        Me.Label4.Location = New System.Drawing.Point(178, 65)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 28)
-        Me.Label4.TabIndex = 89
-        Me.Label4.Text = "From:"
+        Me.fromLabel.AutoSize = True
+        Me.fromLabel.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fromLabel.ForeColor = System.Drawing.Color.Gray
+        Me.fromLabel.Location = New System.Drawing.Point(178, 65)
+        Me.fromLabel.Name = "fromLabel"
+        Me.fromLabel.Size = New System.Drawing.Size(64, 28)
+        Me.fromLabel.TabIndex = 89
+        Me.fromLabel.Text = "From:"
+        Me.fromLabel.Visible = False
         '
-        'birthdayDate
+        'fromDate
         '
-        Me.birthdayDate.Location = New System.Drawing.Point(248, 65)
-        Me.birthdayDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.birthdayDate.Name = "birthdayDate"
-        Me.birthdayDate.Size = New System.Drawing.Size(201, 29)
-        Me.birthdayDate.TabIndex = 88
+        Me.fromDate.Location = New System.Drawing.Point(248, 65)
+        Me.fromDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.fromDate.Name = "fromDate"
+        Me.fromDate.Size = New System.Drawing.Size(201, 29)
+        Me.fromDate.TabIndex = 88
         '
         'evalscoreText
         '
@@ -225,95 +214,22 @@ Partial Class Reports
         Me.evalscoreText.BackColor = System.Drawing.SystemColors.Window
         Me.evalscoreText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.evalscoreText.ForeColor = System.Drawing.Color.Gray
-        Me.evalscoreText.Location = New System.Drawing.Point(884, 203)
+        Me.evalscoreText.Location = New System.Drawing.Point(1019, 62)
         Me.evalscoreText.Name = "evalscoreText"
-        Me.evalscoreText.Size = New System.Drawing.Size(233, 35)
-        Me.evalscoreText.TabIndex = 87
+        Me.evalscoreText.Size = New System.Drawing.Size(98, 35)
+        Me.evalscoreText.TabIndex = 6
         Me.evalscoreText.TabStop = False
-        Me.evalscoreText.Text = "Average Evaluation Score"
-        '
-        'evalscoreRadio
-        '
-        Me.evalscoreRadio.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.evalscoreRadio.AutoSize = True
-        Me.evalscoreRadio.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.evalscoreRadio.ForeColor = System.Drawing.Color.Gray
-        Me.evalscoreRadio.Location = New System.Drawing.Point(743, 176)
-        Me.evalscoreRadio.Name = "evalscoreRadio"
-        Me.evalscoreRadio.Size = New System.Drawing.Size(126, 88)
-        Me.evalscoreRadio.TabIndex = 86
-        Me.evalscoreRadio.TabStop = True
-        Me.evalscoreRadio.Text = "Average" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Evaluation" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Score:"
-        Me.evalscoreRadio.UseVisualStyleBackColor = True
-        '
-        'datehiredRadio
-        '
-        Me.datehiredRadio.AutoSize = True
-        Me.datehiredRadio.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.datehiredRadio.ForeColor = System.Drawing.Color.Gray
-        Me.datehiredRadio.Location = New System.Drawing.Point(23, 62)
-        Me.datehiredRadio.Name = "datehiredRadio"
-        Me.datehiredRadio.Size = New System.Drawing.Size(134, 32)
-        Me.datehiredRadio.TabIndex = 85
-        Me.datehiredRadio.TabStop = True
-        Me.datehiredRadio.Text = "Date Hired:"
-        Me.datehiredRadio.UseVisualStyleBackColor = True
-        '
-        'civilstatusCombobox
-        '
-        Me.civilstatusCombobox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.civilstatusCombobox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.civilstatusCombobox.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.civilstatusCombobox.ForeColor = System.Drawing.Color.Gray
-        Me.civilstatusCombobox.FormattingEnabled = True
-        Me.civilstatusCombobox.Items.AddRange(New Object() {"Single", "Married", "Widowed"})
-        Me.civilstatusCombobox.Location = New System.Drawing.Point(884, 62)
-        Me.civilstatusCombobox.Name = "civilstatusCombobox"
-        Me.civilstatusCombobox.Size = New System.Drawing.Size(233, 36)
-        Me.civilstatusCombobox.TabIndex = 84
-        Me.civilstatusCombobox.Text = "Civil Status"
-        '
-        'civilstatusRadio
-        '
-        Me.civilstatusRadio.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.civilstatusRadio.AutoSize = True
-        Me.civilstatusRadio.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.civilstatusRadio.ForeColor = System.Drawing.Color.Gray
-        Me.civilstatusRadio.Location = New System.Drawing.Point(743, 63)
-        Me.civilstatusRadio.Name = "civilstatusRadio"
-        Me.civilstatusRadio.Size = New System.Drawing.Size(135, 32)
-        Me.civilstatusRadio.TabIndex = 83
-        Me.civilstatusRadio.TabStop = True
-        Me.civilstatusRadio.Text = "Civil Status:"
-        Me.civilstatusRadio.UseVisualStyleBackColor = True
         '
         'groupText
         '
         Me.groupText.BackColor = System.Drawing.SystemColors.Window
         Me.groupText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.groupText.ForeColor = System.Drawing.Color.Gray
-        Me.groupText.Location = New System.Drawing.Point(182, 228)
+        Me.groupText.Location = New System.Drawing.Point(182, 223)
         Me.groupText.Name = "groupText"
         Me.groupText.Size = New System.Drawing.Size(516, 35)
-        Me.groupText.TabIndex = 82
+        Me.groupText.TabIndex = 3
         Me.groupText.TabStop = False
-        Me.groupText.Text = "Group"
-        '
-        'groupRadio
-        '
-        Me.groupRadio.AutoSize = True
-        Me.groupRadio.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.groupRadio.ForeColor = System.Drawing.Color.Gray
-        Me.groupRadio.Location = New System.Drawing.Point(23, 229)
-        Me.groupRadio.Name = "groupRadio"
-        Me.groupRadio.Size = New System.Drawing.Size(92, 32)
-        Me.groupRadio.TabIndex = 80
-        Me.groupRadio.TabStop = True
-        Me.groupRadio.Text = "Group:"
-        Me.groupRadio.UseVisualStyleBackColor = True
         '
         'rankText
         '
@@ -322,27 +238,11 @@ Partial Class Reports
         Me.rankText.BackColor = System.Drawing.SystemColors.Window
         Me.rankText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rankText.ForeColor = System.Drawing.Color.Gray
-        Me.rankText.Location = New System.Drawing.Point(884, 128)
+        Me.rankText.Location = New System.Drawing.Point(884, 122)
         Me.rankText.Name = "rankText"
         Me.rankText.Size = New System.Drawing.Size(233, 35)
-        Me.rankText.TabIndex = 81
+        Me.rankText.TabIndex = 5
         Me.rankText.TabStop = False
-        Me.rankText.Text = "Rank"
-        '
-        'rankRadio
-        '
-        Me.rankRadio.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.rankRadio.AutoSize = True
-        Me.rankRadio.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rankRadio.ForeColor = System.Drawing.Color.Gray
-        Me.rankRadio.Location = New System.Drawing.Point(743, 129)
-        Me.rankRadio.Name = "rankRadio"
-        Me.rankRadio.Size = New System.Drawing.Size(81, 32)
-        Me.rankRadio.TabIndex = 79
-        Me.rankRadio.TabStop = True
-        Me.rankRadio.Text = "Rank:"
-        Me.rankRadio.UseVisualStyleBackColor = True
         '
         'departmentText
         '
@@ -352,9 +252,8 @@ Partial Class Reports
         Me.departmentText.Location = New System.Drawing.Point(182, 167)
         Me.departmentText.Name = "departmentText"
         Me.departmentText.Size = New System.Drawing.Size(516, 35)
-        Me.departmentText.TabIndex = 78
+        Me.departmentText.TabIndex = 2
         Me.departmentText.TabStop = False
-        Me.departmentText.Text = "Department"
         '
         'positionText
         '
@@ -364,22 +263,8 @@ Partial Class Reports
         Me.positionText.Location = New System.Drawing.Point(182, 112)
         Me.positionText.Name = "positionText"
         Me.positionText.Size = New System.Drawing.Size(516, 35)
-        Me.positionText.TabIndex = 77
+        Me.positionText.TabIndex = 1
         Me.positionText.TabStop = False
-        Me.positionText.Text = "Position"
-        '
-        'departmentRadio
-        '
-        Me.departmentRadio.AutoSize = True
-        Me.departmentRadio.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.departmentRadio.ForeColor = System.Drawing.Color.Gray
-        Me.departmentRadio.Location = New System.Drawing.Point(23, 168)
-        Me.departmentRadio.Name = "departmentRadio"
-        Me.departmentRadio.Size = New System.Drawing.Size(146, 32)
-        Me.departmentRadio.TabIndex = 76
-        Me.departmentRadio.TabStop = True
-        Me.departmentRadio.Text = "Department:"
-        Me.departmentRadio.UseVisualStyleBackColor = True
         '
         'presentaddressLabel
         '
@@ -388,22 +273,9 @@ Partial Class Reports
         Me.presentaddressLabel.ForeColor = System.Drawing.Color.Gray
         Me.presentaddressLabel.Location = New System.Drawing.Point(19, 38)
         Me.presentaddressLabel.Name = "presentaddressLabel"
-        Me.presentaddressLabel.Size = New System.Drawing.Size(114, 21)
+        Me.presentaddressLabel.Size = New System.Drawing.Size(157, 21)
         Me.presentaddressLabel.TabIndex = 75
-        Me.presentaddressLabel.Text = "*Choose Filters"
-        '
-        'positionRadio
-        '
-        Me.positionRadio.AutoSize = True
-        Me.positionRadio.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.positionRadio.ForeColor = System.Drawing.Color.Gray
-        Me.positionRadio.Location = New System.Drawing.Point(23, 115)
-        Me.positionRadio.Name = "positionRadio"
-        Me.positionRadio.Size = New System.Drawing.Size(108, 32)
-        Me.positionRadio.TabIndex = 74
-        Me.positionRadio.TabStop = True
-        Me.positionRadio.Text = "Position:"
-        Me.positionRadio.UseVisualStyleBackColor = True
+        Me.presentaddressLabel.Text = "*Check only one filter"
         '
         'cancelButton2
         '
@@ -412,7 +284,7 @@ Partial Class Reports
         Me.cancelButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cancelButton2.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cancelButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.cancelButton2.Location = New System.Drawing.Point(907, 532)
+        Me.cancelButton2.Location = New System.Drawing.Point(907, 522)
         Me.cancelButton2.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cancelButton2.Name = "cancelButton2"
         Me.cancelButton2.Size = New System.Drawing.Size(210, 40)
@@ -420,20 +292,20 @@ Partial Class Reports
         Me.cancelButton2.Text = "Cancel"
         Me.cancelButton2.UseVisualStyleBackColor = False
         '
-        'Button2
+        'createcustomizedButton
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.Color.SteelBlue
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(668, 532)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(210, 40)
-        Me.Button2.TabIndex = 72
-        Me.Button2.Text = "Create"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.createcustomizedButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.createcustomizedButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.createcustomizedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.createcustomizedButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.createcustomizedButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.createcustomizedButton.Location = New System.Drawing.Point(669, 522)
+        Me.createcustomizedButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.createcustomizedButton.Name = "createcustomizedButton"
+        Me.createcustomizedButton.Size = New System.Drawing.Size(210, 40)
+        Me.createcustomizedButton.TabIndex = 72
+        Me.createcustomizedButton.Text = "Create"
+        Me.createcustomizedButton.UseVisualStyleBackColor = False
         '
         'PictureBox4
         '
@@ -463,14 +335,14 @@ Partial Class Reports
         Me.Label5.TabIndex = 70
         Me.Label5.Text = "Preview of Customized Report"
         '
-        'DataGridView3
+        'customizedDGV
         '
-        Me.DataGridView3.AllowUserToAddRows = False
-        Me.DataGridView3.AllowUserToDeleteRows = False
-        Me.DataGridView3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.customizedDGV.AllowUserToAddRows = False
+        Me.customizedDGV.AllowUserToDeleteRows = False
+        Me.customizedDGV.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.customizedDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -478,45 +350,23 @@ Partial Class Reports
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn12})
+        Me.customizedDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.customizedDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView3.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView3.Location = New System.Drawing.Point(23, 299)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.ReadOnly = True
-        Me.DataGridView3.Size = New System.Drawing.Size(1094, 225)
-        Me.DataGridView3.TabIndex = 69
-        Me.DataGridView3.TabStop = False
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn11.HeaderText = "Last Name"
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        Me.DataGridViewTextBoxColumn11.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn10.HeaderText = "Given Name"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        Me.DataGridViewTextBoxColumn10.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        Me.DataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn12.HeaderText = "Middle Name"
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        Me.DataGridViewTextBoxColumn12.ReadOnly = True
+        Me.customizedDGV.DefaultCellStyle = DataGridViewCellStyle2
+        Me.customizedDGV.Location = New System.Drawing.Point(23, 281)
+        Me.customizedDGV.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.customizedDGV.Name = "customizedDGV"
+        Me.customizedDGV.ReadOnly = True
+        Me.customizedDGV.Size = New System.Drawing.Size(1094, 219)
+        Me.customizedDGV.TabIndex = 69
+        Me.customizedDGV.TabStop = False
         '
         'PictureBox2
         '
@@ -531,34 +381,13 @@ Partial Class Reports
         Me.PictureBox2.TabIndex = 9
         Me.PictureBox2.TabStop = False
         '
-        'EmployeeNumber
+        'accountingsearchDGV
         '
-        Me.EmployeeNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.EmployeeNumber.HeaderText = "Employee Number"
-        Me.EmployeeNumber.Name = "EmployeeNumber"
-        Me.EmployeeNumber.ReadOnly = True
-        '
-        'Birthday
-        '
-        Me.Birthday.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Birthday.HeaderText = "Birthday"
-        Me.Birthday.Name = "Birthday"
-        Me.Birthday.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Date Hired"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.ReadOnly = True
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.accountingsearchDGV.AllowUserToAddRows = False
+        Me.accountingsearchDGV.AllowUserToDeleteRows = False
+        Me.accountingsearchDGV.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.accountingsearchDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle3.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -566,181 +395,39 @@ Partial Class Reports
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
+        Me.accountingsearchDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.accountingsearchDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle4.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gray
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle4
-        Me.DataGridView1.Location = New System.Drawing.Point(26, 99)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(1094, 160)
-        Me.DataGridView1.TabIndex = 32
-        Me.DataGridView1.TabStop = False
+        Me.accountingsearchDGV.DefaultCellStyle = DataGridViewCellStyle4
+        Me.accountingsearchDGV.Location = New System.Drawing.Point(26, 99)
+        Me.accountingsearchDGV.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.accountingsearchDGV.MultiSelect = False
+        Me.accountingsearchDGV.Name = "accountingsearchDGV"
+        Me.accountingsearchDGV.ReadOnly = True
+        Me.accountingsearchDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.accountingsearchDGV.Size = New System.Drawing.Size(1094, 160)
+        Me.accountingsearchDGV.TabIndex = 32
+        Me.accountingsearchDGV.TabStop = False
         '
-        'DataGridViewTextBoxColumn1
+        'searchButton
         '
-        Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Last Name"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Given Name"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Middle Name"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn8.HeaderText = "TIN Number"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Last Name"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        '
-        'GivenName
-        '
-        Me.GivenName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.GivenName.HeaderText = "Given Name"
-        Me.GivenName.Name = "GivenName"
-        Me.GivenName.ReadOnly = True
-        '
-        'userText
-        '
-        Me.userText.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.userText.BackColor = System.Drawing.SystemColors.Window
-        Me.userText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.userText.ForeColor = System.Drawing.Color.Gray
-        Me.userText.Location = New System.Drawing.Point(558, 50)
-        Me.userText.Name = "userText"
-        Me.userText.Size = New System.Drawing.Size(335, 39)
-        Me.userText.TabIndex = 30
-        Me.userText.TabStop = False
-        Me.userText.Text = "Search Employee"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Pag-Ibig Number"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Middle Name"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        '
-        'PHICNumber
-        '
-        Me.PHICNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.PHICNumber.HeaderText = "PHIC Number"
-        Me.PHICNumber.Name = "PHICNumber"
-        Me.PHICNumber.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn6.HeaderText = "SSS Number"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        '
-        'loginButton
-        '
-        Me.loginButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.loginButton.BackColor = System.Drawing.Color.SteelBlue
-        Me.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.loginButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.loginButton.Location = New System.Drawing.Point(910, 50)
-        Me.loginButton.Name = "loginButton"
-        Me.loginButton.Size = New System.Drawing.Size(210, 42)
-        Me.loginButton.TabIndex = 31
-        Me.loginButton.Text = "Search"
-        Me.loginButton.UseVisualStyleBackColor = False
-        '
-        'Philhealth
-        '
-        Me.Philhealth.HeaderText = "Philhealth"
-        Me.Philhealth.Name = "Philhealth"
-        Me.Philhealth.ReadOnly = True
-        '
-        'SSSNumber
-        '
-        Me.SSSNumber.HeaderText = "SSS Number"
-        Me.SSSNumber.Name = "SSSNumber"
-        Me.SSSNumber.ReadOnly = True
-        '
-        'PagibigNumber
-        '
-        Me.PagibigNumber.HeaderText = "Pag-Ibig Number"
-        Me.PagibigNumber.Name = "PagibigNumber"
-        Me.PagibigNumber.ReadOnly = True
-        '
-        'TINNumber
-        '
-        Me.TINNumber.HeaderText = "TIN Number"
-        Me.TINNumber.Name = "TINNumber"
-        Me.TINNumber.ReadOnly = True
-        '
-        'RTN
-        '
-        Me.RTN.HeaderText = "RTN"
-        Me.RTN.Name = "RTN"
-        Me.RTN.ReadOnly = True
-        '
-        'Department
-        '
-        Me.Department.HeaderText = "Department/Unit"
-        Me.Department.Name = "Department"
-        Me.Department.ReadOnly = True
-        '
-        'HDMFIDNumber
-        '
-        Me.HDMFIDNumber.HeaderText = "HDMF ID Number"
-        Me.HDMFIDNumber.Name = "HDMFIDNumber"
-        Me.HDMFIDNumber.ReadOnly = True
-        '
-        'Group
-        '
-        Me.Group.HeaderText = "Group"
-        Me.Group.Name = "Group"
-        Me.Group.ReadOnly = True
-        '
-        'MiddleName
-        '
-        Me.MiddleName.HeaderText = "Middle Name"
-        Me.MiddleName.Name = "MiddleName"
-        Me.MiddleName.ReadOnly = True
-        '
-        'DateHired
-        '
-        Me.DateHired.HeaderText = "DateHired"
-        Me.DateHired.Name = "DateHired"
-        Me.DateHired.ReadOnly = True
+        Me.searchButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.searchButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.searchButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.searchButton.Location = New System.Drawing.Point(910, 50)
+        Me.searchButton.Name = "searchButton"
+        Me.searchButton.Size = New System.Drawing.Size(210, 42)
+        Me.searchButton.TabIndex = 31
+        Me.searchButton.Text = "Search"
+        Me.searchButton.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
@@ -755,19 +442,13 @@ Partial Class Reports
         Me.PictureBox3.TabIndex = 24
         Me.PictureBox3.TabStop = False
         '
-        'FirstName
-        '
-        Me.FirstName.HeaderText = "First Name"
-        Me.FirstName.Name = "FirstName"
-        Me.FirstName.ReadOnly = True
-        '
         'masterlistTab
         '
         Me.masterlistTab.Controls.Add(Me.PictureBox3)
         Me.masterlistTab.Controls.Add(Me.cancelButton4)
         Me.masterlistTab.Controls.Add(Me.createButton)
         Me.masterlistTab.Controls.Add(Me.Label3)
-        Me.masterlistTab.Controls.Add(Me.activityDGV)
+        Me.masterlistTab.Controls.Add(Me.masterlistDGV)
         Me.masterlistTab.Location = New System.Drawing.Point(4, 30)
         Me.masterlistTab.Name = "masterlistTab"
         Me.masterlistTab.Padding = New System.Windows.Forms.Padding(3)
@@ -778,12 +459,12 @@ Partial Class Reports
         '
         'cancelButton4
         '
-        Me.cancelButton4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cancelButton4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cancelButton4.BackColor = System.Drawing.Color.SteelBlue
         Me.cancelButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cancelButton4.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cancelButton4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.cancelButton4.Location = New System.Drawing.Point(904, 461)
+        Me.cancelButton4.Location = New System.Drawing.Point(904, 501)
         Me.cancelButton4.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cancelButton4.Name = "cancelButton4"
         Me.cancelButton4.Size = New System.Drawing.Size(210, 45)
@@ -793,12 +474,12 @@ Partial Class Reports
         '
         'createButton
         '
-        Me.createButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.createButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.createButton.BackColor = System.Drawing.Color.SteelBlue
         Me.createButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.createButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.createButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.createButton.Location = New System.Drawing.Point(655, 461)
+        Me.createButton.Location = New System.Drawing.Point(655, 501)
         Me.createButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.createButton.Name = "createButton"
         Me.createButton.Size = New System.Drawing.Size(210, 45)
@@ -821,14 +502,14 @@ Partial Class Reports
         Me.Label3.TabIndex = 23
         Me.Label3.Text = "Preview of Masterlist"
         '
-        'activityDGV
+        'masterlistDGV
         '
-        Me.activityDGV.AllowUserToAddRows = False
-        Me.activityDGV.AllowUserToDeleteRows = False
-        Me.activityDGV.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.masterlistDGV.AllowUserToAddRows = False
+        Me.masterlistDGV.AllowUserToDeleteRows = False
+        Me.masterlistDGV.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.activityDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.masterlistDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.masterlistDGV.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
         DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle5.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -836,130 +517,23 @@ Partial Class Reports
         DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.activityDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
-        Me.activityDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.activityDGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDnumber, Me.LastName, Me.FirstName, Me.MiddleName, Me.TINNumber, Me.SSSNumber, Me.Philhealth, Me.PagibigNumber, Me.RTN, Me.HDMFIDNumber, Me.DateHired, Me.Group, Me.Department, Me.Position, Me.Rank, Me.Bday, Me.Birthplace, Me.CivilStatus, Me.PresentAddress, Me.EmailAddress, Me.ContactNumber, Me.TelephoneNumber, Me.FathersName, Me.MothersMaidenName, Me.SpouseName, Me.SpousesBirthday, Me.ChildrensName, Me.ChildrensBirthday})
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.activityDGV.DefaultCellStyle = DataGridViewCellStyle7
-        Me.activityDGV.Location = New System.Drawing.Point(20, 58)
-        Me.activityDGV.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.activityDGV.Name = "activityDGV"
-        Me.activityDGV.ReadOnly = True
-        Me.activityDGV.Size = New System.Drawing.Size(1094, 395)
-        Me.activityDGV.TabIndex = 22
-        Me.activityDGV.TabStop = False
-        '
-        'IDnumber
-        '
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IDnumber.DefaultCellStyle = DataGridViewCellStyle6
-        Me.IDnumber.HeaderText = "ID No."
-        Me.IDnumber.Name = "IDnumber"
-        Me.IDnumber.ReadOnly = True
-        Me.IDnumber.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'LastName
-        '
-        Me.LastName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.LastName.HeaderText = "Last Name"
-        Me.LastName.Name = "LastName"
-        Me.LastName.ReadOnly = True
-        '
-        'Position
-        '
-        Me.Position.HeaderText = "Position"
-        Me.Position.Name = "Position"
-        Me.Position.ReadOnly = True
-        '
-        'Rank
-        '
-        Me.Rank.HeaderText = "Rank"
-        Me.Rank.Name = "Rank"
-        Me.Rank.ReadOnly = True
-        '
-        'Bday
-        '
-        Me.Bday.HeaderText = "Birthday"
-        Me.Bday.Name = "Bday"
-        Me.Bday.ReadOnly = True
-        '
-        'Birthplace
-        '
-        Me.Birthplace.HeaderText = "Birthplace"
-        Me.Birthplace.Name = "Birthplace"
-        Me.Birthplace.ReadOnly = True
-        '
-        'CivilStatus
-        '
-        Me.CivilStatus.HeaderText = "Civil Status"
-        Me.CivilStatus.Name = "CivilStatus"
-        Me.CivilStatus.ReadOnly = True
-        '
-        'PresentAddress
-        '
-        Me.PresentAddress.HeaderText = "Present Address"
-        Me.PresentAddress.Name = "PresentAddress"
-        Me.PresentAddress.ReadOnly = True
-        '
-        'EmailAddress
-        '
-        Me.EmailAddress.HeaderText = "Email Address"
-        Me.EmailAddress.Name = "EmailAddress"
-        Me.EmailAddress.ReadOnly = True
-        '
-        'ContactNumber
-        '
-        Me.ContactNumber.HeaderText = "Contact Number"
-        Me.ContactNumber.Name = "ContactNumber"
-        Me.ContactNumber.ReadOnly = True
-        '
-        'TelephoneNumber
-        '
-        Me.TelephoneNumber.HeaderText = "Telephone Number"
-        Me.TelephoneNumber.Name = "TelephoneNumber"
-        Me.TelephoneNumber.ReadOnly = True
-        '
-        'FathersName
-        '
-        Me.FathersName.HeaderText = "Father's Name"
-        Me.FathersName.Name = "FathersName"
-        Me.FathersName.ReadOnly = True
-        '
-        'MothersMaidenName
-        '
-        Me.MothersMaidenName.HeaderText = "Mother's Maiden Name"
-        Me.MothersMaidenName.Name = "MothersMaidenName"
-        Me.MothersMaidenName.ReadOnly = True
-        '
-        'SpouseName
-        '
-        Me.SpouseName.HeaderText = "Spouse's Name"
-        Me.SpouseName.Name = "SpouseName"
-        Me.SpouseName.ReadOnly = True
-        '
-        'SpousesBirthday
-        '
-        Me.SpousesBirthday.HeaderText = "Spouse's Birthday"
-        Me.SpousesBirthday.Name = "SpousesBirthday"
-        Me.SpousesBirthday.ReadOnly = True
-        '
-        'ChildrensName
-        '
-        Me.ChildrensName.HeaderText = "Child/ren's Name"
-        Me.ChildrensName.Name = "ChildrensName"
-        Me.ChildrensName.ReadOnly = True
-        '
-        'ChildrensBirthday
-        '
-        Me.ChildrensBirthday.HeaderText = "Child/ren's  Birthday"
-        Me.ChildrensBirthday.Name = "ChildrensBirthday"
-        Me.ChildrensBirthday.ReadOnly = True
+        Me.masterlistDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.masterlistDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.masterlistDGV.DefaultCellStyle = DataGridViewCellStyle6
+        Me.masterlistDGV.Location = New System.Drawing.Point(20, 58)
+        Me.masterlistDGV.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.masterlistDGV.Name = "masterlistDGV"
+        Me.masterlistDGV.ReadOnly = True
+        Me.masterlistDGV.Size = New System.Drawing.Size(1094, 419)
+        Me.masterlistDGV.TabIndex = 22
+        Me.masterlistDGV.TabStop = False
         '
         'TabControl1
         '
@@ -968,6 +542,7 @@ Partial Class Reports
         Me.TabControl1.Controls.Add(Me.masterlistTab)
         Me.TabControl1.Controls.Add(Me.accountingTab)
         Me.TabControl1.Controls.Add(Me.customizedTab)
+        Me.TabControl1.Controls.Add(Me.dprTab)
         Me.TabControl1.Location = New System.Drawing.Point(14, 9)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -976,13 +551,15 @@ Partial Class Reports
         '
         'accountingTab
         '
-        Me.accountingTab.Controls.Add(Me.DataGridView1)
-        Me.accountingTab.Controls.Add(Me.loginButton)
-        Me.accountingTab.Controls.Add(Me.userText)
+        Me.accountingTab.Controls.Add(Me.searchText)
+        Me.accountingTab.Controls.Add(Me.Label6)
+        Me.accountingTab.Controls.Add(Me.chooseButton)
+        Me.accountingTab.Controls.Add(Me.accountingsearchDGV)
+        Me.accountingTab.Controls.Add(Me.searchButton)
         Me.accountingTab.Controls.Add(Me.cancelButton1)
-        Me.accountingTab.Controls.Add(Me.Button1)
+        Me.accountingTab.Controls.Add(Me.createaccountingButton)
         Me.accountingTab.Controls.Add(Me.Label1)
-        Me.accountingTab.Controls.Add(Me.DataGridView2)
+        Me.accountingTab.Controls.Add(Me.accountingDGV)
         Me.accountingTab.Controls.Add(Me.PictureBox1)
         Me.accountingTab.Location = New System.Drawing.Point(4, 22)
         Me.accountingTab.Name = "accountingTab"
@@ -992,14 +569,39 @@ Partial Class Reports
         Me.accountingTab.Text = "Accounting Report"
         Me.accountingTab.UseVisualStyleBackColor = True
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.Gray
+        Me.Label6.Location = New System.Drawing.Point(22, 263)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(341, 21)
+        Me.Label6.TabIndex = 34
+        Me.Label6.Text = "*choose employee to make accounting report on"
+        '
+        'chooseButton
+        '
+        Me.chooseButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.chooseButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.chooseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.chooseButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chooseButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.chooseButton.Location = New System.Drawing.Point(910, 267)
+        Me.chooseButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.chooseButton.Name = "chooseButton"
+        Me.chooseButton.Size = New System.Drawing.Size(210, 37)
+        Me.chooseButton.TabIndex = 33
+        Me.chooseButton.Text = "Choose Employee"
+        Me.chooseButton.UseVisualStyleBackColor = False
+        '
         'cancelButton1
         '
-        Me.cancelButton1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cancelButton1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cancelButton1.BackColor = System.Drawing.Color.SteelBlue
         Me.cancelButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cancelButton1.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cancelButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.cancelButton1.Location = New System.Drawing.Point(910, 469)
+        Me.cancelButton1.Location = New System.Drawing.Point(910, 533)
         Me.cancelButton1.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cancelButton1.Name = "cancelButton1"
         Me.cancelButton1.Size = New System.Drawing.Size(210, 45)
@@ -1007,20 +609,20 @@ Partial Class Reports
         Me.cancelButton1.Text = "Cancel"
         Me.cancelButton1.UseVisualStyleBackColor = False
         '
-        'Button1
+        'createaccountingButton
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.SteelBlue
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(661, 469)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(210, 45)
-        Me.Button1.TabIndex = 28
-        Me.Button1.Text = "Create"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.createaccountingButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.createaccountingButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.createaccountingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.createaccountingButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.createaccountingButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.createaccountingButton.Location = New System.Drawing.Point(661, 533)
+        Me.createaccountingButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.createaccountingButton.Name = "createaccountingButton"
+        Me.createaccountingButton.Size = New System.Drawing.Size(210, 45)
+        Me.createaccountingButton.TabIndex = 28
+        Me.createaccountingButton.Text = "Create"
+        Me.createaccountingButton.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -1037,38 +639,37 @@ Partial Class Reports
         Me.Label1.TabIndex = 26
         Me.Label1.Text = "Preview of Accounting Report"
         '
-        'DataGridView2
+        'accountingDGV
         '
-        Me.DataGridView2.AllowUserToAddRows = False
-        Me.DataGridView2.AllowUserToDeleteRows = False
-        Me.DataGridView2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.accountingDGV.AllowUserToAddRows = False
+        Me.accountingDGV.AllowUserToDeleteRows = False
+        Me.accountingDGV.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.accountingDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.accountingDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        Me.accountingDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle8.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption
         DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.GivenName, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.PHICNumber, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.Birthday, Me.EmployeeNumber})
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle9
-        Me.DataGridView2.Location = New System.Drawing.Point(26, 270)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.ReadOnly = True
-        Me.DataGridView2.Size = New System.Drawing.Size(1094, 191)
-        Me.DataGridView2.TabIndex = 25
-        Me.DataGridView2.TabStop = False
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.accountingDGV.DefaultCellStyle = DataGridViewCellStyle8
+        Me.accountingDGV.Location = New System.Drawing.Point(26, 319)
+        Me.accountingDGV.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.accountingDGV.Name = "accountingDGV"
+        Me.accountingDGV.ReadOnly = True
+        Me.accountingDGV.Size = New System.Drawing.Size(1094, 206)
+        Me.accountingDGV.TabIndex = 25
+        Me.accountingDGV.TabStop = False
         '
         'PictureBox1
         '
@@ -1083,6 +684,311 @@ Partial Class Reports
         Me.PictureBox1.TabIndex = 27
         Me.PictureBox1.TabStop = False
         '
+        'dprTab
+        '
+        Me.dprTab.Controls.Add(Me.dprpreviewButton)
+        Me.dprTab.Controls.Add(Me.Label12)
+        Me.dprTab.Controls.Add(Me.Label11)
+        Me.dprTab.Controls.Add(Me.Label10)
+        Me.dprTab.Controls.Add(Me.Label7)
+        Me.dprTab.Controls.Add(Me.dprtoDate)
+        Me.dprTab.Controls.Add(Me.Label8)
+        Me.dprTab.Controls.Add(Me.dprfromDate)
+        Me.dprTab.Controls.Add(Me.dprrankText)
+        Me.dprTab.Controls.Add(Me.dprpositionText)
+        Me.dprTab.Controls.Add(Me.Button2)
+        Me.dprTab.Controls.Add(Me.dprcreateButton)
+        Me.dprTab.Controls.Add(Me.Label9)
+        Me.dprTab.Controls.Add(Me.dprDGV)
+        Me.dprTab.Location = New System.Drawing.Point(4, 30)
+        Me.dprTab.Name = "dprTab"
+        Me.dprTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.dprTab.Size = New System.Drawing.Size(1138, 592)
+        Me.dprTab.TabIndex = 3
+        Me.dprTab.Text = "Date Hired, Position, Rank Report"
+        Me.dprTab.UseVisualStyleBackColor = True
+        '
+        'dprpreviewButton
+        '
+        Me.dprpreviewButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dprpreviewButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.dprpreviewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.dprpreviewButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dprpreviewButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dprpreviewButton.Location = New System.Drawing.Point(910, 128)
+        Me.dprpreviewButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.dprpreviewButton.Name = "dprpreviewButton"
+        Me.dprpreviewButton.Size = New System.Drawing.Size(210, 40)
+        Me.dprpreviewButton.TabIndex = 114
+        Me.dprpreviewButton.Text = "Preview"
+        Me.dprpreviewButton.UseVisualStyleBackColor = False
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Gray
+        Me.Label12.Location = New System.Drawing.Point(818, 82)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(63, 28)
+        Me.Label12.TabIndex = 113
+        Me.Label12.Text = "Rank:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Gray
+        Me.Label11.Location = New System.Drawing.Point(21, 131)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(90, 28)
+        Me.Label11.TabIndex = 112
+        Me.Label11.Text = "Position:"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.Gray
+        Me.Label10.Location = New System.Drawing.Point(20, 82)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(116, 28)
+        Me.Label10.TabIndex = 111
+        Me.Label10.Text = "Date Hired:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Gray
+        Me.Label7.Location = New System.Drawing.Point(466, 81)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(38, 28)
+        Me.Label7.TabIndex = 109
+        Me.Label7.Text = "To:"
+        '
+        'dprtoDate
+        '
+        Me.dprtoDate.Location = New System.Drawing.Point(510, 81)
+        Me.dprtoDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.dprtoDate.Name = "dprtoDate"
+        Me.dprtoDate.Size = New System.Drawing.Size(243, 29)
+        Me.dprtoDate.TabIndex = 108
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Gray
+        Me.Label8.Location = New System.Drawing.Point(136, 82)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(64, 28)
+        Me.Label8.TabIndex = 107
+        Me.Label8.Text = "From:"
+        '
+        'dprfromDate
+        '
+        Me.dprfromDate.Location = New System.Drawing.Point(206, 82)
+        Me.dprfromDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.dprfromDate.Name = "dprfromDate"
+        Me.dprfromDate.Size = New System.Drawing.Size(245, 29)
+        Me.dprfromDate.TabIndex = 106
+        '
+        'dprrankText
+        '
+        Me.dprrankText.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dprrankText.BackColor = System.Drawing.SystemColors.Window
+        Me.dprrankText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dprrankText.ForeColor = System.Drawing.Color.Gray
+        Me.dprrankText.Location = New System.Drawing.Point(887, 79)
+        Me.dprrankText.Name = "dprrankText"
+        Me.dprrankText.Size = New System.Drawing.Size(233, 35)
+        Me.dprrankText.TabIndex = 101
+        Me.dprrankText.TabStop = False
+        '
+        'dprpositionText
+        '
+        Me.dprpositionText.BackColor = System.Drawing.SystemColors.Window
+        Me.dprpositionText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dprpositionText.ForeColor = System.Drawing.Color.Gray
+        Me.dprpositionText.Location = New System.Drawing.Point(141, 128)
+        Me.dprpositionText.Name = "dprpositionText"
+        Me.dprpositionText.Size = New System.Drawing.Size(516, 35)
+        Me.dprpositionText.TabIndex = 100
+        Me.dprpositionText.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button2.BackColor = System.Drawing.Color.SteelBlue
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Location = New System.Drawing.Point(910, 530)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(210, 40)
+        Me.Button2.TabIndex = 105
+        Me.Button2.Text = "Cancel"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'dprcreateButton
+        '
+        Me.dprcreateButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dprcreateButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.dprcreateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.dprcreateButton.Font = New System.Drawing.Font("WeblySleek UI Semilight", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dprcreateButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dprcreateButton.Location = New System.Drawing.Point(671, 530)
+        Me.dprcreateButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.dprcreateButton.Name = "dprcreateButton"
+        Me.dprcreateButton.Size = New System.Drawing.Size(210, 40)
+        Me.dprcreateButton.TabIndex = 104
+        Me.dprcreateButton.Text = "Create"
+        Me.dprcreateButton.UseVisualStyleBackColor = False
+        '
+        'Label9
+        '
+        Me.Label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Oswald", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.SteelBlue
+        Me.Label9.Location = New System.Drawing.Point(19, 15)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(476, 40)
+        Me.Label9.TabIndex = 103
+        Me.Label9.Text = "Preview of Date Hired, Position, Rank Report"
+        '
+        'dprDGV
+        '
+        Me.dprDGV.AllowUserToAddRows = False
+        Me.dprDGV.AllowUserToDeleteRows = False
+        Me.dprDGV.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dprDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dprDGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        Me.dprDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dprDGV.DefaultCellStyle = DataGridViewCellStyle10
+        Me.dprDGV.Location = New System.Drawing.Point(26, 197)
+        Me.dprDGV.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.dprDGV.Name = "dprDGV"
+        Me.dprDGV.ReadOnly = True
+        Me.dprDGV.Size = New System.Drawing.Size(1094, 311)
+        Me.dprDGV.TabIndex = 102
+        Me.dprDGV.TabStop = False
+        '
+        'dateCheck
+        '
+        Me.dateCheck.AutoSize = True
+        Me.dateCheck.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dateCheck.Location = New System.Drawing.Point(23, 65)
+        Me.dateCheck.Name = "dateCheck"
+        Me.dateCheck.Size = New System.Drawing.Size(134, 32)
+        Me.dateCheck.TabIndex = 103
+        Me.dateCheck.TabStop = True
+        Me.dateCheck.Text = "Date Hired:"
+        Me.dateCheck.UseVisualStyleBackColor = True
+        '
+        'positionCheck
+        '
+        Me.positionCheck.AutoSize = True
+        Me.positionCheck.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.positionCheck.Location = New System.Drawing.Point(23, 113)
+        Me.positionCheck.Name = "positionCheck"
+        Me.positionCheck.Size = New System.Drawing.Size(108, 32)
+        Me.positionCheck.TabIndex = 104
+        Me.positionCheck.TabStop = True
+        Me.positionCheck.Text = "Position:"
+        Me.positionCheck.UseVisualStyleBackColor = True
+        '
+        'departmentCheck
+        '
+        Me.departmentCheck.AutoSize = True
+        Me.departmentCheck.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.departmentCheck.Location = New System.Drawing.Point(23, 168)
+        Me.departmentCheck.Name = "departmentCheck"
+        Me.departmentCheck.Size = New System.Drawing.Size(152, 32)
+        Me.departmentCheck.TabIndex = 105
+        Me.departmentCheck.TabStop = True
+        Me.departmentCheck.Text = "Department: "
+        Me.departmentCheck.UseVisualStyleBackColor = True
+        '
+        'groupCheck
+        '
+        Me.groupCheck.AutoSize = True
+        Me.groupCheck.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.groupCheck.Location = New System.Drawing.Point(24, 224)
+        Me.groupCheck.Name = "groupCheck"
+        Me.groupCheck.Size = New System.Drawing.Size(92, 32)
+        Me.groupCheck.TabIndex = 106
+        Me.groupCheck.TabStop = True
+        Me.groupCheck.Text = "Group:"
+        Me.groupCheck.UseVisualStyleBackColor = True
+        '
+        'scoreCheck
+        '
+        Me.scoreCheck.AutoSize = True
+        Me.scoreCheck.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.scoreCheck.Location = New System.Drawing.Point(743, 65)
+        Me.scoreCheck.Name = "scoreCheck"
+        Me.scoreCheck.Size = New System.Drawing.Size(269, 32)
+        Me.scoreCheck.TabIndex = 107
+        Me.scoreCheck.TabStop = True
+        Me.scoreCheck.Text = "Average Evaluation Score:"
+        Me.scoreCheck.UseVisualStyleBackColor = True
+        '
+        'rankCheck
+        '
+        Me.rankCheck.AutoSize = True
+        Me.rankCheck.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rankCheck.Location = New System.Drawing.Point(743, 123)
+        Me.rankCheck.Name = "rankCheck"
+        Me.rankCheck.Size = New System.Drawing.Size(81, 32)
+        Me.rankCheck.TabIndex = 108
+        Me.rankCheck.TabStop = True
+        Me.rankCheck.Text = "Rank:"
+        Me.rankCheck.UseVisualStyleBackColor = True
+        '
+        'statusCheck
+        '
+        Me.statusCheck.AutoSize = True
+        Me.statusCheck.Font = New System.Drawing.Font("WeblySleek UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusCheck.Location = New System.Drawing.Point(743, 181)
+        Me.statusCheck.Name = "statusCheck"
+        Me.statusCheck.Size = New System.Drawing.Size(91, 32)
+        Me.statusCheck.TabIndex = 109
+        Me.statusCheck.TabStop = True
+        Me.statusCheck.Text = "Status:"
+        Me.statusCheck.UseVisualStyleBackColor = True
+        '
+        'searchText
+        '
+        Me.searchText.Font = New System.Drawing.Font("WeblySleek UI Semilight", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchText.Location = New System.Drawing.Point(558, 50)
+        Me.searchText.Name = "searchText"
+        Me.searchText.Size = New System.Drawing.Size(335, 39)
+        Me.searchText.TabIndex = 35
+        Me.searchText.Watermark = "Search Employee"
+        '
         'Reports
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -1091,7 +997,7 @@ Partial Class Reports
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.TabControl1)
         Me.Font = New System.Drawing.Font("WeblySleek UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.ForeColor = System.Drawing.Color.Gray
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -1102,106 +1008,82 @@ Partial Class Reports
         Me.customizedTab.ResumeLayout(False)
         Me.customizedTab.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.customizedDGV, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.accountingsearchDGV, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.masterlistTab.ResumeLayout(False)
         Me.masterlistTab.PerformLayout()
-        CType(Me.activityDGV, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.masterlistDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.accountingTab.ResumeLayout(False)
         Me.accountingTab.PerformLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.accountingDGV, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.dprTab.ResumeLayout(False)
+        Me.dprTab.PerformLayout()
+        CType(Me.dprDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents customizedTab As System.Windows.Forms.TabPage
     Friend WithEvents previewButton As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents birthdayDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents toDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents fromLabel As System.Windows.Forms.Label
+    Friend WithEvents fromDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents evalscoreText As System.Windows.Forms.TextBox
-    Friend WithEvents evalscoreRadio As System.Windows.Forms.RadioButton
-    Friend WithEvents datehiredRadio As System.Windows.Forms.RadioButton
-    Friend WithEvents civilstatusCombobox As System.Windows.Forms.ComboBox
-    Friend WithEvents civilstatusRadio As System.Windows.Forms.RadioButton
     Friend WithEvents groupText As System.Windows.Forms.TextBox
-    Friend WithEvents groupRadio As System.Windows.Forms.RadioButton
     Friend WithEvents rankText As System.Windows.Forms.TextBox
-    Friend WithEvents rankRadio As System.Windows.Forms.RadioButton
     Friend WithEvents departmentText As System.Windows.Forms.TextBox
     Friend WithEvents positionText As System.Windows.Forms.TextBox
-    Friend WithEvents departmentRadio As System.Windows.Forms.RadioButton
     Friend WithEvents presentaddressLabel As System.Windows.Forms.Label
-    Friend WithEvents positionRadio As System.Windows.Forms.RadioButton
     Friend WithEvents cancelButton2 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents createcustomizedButton As System.Windows.Forms.Button
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents DataGridView3 As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents customizedDGV As System.Windows.Forms.DataGridView
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents EmployeeNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Birthday As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GivenName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents userText As System.Windows.Forms.TextBox
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PHICNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents loginButton As System.Windows.Forms.Button
-    Friend WithEvents Philhealth As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SSSNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PagibigNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TINNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents RTN As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Department As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents HDMFIDNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Group As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MiddleName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DateHired As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents accountingsearchDGV As System.Windows.Forms.DataGridView
+    Friend WithEvents searchButton As System.Windows.Forms.Button
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents FirstName As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents masterlistTab As System.Windows.Forms.TabPage
     Friend WithEvents cancelButton4 As System.Windows.Forms.Button
     Friend WithEvents createButton As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents activityDGV As System.Windows.Forms.DataGridView
-    Friend WithEvents IDnumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents LastName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Position As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Rank As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Bday As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Birthplace As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CivilStatus As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PresentAddress As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmailAddress As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ContactNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TelephoneNumber As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FathersName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MothersMaidenName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SpouseName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SpousesBirthday As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ChildrensName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ChildrensBirthday As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents masterlistDGV As System.Windows.Forms.DataGridView
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents accountingTab As System.Windows.Forms.TabPage
     Friend WithEvents cancelButton1 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents createaccountingButton As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
+    Friend WithEvents accountingDGV As System.Windows.Forms.DataGridView
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents chooseButton As System.Windows.Forms.Button
+    Friend WithEvents searchText As Wireframes.WatermarkTextBox
+    Friend WithEvents statusCombobox As System.Windows.Forms.ComboBox
+    Friend WithEvents dprTab As System.Windows.Forms.TabPage
+    Friend WithEvents dprpreviewButton As System.Windows.Forms.Button
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents dprtoDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents dprfromDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dprrankText As System.Windows.Forms.TextBox
+    Friend WithEvents dprpositionText As System.Windows.Forms.TextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents dprcreateButton As System.Windows.Forms.Button
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents dprDGV As System.Windows.Forms.DataGridView
+    Friend WithEvents dateCheck As System.Windows.Forms.RadioButton
+    Friend WithEvents rankCheck As System.Windows.Forms.RadioButton
+    Friend WithEvents scoreCheck As System.Windows.Forms.RadioButton
+    Friend WithEvents groupCheck As System.Windows.Forms.RadioButton
+    Friend WithEvents departmentCheck As System.Windows.Forms.RadioButton
+    Friend WithEvents positionCheck As System.Windows.Forms.RadioButton
+    Friend WithEvents statusCheck As System.Windows.Forms.RadioButton
 
 End Class
