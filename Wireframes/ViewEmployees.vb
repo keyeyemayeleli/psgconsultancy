@@ -2,6 +2,7 @@
 Imports System.Data.Common
 Imports System.IO
 Public Class ViewEmployees
+    Dim picaddress As String
     Private Sub ViewEmployees_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Try
@@ -46,6 +47,11 @@ Public Class ViewEmployees
                 pagibignumberLabel.Text = dt.Rows(0)("pagibig_number").ToString
                 rtnLabel.Text = dt.Rows(0)("RTN").ToString
                 hdmfnumberLabel.Text = dt.Rows(0)("HDMF_MID_number").ToString
+                If dt.Rows(0)("picture_address") IsNot Nothing Then
+                    picbox.BackgroundImage = Image.FromFile(dt.Rows(0)("picture_address").ToString)
+                    picbox.BackgroundImageLayout = ImageLayout.Zoom
+                    picaddress = dt.Rows(0)("picture_address").ToString
+                End If
             End If
             connection.Close()
         Catch ex As Exception

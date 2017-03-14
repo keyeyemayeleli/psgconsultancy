@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data.Common
 Public Class EditEmployee
-
+    Dim picaddress As String
     Private Sub EditEmployee_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
         Me.birthdayDate.Format = DateTimePickerFormat.Custom
@@ -85,6 +85,11 @@ Public Class EditEmployee
                 pagibignumberText.Text = dt.Rows(0)("pagibig_number").ToString
                 rtnText.Text = dt.Rows(0)("RTN").ToString
                 hdmfnumberText.Text = dt.Rows(0)("HDMF_MID_number").ToString
+                If dt.Rows(0)("picture_address") IsNot Nothing Then
+                    picbox.BackgroundImage = Image.FromFile(dt.Rows(0)("picture_address").ToString)
+                    picbox.BackgroundImageLayout = ImageLayout.Zoom
+                    picaddress = dt.Rows(0)("picture_address").ToString
+                End If
             End If
 
 
@@ -157,7 +162,7 @@ Public Class EditEmployee
     Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click
         Try
 
-            Dim sql As String = "UPDATE employee201files SET last_name= @lastname, first_name= @firstname, middle_name= @middlename, status= @status, tin_number=@tin, sss_number= @sss, philhealth_number = @philhealth, pagibig_number= @pagibig, RTN= @rtn, HDMF_MID_number= @grp, date_hired= @hiredate, company_group= @grp, department= @dept, position= @pos, rank= @rank, birthday= @bday, birth_place= @bplace, civil_status= @civil, present_address= @presentadd, permanent_address= @permanentadd, email= @emailadd, contact_number= @contactnum, telephone_number= @telnum, fathers_name= @father, mothers_name= @mother, spouse_name= @spouse, spouse_birthday= @spousebday, nextofkin_name= @nokname, nextofkin_birthday= @nokbday, status_reason= @statreason, statusreason_date= @statreasondate WHERE employee_id = @eid "
+            Dim sql As String = "UPDATE employee201files SET last_name= @lastname, first_name= @firstname, middle_name= @middlename, status= @status, tin_number=@tin, sss_number= @sss, philhealth_number = @philhealth, pagibig_number= @pagibig, RTN= @rtn, HDMF_MID_number= @grp, date_hired= @hiredate, company_group= @grp, department= @dept, position= @pos, rank= @rank, birthday= @bday, birth_place= @bplace, civil_status= @civil, present_address= @presentadd, permanent_address= @permanentadd, email= @emailadd, contact_number= @contactnum, telephone_number= @telnum, fathers_name= @father, mothers_name= @mother, spouse_name= @spouse, spouse_birthday= @spousebday, nextofkin_name= @nokname, nextofkin_birthday= @nokbday, status_reason= @statreason, statusreason_date= @statreasondate, picture_address= @pic WHERE employee_id = @eid "
             Dim sql2 As String = "INSERT INTO children (employee_id, child_name, child_birthday) VALUES (@empid, @cname, @cbday)"
             Dim sql3 As String = "INSERT INTO beneficiaries (employee_id, ben_name, ben_birthday, ben_relation) VALUES (@empid, @bname, @bbday, @brel)"
             Dim sql4 As String = "DELETE FROM children WHERE employee_id= @empid; DELETE FROM beneficiaries WHERE employee_id= @empid"
@@ -201,6 +206,7 @@ Public Class EditEmployee
                         .Parameters.AddWithValue("statreason", statusreasonText.Text)
                         .Parameters.AddWithValue("statreasondate", statusdateDate.Text)
                         .Parameters.AddWithValue("eid", Employee)
+                        .Parameters.AddWithValue("pic", picaddress)
                     End With
 
                     Try
@@ -408,5 +414,26 @@ Public Class EditEmployee
 
     Private Sub adddocumentsButton_Click(sender As Object, e As EventArgs) Handles adddocumentsButton.Click
 
+    End Sub
+
+    Private Sub changepicButton_Click(sender As Object, e As EventArgs) Handles changepicButton.Click
+        Dim pic As New OpenFileDialog()
+        pic.InitialDirectory = "c:\"
+        pic.Filter = "Image files (*.jpg,*.jpeg,*.jpe,*.jfif,*.png)|*.jpg;*.jpeg;*.jpe;*.jfif;*.png"
+        pic.FilterIndex = 1
+        pic.Multiselect = False
+        pic.RestoreDirectory = True
+
+        If pic.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Try
+                If pic.FileName IsNot Nothing Then
+                    picbox.BackgroundImage = Image.FromFile(pic.FileName)
+                    picbox.BackgroundImageLayout = ImageLayout.Zoom
+                    picaddress = pic.FileName
+                End If
+            Catch ex As Exception
+                MessageBox.Show("Cannot read file from disk. Original error: " & ex.Message)
+            End Try
+        End If
     End Sub
 End Class
