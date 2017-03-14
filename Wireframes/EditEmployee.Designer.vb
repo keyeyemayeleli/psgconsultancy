@@ -64,16 +64,10 @@ Partial Class EditEmployee
         Me.PictureBox27 = New System.Windows.Forms.PictureBox()
         Me.PictureBox29 = New System.Windows.Forms.PictureBox()
         Me.changepicButton = New System.Windows.Forms.Button()
-        Me.score = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.month = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.monthlyDatagrid = New System.Windows.Forms.DataGridView()
-        Me.remarks = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.monthlyevalTab = New System.Windows.Forms.TabPage()
         Me.yearlyevalTab = New System.Windows.Forms.TabPage()
         Me.yearlyDatadrid = New System.Windows.Forms.DataGridView()
-        Me.year = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.yearlyscore = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.yearlyremarks = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.documentsTab = New System.Windows.Forms.TabPage()
         Me.statusdateLabel = New System.Windows.Forms.Label()
         Me.workinfoTab = New System.Windows.Forms.TabPage()
@@ -671,19 +665,6 @@ Partial Class EditEmployee
         Me.changepicButton.Text = "Change Picture"
         Me.changepicButton.UseVisualStyleBackColor = False
         '
-        'score
-        '
-        Me.score.HeaderText = "Score"
-        Me.score.Name = "score"
-        Me.score.ReadOnly = True
-        '
-        'month
-        '
-        Me.month.HeaderText = "Month"
-        Me.month.Name = "month"
-        Me.month.ReadOnly = True
-        Me.month.Width = 150
-        '
         'monthlyDatagrid
         '
         Me.monthlyDatagrid.AllowUserToAddRows = False
@@ -691,7 +672,6 @@ Partial Class EditEmployee
         Me.monthlyDatagrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.monthlyDatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.monthlyDatagrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.month, Me.score, Me.remarks})
         Me.monthlyDatagrid.Location = New System.Drawing.Point(22, 19)
         Me.monthlyDatagrid.MultiSelect = False
         Me.monthlyDatagrid.Name = "monthlyDatagrid"
@@ -699,20 +679,13 @@ Partial Class EditEmployee
         Me.monthlyDatagrid.Size = New System.Drawing.Size(798, 446)
         Me.monthlyDatagrid.TabIndex = 0
         '
-        'remarks
-        '
-        Me.remarks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.remarks.HeaderText = "Remarks"
-        Me.remarks.Name = "remarks"
-        Me.remarks.ReadOnly = True
-        '
         'monthlyevalTab
         '
         Me.monthlyevalTab.Controls.Add(Me.monthlyDatagrid)
-        Me.monthlyevalTab.Location = New System.Drawing.Point(4, 22)
+        Me.monthlyevalTab.Location = New System.Drawing.Point(4, 29)
         Me.monthlyevalTab.Name = "monthlyevalTab"
         Me.monthlyevalTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.monthlyevalTab.Size = New System.Drawing.Size(839, 490)
+        Me.monthlyevalTab.Size = New System.Drawing.Size(839, 483)
         Me.monthlyevalTab.TabIndex = 6
         Me.monthlyevalTab.Text = "Monthly Evaluations"
         Me.monthlyevalTab.UseVisualStyleBackColor = True
@@ -720,9 +693,9 @@ Partial Class EditEmployee
         'yearlyevalTab
         '
         Me.yearlyevalTab.Controls.Add(Me.yearlyDatadrid)
-        Me.yearlyevalTab.Location = New System.Drawing.Point(4, 22)
+        Me.yearlyevalTab.Location = New System.Drawing.Point(4, 29)
         Me.yearlyevalTab.Name = "yearlyevalTab"
-        Me.yearlyevalTab.Size = New System.Drawing.Size(839, 490)
+        Me.yearlyevalTab.Size = New System.Drawing.Size(839, 483)
         Me.yearlyevalTab.TabIndex = 7
         Me.yearlyevalTab.Text = "Yearly Evaluations"
         Me.yearlyevalTab.UseVisualStyleBackColor = True
@@ -732,28 +705,10 @@ Partial Class EditEmployee
         Me.yearlyDatadrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.yearlyDatadrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.yearlyDatadrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.year, Me.yearlyscore, Me.yearlyremarks})
         Me.yearlyDatadrid.Location = New System.Drawing.Point(20, 18)
         Me.yearlyDatadrid.Name = "yearlyDatadrid"
         Me.yearlyDatadrid.Size = New System.Drawing.Size(798, 446)
         Me.yearlyDatadrid.TabIndex = 1
-        '
-        'year
-        '
-        Me.year.HeaderText = "Year"
-        Me.year.Name = "year"
-        Me.year.Width = 150
-        '
-        'yearlyscore
-        '
-        Me.yearlyscore.HeaderText = "Score"
-        Me.yearlyscore.Name = "yearlyscore"
-        '
-        'yearlyremarks
-        '
-        Me.yearlyremarks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.yearlyremarks.HeaderText = "Remarks"
-        Me.yearlyremarks.Name = "yearlyremarks"
         '
         'documentsTab
         '
@@ -1727,16 +1682,10 @@ Partial Class EditEmployee
     Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox29 As System.Windows.Forms.PictureBox
     Friend WithEvents changepicButton As System.Windows.Forms.Button
-    Friend WithEvents score As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents month As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents monthlyDatagrid As System.Windows.Forms.DataGridView
-    Friend WithEvents remarks As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents monthlyevalTab As System.Windows.Forms.TabPage
     Friend WithEvents yearlyevalTab As System.Windows.Forms.TabPage
     Friend WithEvents yearlyDatadrid As System.Windows.Forms.DataGridView
-    Friend WithEvents year As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents yearlyscore As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents yearlyremarks As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents documentsTab As System.Windows.Forms.TabPage
     Friend WithEvents statusdateLabel As System.Windows.Forms.Label
     Friend WithEvents workinfoTab As System.Windows.Forms.TabPage

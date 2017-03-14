@@ -141,6 +141,28 @@ Public Class EditEmployee
                 beneficiarynameTextone.Text = dt3.Rows(0)("ben_name").ToString
                 beneficiarybdayDateone.Text = dt3.Rows(0)("ben_birthday").ToString
             End If
+
+            Dim ds4 As New DataSet()
+            Dim sqlCmd4 As New SqlCommand("SELECT * FROM employee_ym_evals WHERE employee_ID = @eid AND status = 'monthly'", connection)
+            Dim dataadapter4 As New SqlDataAdapter(sqlCmd4)
+            sqlCmd4.Parameters.AddWithValue("@eid", Employee)
+            dataadapter4.Fill(ds4, "employee_ym_evals")
+            monthlyDatagrid.DataSource = ds4
+            monthlyDatagrid.DataMember = "employee_ym_evals"
+            monthlyDatagrid.Columns("date").HeaderCell.Value = "Month"
+            monthlyDatagrid.Columns("score").HeaderCell.Value = "Score"
+            monthlyDatagrid.Columns("remarks").HeaderCell.Value = "Remarks"
+
+            Dim ds5 As New DataSet()
+            Dim sqlCmd5 As New SqlCommand("SELECT * FROM employee_ym_evals WHERE employee_ID = @eid AND status = 'yearly'", connection)
+            Dim dataadapter5 As New SqlDataAdapter(sqlCmd5)
+            sqlCmd5.Parameters.AddWithValue("@eid", Employee)
+            dataadapter5.Fill(ds5, "employee_ym_evals")
+            yearlyDatadrid.DataSource = ds5
+            yearlyDatadrid.DataMember = "employee_ym_evals"
+            yearlyDatadrid.Columns("date").HeaderCell.Value = "Month"
+            yearlyDatadrid.Columns("score").HeaderCell.Value = "Score"
+            yearlyDatadrid.Columns("remarks").HeaderCell.Value = "Remarks"
             connection.Close()
         Catch ex As Exception
             MessageBox.Show("Error while connecting to database" & ex.Message)
