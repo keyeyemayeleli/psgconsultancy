@@ -66,16 +66,10 @@ Partial Class ViewEmployees
         Me.PictureBox27 = New System.Windows.Forms.PictureBox()
         Me.PictureBox28 = New System.Windows.Forms.PictureBox()
         Me.PictureBox29 = New System.Windows.Forms.PictureBox()
-        Me.month = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.yearlyremarks = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.monthlyDatagrid = New System.Windows.Forms.DataGridView()
-        Me.score = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.remarks = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.monthlyTab = New System.Windows.Forms.TabPage()
-        Me.yearlyscore = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.yearlyTab = New System.Windows.Forms.TabPage()
         Me.yearlyDatadrid = New System.Windows.Forms.DataGridView()
-        Me.year = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.workinfoTab = New System.Windows.Forms.TabPage()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
@@ -123,12 +117,12 @@ Partial Class ViewEmployees
         Me.bdayLabel = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.familyinfoTab = New System.Windows.Forms.TabPage()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.childrenbdayLabel4 = New System.Windows.Forms.Label()
+        Me.childrennamelabel4 = New System.Windows.Forms.Label()
+        Me.childrenbdayLabel3 = New System.Windows.Forms.Label()
+        Me.childrennamelabel3 = New System.Windows.Forms.Label()
+        Me.childrenbdayLabel2 = New System.Windows.Forms.Label()
+        Me.childrennamelabel2 = New System.Windows.Forms.Label()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
@@ -155,6 +149,7 @@ Partial Class ViewEmployees
         Me.backButton = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.documentsLV = New System.Windows.Forms.ListView()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.otherTab.SuspendLayout()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -194,6 +189,7 @@ Partial Class ViewEmployees
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.documentsTab.SuspendLayout()
         CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -299,9 +295,9 @@ Partial Class ViewEmployees
         Me.beneficiaryrelationLabelfour.ForeColor = System.Drawing.Color.Gray
         Me.beneficiaryrelationLabelfour.Location = New System.Drawing.Point(33, 377)
         Me.beneficiaryrelationLabelfour.Name = "beneficiaryrelationLabelfour"
-        Me.beneficiaryrelationLabelfour.Size = New System.Drawing.Size(376, 24)
+        Me.beneficiaryrelationLabelfour.Size = New System.Drawing.Size(42, 24)
         Me.beneficiaryrelationLabelfour.TabIndex = 59
-        Me.beneficiaryrelationLabelfour.Text = "Beneficiary's Relation: Beneficiary's Relation"
+        Me.beneficiaryrelationLabelfour.Text = "N/A"
         '
         'PictureBox36
         '
@@ -323,9 +319,9 @@ Partial Class ViewEmployees
         Me.beneficiaryrelationLabelthree.ForeColor = System.Drawing.Color.Gray
         Me.beneficiaryrelationLabelthree.Location = New System.Drawing.Point(33, 273)
         Me.beneficiaryrelationLabelthree.Name = "beneficiaryrelationLabelthree"
-        Me.beneficiaryrelationLabelthree.Size = New System.Drawing.Size(376, 24)
+        Me.beneficiaryrelationLabelthree.Size = New System.Drawing.Size(42, 24)
         Me.beneficiaryrelationLabelthree.TabIndex = 57
-        Me.beneficiaryrelationLabelthree.Text = "Beneficiary's Relation: Beneficiary's Relation"
+        Me.beneficiaryrelationLabelthree.Text = "N/A"
         '
         'PictureBox35
         '
@@ -347,9 +343,9 @@ Partial Class ViewEmployees
         Me.beneficiaryrelationLabeltwo.ForeColor = System.Drawing.Color.Gray
         Me.beneficiaryrelationLabeltwo.Location = New System.Drawing.Point(33, 169)
         Me.beneficiaryrelationLabeltwo.Name = "beneficiaryrelationLabeltwo"
-        Me.beneficiaryrelationLabeltwo.Size = New System.Drawing.Size(376, 24)
+        Me.beneficiaryrelationLabeltwo.Size = New System.Drawing.Size(42, 24)
         Me.beneficiaryrelationLabeltwo.TabIndex = 55
-        Me.beneficiaryrelationLabeltwo.Text = "Beneficiary's Relation: Beneficiary's Relation"
+        Me.beneficiaryrelationLabeltwo.Text = "N/A"
         '
         'PictureBox34
         '
@@ -371,9 +367,9 @@ Partial Class ViewEmployees
         Me.beneficiaryrelationLabelone.ForeColor = System.Drawing.Color.Gray
         Me.beneficiaryrelationLabelone.Location = New System.Drawing.Point(34, 65)
         Me.beneficiaryrelationLabelone.Name = "beneficiaryrelationLabelone"
-        Me.beneficiaryrelationLabelone.Size = New System.Drawing.Size(376, 24)
+        Me.beneficiaryrelationLabelone.Size = New System.Drawing.Size(42, 24)
         Me.beneficiaryrelationLabelone.TabIndex = 53
-        Me.beneficiaryrelationLabelone.Text = "Beneficiary's Relation: Beneficiary's Relation"
+        Me.beneficiaryrelationLabelone.Text = "N/A"
         '
         'beneficiarybdayLabelfour
         '
@@ -382,9 +378,9 @@ Partial Class ViewEmployees
         Me.beneficiarybdayLabelfour.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarybdayLabelfour.Location = New System.Drawing.Point(437, 343)
         Me.beneficiarybdayLabelfour.Name = "beneficiarybdayLabelfour"
-        Me.beneficiarybdayLabelfour.Size = New System.Drawing.Size(374, 24)
+        Me.beneficiarybdayLabelfour.Size = New System.Drawing.Size(42, 24)
         Me.beneficiarybdayLabelfour.TabIndex = 52
-        Me.beneficiarybdayLabelfour.Text = "Beneficiary's Birthday: Beneficiary's Birthday"
+        Me.beneficiarybdayLabelfour.Text = "N/A"
         '
         'beneficiarybdayLabelthree
         '
@@ -393,9 +389,9 @@ Partial Class ViewEmployees
         Me.beneficiarybdayLabelthree.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarybdayLabelthree.Location = New System.Drawing.Point(436, 238)
         Me.beneficiarybdayLabelthree.Name = "beneficiarybdayLabelthree"
-        Me.beneficiarybdayLabelthree.Size = New System.Drawing.Size(374, 24)
+        Me.beneficiarybdayLabelthree.Size = New System.Drawing.Size(42, 24)
         Me.beneficiarybdayLabelthree.TabIndex = 51
-        Me.beneficiarybdayLabelthree.Text = "Beneficiary's Birthday: Beneficiary's Birthday"
+        Me.beneficiarybdayLabelthree.Text = "N/A"
         '
         'beneficiarynameLabelfour
         '
@@ -404,9 +400,9 @@ Partial Class ViewEmployees
         Me.beneficiarynameLabelfour.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarynameLabelfour.Location = New System.Drawing.Point(33, 343)
         Me.beneficiarynameLabelfour.Name = "beneficiarynameLabelfour"
-        Me.beneficiarynameLabelfour.Size = New System.Drawing.Size(342, 24)
+        Me.beneficiarynameLabelfour.Size = New System.Drawing.Size(42, 24)
         Me.beneficiarynameLabelfour.TabIndex = 50
-        Me.beneficiarynameLabelfour.Text = "Beneficiary's Name: Beneficiary's Name"
+        Me.beneficiarynameLabelfour.Text = "N/A"
         '
         'beneficiarybdayLabeltwo
         '
@@ -415,9 +411,9 @@ Partial Class ViewEmployees
         Me.beneficiarybdayLabeltwo.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarybdayLabeltwo.Location = New System.Drawing.Point(436, 129)
         Me.beneficiarybdayLabeltwo.Name = "beneficiarybdayLabeltwo"
-        Me.beneficiarybdayLabeltwo.Size = New System.Drawing.Size(374, 24)
+        Me.beneficiarybdayLabeltwo.Size = New System.Drawing.Size(42, 24)
         Me.beneficiarybdayLabeltwo.TabIndex = 49
-        Me.beneficiarybdayLabeltwo.Text = "Beneficiary's Birthday: Beneficiary's Birthday"
+        Me.beneficiarybdayLabeltwo.Text = "N/A"
         '
         'beneficiarynameLabelthree
         '
@@ -426,9 +422,9 @@ Partial Class ViewEmployees
         Me.beneficiarynameLabelthree.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarynameLabelthree.Location = New System.Drawing.Point(33, 238)
         Me.beneficiarynameLabelthree.Name = "beneficiarynameLabelthree"
-        Me.beneficiarynameLabelthree.Size = New System.Drawing.Size(342, 24)
+        Me.beneficiarynameLabelthree.Size = New System.Drawing.Size(42, 24)
         Me.beneficiarynameLabelthree.TabIndex = 48
-        Me.beneficiarynameLabelthree.Text = "Beneficiary's Name: Beneficiary's Name"
+        Me.beneficiarynameLabelthree.Text = "N/A"
         '
         'beneficiarybdayLabelone
         '
@@ -437,9 +433,9 @@ Partial Class ViewEmployees
         Me.beneficiarybdayLabelone.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarybdayLabelone.Location = New System.Drawing.Point(437, 22)
         Me.beneficiarybdayLabelone.Name = "beneficiarybdayLabelone"
-        Me.beneficiarybdayLabelone.Size = New System.Drawing.Size(374, 24)
+        Me.beneficiarybdayLabelone.Size = New System.Drawing.Size(42, 24)
         Me.beneficiarybdayLabelone.TabIndex = 47
-        Me.beneficiarybdayLabelone.Text = "Beneficiary's Birthday: Beneficiary's Birthday"
+        Me.beneficiarybdayLabelone.Text = "N/A"
         '
         'beneficiarynameLabeltwo
         '
@@ -448,9 +444,9 @@ Partial Class ViewEmployees
         Me.beneficiarynameLabeltwo.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarynameLabeltwo.Location = New System.Drawing.Point(33, 129)
         Me.beneficiarynameLabeltwo.Name = "beneficiarynameLabeltwo"
-        Me.beneficiarynameLabeltwo.Size = New System.Drawing.Size(342, 24)
+        Me.beneficiarynameLabeltwo.Size = New System.Drawing.Size(42, 24)
         Me.beneficiarynameLabeltwo.TabIndex = 46
-        Me.beneficiarynameLabeltwo.Text = "Beneficiary's Name: Beneficiary's Name"
+        Me.beneficiarynameLabeltwo.Text = "N/A"
         '
         'PictureBox33
         '
@@ -494,9 +490,9 @@ Partial Class ViewEmployees
         Me.beneficiarynameLabelone.ForeColor = System.Drawing.Color.Gray
         Me.beneficiarynameLabelone.Location = New System.Drawing.Point(34, 22)
         Me.beneficiarynameLabelone.Name = "beneficiarynameLabelone"
-        Me.beneficiarynameLabelone.Size = New System.Drawing.Size(342, 24)
+        Me.beneficiarynameLabelone.Size = New System.Drawing.Size(42, 24)
         Me.beneficiarynameLabelone.TabIndex = 40
-        Me.beneficiarynameLabelone.Text = "Beneficiary's Name: Beneficiary's Name"
+        Me.beneficiarynameLabelone.Text = "N/A"
         '
         'philhealthnumberLabel
         '
@@ -737,44 +733,16 @@ Partial Class ViewEmployees
         Me.PictureBox29.TabIndex = 55
         Me.PictureBox29.TabStop = False
         '
-        'month
-        '
-        Me.month.HeaderText = "Month"
-        Me.month.Name = "month"
-        Me.month.ReadOnly = True
-        Me.month.Width = 150
-        '
-        'yearlyremarks
-        '
-        Me.yearlyremarks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.yearlyremarks.HeaderText = "Remarks"
-        Me.yearlyremarks.Name = "yearlyremarks"
-        Me.yearlyremarks.ReadOnly = True
-        '
         'monthlyDatagrid
         '
         Me.monthlyDatagrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.monthlyDatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.monthlyDatagrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.month, Me.score, Me.remarks})
         Me.monthlyDatagrid.Location = New System.Drawing.Point(20, 18)
         Me.monthlyDatagrid.Name = "monthlyDatagrid"
         Me.monthlyDatagrid.ReadOnly = True
         Me.monthlyDatagrid.Size = New System.Drawing.Size(798, 446)
         Me.monthlyDatagrid.TabIndex = 1
-        '
-        'score
-        '
-        Me.score.HeaderText = "Score"
-        Me.score.Name = "score"
-        Me.score.ReadOnly = True
-        '
-        'remarks
-        '
-        Me.remarks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.remarks.HeaderText = "Remarks"
-        Me.remarks.Name = "remarks"
-        Me.remarks.ReadOnly = True
         '
         'monthlyTab
         '
@@ -786,18 +754,12 @@ Partial Class ViewEmployees
         Me.monthlyTab.Text = "Monthly Evaluations"
         Me.monthlyTab.UseVisualStyleBackColor = True
         '
-        'yearlyscore
-        '
-        Me.yearlyscore.HeaderText = "Score"
-        Me.yearlyscore.Name = "yearlyscore"
-        Me.yearlyscore.ReadOnly = True
-        '
         'yearlyTab
         '
         Me.yearlyTab.Controls.Add(Me.yearlyDatadrid)
-        Me.yearlyTab.Location = New System.Drawing.Point(4, 22)
+        Me.yearlyTab.Location = New System.Drawing.Point(4, 29)
         Me.yearlyTab.Name = "yearlyTab"
-        Me.yearlyTab.Size = New System.Drawing.Size(839, 490)
+        Me.yearlyTab.Size = New System.Drawing.Size(839, 483)
         Me.yearlyTab.TabIndex = 7
         Me.yearlyTab.Text = "Yearly Evaluations"
         Me.yearlyTab.UseVisualStyleBackColor = True
@@ -807,19 +769,11 @@ Partial Class ViewEmployees
         Me.yearlyDatadrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.yearlyDatadrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.yearlyDatadrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.year, Me.yearlyscore, Me.yearlyremarks})
         Me.yearlyDatadrid.Location = New System.Drawing.Point(20, 18)
         Me.yearlyDatadrid.Name = "yearlyDatadrid"
         Me.yearlyDatadrid.ReadOnly = True
         Me.yearlyDatadrid.Size = New System.Drawing.Size(798, 446)
         Me.yearlyDatadrid.TabIndex = 2
-        '
-        'year
-        '
-        Me.year.HeaderText = "Year"
-        Me.year.Name = "year"
-        Me.year.ReadOnly = True
-        Me.year.Width = 150
         '
         'workinfoTab
         '
@@ -1404,12 +1358,12 @@ Partial Class ViewEmployees
         '
         'familyinfoTab
         '
-        Me.familyinfoTab.Controls.Add(Me.Label6)
-        Me.familyinfoTab.Controls.Add(Me.Label7)
-        Me.familyinfoTab.Controls.Add(Me.Label8)
-        Me.familyinfoTab.Controls.Add(Me.Label9)
-        Me.familyinfoTab.Controls.Add(Me.Label4)
-        Me.familyinfoTab.Controls.Add(Me.Label5)
+        Me.familyinfoTab.Controls.Add(Me.childrenbdayLabel4)
+        Me.familyinfoTab.Controls.Add(Me.childrennamelabel4)
+        Me.familyinfoTab.Controls.Add(Me.childrenbdayLabel3)
+        Me.familyinfoTab.Controls.Add(Me.childrennamelabel3)
+        Me.familyinfoTab.Controls.Add(Me.childrenbdayLabel2)
+        Me.familyinfoTab.Controls.Add(Me.childrennamelabel2)
         Me.familyinfoTab.Controls.Add(Me.PictureBox10)
         Me.familyinfoTab.Controls.Add(Me.PictureBox11)
         Me.familyinfoTab.Controls.Add(Me.PictureBox9)
@@ -1431,71 +1385,71 @@ Partial Class ViewEmployees
         Me.familyinfoTab.Text = "Family Information"
         Me.familyinfoTab.UseVisualStyleBackColor = True
         '
-        'Label6
+        'childrenbdayLabel4
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Gray
-        Me.Label6.Location = New System.Drawing.Point(443, 391)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(370, 24)
-        Me.Label6.TabIndex = 45
-        Me.Label6.Text = "Child/ren's Birthday/s: Child/ren's Birthday/s"
+        Me.childrenbdayLabel4.AutoSize = True
+        Me.childrenbdayLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childrenbdayLabel4.ForeColor = System.Drawing.Color.Gray
+        Me.childrenbdayLabel4.Location = New System.Drawing.Point(443, 391)
+        Me.childrenbdayLabel4.Name = "childrenbdayLabel4"
+        Me.childrenbdayLabel4.Size = New System.Drawing.Size(42, 24)
+        Me.childrenbdayLabel4.TabIndex = 45
+        Me.childrenbdayLabel4.Text = "N/A"
         '
-        'Label7
+        'childrennamelabel4
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Gray
-        Me.Label7.Location = New System.Drawing.Point(43, 391)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(338, 24)
-        Me.Label7.TabIndex = 44
-        Me.Label7.Text = "Child/ren's Name/s: Child/ren's Name/s"
+        Me.childrennamelabel4.AutoSize = True
+        Me.childrennamelabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childrennamelabel4.ForeColor = System.Drawing.Color.Gray
+        Me.childrennamelabel4.Location = New System.Drawing.Point(43, 391)
+        Me.childrennamelabel4.Name = "childrennamelabel4"
+        Me.childrennamelabel4.Size = New System.Drawing.Size(42, 24)
+        Me.childrennamelabel4.TabIndex = 44
+        Me.childrennamelabel4.Text = "N/A"
         '
-        'Label8
+        'childrenbdayLabel3
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.Gray
-        Me.Label8.Location = New System.Drawing.Point(443, 331)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(370, 24)
-        Me.Label8.TabIndex = 43
-        Me.Label8.Text = "Child/ren's Birthday/s: Child/ren's Birthday/s"
+        Me.childrenbdayLabel3.AutoSize = True
+        Me.childrenbdayLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childrenbdayLabel3.ForeColor = System.Drawing.Color.Gray
+        Me.childrenbdayLabel3.Location = New System.Drawing.Point(443, 331)
+        Me.childrenbdayLabel3.Name = "childrenbdayLabel3"
+        Me.childrenbdayLabel3.Size = New System.Drawing.Size(42, 24)
+        Me.childrenbdayLabel3.TabIndex = 43
+        Me.childrenbdayLabel3.Text = "N/A"
         '
-        'Label9
+        'childrennamelabel3
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.Gray
-        Me.Label9.Location = New System.Drawing.Point(40, 331)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(338, 24)
-        Me.Label9.TabIndex = 42
-        Me.Label9.Text = "Child/ren's Name/s: Child/ren's Name/s"
+        Me.childrennamelabel3.AutoSize = True
+        Me.childrennamelabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childrennamelabel3.ForeColor = System.Drawing.Color.Gray
+        Me.childrennamelabel3.Location = New System.Drawing.Point(40, 331)
+        Me.childrennamelabel3.Name = "childrennamelabel3"
+        Me.childrennamelabel3.Size = New System.Drawing.Size(42, 24)
+        Me.childrennamelabel3.TabIndex = 42
+        Me.childrennamelabel3.Text = "N/A"
         '
-        'Label4
+        'childrenbdayLabel2
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Gray
-        Me.Label4.Location = New System.Drawing.Point(443, 277)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(370, 24)
-        Me.Label4.TabIndex = 41
-        Me.Label4.Text = "Child/ren's Birthday/s: Child/ren's Birthday/s"
+        Me.childrenbdayLabel2.AutoSize = True
+        Me.childrenbdayLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childrenbdayLabel2.ForeColor = System.Drawing.Color.Gray
+        Me.childrenbdayLabel2.Location = New System.Drawing.Point(443, 277)
+        Me.childrenbdayLabel2.Name = "childrenbdayLabel2"
+        Me.childrenbdayLabel2.Size = New System.Drawing.Size(42, 24)
+        Me.childrenbdayLabel2.TabIndex = 41
+        Me.childrenbdayLabel2.Text = "N/A"
         '
-        'Label5
+        'childrennamelabel2
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Gray
-        Me.Label5.Location = New System.Drawing.Point(40, 277)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(338, 24)
-        Me.Label5.TabIndex = 40
-        Me.Label5.Text = "Child/ren's Name/s: Child/ren's Name/s"
+        Me.childrennamelabel2.AutoSize = True
+        Me.childrennamelabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childrennamelabel2.ForeColor = System.Drawing.Color.Gray
+        Me.childrennamelabel2.Location = New System.Drawing.Point(40, 277)
+        Me.childrennamelabel2.Name = "childrennamelabel2"
+        Me.childrennamelabel2.Size = New System.Drawing.Size(42, 24)
+        Me.childrennamelabel2.TabIndex = 40
+        Me.childrennamelabel2.Text = "N/A"
         '
         'PictureBox10
         '
@@ -1556,9 +1510,9 @@ Partial Class ViewEmployees
         Me.childrenbdayLabel.ForeColor = System.Drawing.Color.Gray
         Me.childrenbdayLabel.Location = New System.Drawing.Point(443, 222)
         Me.childrenbdayLabel.Name = "childrenbdayLabel"
-        Me.childrenbdayLabel.Size = New System.Drawing.Size(370, 24)
+        Me.childrenbdayLabel.Size = New System.Drawing.Size(42, 24)
         Me.childrenbdayLabel.TabIndex = 20
-        Me.childrenbdayLabel.Text = "Child/ren's Birthday/s: Child/ren's Birthday/s"
+        Me.childrenbdayLabel.Text = "N/A"
         '
         'childrennameLabel
         '
@@ -1567,9 +1521,9 @@ Partial Class ViewEmployees
         Me.childrennameLabel.ForeColor = System.Drawing.Color.Gray
         Me.childrennameLabel.Location = New System.Drawing.Point(40, 222)
         Me.childrennameLabel.Name = "childrennameLabel"
-        Me.childrennameLabel.Size = New System.Drawing.Size(338, 24)
+        Me.childrennameLabel.Size = New System.Drawing.Size(42, 24)
         Me.childrennameLabel.TabIndex = 19
-        Me.childrennameLabel.Text = "Child/ren's Name/s: Child/ren's Name/s"
+        Me.childrennameLabel.Text = "N/A"
         '
         'Label18
         '
@@ -1639,10 +1593,11 @@ Partial Class ViewEmployees
         '
         'documentsTab
         '
-        Me.documentsTab.Location = New System.Drawing.Point(4, 22)
+        Me.documentsTab.Controls.Add(Me.documentsLV)
+        Me.documentsTab.Location = New System.Drawing.Point(4, 29)
         Me.documentsTab.Name = "documentsTab"
         Me.documentsTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.documentsTab.Size = New System.Drawing.Size(839, 490)
+        Me.documentsTab.Size = New System.Drawing.Size(839, 483)
         Me.documentsTab.TabIndex = 1
         Me.documentsTab.Text = "Scanned Documents"
         Me.documentsTab.UseVisualStyleBackColor = True
@@ -1801,6 +1756,15 @@ Partial Class ViewEmployees
         Me.PictureBox1.TabIndex = 46
         Me.PictureBox1.TabStop = False
         '
+        'documentsLV
+        '
+        Me.documentsLV.Location = New System.Drawing.Point(0, 0)
+        Me.documentsLV.MultiSelect = False
+        Me.documentsLV.Name = "documentsLV"
+        Me.documentsLV.Size = New System.Drawing.Size(839, 229)
+        Me.documentsLV.TabIndex = 0
+        Me.documentsLV.UseCompatibleStateImageBehavior = False
+        '
         'ViewEmployees
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -1874,6 +1838,7 @@ Partial Class ViewEmployees
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.documentsTab.ResumeLayout(False)
         CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1923,16 +1888,10 @@ Partial Class ViewEmployees
     Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox28 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox29 As System.Windows.Forms.PictureBox
-    Friend WithEvents month As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents yearlyremarks As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents monthlyDatagrid As System.Windows.Forms.DataGridView
-    Friend WithEvents score As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents remarks As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents monthlyTab As System.Windows.Forms.TabPage
-    Friend WithEvents yearlyscore As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents yearlyTab As System.Windows.Forms.TabPage
     Friend WithEvents yearlyDatadrid As System.Windows.Forms.DataGridView
-    Friend WithEvents year As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents workinfoTab As System.Windows.Forms.TabPage
     Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
@@ -1965,12 +1924,12 @@ Partial Class ViewEmployees
     Friend WithEvents bdayLabel As System.Windows.Forms.Label
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents familyinfoTab As System.Windows.Forms.TabPage
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents childrenbdayLabel4 As System.Windows.Forms.Label
+    Friend WithEvents childrennamelabel4 As System.Windows.Forms.Label
+    Friend WithEvents childrenbdayLabel3 As System.Windows.Forms.Label
+    Friend WithEvents childrennamelabel3 As System.Windows.Forms.Label
+    Friend WithEvents childrenbdayLabel2 As System.Windows.Forms.Label
+    Friend WithEvents childrennamelabel2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
@@ -2018,4 +1977,5 @@ Partial Class ViewEmployees
     Friend WithEvents Label30 As Label
     Friend WithEvents Label29 As Label
     Friend WithEvents Label28 As Label
+    Friend WithEvents documentsLV As ListView
 End Class

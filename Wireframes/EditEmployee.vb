@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data.Common
+Imports System.IO
 Public Class EditEmployee
     Dim picaddress As String
     Private Sub EditEmployee_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
@@ -85,7 +86,7 @@ Public Class EditEmployee
                 pagibignumberText.Text = dt.Rows(0)("pagibig_number").ToString
                 rtnText.Text = dt.Rows(0)("RTN").ToString
                 hdmfnumberText.Text = dt.Rows(0)("HDMF_MID_number").ToString
-                If dt.Rows(0)("picture_address") IsNot Nothing Then
+                If Not IsDBNull(dt.Rows(0)("picture_address")) Then
                     picbox.BackgroundImage = Image.FromFile(dt.Rows(0)("picture_address").ToString)
                     picbox.BackgroundImageLayout = ImageLayout.Zoom
                     picaddress = dt.Rows(0)("picture_address").ToString
@@ -152,6 +153,9 @@ Public Class EditEmployee
             monthlyDatagrid.Columns("date").HeaderCell.Value = "Month"
             monthlyDatagrid.Columns("score").HeaderCell.Value = "Score"
             monthlyDatagrid.Columns("remarks").HeaderCell.Value = "Remarks"
+            monthlyDatagrid.Columns("employee_id").Visible = False
+            monthlyDatagrid.Columns("eval_id").Visible = False
+            monthlyDatagrid.Columns("status").Visible = False
 
             Dim ds5 As New DataSet()
             Dim sqlCmd5 As New SqlCommand("SELECT * FROM employee_ym_evals WHERE employee_ID = @eid AND status = 'yearly'", connection)
@@ -163,6 +167,9 @@ Public Class EditEmployee
             yearlyDatadrid.Columns("date").HeaderCell.Value = "Month"
             yearlyDatadrid.Columns("score").HeaderCell.Value = "Score"
             yearlyDatadrid.Columns("remarks").HeaderCell.Value = "Remarks"
+            yearlyDatadrid.Columns("employee_id").Visible = False
+            yearlyDatadrid.Columns("eval_id").Visible = False
+            yearlyDatadrid.Columns("status").Visible = False
             connection.Close()
         Catch ex As Exception
             MessageBox.Show("Error while connecting to database" & ex.Message)
@@ -435,7 +442,47 @@ Public Class EditEmployee
     End Sub
 
     Private Sub adddocumentsButton_Click(sender As Object, e As EventArgs) Handles adddocumentsButton.Click
+        Dim open As New OpenFileDialog()
+        Dim sql As String = "INSERT INTO documents (employee_id, document_name, document_address) VALUES (@empid, @dname, @dadd)"
 
+        open.InitialDirectory = "c:\"
+        open.Filter = "All files (*.*)|*.*"
+        open.FilterIndex = 1
+        open.Multiselect = True
+        open.RestoreDirectory = True
+
+        If open.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Try
+                For Each file In open.FileNames
+
+                    Using conn As New SqlConnection(connectionString)
+                        Using cmd2 As New SqlCommand()
+                            With cmd2
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql
+                                .Parameters.AddWithValue("empid", Employee)
+                                .Parameters.AddWithValue("dadd", file)
+                                .Parameters.AddWithValue("dname", Path.GetFileNameWithoutExtension(file))
+                            End With
+                            Try
+                                conn.Open()
+                                cmd2.ExecuteNonQuery()
+                                cmd2.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+                    End Using
+
+                Next
+
+            Catch Ex As Exception
+                MessageBox.Show("Cannot read file from disk. Original error: " & Ex.Message)
+
+
+            End Try
+        End If
     End Sub
 
     Private Sub changepicButton_Click(sender As Object, e As EventArgs) Handles changepicButton.Click
@@ -456,6 +503,110 @@ Public Class EditEmployee
             Catch ex As Exception
                 MessageBox.Show("Cannot read file from disk. Original error: " & ex.Message)
             End Try
+        End If
+    End Sub
+
+    Private Sub addmevalsbutton_Click(sender As Object, e As EventArgs) Handles addmevalsbutton.Click
+        Evaltype = "monthly"
+        EvalNum = -1
+        Dim NewForm As EvaluationsForm
+        NewForm = New EvaluationsForm()
+        NewForm.Show()
+        NewForm = Nothing
+
+    End Sub
+
+    Private Sub editmevalsbutton_Click(sender As Object, e As EventArgs) Handles editmevalsbutton.Click
+        If monthlyDatagrid.SelectedRows.Count() = 1 Then
+            Evaltype = "monthly"
+            EvalNum = monthlyDatagrid.SelectedRows(0).Cells(0).Value.ToString
+            Dim NewForm As EvaluationsForm
+            NewForm = New EvaluationsForm()
+            NewForm.Show()
+            NewForm = Nothing
+        Else
+            MessageBox.Show("You need to select one record.", "Edit Employee Evaluation Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End If
+
+    End Sub
+
+    Private Sub deletemevalsbutton_Click(sender As Object, e As EventArgs) Handles deletemevalsbutton.Click
+        If monthlyDatagrid.SelectedRows.Count() = 1 Then
+            If MsgBox("Are you sure you want to delete record?", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
+                Dim deletesql As String = "DELETE FROM employee_ym_evals WHERE eval_id= @evid"
+
+                Using conn As New SqlConnection(connectionString)
+                    Using dcmd As New SqlCommand()
+                        With dcmd
+                            .Connection = conn
+                            .CommandType = CommandType.Text
+                            .CommandText = deletesql
+                            .Parameters.AddWithValue("evid", monthlyDatagrid.SelectedRows(0).Cells(0).Value.ToString)
+                        End With
+                        Try
+                            conn.Open()
+                            dcmd.ExecuteNonQuery()
+                            dcmd.Parameters.Clear()
+                        Catch ex As Exception
+                            MessageBox.Show(ex.Message.ToString(), "Error Message")
+                        End Try
+                    End Using
+                End Using
+
+            End If
+        Else
+            MessageBox.Show("You need to select one record.", "Delete Employee Evaluation Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End If
+    End Sub
+
+    Private Sub addyevalsbutton_Click(sender As Object, e As EventArgs) Handles addyevalsbutton.Click
+        Evaltype = "yearly"
+        EvalNum = -1
+        Dim NewForm As EvaluationsForm
+        NewForm = New EvaluationsForm()
+        NewForm.Show()
+        NewForm = Nothing
+    End Sub
+
+    Private Sub edityevalsbutton_Click(sender As Object, e As EventArgs) Handles edityevalsbutton.Click
+        If yearlyDatadrid.SelectedRows.Count() = 1 Then
+            Evaltype = "yearly"
+            EvalNum = monthlyDatagrid.SelectedRows(0).Cells(0).Value.ToString
+            Dim NewForm As EvaluationsForm
+            NewForm = New EvaluationsForm()
+            NewForm.Show()
+            NewForm = Nothing
+        Else
+            MessageBox.Show("You need to select one record.", "Edit Employee Evaluation Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End If
+    End Sub
+
+    Private Sub deleteyevalsbutton_Click(sender As Object, e As EventArgs) Handles deleteyevalsbutton.Click
+        If yearlyDatadrid.SelectedRows.Count() = 1 Then
+            If MsgBox("Are you sure you want to delete record?", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
+                Dim deletesql As String = "DELETE FROM employee_ym_evals WHERE eval_id= @evid"
+
+                Using conn As New SqlConnection(connectionString)
+                    Using dcmd As New SqlCommand()
+                        With dcmd
+                            .Connection = conn
+                            .CommandType = CommandType.Text
+                            .CommandText = deletesql
+                            .Parameters.AddWithValue("evid", yearlyDatadrid.SelectedRows(0).Cells(0).Value.ToString)
+                        End With
+                        Try
+                            conn.Open()
+                            dcmd.ExecuteNonQuery()
+                            dcmd.Parameters.Clear()
+                        Catch ex As Exception
+                            MessageBox.Show(ex.Message.ToString(), "Error Message")
+                        End Try
+                    End Using
+                End Using
+
+            End If
+        Else
+            MessageBox.Show("You need to select one record.", "Delete Employee Evaluation Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
     End Sub
 End Class

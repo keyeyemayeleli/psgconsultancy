@@ -8,24 +8,29 @@ Public Class Homepage
     Private Sub Homepage_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         currentuser_label.Text = User
 
+        Try
 
-        Dim sql As String = "SELECT logs.time_stamp, logs.activity_name, accounts.username FROM logs JOIN accounts ON logs.account_id = accounts.account_id"
-        Dim connection As New SqlConnection(connectionString)
-        Dim dataadapter As New SqlDataAdapter(sql, connection)
-        Dim ds As New DataSet()
+            Dim sql As String = "SELECT logs.time_stamp, logs.activity_name, accounts.username FROM logs JOIN accounts ON logs.account_id = accounts.account_id"
+            Dim connection As New SqlConnection(connectionString)
+            Dim dataadapter As New SqlDataAdapter(sql, connection)
+            Dim ds As New DataSet()
 
-        connection.Open()
-        dataadapter.Fill(ds, "logs")
+            connection.Open()
+            dataadapter.Fill(ds, "logs")
 
-        connection.Close()
-        activityDGV.DataSource = ds
-        activityDGV.DataMember = "logs"
-        activityDGV.Columns("activity_name").HeaderCell.Value = "Activity"
-        activityDGV.Columns("time_stamp").HeaderCell.Value = "Date"
-        activityDGV.Columns("username").HeaderCell.Value = "User"
-        activityDGV.Columns("activity_name").Width = 420
-        activityDGV.Columns("username").Width = 200
-        activityDGV.Columns("time_stamp").Width = 140
+            connection.Close()
+            activityDGV.DataSource = ds
+            activityDGV.DataMember = "logs"
+            activityDGV.Columns("activity_name").HeaderCell.Value = "Activity"
+            activityDGV.Columns("time_stamp").HeaderCell.Value = "Date"
+            activityDGV.Columns("username").HeaderCell.Value = "User"
+            activityDGV.Columns("activity_name").Width = 420
+            activityDGV.Columns("username").Width = 200
+            activityDGV.Columns("time_stamp").Width = 140
+            connection.Close()
+        Catch ex As Exception
+            MessageBox.Show("Error while connecting to server " & ex.Message)
+        End Try
 
         Me.DateTimePicker1.Format = DateTimePickerFormat.Custom
         DateTimePicker1.CustomFormat = "MMMM d, yyyy"

@@ -47,12 +47,137 @@ Public Class ViewEmployees
                 pagibignumberLabel.Text = dt.Rows(0)("pagibig_number").ToString
                 rtnLabel.Text = dt.Rows(0)("RTN").ToString
                 hdmfnumberLabel.Text = dt.Rows(0)("HDMF_MID_number").ToString
-                If dt.Rows(0)("picture_address") IsNot Nothing Then
+                If Not IsDBNull(dt.Rows(0)("picture_address")) Then
                     picbox.BackgroundImage = Image.FromFile(dt.Rows(0)("picture_address").ToString)
                     picbox.BackgroundImageLayout = ImageLayout.Zoom
                     picaddress = dt.Rows(0)("picture_address").ToString
                 End If
             End If
+
+            Dim dt2 As New DataTable()
+            Dim sqlCmd2 As New SqlCommand("SELECT * FROM children WHERE employee_ID = @eid", connection)
+            Dim dataadapter2 As New SqlDataAdapter(sqlCmd2)
+
+            sqlCmd2.Parameters.AddWithValue("@eid", Employee)
+            dataadapter2.Fill(dt2)
+            Dim child_num As Integer = dt2.Rows.Count
+            If child_num > 0 Then
+                If child_num > 3 Then
+                    childrennamelabel4.Text = dt2.Rows(3)("child_name").ToString
+                    childrenbdayLabel4.Text = dt2.Rows(3)("child_birthday").ToString
+                End If
+                If child_num > 2 Then
+                    childrennamelabel3.Text = dt2.Rows(2)("child_name").ToString
+                    childrenbdayLabel3.Text = dt2.Rows(2)("child_birthday").ToString
+                End If
+                If child_num > 1 Then
+                    childrennamelabel2.Text = dt2.Rows(1)("child_name").ToString
+                    childrenbdayLabel2.Text = dt2.Rows(1)("child_birthday").ToString
+                End If
+                childrennameLabel.Text = dt2.Rows(0)("child_name").ToString
+                childrenbdayLabel.Text = dt2.Rows(0)("child_birthday").ToString
+            End If
+
+            Dim dt3 As New DataTable()
+            Dim sqlCmd3 As New SqlCommand("SELECT * FROM beneficiaries WHERE employee_ID = @eid", connection)
+            Dim dataadapter3 As New SqlDataAdapter(sqlCmd3)
+
+            sqlCmd3.Parameters.AddWithValue("@eid", Employee)
+            dataadapter3.Fill(dt3)
+            Dim ben_num As Integer
+            ben_num = dt3.Rows.Count
+            If ben_num > 0 Then
+                If ben_num > 3 Then
+                    beneficiarynameLabelfour.Text = dt3.Rows(3)("ben_name").ToString
+                    beneficiarybdayLabelfour.Text = dt3.Rows(3)("ben_birthday").ToString
+                    beneficiaryrelationLabelfour.Text = dt3.Rows(3)("ben_relation").ToString
+                End If
+                If ben_num > 2 Then
+                    beneficiarynameLabelthree.Text = dt3.Rows(2)("ben_name").ToString
+                    beneficiarybdayLabelthree.Text = dt3.Rows(2)("ben_birthday").ToString
+                    beneficiaryrelationLabelthree.Text = dt3.Rows(2)("ben_relation").ToString
+                End If
+                If ben_num > 1 Then
+                    beneficiarynameLabeltwo.Text = dt3.Rows(1)("ben_name").ToString
+                    beneficiarybdayLabeltwo.Text = dt3.Rows(1)("ben_birthday").ToString
+                    beneficiaryrelationLabeltwo.Text = dt3.Rows(1)("ben_relation").ToString
+                End If
+                beneficiarynameLabelone.Text = dt3.Rows(0)("ben_name").ToString
+                beneficiarybdayLabelone.Text = dt3.Rows(0)("ben_birthday").ToString
+                beneficiaryrelationLabelone.Text = dt3.Rows(0)("ben_relation").ToString
+            End If
+
+            Dim ds4 As New DataSet()
+            Dim sqlCmd4 As New SqlCommand("SELECT * FROM employee_ym_evals WHERE employee_ID = @eid AND status = 'monthly'", connection)
+            Dim dataadapter4 As New SqlDataAdapter(sqlCmd4)
+            sqlCmd4.Parameters.AddWithValue("@eid", Employee)
+            dataadapter4.Fill(ds4, "employee_ym_evals")
+            monthlyDatagrid.DataSource = ds4
+            monthlyDatagrid.DataMember = "employee_ym_evals"
+            monthlyDatagrid.Columns("date").HeaderCell.Value = "Month"
+            monthlyDatagrid.Columns("score").HeaderCell.Value = "Score"
+            monthlyDatagrid.Columns("remarks").HeaderCell.Value = "Remarks"
+            monthlyDatagrid.Columns("employee_id").Visible = False
+            monthlyDatagrid.Columns("eval_id").Visible = False
+            monthlyDatagrid.Columns("status").Visible = False
+
+            Dim ds5 As New DataSet()
+            Dim sqlCmd5 As New SqlCommand("SELECT * FROM employee_ym_evals WHERE employee_ID = @eid AND status = 'yearly'", connection)
+            Dim dataadapter5 As New SqlDataAdapter(sqlCmd5)
+            sqlCmd5.Parameters.AddWithValue("@eid", Employee)
+            dataadapter5.Fill(ds5, "employee_ym_evals")
+            yearlyDatadrid.DataSource = ds5
+            yearlyDatadrid.DataMember = "employee_ym_evals"
+            yearlyDatadrid.Columns("date").HeaderCell.Value = "Month"
+            yearlyDatadrid.Columns("score").HeaderCell.Value = "Score"
+            yearlyDatadrid.Columns("remarks").HeaderCell.Value = "Remarks"
+            yearlyDatadrid.Columns("employee_id").Visible = False
+            yearlyDatadrid.Columns("eval_id").Visible = False
+            yearlyDatadrid.Columns("status").Visible = False
+
+            Dim ds6 As New DataSet()
+            Dim imageList1 As New ImageList() With {.ImageSize = New Size(24, 24)}
+            Dim a() As String
+            documentsLV.View = View.Details
+            documentsLV.FullRowSelect = True
+            documentsLV.SmallImageList = imageList1
+
+            documentsLV.Columns.Add("", 100, HorizontalAlignment.Left)
+            documentsLV.Columns.Add("Full Name", 0, HorizontalAlignment.Left)
+            documentsLV.Columns.Add("Document name", 500, HorizontalAlignment.Left)
+
+
+            documentsLV.Columns(0).DisplayIndex = documentsLV.Columns.Count - 1
+
+            Dim dt7 As New DataTable()
+            Dim sqlCmd7 As New SqlCommand("SELECT * FROM documents WHERE employee_ID = @eid", connection)
+            Dim dataadapter7 As New SqlDataAdapter(sqlCmd7)
+            sqlCmd7.Parameters.AddWithValue("@eid", Employee)
+
+            dataadapter7.Fill(dt7)
+
+
+
+            If dt7.Rows.Count > 0 Then
+                ReDim a(0 To dt7.Rows.Count - 1)
+                For i = 0 To dt7.Rows.Count - 1
+                    a(i) = dt7.Rows(i)("document_address").ToString
+                Next
+                imageList1.Images.Clear()
+                For Each file In a
+
+                    imageList1.Images.Add(Icon.ExtractAssociatedIcon(file).ToBitmap)
+                    Dim lvi As New ListViewItem("", imageList1.Images.Count - 1)
+                    lvi.SubItems.Add(file)
+                    lvi.SubItems.Add(IO.Path.GetFileNameWithoutExtension(file))
+
+                    documentsLV.Items.Add(lvi)
+
+
+                Next
+
+            End If
+
             connection.Close()
         Catch ex As Exception
             MessageBox.Show("Error while connecting to database" & ex.Message)
@@ -118,6 +243,20 @@ Public Class ViewEmployees
 
 
             End Try
+        End If
+    End Sub
+
+    Private Sub documentsLV_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles documentsLV.MouseDoubleClick
+        If documentsLV.SelectedItems.Count() = 1 Then
+            Dim file As String
+            file = documentsLV.SelectedItems.Item(0).SubItems(1).Text
+            Dim p As New System.Diagnostics.Process
+            Dim s As New System.Diagnostics.ProcessStartInfo(file)
+            s.UseShellExecute = True
+            p.StartInfo = s
+            p.Start()
+        Else
+            MessageBox.Show("You need to select only one file.", "View Employee Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
     End Sub
 End Class
