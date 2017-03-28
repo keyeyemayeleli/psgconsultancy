@@ -170,49 +170,6 @@ Public Class EditEmployee
             yearlyDatadrid.Columns("employee_id").Visible = False
             yearlyDatadrid.Columns("eval_id").Visible = False
             yearlyDatadrid.Columns("status").Visible = False
-
-            Dim imageList1 As New ImageList() With {.ImageSize = New Size(24, 24)}
-            Dim a() As String
-            documentsLV.View = View.Details
-            documentsLV.FullRowSelect = True
-            documentsLV.SmallImageList = imageList1
-
-            documentsLV.Columns.Add("", 100, HorizontalAlignment.Left)
-            documentsLV.Columns.Add("Full Name", 0, HorizontalAlignment.Left)
-            documentsLV.Columns.Add("Document name", 500, HorizontalAlignment.Left)
-
-
-            documentsLV.Columns(0).DisplayIndex = documentsLV.Columns.Count - 1
-
-            Dim dt7 As New DataTable()
-            Dim sqlCmd7 As New SqlCommand("SELECT * FROM documents WHERE employee_ID = @eid", connection)
-            Dim dataadapter7 As New SqlDataAdapter(sqlCmd7)
-            sqlCmd7.Parameters.AddWithValue("@eid", Employee)
-
-            dataadapter7.Fill(dt7)
-
-
-
-            If dt7.Rows.Count > 0 Then
-                ReDim a(0 To dt7.Rows.Count - 1)
-                For i = 0 To dt7.Rows.Count - 1
-                    a(i) = dt7.Rows(i)("document_address").ToString
-                Next
-                imageList1.Images.Clear()
-                For Each file In a
-
-                    imageList1.Images.Add(Icon.ExtractAssociatedIcon(file).ToBitmap)
-                    Dim lvi As New ListViewItem("", imageList1.Images.Count - 1)
-                    lvi.SubItems.Add(file)
-                    lvi.SubItems.Add(IO.Path.GetFileNameWithoutExtension(file))
-
-                    documentsLV.Items.Add(lvi)
-
-
-                Next
-
-            End If
-
             connection.Close()
         Catch ex As Exception
             MessageBox.Show("Error while connecting to database" & ex.Message)
