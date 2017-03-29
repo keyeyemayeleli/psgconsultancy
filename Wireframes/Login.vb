@@ -15,9 +15,6 @@ Public Class Login
 
     End Sub
 
-    Private Sub loginButton_Click(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub loginButton_Click_1(sender As Object, e As EventArgs) Handles loginButton.Click
 

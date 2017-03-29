@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class EvaluationsForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class EvaluationsForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.employeenamelabel = New System.Windows.Forms.Label()
@@ -119,14 +119,14 @@ Partial Class EvaluationsForm
         Me.evalremarkstext.Location = New System.Drawing.Point(154, 224)
         Me.evalremarkstext.Name = "evalremarkstext"
         Me.evalremarkstext.Size = New System.Drawing.Size(100, 20)
-        Me.evalremarkstext.TabIndex = 11
+        Me.evalremarkstext.TabIndex = 20
         '
         'evalsavebutton
         '
         Me.evalsavebutton.Location = New System.Drawing.Point(52, 260)
         Me.evalsavebutton.Name = "evalsavebutton"
         Me.evalsavebutton.Size = New System.Drawing.Size(75, 23)
-        Me.evalsavebutton.TabIndex = 12
+        Me.evalsavebutton.TabIndex = 21
         Me.evalsavebutton.Text = "Save"
         Me.evalsavebutton.UseVisualStyleBackColor = True
         '
@@ -135,7 +135,7 @@ Partial Class EvaluationsForm
         Me.evalcancelbutton.Location = New System.Drawing.Point(154, 260)
         Me.evalcancelbutton.Name = "evalcancelbutton"
         Me.evalcancelbutton.Size = New System.Drawing.Size(75, 23)
-        Me.evalcancelbutton.TabIndex = 13
+        Me.evalcancelbutton.TabIndex = 22
         Me.evalcancelbutton.Text = "Cancel"
         Me.evalcancelbutton.UseVisualStyleBackColor = True
         '
@@ -145,7 +145,7 @@ Partial Class EvaluationsForm
         Me.evaldateText.Location = New System.Drawing.Point(154, 111)
         Me.evaldateText.Name = "evaldateText"
         Me.evaldateText.Size = New System.Drawing.Size(100, 21)
-        Me.evaldateText.TabIndex = 14
+        Me.evaldateText.TabIndex = 10
         '
         'Label5
         '
@@ -161,7 +161,7 @@ Partial Class EvaluationsForm
         Me.acscoreText.Location = New System.Drawing.Point(154, 143)
         Me.acscoreText.Name = "acscoreText"
         Me.acscoreText.Size = New System.Drawing.Size(100, 20)
-        Me.acscoreText.TabIndex = 10
+        Me.acscoreText.TabIndex = 11
         '
         'prscoreText
         '

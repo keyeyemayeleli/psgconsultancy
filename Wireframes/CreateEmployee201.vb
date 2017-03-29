@@ -67,6 +67,8 @@ Public Class CreateEmployee201
     Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click
 
 
+        Dim bday, spday, hireday As String
+
 
 
 
@@ -93,12 +95,12 @@ Public Class CreateEmployee201
                     .Parameters.AddWithValue("pagibig", pagibignumberText.Text)
                     .Parameters.AddWithValue("rtn", rtnText.Text)
                     .Parameters.AddWithValue("hdmf", hdmfnumberText.Text)
-                    .Parameters.AddWithValue("hiredate", datehiredDate.Text)
+
                     .Parameters.AddWithValue("grp", groupText.Text)
                     .Parameters.AddWithValue("dept", departmentText.Text)
                     .Parameters.AddWithValue("pos", positionText.Text)
                     .Parameters.AddWithValue("rank", rankText.Text)
-                    .Parameters.AddWithValue("bday", birthdayDate.Text)
+
                     .Parameters.AddWithValue("bplace", birthplaceText.Text)
                     .Parameters.AddWithValue("civil", civilstatusCombobox.Text)
                     .Parameters.AddWithValue("presentadd", presentaddressText.Text)
@@ -109,13 +111,30 @@ Public Class CreateEmployee201
                     .Parameters.AddWithValue("father", fathersnameText.Text)
                     .Parameters.AddWithValue("mother", mothersnameText.Text)
                     .Parameters.AddWithValue("spouse", spousenameText.Text)
-                    .Parameters.AddWithValue("spousebday", spousebdayDate.Text)
+
                     .Parameters.AddWithValue("nokname", nextofkinnameText.Text)
                     .Parameters.AddWithValue("nokbday", nextofkinbdayDate.Text)
                     .Parameters.AddWithValue("statreason", statusreasonText.Text)
                     .Parameters.AddWithValue("statreasondate", statusdateDate.Text)
                     .Parameters.AddWithValue("pic", picaddress)
                 End With
+                If datehiredcheck.Checked = True Then
+                    cmd.Parameters.AddWithValue("hiredate", datehiredDate.Text)
+                Else
+                    cmd.Parameters.AddWithValue("hiredate", DBNull.Value)
+                End If
+
+                If bdaycheck.Checked = True Then
+                    cmd.Parameters.AddWithValue("bday", birthdayDate.Text)
+                Else
+                    cmd.Parameters.AddWithValue("bday", DBNull.Value)
+                End If
+
+                If spousebdaycheck.Checked = True Then
+                    cmd.Parameters.AddWithValue("spousebday", spousebdayDate.Text)
+                Else
+                    cmd.Parameters.AddWithValue("spousebday", DBNull.Value)
+                End If
 
                 Try
                     conn.Open()
@@ -397,4 +416,30 @@ Public Class CreateEmployee201
             End Try
         End If
     End Sub
+
+    Private Sub bdaycheck_CheckedChanged(sender As Object, e As EventArgs) Handles bdaycheck.CheckedChanged
+        If bdaycheck.Checked = True Then
+            birthdayDate.Enabled = True
+        Else
+            birthdayDate.Enabled = False
+        End If
+    End Sub
+
+    Private Sub datehiredcheck_CheckedChanged(sender As Object, e As EventArgs) Handles datehiredcheck.CheckedChanged
+        If datehiredcheck.Checked = True Then
+            datehiredDate.Enabled = True
+        Else
+            datehiredDate.Enabled = False
+        End If
+    End Sub
+
+    Private Sub spousebdaycheck_CheckedChanged(sender As Object, e As EventArgs) Handles spousebdaycheck.CheckedChanged
+        If spousebdaycheck.Checked = True Then
+            spousebdayDate.Enabled = True
+        Else
+            spousebdayDate.Enabled = False
+        End If
+    End Sub
+
+
 End Class

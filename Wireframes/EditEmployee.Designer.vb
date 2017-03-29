@@ -75,6 +75,7 @@ Partial Class EditEmployee
         Me.edityevalsbutton = New System.Windows.Forms.Button()
         Me.yearlyDatadrid = New System.Windows.Forms.DataGridView()
         Me.documentsTab = New System.Windows.Forms.TabPage()
+        Me.documentsLV = New System.Windows.Forms.ListView()
         Me.statusdateLabel = New System.Windows.Forms.Label()
         Me.workinfoTab = New System.Windows.Forms.TabPage()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -144,7 +145,9 @@ Partial Class EditEmployee
         Me.middlenameText = New Wireframes.WatermarkTextBox()
         Me.givennameText = New Wireframes.WatermarkTextBox()
         Me.lastnameText = New Wireframes.WatermarkTextBox()
-        Me.documentsLV = New System.Windows.Forms.ListView()
+        Me.datehiredcheck = New System.Windows.Forms.CheckBox()
+        Me.bdaycheck = New System.Windows.Forms.CheckBox()
+        Me.bdayspousecheck = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -818,13 +821,21 @@ Partial Class EditEmployee
         'documentsTab
         '
         Me.documentsTab.Controls.Add(Me.documentsLV)
-        Me.documentsTab.Location = New System.Drawing.Point(4, 29)
+        Me.documentsTab.Location = New System.Drawing.Point(4, 22)
         Me.documentsTab.Name = "documentsTab"
         Me.documentsTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.documentsTab.Size = New System.Drawing.Size(839, 483)
+        Me.documentsTab.Size = New System.Drawing.Size(839, 490)
         Me.documentsTab.TabIndex = 1
         Me.documentsTab.Text = "Scanned Documents"
         Me.documentsTab.UseVisualStyleBackColor = True
+        '
+        'documentsLV
+        '
+        Me.documentsLV.Location = New System.Drawing.Point(0, 0)
+        Me.documentsLV.Name = "documentsLV"
+        Me.documentsLV.Size = New System.Drawing.Size(468, 155)
+        Me.documentsLV.TabIndex = 0
+        Me.documentsLV.UseCompatibleStateImageBehavior = False
         '
         'statusdateLabel
         '
@@ -839,6 +850,7 @@ Partial Class EditEmployee
         '
         'workinfoTab
         '
+        Me.workinfoTab.Controls.Add(Me.datehiredcheck)
         Me.workinfoTab.Controls.Add(Me.statusdateLabel)
         Me.workinfoTab.Controls.Add(Me.statusdateDate)
         Me.workinfoTab.Controls.Add(Me.PictureBox35)
@@ -854,10 +866,10 @@ Partial Class EditEmployee
         Me.workinfoTab.Controls.Add(Me.positionText)
         Me.workinfoTab.Controls.Add(Me.departmentText)
         Me.workinfoTab.Controls.Add(Me.groupText)
-        Me.workinfoTab.Location = New System.Drawing.Point(4, 22)
+        Me.workinfoTab.Location = New System.Drawing.Point(4, 29)
         Me.workinfoTab.Name = "workinfoTab"
         Me.workinfoTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.workinfoTab.Size = New System.Drawing.Size(839, 490)
+        Me.workinfoTab.Size = New System.Drawing.Size(839, 483)
         Me.workinfoTab.TabIndex = 0
         Me.workinfoTab.Text = "Work Information"
         Me.workinfoTab.UseVisualStyleBackColor = True
@@ -1069,6 +1081,7 @@ Partial Class EditEmployee
         '
         'personalinfoTab
         '
+        Me.personalinfoTab.Controls.Add(Me.bdaycheck)
         Me.personalinfoTab.Controls.Add(Me.telephonenumberText)
         Me.personalinfoTab.Controls.Add(Me.contactnumberText)
         Me.personalinfoTab.Controls.Add(Me.emailaddressText)
@@ -1251,6 +1264,7 @@ Partial Class EditEmployee
         '
         'familyinfoTab
         '
+        Me.familyinfoTab.Controls.Add(Me.bdayspousecheck)
         Me.familyinfoTab.Controls.Add(Me.childnameTextfour)
         Me.familyinfoTab.Controls.Add(Me.childnameTextthree)
         Me.familyinfoTab.Controls.Add(Me.childnameTexttwo)
@@ -1271,9 +1285,9 @@ Partial Class EditEmployee
         Me.familyinfoTab.Controls.Add(Me.PictureBox11)
         Me.familyinfoTab.Controls.Add(Me.PictureBox9)
         Me.familyinfoTab.Controls.Add(Me.PictureBox8)
-        Me.familyinfoTab.Location = New System.Drawing.Point(4, 22)
+        Me.familyinfoTab.Location = New System.Drawing.Point(4, 29)
         Me.familyinfoTab.Name = "familyinfoTab"
-        Me.familyinfoTab.Size = New System.Drawing.Size(839, 490)
+        Me.familyinfoTab.Size = New System.Drawing.Size(839, 483)
         Me.familyinfoTab.TabIndex = 4
         Me.familyinfoTab.Text = "Family Information"
         Me.familyinfoTab.UseVisualStyleBackColor = True
@@ -1643,13 +1657,39 @@ Partial Class EditEmployee
         Me.lastnameText.TabIndex = 80
         Me.lastnameText.Watermark = "Last Name"
         '
-        'documentsLV
+        'datehiredcheck
         '
-        Me.documentsLV.Location = New System.Drawing.Point(0, 0)
-        Me.documentsLV.Name = "documentsLV"
-        Me.documentsLV.Size = New System.Drawing.Size(468, 155)
-        Me.documentsLV.TabIndex = 0
-        Me.documentsLV.UseCompatibleStateImageBehavior = False
+        Me.datehiredcheck.AutoSize = True
+        Me.datehiredcheck.Checked = True
+        Me.datehiredcheck.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.datehiredcheck.Location = New System.Drawing.Point(367, 22)
+        Me.datehiredcheck.Name = "datehiredcheck"
+        Me.datehiredcheck.Size = New System.Drawing.Size(36, 24)
+        Me.datehiredcheck.TabIndex = 82
+        Me.datehiredcheck.Text = "  "
+        Me.datehiredcheck.UseVisualStyleBackColor = True
+        '
+        'bdaycheck
+        '
+        Me.bdaycheck.AutoSize = True
+        Me.bdaycheck.Checked = True
+        Me.bdaycheck.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.bdaycheck.Location = New System.Drawing.Point(343, 26)
+        Me.bdaycheck.Name = "bdaycheck"
+        Me.bdaycheck.Size = New System.Drawing.Size(15, 14)
+        Me.bdaycheck.TabIndex = 64
+        Me.bdaycheck.UseVisualStyleBackColor = True
+        '
+        'bdayspousecheck
+        '
+        Me.bdayspousecheck.AutoSize = True
+        Me.bdayspousecheck.Checked = True
+        Me.bdayspousecheck.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.bdayspousecheck.Location = New System.Drawing.Point(812, 162)
+        Me.bdayspousecheck.Name = "bdayspousecheck"
+        Me.bdayspousecheck.Size = New System.Drawing.Size(15, 14)
+        Me.bdayspousecheck.TabIndex = 77
+        Me.bdayspousecheck.UseVisualStyleBackColor = True
         '
         'EditEmployee
         '
@@ -1860,4 +1900,7 @@ Partial Class EditEmployee
     Friend WithEvents addmevalsbutton As Button
     Friend WithEvents addyevalsbutton As Button
     Friend WithEvents documentsLV As ListView
+    Friend WithEvents datehiredcheck As CheckBox
+    Friend WithEvents bdaycheck As CheckBox
+    Friend WithEvents bdayspousecheck As CheckBox
 End Class

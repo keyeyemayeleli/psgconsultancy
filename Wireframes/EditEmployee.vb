@@ -62,7 +62,9 @@ Public Class EditEmployee
                 employeenumberText.Text = dt.Rows(0)("employee_id").ToString
                 statusCombobox.Text = dt.Rows(0)("status").ToString
                 birthplaceText.Text = dt.Rows(0)("birth_place").ToString
-                birthdayDate.Value = dt.Rows(0)("birthday")
+                If Not IsDBNull(dt.Rows(0)("birthday")) And Not dt.Rows(0)("birthday").ToString = "" Then
+                    birthdayDate.Value = dt.Rows(0)("birthday")
+                End If
                 civilstatusCombobox.Text = dt.Rows(0)("civil_status").ToString
                 presentaddressText.Text = dt.Rows(0)("present_address").ToString
                 permanentaddressText.Text = dt.Rows(0)("permanent_address").ToString
@@ -72,8 +74,12 @@ Public Class EditEmployee
                 fathersnameText.Text = dt.Rows(0)("fathers_name").ToString
                 mothersnameText.Text = dt.Rows(0)("mothers_name").ToString
                 spousenameText.Text = dt.Rows(0)("spouse_name").ToString
-                spousebdayDate.Value = dt.Rows(0)("spouse_birthday")
-                datehiredDate.Value = dt.Rows(0)("date_hired")
+                If Not IsDBNull(dt.Rows(0)("spouse_birthday")) And Not dt.Rows(0)("spouse_birthday").ToString = "" Then
+                    spousebdayDate.Value = dt.Rows(0)("spouse_birthday")
+                End If
+                If Not IsDBNull(dt.Rows(0)("date_hired")) And Not dt.Rows(0)("date_hired").ToString = "" Then
+                    datehiredDate.Value = dt.Rows(0)("date_hired")
+                End If
                 groupText.Text = dt.Rows(0)("company_group").ToString
                 departmentText.Text = dt.Rows(0)("department").ToString
                 positionText.Text = dt.Rows(0)("position").ToString
@@ -92,7 +98,6 @@ Public Class EditEmployee
                     picaddress = dt.Rows(0)("picture_address").ToString
                 End If
             End If
-
 
             Dim dt2 As New DataTable()
             Dim sqlCmd2 As New SqlCommand("SELECT * FROM children WHERE employee_ID = @eid", connection)
@@ -151,7 +156,9 @@ Public Class EditEmployee
             monthlyDatagrid.DataSource = ds4
             monthlyDatagrid.DataMember = "employee_ym_evals"
             monthlyDatagrid.Columns("date").HeaderCell.Value = "Month"
-            monthlyDatagrid.Columns("score").HeaderCell.Value = "Score"
+            monthlyDatagrid.Columns("fscore").HeaderCell.Value = "Final Score"
+            monthlyDatagrid.Columns("prscore").HeaderCell.Value = "Performance Rating Score"
+            monthlyDatagrid.Columns("acscore").HeaderCell.Value = "Admin Compliance Score"
             monthlyDatagrid.Columns("remarks").HeaderCell.Value = "Remarks"
             monthlyDatagrid.Columns("employee_id").Visible = False
             monthlyDatagrid.Columns("eval_id").Visible = False
@@ -165,7 +172,9 @@ Public Class EditEmployee
             yearlyDatadrid.DataSource = ds5
             yearlyDatadrid.DataMember = "employee_ym_evals"
             yearlyDatadrid.Columns("date").HeaderCell.Value = "Month"
-            yearlyDatadrid.Columns("score").HeaderCell.Value = "Score"
+            yearlyDatadrid.Columns("fscore").HeaderCell.Value = "Final Score"
+            yearlyDatadrid.Columns("prscore").HeaderCell.Value = "Performance Rating Score"
+            yearlyDatadrid.Columns("acscore").HeaderCell.Value = "Admin Compliance Score"
             yearlyDatadrid.Columns("remarks").HeaderCell.Value = "Remarks"
             yearlyDatadrid.Columns("employee_id").Visible = False
             yearlyDatadrid.Columns("eval_id").Visible = False
@@ -222,6 +231,15 @@ Public Class EditEmployee
         statusreasonText.Watermark = "Reason for " & statusCombobox.GetItemText(statusCombobox.SelectedItem) & ""
         statusdateLabel.Text = "" & statusCombobox.GetItemText(statusCombobox.SelectedItem) & " Date:"
 
+        If Evaltype = "monthly" Then
+            TabControl1.SelectTab(5)
+            Evaltype = ""
+        ElseIf Evaltype = "yearly" Then
+            TabControl1.SelectTab(6)
+            Evaltype = ""
+        End If
+
+
     End Sub
 
 
@@ -232,6 +250,27 @@ Public Class EditEmployee
     End Sub
 
     Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click
+
+        Dim bday, spday, hireday As Date
+
+        If bdaycheck.Checked = True Then
+            bday = birthdayDate.Text
+        Else
+            bday = ""
+        End If
+
+        If datehiredcheck.Checked = True Then
+            hireday = datehiredDate.Text
+        Else
+            hireday = ""
+        End If
+
+        If bdayspousecheck.Checked = True Then
+            spday = spousebdayDate.Text
+        Else
+            spday = ""
+        End If
+
         Try
 
             Dim sql As String = "UPDATE employee201files SET last_name= @lastname, first_name= @firstname, middle_name= @middlename, status= @status, tin_number=@tin, sss_number= @sss, philhealth_number = @philhealth, pagibig_number= @pagibig, RTN= @rtn, HDMF_MID_number= @grp, date_hired= @hiredate, company_group= @grp, department= @dept, position= @pos, rank= @rank, birthday= @bday, birth_place= @bplace, civil_status= @civil, present_address= @presentadd, permanent_address= @permanentadd, email= @emailadd, contact_number= @contactnum, telephone_number= @telnum, fathers_name= @father, mothers_name= @mother, spouse_name= @spouse, spouse_birthday= @spousebday, nextofkin_name= @nokname, nextofkin_birthday= @nokbday, status_reason= @statreason, statusreason_date= @statreasondate, picture_address= @pic WHERE employee_id = @eid "
@@ -257,12 +296,12 @@ Public Class EditEmployee
                         .Parameters.AddWithValue("pagibig", pagibignumberText.Text)
                         .Parameters.AddWithValue("rtn", rtnText.Text)
                         .Parameters.AddWithValue("hdmf", hdmfnumberText.Text)
-                        .Parameters.AddWithValue("hiredate", datehiredDate.Text)
+                        '.Parameters.AddWithValue("hiredate", hireday)
                         .Parameters.AddWithValue("grp", groupText.Text)
                         .Parameters.AddWithValue("dept", departmentText.Text)
                         .Parameters.AddWithValue("pos", positionText.Text)
                         .Parameters.AddWithValue("rank", rankText.Text)
-                        .Parameters.AddWithValue("bday", birthdayDate.Text)
+                        '.Parameters.AddWithValue("bday", bday)
                         .Parameters.AddWithValue("bplace", birthplaceText.Text)
                         .Parameters.AddWithValue("civil", civilstatusCombobox.Text)
                         .Parameters.AddWithValue("presentadd", presentaddressText.Text)
@@ -273,7 +312,7 @@ Public Class EditEmployee
                         .Parameters.AddWithValue("father", fathersnameText.Text)
                         .Parameters.AddWithValue("mother", mothersnameText.Text)
                         .Parameters.AddWithValue("spouse", spousenameText.Text)
-                        .Parameters.AddWithValue("spousebday", spousebdayDate.Text)
+                        '.Parameters.AddWithValue("spousebday", spday)
                         .Parameters.AddWithValue("nokname", nextofkinnameText.Text)
                         .Parameters.AddWithValue("nokbday", nextofkinbdayDate.Text)
                         .Parameters.AddWithValue("statreason", statusreasonText.Text)
@@ -281,6 +320,24 @@ Public Class EditEmployee
                         .Parameters.AddWithValue("eid", Employee)
                         .Parameters.AddWithValue("pic", picaddress)
                     End With
+
+                    If datehiredcheck.Checked = True Then
+                        cmd.Parameters.AddWithValue("hiredate", datehiredDate.Text)
+                    Else
+                        cmd.Parameters.AddWithValue("hiredate", DBNull.Value)
+                    End If
+
+                    If bdaycheck.Checked = True Then
+                        cmd.Parameters.AddWithValue("bday", birthdayDate.Text)
+                    Else
+                        cmd.Parameters.AddWithValue("bday", DBNull.Value)
+                    End If
+
+                    If bdayspousecheck.Checked = True Then
+                        cmd.Parameters.AddWithValue("spousebday", spousebdayDate.Text)
+                    Else
+                        cmd.Parameters.AddWithValue("spousebday", DBNull.Value)
+                    End If
 
                     Try
                         conn.Open()
@@ -673,6 +730,36 @@ Public Class EditEmployee
             End If
         Else
             MessageBox.Show("You need to select one record.", "Delete Employee Evaluation Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End If
+    End Sub
+
+    Private Sub backButton_Click(sender As Object, e As EventArgs) Handles backButton.Click
+        Me.Close()
+        ViewEmployees.Show()
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles datehiredcheck.CheckedChanged
+        If datehiredcheck.Checked = True Then
+            datehiredDate.Enabled = True
+        Else
+            datehiredDate.Enabled = False
+        End If
+
+    End Sub
+
+    Private Sub bdaycheck_CheckedChanged(sender As Object, e As EventArgs) Handles bdaycheck.CheckedChanged
+        If bdaycheck.Checked = True Then
+            birthdayDate.Enabled = True
+        Else
+            birthdayDate.Enabled = False
+        End If
+    End Sub
+
+    Private Sub bdayspousecheck_CheckedChanged(sender As Object, e As EventArgs) Handles bdayspousecheck.CheckedChanged
+        If bdayspousecheck.Checked = True Then
+            spousebdayDate.Enabled = True
+        Else
+            spousebdayDate.Enabled = False
         End If
     End Sub
 End Class

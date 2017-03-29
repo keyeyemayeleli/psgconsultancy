@@ -23,18 +23,14 @@ Partial Class ViewEmployees
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewEmployees))
-        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
         Me.editButton = New System.Windows.Forms.Button()
         Me.hdmfnumberLabel = New System.Windows.Forms.Label()
         Me.rtnLabel = New System.Windows.Forms.Label()
         Me.pagibignumberLabel = New System.Windows.Forms.Label()
         Me.otherTab = New System.Windows.Forms.TabPage()
         Me.beneficiaryrelationLabelfour = New System.Windows.Forms.Label()
-        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
         Me.beneficiaryrelationLabelthree = New System.Windows.Forms.Label()
-        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
         Me.beneficiaryrelationLabeltwo = New System.Windows.Forms.Label()
-        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
         Me.beneficiaryrelationLabelone = New System.Windows.Forms.Label()
         Me.beneficiarybdayLabelfour = New System.Windows.Forms.Label()
         Me.beneficiarybdayLabelthree = New System.Windows.Forms.Label()
@@ -43,14 +39,11 @@ Partial Class ViewEmployees
         Me.beneficiarynameLabelthree = New System.Windows.Forms.Label()
         Me.beneficiarybdayLabelone = New System.Windows.Forms.Label()
         Me.beneficiarynameLabeltwo = New System.Windows.Forms.Label()
-        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
         Me.nextofkinbdayLabel = New System.Windows.Forms.Label()
         Me.nextofkinnameLabel = New System.Windows.Forms.Label()
         Me.beneficiarynameLabelone = New System.Windows.Forms.Label()
         Me.philhealthnumberLabel = New System.Windows.Forms.Label()
         Me.sssnumberLabel = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
         Me.statusdateLabel = New System.Windows.Forms.Label()
         Me.statusreasonLabel = New System.Windows.Forms.Label()
         Me.govtinfoTab = New System.Windows.Forms.TabPage()
@@ -61,11 +54,6 @@ Partial Class ViewEmployees
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.tinnumberLabel = New System.Windows.Forms.Label()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
         Me.monthlyDatagrid = New System.Windows.Forms.DataGridView()
         Me.monthlyTab = New System.Windows.Forms.TabPage()
         Me.yearlyTab = New System.Windows.Forms.TabPage()
@@ -73,11 +61,6 @@ Partial Class ViewEmployees
         Me.workinfoTab = New System.Windows.Forms.TabPage()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.rankLabel = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
@@ -89,15 +72,7 @@ Partial Class ViewEmployees
         Me.Label19 = New System.Windows.Forms.Label()
         Me.datehiredLabel = New System.Windows.Forms.Label()
         Me.fathernameLabel = New System.Windows.Forms.Label()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.mothernameLabel = New System.Windows.Forms.Label()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.emailaddressLabel = New System.Windows.Forms.Label()
         Me.permanentaddressLabel = New System.Windows.Forms.Label()
         Me.personalinfoTab = New System.Windows.Forms.TabPage()
@@ -123,10 +98,6 @@ Partial Class ViewEmployees
         Me.childrennamelabel3 = New System.Windows.Forms.Label()
         Me.childrenbdayLabel2 = New System.Windows.Forms.Label()
         Me.childrennamelabel2 = New System.Windows.Forms.Label()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.childrenbdayLabel = New System.Windows.Forms.Label()
         Me.childrennameLabel = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -137,43 +108,59 @@ Partial Class ViewEmployees
         Me.Label15 = New System.Windows.Forms.Label()
         Me.documentsTab = New System.Windows.Forms.TabPage()
         Me.documentsLV = New System.Windows.Forms.ListView()
-        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
         Me.statusLabel = New System.Windows.Forms.Label()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.employeenumberLabel = New System.Windows.Forms.Label()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.nameLabel = New System.Windows.Forms.Label()
         Me.adddocumentsButton = New System.Windows.Forms.Button()
+        Me.backButton = New System.Windows.Forms.Button()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.picbox = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.backButton = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.otherTab.SuspendLayout()
-        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.govtinfoTab.SuspendLayout()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.monthlyDatagrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.monthlyTab.SuspendLayout()
         Me.yearlyTab.SuspendLayout()
         CType(Me.yearlyDatadrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.workinfoTab.SuspendLayout()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.personalinfoTab.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.familyinfoTab.SuspendLayout()
+        Me.documentsTab.SuspendLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -182,14 +169,27 @@ Partial Class ViewEmployees
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.personalinfoTab.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
-        Me.familyinfoTab.SuspendLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.documentsTab.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -199,19 +199,6 @@ Partial Class ViewEmployees
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox30
-        '
-        Me.PictureBox30.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox30.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox30.Location = New System.Drawing.Point(49, 441)
-        Me.PictureBox30.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox30.Name = "PictureBox30"
-        Me.PictureBox30.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox30.TabIndex = 61
-        Me.PictureBox30.TabStop = False
         '
         'editButton
         '
@@ -263,11 +250,8 @@ Partial Class ViewEmployees
         'otherTab
         '
         Me.otherTab.Controls.Add(Me.beneficiaryrelationLabelfour)
-        Me.otherTab.Controls.Add(Me.PictureBox36)
         Me.otherTab.Controls.Add(Me.beneficiaryrelationLabelthree)
-        Me.otherTab.Controls.Add(Me.PictureBox35)
         Me.otherTab.Controls.Add(Me.beneficiaryrelationLabeltwo)
-        Me.otherTab.Controls.Add(Me.PictureBox34)
         Me.otherTab.Controls.Add(Me.beneficiaryrelationLabelone)
         Me.otherTab.Controls.Add(Me.beneficiarybdayLabelfour)
         Me.otherTab.Controls.Add(Me.beneficiarybdayLabelthree)
@@ -276,10 +260,13 @@ Partial Class ViewEmployees
         Me.otherTab.Controls.Add(Me.beneficiarynameLabelthree)
         Me.otherTab.Controls.Add(Me.beneficiarybdayLabelone)
         Me.otherTab.Controls.Add(Me.beneficiarynameLabeltwo)
-        Me.otherTab.Controls.Add(Me.PictureBox33)
         Me.otherTab.Controls.Add(Me.nextofkinbdayLabel)
         Me.otherTab.Controls.Add(Me.nextofkinnameLabel)
         Me.otherTab.Controls.Add(Me.beneficiarynameLabelone)
+        Me.otherTab.Controls.Add(Me.PictureBox36)
+        Me.otherTab.Controls.Add(Me.PictureBox35)
+        Me.otherTab.Controls.Add(Me.PictureBox34)
+        Me.otherTab.Controls.Add(Me.PictureBox33)
         Me.otherTab.Location = New System.Drawing.Point(4, 22)
         Me.otherTab.Name = "otherTab"
         Me.otherTab.Padding = New System.Windows.Forms.Padding(3)
@@ -299,19 +286,6 @@ Partial Class ViewEmployees
         Me.beneficiaryrelationLabelfour.TabIndex = 59
         Me.beneficiaryrelationLabelfour.Text = "N/A"
         '
-        'PictureBox36
-        '
-        Me.PictureBox36.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox36.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox36.Location = New System.Drawing.Point(38, 303)
-        Me.PictureBox36.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox36.Name = "PictureBox36"
-        Me.PictureBox36.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox36.TabIndex = 58
-        Me.PictureBox36.TabStop = False
-        '
         'beneficiaryrelationLabelthree
         '
         Me.beneficiaryrelationLabelthree.AutoSize = True
@@ -323,19 +297,6 @@ Partial Class ViewEmployees
         Me.beneficiaryrelationLabelthree.TabIndex = 57
         Me.beneficiaryrelationLabelthree.Text = "N/A"
         '
-        'PictureBox35
-        '
-        Me.PictureBox35.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox35.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox35.Location = New System.Drawing.Point(38, 199)
-        Me.PictureBox35.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox35.Name = "PictureBox35"
-        Me.PictureBox35.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox35.TabIndex = 56
-        Me.PictureBox35.TabStop = False
-        '
         'beneficiaryrelationLabeltwo
         '
         Me.beneficiaryrelationLabeltwo.AutoSize = True
@@ -346,19 +307,6 @@ Partial Class ViewEmployees
         Me.beneficiaryrelationLabeltwo.Size = New System.Drawing.Size(42, 24)
         Me.beneficiaryrelationLabeltwo.TabIndex = 55
         Me.beneficiaryrelationLabeltwo.Text = "N/A"
-        '
-        'PictureBox34
-        '
-        Me.PictureBox34.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox34.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox34.Location = New System.Drawing.Point(38, 95)
-        Me.PictureBox34.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox34.Name = "PictureBox34"
-        Me.PictureBox34.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox34.TabIndex = 54
-        Me.PictureBox34.TabStop = False
         '
         'beneficiaryrelationLabelone
         '
@@ -448,19 +396,6 @@ Partial Class ViewEmployees
         Me.beneficiarynameLabeltwo.TabIndex = 46
         Me.beneficiarynameLabeltwo.Text = "N/A"
         '
-        'PictureBox33
-        '
-        Me.PictureBox33.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox33.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox33.Location = New System.Drawing.Point(38, 407)
-        Me.PictureBox33.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox33.Name = "PictureBox33"
-        Me.PictureBox33.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox33.TabIndex = 43
-        Me.PictureBox33.TabStop = False
-        '
         'nextofkinbdayLabel
         '
         Me.nextofkinbdayLabel.AutoSize = True
@@ -515,32 +450,6 @@ Partial Class ViewEmployees
         Me.sssnumberLabel.Size = New System.Drawing.Size(120, 24)
         Me.sssnumberLabel.TabIndex = 51
         Me.sssnumberLabel.Text = "SSS Number"
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox4.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox4.Location = New System.Drawing.Point(53, 453)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 53
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox32
-        '
-        Me.PictureBox32.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox32.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox32.Location = New System.Drawing.Point(53, 390)
-        Me.PictureBox32.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox32.Name = "PictureBox32"
-        Me.PictureBox32.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox32.TabIndex = 52
-        Me.PictureBox32.TabStop = False
         '
         'statusdateLabel
         '
@@ -668,71 +577,6 @@ Partial Class ViewEmployees
         Me.tinnumberLabel.TabIndex = 50
         Me.tinnumberLabel.Text = "TIN Number"
         '
-        'PictureBox25
-        '
-        Me.PictureBox25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox25.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox25.Location = New System.Drawing.Point(49, 366)
-        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox25.TabIndex = 59
-        Me.PictureBox25.TabStop = False
-        '
-        'PictureBox26
-        '
-        Me.PictureBox26.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox26.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox26.Location = New System.Drawing.Point(51, 290)
-        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox26.TabIndex = 58
-        Me.PictureBox26.TabStop = False
-        '
-        'PictureBox27
-        '
-        Me.PictureBox27.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox27.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox27.Location = New System.Drawing.Point(50, 215)
-        Me.PictureBox27.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox27.TabIndex = 57
-        Me.PictureBox27.TabStop = False
-        '
-        'PictureBox28
-        '
-        Me.PictureBox28.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox28.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox28.Location = New System.Drawing.Point(50, 137)
-        Me.PictureBox28.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox28.TabIndex = 56
-        Me.PictureBox28.TabStop = False
-        '
-        'PictureBox29
-        '
-        Me.PictureBox29.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox29.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox29.Location = New System.Drawing.Point(50, 70)
-        Me.PictureBox29.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox29.TabIndex = 55
-        Me.PictureBox29.TabStop = False
-        '
         'monthlyDatagrid
         '
         Me.monthlyDatagrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -783,11 +627,6 @@ Partial Class ViewEmployees
         Me.workinfoTab.Controls.Add(Me.statusreasonLabel)
         Me.workinfoTab.Controls.Add(Me.Label24)
         Me.workinfoTab.Controls.Add(Me.statusdateLabel)
-        Me.workinfoTab.Controls.Add(Me.PictureBox20)
-        Me.workinfoTab.Controls.Add(Me.PictureBox21)
-        Me.workinfoTab.Controls.Add(Me.PictureBox22)
-        Me.workinfoTab.Controls.Add(Me.PictureBox23)
-        Me.workinfoTab.Controls.Add(Me.PictureBox24)
         Me.workinfoTab.Controls.Add(Me.Label23)
         Me.workinfoTab.Controls.Add(Me.rankLabel)
         Me.workinfoTab.Controls.Add(Me.Label22)
@@ -798,6 +637,11 @@ Partial Class ViewEmployees
         Me.workinfoTab.Controls.Add(Me.groupLabel)
         Me.workinfoTab.Controls.Add(Me.Label19)
         Me.workinfoTab.Controls.Add(Me.datehiredLabel)
+        Me.workinfoTab.Controls.Add(Me.PictureBox20)
+        Me.workinfoTab.Controls.Add(Me.PictureBox21)
+        Me.workinfoTab.Controls.Add(Me.PictureBox22)
+        Me.workinfoTab.Controls.Add(Me.PictureBox23)
+        Me.workinfoTab.Controls.Add(Me.PictureBox24)
         Me.workinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.workinfoTab.Name = "workinfoTab"
         Me.workinfoTab.Padding = New System.Windows.Forms.Padding(3)
@@ -827,71 +671,6 @@ Partial Class ViewEmployees
         Me.Label24.Size = New System.Drawing.Size(108, 24)
         Me.Label24.TabIndex = 50
         Me.Label24.Text = "Status Date:"
-        '
-        'PictureBox20
-        '
-        Me.PictureBox20.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox20.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox20.Location = New System.Drawing.Point(53, 319)
-        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox20.TabIndex = 49
-        Me.PictureBox20.TabStop = False
-        '
-        'PictureBox21
-        '
-        Me.PictureBox21.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox21.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox21.Location = New System.Drawing.Point(54, 252)
-        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox21.TabIndex = 48
-        Me.PictureBox21.TabStop = False
-        '
-        'PictureBox22
-        '
-        Me.PictureBox22.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox22.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox22.Location = New System.Drawing.Point(53, 173)
-        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox22.TabIndex = 47
-        Me.PictureBox22.TabStop = False
-        '
-        'PictureBox23
-        '
-        Me.PictureBox23.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox23.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox23.Location = New System.Drawing.Point(53, 110)
-        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox23.TabIndex = 46
-        Me.PictureBox23.TabStop = False
-        '
-        'PictureBox24
-        '
-        Me.PictureBox24.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox24.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox24.Location = New System.Drawing.Point(53, 50)
-        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox24.TabIndex = 45
-        Me.PictureBox24.TabStop = False
         '
         'Label23
         '
@@ -1014,32 +793,6 @@ Partial Class ViewEmployees
         Me.fathernameLabel.TabIndex = 13
         Me.fathernameLabel.Text = "Father's Name"
         '
-        'PictureBox16
-        '
-        Me.PictureBox16.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox16.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox16.Location = New System.Drawing.Point(48, 459)
-        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox16.TabIndex = 47
-        Me.PictureBox16.TabStop = False
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox17.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox17.Location = New System.Drawing.Point(48, 399)
-        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox17.TabIndex = 46
-        Me.PictureBox17.TabStop = False
-        '
         'mothernameLabel
         '
         Me.mothernameLabel.AutoSize = True
@@ -1050,84 +803,6 @@ Partial Class ViewEmployees
         Me.mothernameLabel.Size = New System.Drawing.Size(138, 24)
         Me.mothernameLabel.TabIndex = 15
         Me.mothernameLabel.Text = "Mother's Name"
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox18.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox18.Location = New System.Drawing.Point(48, 338)
-        Me.PictureBox18.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox18.TabIndex = 45
-        Me.PictureBox18.TabStop = False
-        '
-        'PictureBox19
-        '
-        Me.PictureBox19.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox19.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox19.Location = New System.Drawing.Point(48, 284)
-        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox19.TabIndex = 44
-        Me.PictureBox19.TabStop = False
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox12.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox12.Location = New System.Drawing.Point(48, 224)
-        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox12.TabIndex = 43
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox13.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox13.Location = New System.Drawing.Point(48, 162)
-        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox13.TabIndex = 42
-        Me.PictureBox13.TabStop = False
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox14.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox14.Location = New System.Drawing.Point(48, 107)
-        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox14.TabIndex = 41
-        Me.PictureBox14.TabStop = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox15.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox15.Location = New System.Drawing.Point(48, 53)
-        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox15.TabIndex = 40
-        Me.PictureBox15.TabStop = False
         '
         'emailaddressLabel
         '
@@ -1364,10 +1039,6 @@ Partial Class ViewEmployees
         Me.familyinfoTab.Controls.Add(Me.childrennamelabel3)
         Me.familyinfoTab.Controls.Add(Me.childrenbdayLabel2)
         Me.familyinfoTab.Controls.Add(Me.childrennamelabel2)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox10)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox11)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox9)
-        Me.familyinfoTab.Controls.Add(Me.PictureBox8)
         Me.familyinfoTab.Controls.Add(Me.childrenbdayLabel)
         Me.familyinfoTab.Controls.Add(Me.childrennameLabel)
         Me.familyinfoTab.Controls.Add(Me.Label18)
@@ -1378,6 +1049,10 @@ Partial Class ViewEmployees
         Me.familyinfoTab.Controls.Add(Me.mothernameLabel)
         Me.familyinfoTab.Controls.Add(Me.Label15)
         Me.familyinfoTab.Controls.Add(Me.fathernameLabel)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox10)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox11)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox9)
+        Me.familyinfoTab.Controls.Add(Me.PictureBox8)
         Me.familyinfoTab.Location = New System.Drawing.Point(4, 22)
         Me.familyinfoTab.Name = "familyinfoTab"
         Me.familyinfoTab.Size = New System.Drawing.Size(839, 490)
@@ -1450,58 +1125,6 @@ Partial Class ViewEmployees
         Me.childrennamelabel2.Size = New System.Drawing.Size(42, 24)
         Me.childrennamelabel2.TabIndex = 40
         Me.childrennamelabel2.Text = "N/A"
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox10.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox10.Location = New System.Drawing.Point(45, 438)
-        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox10.TabIndex = 39
-        Me.PictureBox10.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox11.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox11.Location = New System.Drawing.Point(42, 173)
-        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox11.TabIndex = 38
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox9.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox9.Location = New System.Drawing.Point(42, 114)
-        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox9.TabIndex = 37
-        Me.PictureBox9.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox8.Image = Global.Wireframes.My.Resources.Resources.line_left
-        Me.PictureBox8.Location = New System.Drawing.Point(42, 54)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(763, 10)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox8.TabIndex = 36
-        Me.PictureBox8.TabStop = False
         '
         'childrenbdayLabel
         '
@@ -1594,10 +1217,10 @@ Partial Class ViewEmployees
         'documentsTab
         '
         Me.documentsTab.Controls.Add(Me.documentsLV)
-        Me.documentsTab.Location = New System.Drawing.Point(4, 29)
+        Me.documentsTab.Location = New System.Drawing.Point(4, 22)
         Me.documentsTab.Name = "documentsTab"
         Me.documentsTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.documentsTab.Size = New System.Drawing.Size(839, 483)
+        Me.documentsTab.Size = New System.Drawing.Size(839, 490)
         Me.documentsTab.TabIndex = 1
         Me.documentsTab.Text = "Scanned Documents"
         Me.documentsTab.UseVisualStyleBackColor = True
@@ -1611,17 +1234,6 @@ Partial Class ViewEmployees
         Me.documentsLV.TabIndex = 0
         Me.documentsLV.UseCompatibleStateImageBehavior = False
         '
-        'PictureBox31
-        '
-        Me.PictureBox31.Image = CType(resources.GetObject("PictureBox31.Image"), System.Drawing.Image)
-        Me.PictureBox31.Location = New System.Drawing.Point(40, 442)
-        Me.PictureBox31.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox31.Name = "PictureBox31"
-        Me.PictureBox31.Size = New System.Drawing.Size(229, 10)
-        Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox31.TabIndex = 59
-        Me.PictureBox31.TabStop = False
-        '
         'statusLabel
         '
         Me.statusLabel.AutoSize = True
@@ -1633,17 +1245,6 @@ Partial Class ViewEmployees
         Me.statusLabel.TabIndex = 58
         Me.statusLabel.Text = "Status"
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(40, 386)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(229, 10)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 57
-        Me.PictureBox7.TabStop = False
-        '
         'employeenumberLabel
         '
         Me.employeenumberLabel.AutoSize = True
@@ -1654,17 +1255,6 @@ Partial Class ViewEmployees
         Me.employeenumberLabel.Size = New System.Drawing.Size(188, 25)
         Me.employeenumberLabel.TabIndex = 56
         Me.employeenumberLabel.Text = "Employee Number"
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(40, 335)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(229, 10)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 55
-        Me.PictureBox6.TabStop = False
         '
         'nameLabel
         '
@@ -1691,6 +1281,431 @@ Partial Class ViewEmployees
         Me.adddocumentsButton.TabIndex = 53
         Me.adddocumentsButton.Text = "Add Scanned Documents"
         Me.adddocumentsButton.UseVisualStyleBackColor = False
+        '
+        'backButton
+        '
+        Me.backButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.backButton.BackColor = System.Drawing.Color.SteelBlue
+        Me.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.backButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.backButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.backButton.Location = New System.Drawing.Point(929, 590)
+        Me.backButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.backButton.Name = "backButton"
+        Me.backButton.Size = New System.Drawing.Size(210, 45)
+        Me.backButton.TabIndex = 49
+        Me.backButton.Text = "Back"
+        Me.backButton.UseVisualStyleBackColor = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox16.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox16.Location = New System.Drawing.Point(48, 459)
+        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox16.TabIndex = 47
+        Me.PictureBox16.TabStop = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox17.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox17.Location = New System.Drawing.Point(48, 399)
+        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox17.TabIndex = 46
+        Me.PictureBox17.TabStop = False
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox18.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox18.Location = New System.Drawing.Point(48, 338)
+        Me.PictureBox18.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox18.TabIndex = 45
+        Me.PictureBox18.TabStop = False
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox19.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox19.Location = New System.Drawing.Point(48, 284)
+        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox19.TabIndex = 44
+        Me.PictureBox19.TabStop = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox12.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox12.Location = New System.Drawing.Point(48, 224)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox12.TabIndex = 43
+        Me.PictureBox12.TabStop = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox13.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox13.Location = New System.Drawing.Point(48, 162)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox13.TabIndex = 42
+        Me.PictureBox13.TabStop = False
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox14.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox14.Location = New System.Drawing.Point(48, 107)
+        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox14.TabIndex = 41
+        Me.PictureBox14.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox15.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox15.Location = New System.Drawing.Point(48, 53)
+        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox15.TabIndex = 40
+        Me.PictureBox15.TabStop = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox10.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox10.Location = New System.Drawing.Point(45, 438)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox10.TabIndex = 39
+        Me.PictureBox10.TabStop = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox11.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox11.Location = New System.Drawing.Point(42, 173)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox11.TabIndex = 38
+        Me.PictureBox11.TabStop = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox9.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox9.Location = New System.Drawing.Point(42, 114)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox9.TabIndex = 37
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox8.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox8.Location = New System.Drawing.Point(42, 54)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox8.TabIndex = 36
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox4.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox4.Location = New System.Drawing.Point(53, 453)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 53
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox32
+        '
+        Me.PictureBox32.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox32.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox32.Location = New System.Drawing.Point(53, 390)
+        Me.PictureBox32.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox32.Name = "PictureBox32"
+        Me.PictureBox32.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox32.TabIndex = 52
+        Me.PictureBox32.TabStop = False
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox20.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox20.Location = New System.Drawing.Point(53, 319)
+        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox20.TabIndex = 49
+        Me.PictureBox20.TabStop = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox21.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox21.Location = New System.Drawing.Point(54, 252)
+        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox21.TabIndex = 48
+        Me.PictureBox21.TabStop = False
+        '
+        'PictureBox22
+        '
+        Me.PictureBox22.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox22.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox22.Location = New System.Drawing.Point(53, 173)
+        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox22.TabIndex = 47
+        Me.PictureBox22.TabStop = False
+        '
+        'PictureBox23
+        '
+        Me.PictureBox23.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox23.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox23.Location = New System.Drawing.Point(53, 110)
+        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox23.TabIndex = 46
+        Me.PictureBox23.TabStop = False
+        '
+        'PictureBox24
+        '
+        Me.PictureBox24.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox24.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox24.Location = New System.Drawing.Point(53, 50)
+        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox24.TabIndex = 45
+        Me.PictureBox24.TabStop = False
+        '
+        'PictureBox30
+        '
+        Me.PictureBox30.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox30.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox30.Location = New System.Drawing.Point(49, 441)
+        Me.PictureBox30.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox30.Name = "PictureBox30"
+        Me.PictureBox30.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox30.TabIndex = 61
+        Me.PictureBox30.TabStop = False
+        '
+        'PictureBox25
+        '
+        Me.PictureBox25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox25.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox25.Location = New System.Drawing.Point(49, 366)
+        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox25.TabIndex = 59
+        Me.PictureBox25.TabStop = False
+        '
+        'PictureBox26
+        '
+        Me.PictureBox26.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox26.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox26.Location = New System.Drawing.Point(51, 290)
+        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox26.TabIndex = 58
+        Me.PictureBox26.TabStop = False
+        '
+        'PictureBox27
+        '
+        Me.PictureBox27.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox27.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox27.Location = New System.Drawing.Point(50, 215)
+        Me.PictureBox27.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox27.Name = "PictureBox27"
+        Me.PictureBox27.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox27.TabIndex = 57
+        Me.PictureBox27.TabStop = False
+        '
+        'PictureBox28
+        '
+        Me.PictureBox28.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox28.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox28.Location = New System.Drawing.Point(50, 137)
+        Me.PictureBox28.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox28.Name = "PictureBox28"
+        Me.PictureBox28.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox28.TabIndex = 56
+        Me.PictureBox28.TabStop = False
+        '
+        'PictureBox29
+        '
+        Me.PictureBox29.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox29.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox29.Location = New System.Drawing.Point(50, 70)
+        Me.PictureBox29.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox29.Name = "PictureBox29"
+        Me.PictureBox29.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox29.TabIndex = 55
+        Me.PictureBox29.TabStop = False
+        '
+        'PictureBox36
+        '
+        Me.PictureBox36.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox36.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox36.Location = New System.Drawing.Point(38, 303)
+        Me.PictureBox36.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox36.Name = "PictureBox36"
+        Me.PictureBox36.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox36.TabIndex = 58
+        Me.PictureBox36.TabStop = False
+        '
+        'PictureBox35
+        '
+        Me.PictureBox35.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox35.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox35.Location = New System.Drawing.Point(38, 199)
+        Me.PictureBox35.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox35.Name = "PictureBox35"
+        Me.PictureBox35.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox35.TabIndex = 56
+        Me.PictureBox35.TabStop = False
+        '
+        'PictureBox34
+        '
+        Me.PictureBox34.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox34.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox34.Location = New System.Drawing.Point(38, 95)
+        Me.PictureBox34.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox34.TabIndex = 54
+        Me.PictureBox34.TabStop = False
+        '
+        'PictureBox33
+        '
+        Me.PictureBox33.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox33.Image = Global.Wireframes.My.Resources.Resources.line_left
+        Me.PictureBox33.Location = New System.Drawing.Point(38, 407)
+        Me.PictureBox33.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox33.Name = "PictureBox33"
+        Me.PictureBox33.Size = New System.Drawing.Size(763, 10)
+        Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox33.TabIndex = 43
+        Me.PictureBox33.TabStop = False
+        '
+        'PictureBox31
+        '
+        Me.PictureBox31.Image = CType(resources.GetObject("PictureBox31.Image"), System.Drawing.Image)
+        Me.PictureBox31.Location = New System.Drawing.Point(40, 442)
+        Me.PictureBox31.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox31.Name = "PictureBox31"
+        Me.PictureBox31.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox31.TabIndex = 59
+        Me.PictureBox31.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(40, 386)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 57
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(40, 335)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(229, 10)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 55
+        Me.PictureBox6.TabStop = False
         '
         'PictureBox5
         '
@@ -1724,21 +1739,6 @@ Partial Class ViewEmployees
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 50
         Me.PictureBox2.TabStop = False
-        '
-        'backButton
-        '
-        Me.backButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.backButton.BackColor = System.Drawing.Color.SteelBlue
-        Me.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.backButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.backButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.backButton.Location = New System.Drawing.Point(929, 590)
-        Me.backButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
-        Me.backButton.Name = "backButton"
-        Me.backButton.Size = New System.Drawing.Size(210, 45)
-        Me.backButton.TabIndex = 49
-        Me.backButton.Text = "Back"
-        Me.backButton.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
@@ -1794,33 +1794,22 @@ Partial Class ViewEmployees
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "View Employee"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
         Me.otherTab.ResumeLayout(False)
         Me.otherTab.PerformLayout()
-        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
         Me.govtinfoTab.ResumeLayout(False)
         Me.govtinfoTab.PerformLayout()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.monthlyDatagrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.monthlyTab.ResumeLayout(False)
         Me.yearlyTab.ResumeLayout(False)
         CType(Me.yearlyDatadrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.workinfoTab.ResumeLayout(False)
         Me.workinfoTab.PerformLayout()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.personalinfoTab.ResumeLayout(False)
+        Me.personalinfoTab.PerformLayout()
+        Me.TabControl1.ResumeLayout(False)
+        Me.familyinfoTab.ResumeLayout(False)
+        Me.familyinfoTab.PerformLayout()
+        Me.documentsTab.ResumeLayout(False)
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1829,16 +1818,27 @@ Partial Class ViewEmployees
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.personalinfoTab.ResumeLayout(False)
-        Me.personalinfoTab.PerformLayout()
-        Me.TabControl1.ResumeLayout(False)
-        Me.familyinfoTab.ResumeLayout(False)
-        Me.familyinfoTab.PerformLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.documentsTab.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()

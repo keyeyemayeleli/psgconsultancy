@@ -25,9 +25,6 @@ Partial Class CreateEmployee201
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CreateEmployee201))
         Me.backButton = New System.Windows.Forms.Button()
         Me.otherTab = New System.Windows.Forms.TabPage()
-        Me.nextofkinnameText = New Wireframes.WatermarkTextBox()
-        Me.beneficiaryrelationTextfour = New Wireframes.WatermarkTextBox()
-        Me.beneficiarynameTextfour = New Wireframes.WatermarkTextBox()
         Me.PictureBox34 = New System.Windows.Forms.PictureBox()
         Me.PictureBox33 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
@@ -42,12 +39,6 @@ Partial Class CreateEmployee201
         Me.Label5 = New System.Windows.Forms.Label()
         Me.nextofkinbdayDate = New System.Windows.Forms.DateTimePicker()
         Me.PictureBox32 = New System.Windows.Forms.PictureBox()
-        Me.beneficiaryrelationTextthree = New Wireframes.WatermarkTextBox()
-        Me.beneficiarynameTextthree = New Wireframes.WatermarkTextBox()
-        Me.beneficiaryrelationTexttwo = New Wireframes.WatermarkTextBox()
-        Me.beneficiarynameTexttwo = New Wireframes.WatermarkTextBox()
-        Me.beneficiaryrelationTextone = New Wireframes.WatermarkTextBox()
-        Me.beneficiarynameTextone = New Wireframes.WatermarkTextBox()
         Me.statusdateLabel = New System.Windows.Forms.Label()
         Me.statusdateDate = New System.Windows.Forms.DateTimePicker()
         Me.PictureBox25 = New System.Windows.Forms.PictureBox()
@@ -60,18 +51,7 @@ Partial Class CreateEmployee201
         Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.statusreasonText = New Wireframes.WatermarkTextBox()
-        Me.rankText = New Wireframes.WatermarkTextBox()
-        Me.positionText = New Wireframes.WatermarkTextBox()
-        Me.departmentText = New Wireframes.WatermarkTextBox()
-        Me.groupText = New Wireframes.WatermarkTextBox()
         Me.govtinfoTab = New System.Windows.Forms.TabPage()
-        Me.hdmfnumberText = New Wireframes.WatermarkTextBox()
-        Me.rtnText = New Wireframes.WatermarkTextBox()
-        Me.pagibignumberText = New Wireframes.WatermarkTextBox()
-        Me.philhealthnumberText = New Wireframes.WatermarkTextBox()
-        Me.sssnumberText = New Wireframes.WatermarkTextBox()
-        Me.tinnumberText = New Wireframes.WatermarkTextBox()
         Me.PictureBox30 = New System.Windows.Forms.PictureBox()
         Me.PictureBox26 = New System.Windows.Forms.PictureBox()
         Me.PictureBox27 = New System.Windows.Forms.PictureBox()
@@ -96,12 +76,6 @@ Partial Class CreateEmployee201
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.personalinfoTab = New System.Windows.Forms.TabPage()
-        Me.telephonenumberText = New Wireframes.WatermarkTextBox()
-        Me.contactnumberText = New Wireframes.WatermarkTextBox()
-        Me.emailaddressText = New Wireframes.WatermarkTextBox()
-        Me.permanentaddressText = New Wireframes.WatermarkTextBox()
-        Me.presentaddressText = New Wireframes.WatermarkTextBox()
-        Me.birthplaceText = New Wireframes.WatermarkTextBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
@@ -110,13 +84,6 @@ Partial Class CreateEmployee201
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.familyinfoTab = New System.Windows.Forms.TabPage()
-        Me.childnameTextfour = New Wireframes.WatermarkTextBox()
-        Me.childnameTextthree = New Wireframes.WatermarkTextBox()
-        Me.childnameTexttwo = New Wireframes.WatermarkTextBox()
-        Me.childnameTextone = New Wireframes.WatermarkTextBox()
-        Me.spousenameText = New Wireframes.WatermarkTextBox()
-        Me.mothersnameText = New Wireframes.WatermarkTextBox()
-        Me.fathersnameText = New Wireframes.WatermarkTextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.childbdayDatefour = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -139,10 +106,46 @@ Partial Class CreateEmployee201
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.changepicButton = New System.Windows.Forms.Button()
+        Me.telephonenumberText = New Wireframes.WatermarkTextBox()
+        Me.contactnumberText = New Wireframes.WatermarkTextBox()
+        Me.emailaddressText = New Wireframes.WatermarkTextBox()
+        Me.permanentaddressText = New Wireframes.WatermarkTextBox()
+        Me.presentaddressText = New Wireframes.WatermarkTextBox()
+        Me.birthplaceText = New Wireframes.WatermarkTextBox()
+        Me.childnameTextfour = New Wireframes.WatermarkTextBox()
+        Me.childnameTextthree = New Wireframes.WatermarkTextBox()
+        Me.childnameTexttwo = New Wireframes.WatermarkTextBox()
+        Me.childnameTextone = New Wireframes.WatermarkTextBox()
+        Me.spousenameText = New Wireframes.WatermarkTextBox()
+        Me.mothersnameText = New Wireframes.WatermarkTextBox()
+        Me.fathersnameText = New Wireframes.WatermarkTextBox()
+        Me.statusreasonText = New Wireframes.WatermarkTextBox()
+        Me.rankText = New Wireframes.WatermarkTextBox()
+        Me.positionText = New Wireframes.WatermarkTextBox()
+        Me.departmentText = New Wireframes.WatermarkTextBox()
+        Me.groupText = New Wireframes.WatermarkTextBox()
+        Me.hdmfnumberText = New Wireframes.WatermarkTextBox()
+        Me.rtnText = New Wireframes.WatermarkTextBox()
+        Me.pagibignumberText = New Wireframes.WatermarkTextBox()
+        Me.philhealthnumberText = New Wireframes.WatermarkTextBox()
+        Me.sssnumberText = New Wireframes.WatermarkTextBox()
+        Me.tinnumberText = New Wireframes.WatermarkTextBox()
+        Me.nextofkinnameText = New Wireframes.WatermarkTextBox()
+        Me.beneficiaryrelationTextfour = New Wireframes.WatermarkTextBox()
+        Me.beneficiarynameTextfour = New Wireframes.WatermarkTextBox()
+        Me.beneficiaryrelationTextthree = New Wireframes.WatermarkTextBox()
+        Me.beneficiarynameTextthree = New Wireframes.WatermarkTextBox()
+        Me.beneficiaryrelationTexttwo = New Wireframes.WatermarkTextBox()
+        Me.beneficiarynameTexttwo = New Wireframes.WatermarkTextBox()
+        Me.beneficiaryrelationTextone = New Wireframes.WatermarkTextBox()
+        Me.beneficiarynameTextone = New Wireframes.WatermarkTextBox()
         Me.employeenumberText = New Wireframes.WatermarkTextBox()
         Me.middlenameText = New Wireframes.WatermarkTextBox()
         Me.givennameText = New Wireframes.WatermarkTextBox()
         Me.lastnameText = New Wireframes.WatermarkTextBox()
+        Me.bdaycheck = New System.Windows.Forms.CheckBox()
+        Me.spousebdaycheck = New System.Windows.Forms.CheckBox()
+        Me.datehiredcheck = New System.Windows.Forms.CheckBox()
         Me.otherTab.SuspendLayout()
         CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -237,36 +240,6 @@ Partial Class CreateEmployee201
         Me.otherTab.TabIndex = 5
         Me.otherTab.Text = "Other"
         Me.otherTab.UseVisualStyleBackColor = True
-        '
-        'nextofkinnameText
-        '
-        Me.nextofkinnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nextofkinnameText.ForeColor = System.Drawing.Color.Gray
-        Me.nextofkinnameText.Location = New System.Drawing.Point(36, 428)
-        Me.nextofkinnameText.Name = "nextofkinnameText"
-        Me.nextofkinnameText.Size = New System.Drawing.Size(358, 29)
-        Me.nextofkinnameText.TabIndex = 89
-        Me.nextofkinnameText.Watermark = "Next of Kin"
-        '
-        'beneficiaryrelationTextfour
-        '
-        Me.beneficiaryrelationTextfour.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.beneficiaryrelationTextfour.ForeColor = System.Drawing.Color.Gray
-        Me.beneficiaryrelationTextfour.Location = New System.Drawing.Point(36, 362)
-        Me.beneficiaryrelationTextfour.Name = "beneficiaryrelationTextfour"
-        Me.beneficiaryrelationTextfour.Size = New System.Drawing.Size(358, 29)
-        Me.beneficiaryrelationTextfour.TabIndex = 88
-        Me.beneficiaryrelationTextfour.Watermark = "Beneficiary's Relation"
-        '
-        'beneficiarynameTextfour
-        '
-        Me.beneficiarynameTextfour.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.beneficiarynameTextfour.ForeColor = System.Drawing.Color.Gray
-        Me.beneficiarynameTextfour.Location = New System.Drawing.Point(36, 319)
-        Me.beneficiarynameTextfour.Name = "beneficiarynameTextfour"
-        Me.beneficiarynameTextfour.Size = New System.Drawing.Size(358, 29)
-        Me.beneficiarynameTextfour.TabIndex = 87
-        Me.beneficiarynameTextfour.Watermark = "Beneficiary's Name"
         '
         'PictureBox34
         '
@@ -415,66 +388,6 @@ Partial Class CreateEmployee201
         Me.PictureBox32.TabIndex = 61
         Me.PictureBox32.TabStop = False
         '
-        'beneficiaryrelationTextthree
-        '
-        Me.beneficiaryrelationTextthree.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.beneficiaryrelationTextthree.ForeColor = System.Drawing.Color.Gray
-        Me.beneficiaryrelationTextthree.Location = New System.Drawing.Point(36, 258)
-        Me.beneficiaryrelationTextthree.Name = "beneficiaryrelationTextthree"
-        Me.beneficiaryrelationTextthree.Size = New System.Drawing.Size(358, 29)
-        Me.beneficiaryrelationTextthree.TabIndex = 85
-        Me.beneficiaryrelationTextthree.Watermark = "Beneficiary's Relation"
-        '
-        'beneficiarynameTextthree
-        '
-        Me.beneficiarynameTextthree.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.beneficiarynameTextthree.ForeColor = System.Drawing.Color.Gray
-        Me.beneficiarynameTextthree.Location = New System.Drawing.Point(36, 212)
-        Me.beneficiarynameTextthree.Name = "beneficiarynameTextthree"
-        Me.beneficiarynameTextthree.Size = New System.Drawing.Size(358, 29)
-        Me.beneficiarynameTextthree.TabIndex = 84
-        Me.beneficiarynameTextthree.Watermark = "Beneficiary's Name"
-        '
-        'beneficiaryrelationTexttwo
-        '
-        Me.beneficiaryrelationTexttwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.beneficiaryrelationTexttwo.ForeColor = System.Drawing.Color.Gray
-        Me.beneficiaryrelationTexttwo.Location = New System.Drawing.Point(36, 154)
-        Me.beneficiaryrelationTexttwo.Name = "beneficiaryrelationTexttwo"
-        Me.beneficiaryrelationTexttwo.Size = New System.Drawing.Size(358, 29)
-        Me.beneficiaryrelationTexttwo.TabIndex = 81
-        Me.beneficiaryrelationTexttwo.Watermark = "Beneficiary's Relation"
-        '
-        'beneficiarynameTexttwo
-        '
-        Me.beneficiarynameTexttwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.beneficiarynameTexttwo.ForeColor = System.Drawing.Color.Gray
-        Me.beneficiarynameTexttwo.Location = New System.Drawing.Point(36, 115)
-        Me.beneficiarynameTexttwo.Name = "beneficiarynameTexttwo"
-        Me.beneficiarynameTexttwo.Size = New System.Drawing.Size(358, 29)
-        Me.beneficiarynameTexttwo.TabIndex = 80
-        Me.beneficiarynameTexttwo.Watermark = "Beneficiary's Name"
-        '
-        'beneficiaryrelationTextone
-        '
-        Me.beneficiaryrelationTextone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.beneficiaryrelationTextone.ForeColor = System.Drawing.Color.Gray
-        Me.beneficiaryrelationTextone.Location = New System.Drawing.Point(36, 58)
-        Me.beneficiaryrelationTextone.Name = "beneficiaryrelationTextone"
-        Me.beneficiaryrelationTextone.Size = New System.Drawing.Size(358, 29)
-        Me.beneficiaryrelationTextone.TabIndex = 79
-        Me.beneficiaryrelationTextone.Watermark = "Beneficiary's Relation"
-        '
-        'beneficiarynameTextone
-        '
-        Me.beneficiarynameTextone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.beneficiarynameTextone.ForeColor = System.Drawing.Color.Gray
-        Me.beneficiarynameTextone.Location = New System.Drawing.Point(36, 19)
-        Me.beneficiarynameTextone.Name = "beneficiarynameTextone"
-        Me.beneficiarynameTextone.Size = New System.Drawing.Size(358, 29)
-        Me.beneficiarynameTextone.TabIndex = 78
-        Me.beneficiarynameTextone.Watermark = "Beneficiary's Name"
-        '
         'statusdateLabel
         '
         Me.statusdateLabel.AutoSize = True
@@ -509,6 +422,7 @@ Partial Class CreateEmployee201
         '
         'workinfoTab
         '
+        Me.workinfoTab.Controls.Add(Me.datehiredcheck)
         Me.workinfoTab.Controls.Add(Me.statusdateLabel)
         Me.workinfoTab.Controls.Add(Me.statusdateDate)
         Me.workinfoTab.Controls.Add(Me.PictureBox35)
@@ -524,10 +438,10 @@ Partial Class CreateEmployee201
         Me.workinfoTab.Controls.Add(Me.positionText)
         Me.workinfoTab.Controls.Add(Me.departmentText)
         Me.workinfoTab.Controls.Add(Me.groupText)
-        Me.workinfoTab.Location = New System.Drawing.Point(4, 22)
+        Me.workinfoTab.Location = New System.Drawing.Point(4, 29)
         Me.workinfoTab.Name = "workinfoTab"
         Me.workinfoTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.workinfoTab.Size = New System.Drawing.Size(839, 490)
+        Me.workinfoTab.Size = New System.Drawing.Size(839, 483)
         Me.workinfoTab.TabIndex = 0
         Me.workinfoTab.Text = "Work Information"
         Me.workinfoTab.UseVisualStyleBackColor = True
@@ -629,56 +543,6 @@ Partial Class CreateEmployee201
         Me.PictureBox24.TabIndex = 45
         Me.PictureBox24.TabStop = False
         '
-        'statusreasonText
-        '
-        Me.statusreasonText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.statusreasonText.ForeColor = System.Drawing.Color.Gray
-        Me.statusreasonText.Location = New System.Drawing.Point(53, 429)
-        Me.statusreasonText.Name = "statusreasonText"
-        Me.statusreasonText.Size = New System.Drawing.Size(566, 29)
-        Me.statusreasonText.TabIndex = 83
-        Me.statusreasonText.Watermark = "Status Reason"
-        '
-        'rankText
-        '
-        Me.rankText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rankText.ForeColor = System.Drawing.Color.Gray
-        Me.rankText.Location = New System.Drawing.Point(53, 298)
-        Me.rankText.Name = "rankText"
-        Me.rankText.Size = New System.Drawing.Size(566, 29)
-        Me.rankText.TabIndex = 77
-        Me.rankText.Watermark = "Rank"
-        '
-        'positionText
-        '
-        Me.positionText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.positionText.ForeColor = System.Drawing.Color.Gray
-        Me.positionText.Location = New System.Drawing.Point(53, 231)
-        Me.positionText.Name = "positionText"
-        Me.positionText.Size = New System.Drawing.Size(566, 29)
-        Me.positionText.TabIndex = 76
-        Me.positionText.Watermark = "Position"
-        '
-        'departmentText
-        '
-        Me.departmentText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.departmentText.ForeColor = System.Drawing.Color.Gray
-        Me.departmentText.Location = New System.Drawing.Point(53, 159)
-        Me.departmentText.Name = "departmentText"
-        Me.departmentText.Size = New System.Drawing.Size(566, 29)
-        Me.departmentText.TabIndex = 75
-        Me.departmentText.Watermark = "Department/Unit"
-        '
-        'groupText
-        '
-        Me.groupText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.groupText.ForeColor = System.Drawing.Color.Gray
-        Me.groupText.Location = New System.Drawing.Point(53, 83)
-        Me.groupText.Name = "groupText"
-        Me.groupText.Size = New System.Drawing.Size(566, 29)
-        Me.groupText.TabIndex = 74
-        Me.groupText.Watermark = "Group"
-        '
         'govtinfoTab
         '
         Me.govtinfoTab.Controls.Add(Me.hdmfnumberText)
@@ -699,66 +563,6 @@ Partial Class CreateEmployee201
         Me.govtinfoTab.TabIndex = 2
         Me.govtinfoTab.Text = "Government Information"
         Me.govtinfoTab.UseVisualStyleBackColor = True
-        '
-        'hdmfnumberText
-        '
-        Me.hdmfnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.hdmfnumberText.ForeColor = System.Drawing.Color.Gray
-        Me.hdmfnumberText.Location = New System.Drawing.Point(51, 401)
-        Me.hdmfnumberText.Name = "hdmfnumberText"
-        Me.hdmfnumberText.Size = New System.Drawing.Size(566, 29)
-        Me.hdmfnumberText.TabIndex = 80
-        Me.hdmfnumberText.Watermark = "HDMF Number"
-        '
-        'rtnText
-        '
-        Me.rtnText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtnText.ForeColor = System.Drawing.Color.Gray
-        Me.rtnText.Location = New System.Drawing.Point(51, 326)
-        Me.rtnText.Name = "rtnText"
-        Me.rtnText.Size = New System.Drawing.Size(566, 29)
-        Me.rtnText.TabIndex = 79
-        Me.rtnText.Watermark = "RTN"
-        '
-        'pagibignumberText
-        '
-        Me.pagibignumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pagibignumberText.ForeColor = System.Drawing.Color.Gray
-        Me.pagibignumberText.Location = New System.Drawing.Point(51, 250)
-        Me.pagibignumberText.Name = "pagibignumberText"
-        Me.pagibignumberText.Size = New System.Drawing.Size(566, 29)
-        Me.pagibignumberText.TabIndex = 78
-        Me.pagibignumberText.Watermark = "Pag-ibig Number"
-        '
-        'philhealthnumberText
-        '
-        Me.philhealthnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.philhealthnumberText.ForeColor = System.Drawing.Color.Gray
-        Me.philhealthnumberText.Location = New System.Drawing.Point(51, 175)
-        Me.philhealthnumberText.Name = "philhealthnumberText"
-        Me.philhealthnumberText.Size = New System.Drawing.Size(566, 29)
-        Me.philhealthnumberText.TabIndex = 77
-        Me.philhealthnumberText.Watermark = "Philhealth Number"
-        '
-        'sssnumberText
-        '
-        Me.sssnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sssnumberText.ForeColor = System.Drawing.Color.Gray
-        Me.sssnumberText.Location = New System.Drawing.Point(51, 97)
-        Me.sssnumberText.Name = "sssnumberText"
-        Me.sssnumberText.Size = New System.Drawing.Size(566, 29)
-        Me.sssnumberText.TabIndex = 76
-        Me.sssnumberText.Watermark = "SSS Number"
-        '
-        'tinnumberText
-        '
-        Me.tinnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tinnumberText.ForeColor = System.Drawing.Color.Gray
-        Me.tinnumberText.Location = New System.Drawing.Point(51, 30)
-        Me.tinnumberText.Name = "tinnumberText"
-        Me.tinnumberText.Size = New System.Drawing.Size(566, 29)
-        Me.tinnumberText.TabIndex = 75
-        Me.tinnumberText.Watermark = "TIN Number"
         '
         'PictureBox30
         '
@@ -998,6 +802,7 @@ Partial Class CreateEmployee201
         '
         'personalinfoTab
         '
+        Me.personalinfoTab.Controls.Add(Me.bdaycheck)
         Me.personalinfoTab.Controls.Add(Me.telephonenumberText)
         Me.personalinfoTab.Controls.Add(Me.contactnumberText)
         Me.personalinfoTab.Controls.Add(Me.emailaddressText)
@@ -1021,66 +826,6 @@ Partial Class CreateEmployee201
         Me.personalinfoTab.TabIndex = 3
         Me.personalinfoTab.Text = "Personal Information"
         Me.personalinfoTab.UseVisualStyleBackColor = True
-        '
-        'telephonenumberText
-        '
-        Me.telephonenumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.telephonenumberText.ForeColor = System.Drawing.Color.Black
-        Me.telephonenumberText.Location = New System.Drawing.Point(48, 419)
-        Me.telephonenumberText.Name = "telephonenumberText"
-        Me.telephonenumberText.Size = New System.Drawing.Size(566, 29)
-        Me.telephonenumberText.TabIndex = 63
-        Me.telephonenumberText.Watermark = "Telephone Number"
-        '
-        'contactnumberText
-        '
-        Me.contactnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.contactnumberText.ForeColor = System.Drawing.Color.Black
-        Me.contactnumberText.Location = New System.Drawing.Point(48, 359)
-        Me.contactnumberText.Name = "contactnumberText"
-        Me.contactnumberText.Size = New System.Drawing.Size(566, 29)
-        Me.contactnumberText.TabIndex = 62
-        Me.contactnumberText.Watermark = "Contact Number"
-        '
-        'emailaddressText
-        '
-        Me.emailaddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.emailaddressText.ForeColor = System.Drawing.Color.Black
-        Me.emailaddressText.Location = New System.Drawing.Point(48, 301)
-        Me.emailaddressText.Name = "emailaddressText"
-        Me.emailaddressText.Size = New System.Drawing.Size(566, 29)
-        Me.emailaddressText.TabIndex = 61
-        Me.emailaddressText.Watermark = "Email Address"
-        '
-        'permanentaddressText
-        '
-        Me.permanentaddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.permanentaddressText.ForeColor = System.Drawing.Color.Black
-        Me.permanentaddressText.Location = New System.Drawing.Point(48, 244)
-        Me.permanentaddressText.Name = "permanentaddressText"
-        Me.permanentaddressText.Size = New System.Drawing.Size(566, 29)
-        Me.permanentaddressText.TabIndex = 60
-        Me.permanentaddressText.Watermark = "Permanent Address"
-        '
-        'presentaddressText
-        '
-        Me.presentaddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.presentaddressText.ForeColor = System.Drawing.Color.Black
-        Me.presentaddressText.Location = New System.Drawing.Point(48, 184)
-        Me.presentaddressText.Name = "presentaddressText"
-        Me.presentaddressText.Size = New System.Drawing.Size(566, 29)
-        Me.presentaddressText.TabIndex = 59
-        Me.presentaddressText.Watermark = "Present Address"
-        '
-        'birthplaceText
-        '
-        Me.birthplaceText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.birthplaceText.ForeColor = System.Drawing.Color.Black
-        Me.birthplaceText.Location = New System.Drawing.Point(48, 67)
-        Me.birthplaceText.Name = "birthplaceText"
-        Me.birthplaceText.Size = New System.Drawing.Size(566, 29)
-        Me.birthplaceText.TabIndex = 58
-        Me.birthplaceText.Watermark = "Birthplace"
         '
         'PictureBox18
         '
@@ -1180,6 +925,7 @@ Partial Class CreateEmployee201
         '
         'familyinfoTab
         '
+        Me.familyinfoTab.Controls.Add(Me.spousebdaycheck)
         Me.familyinfoTab.Controls.Add(Me.childnameTextfour)
         Me.familyinfoTab.Controls.Add(Me.childnameTextthree)
         Me.familyinfoTab.Controls.Add(Me.childnameTexttwo)
@@ -1200,82 +946,12 @@ Partial Class CreateEmployee201
         Me.familyinfoTab.Controls.Add(Me.PictureBox11)
         Me.familyinfoTab.Controls.Add(Me.PictureBox9)
         Me.familyinfoTab.Controls.Add(Me.PictureBox8)
-        Me.familyinfoTab.Location = New System.Drawing.Point(4, 22)
+        Me.familyinfoTab.Location = New System.Drawing.Point(4, 29)
         Me.familyinfoTab.Name = "familyinfoTab"
-        Me.familyinfoTab.Size = New System.Drawing.Size(839, 490)
+        Me.familyinfoTab.Size = New System.Drawing.Size(839, 483)
         Me.familyinfoTab.TabIndex = 4
         Me.familyinfoTab.Text = "Family Information"
         Me.familyinfoTab.UseVisualStyleBackColor = True
-        '
-        'childnameTextfour
-        '
-        Me.childnameTextfour.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.childnameTextfour.ForeColor = System.Drawing.Color.Gray
-        Me.childnameTextfour.Location = New System.Drawing.Point(41, 421)
-        Me.childnameTextfour.Name = "childnameTextfour"
-        Me.childnameTextfour.Size = New System.Drawing.Size(386, 29)
-        Me.childnameTextfour.TabIndex = 76
-        Me.childnameTextfour.Watermark = "Child's Name"
-        '
-        'childnameTextthree
-        '
-        Me.childnameTextthree.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.childnameTextthree.ForeColor = System.Drawing.Color.Gray
-        Me.childnameTextthree.Location = New System.Drawing.Point(42, 358)
-        Me.childnameTextthree.Name = "childnameTextthree"
-        Me.childnameTextthree.Size = New System.Drawing.Size(386, 29)
-        Me.childnameTextthree.TabIndex = 75
-        Me.childnameTextthree.Watermark = "Child's Name"
-        '
-        'childnameTexttwo
-        '
-        Me.childnameTexttwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.childnameTexttwo.ForeColor = System.Drawing.Color.Gray
-        Me.childnameTexttwo.Location = New System.Drawing.Point(41, 296)
-        Me.childnameTexttwo.Name = "childnameTexttwo"
-        Me.childnameTexttwo.Size = New System.Drawing.Size(386, 29)
-        Me.childnameTexttwo.TabIndex = 74
-        Me.childnameTexttwo.Watermark = "Child's Name"
-        '
-        'childnameTextone
-        '
-        Me.childnameTextone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.childnameTextone.ForeColor = System.Drawing.Color.Gray
-        Me.childnameTextone.Location = New System.Drawing.Point(41, 236)
-        Me.childnameTextone.Name = "childnameTextone"
-        Me.childnameTextone.Size = New System.Drawing.Size(386, 29)
-        Me.childnameTextone.TabIndex = 73
-        Me.childnameTextone.Watermark = "Child's Name"
-        '
-        'spousenameText
-        '
-        Me.spousenameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.spousenameText.ForeColor = System.Drawing.Color.Gray
-        Me.spousenameText.Location = New System.Drawing.Point(41, 159)
-        Me.spousenameText.Name = "spousenameText"
-        Me.spousenameText.Size = New System.Drawing.Size(386, 29)
-        Me.spousenameText.TabIndex = 72
-        Me.spousenameText.Watermark = "Spouse's Name"
-        '
-        'mothersnameText
-        '
-        Me.mothersnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mothersnameText.ForeColor = System.Drawing.Color.Gray
-        Me.mothersnameText.Location = New System.Drawing.Point(42, 92)
-        Me.mothersnameText.Name = "mothersnameText"
-        Me.mothersnameText.Size = New System.Drawing.Size(566, 29)
-        Me.mothersnameText.TabIndex = 71
-        Me.mothersnameText.Watermark = "Mother's Name"
-        '
-        'fathersnameText
-        '
-        Me.fathersnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fathersnameText.ForeColor = System.Drawing.Color.Gray
-        Me.fathersnameText.Location = New System.Drawing.Point(42, 24)
-        Me.fathersnameText.Name = "fathersnameText"
-        Me.fathersnameText.Size = New System.Drawing.Size(566, 29)
-        Me.fathersnameText.TabIndex = 70
-        Me.fathersnameText.Watermark = "Father's Name"
         '
         'Label10
         '
@@ -1518,6 +1194,336 @@ Partial Class CreateEmployee201
         Me.changepicButton.Text = "Change Picture"
         Me.changepicButton.UseVisualStyleBackColor = False
         '
+        'telephonenumberText
+        '
+        Me.telephonenumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.telephonenumberText.ForeColor = System.Drawing.Color.Black
+        Me.telephonenumberText.Location = New System.Drawing.Point(48, 419)
+        Me.telephonenumberText.Name = "telephonenumberText"
+        Me.telephonenumberText.Size = New System.Drawing.Size(566, 29)
+        Me.telephonenumberText.TabIndex = 63
+        Me.telephonenumberText.Watermark = "Telephone Number"
+        '
+        'contactnumberText
+        '
+        Me.contactnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.contactnumberText.ForeColor = System.Drawing.Color.Black
+        Me.contactnumberText.Location = New System.Drawing.Point(48, 359)
+        Me.contactnumberText.Name = "contactnumberText"
+        Me.contactnumberText.Size = New System.Drawing.Size(566, 29)
+        Me.contactnumberText.TabIndex = 62
+        Me.contactnumberText.Watermark = "Contact Number"
+        '
+        'emailaddressText
+        '
+        Me.emailaddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailaddressText.ForeColor = System.Drawing.Color.Black
+        Me.emailaddressText.Location = New System.Drawing.Point(48, 301)
+        Me.emailaddressText.Name = "emailaddressText"
+        Me.emailaddressText.Size = New System.Drawing.Size(566, 29)
+        Me.emailaddressText.TabIndex = 61
+        Me.emailaddressText.Watermark = "Email Address"
+        '
+        'permanentaddressText
+        '
+        Me.permanentaddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.permanentaddressText.ForeColor = System.Drawing.Color.Black
+        Me.permanentaddressText.Location = New System.Drawing.Point(48, 244)
+        Me.permanentaddressText.Name = "permanentaddressText"
+        Me.permanentaddressText.Size = New System.Drawing.Size(566, 29)
+        Me.permanentaddressText.TabIndex = 60
+        Me.permanentaddressText.Watermark = "Permanent Address"
+        '
+        'presentaddressText
+        '
+        Me.presentaddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.presentaddressText.ForeColor = System.Drawing.Color.Black
+        Me.presentaddressText.Location = New System.Drawing.Point(48, 184)
+        Me.presentaddressText.Name = "presentaddressText"
+        Me.presentaddressText.Size = New System.Drawing.Size(566, 29)
+        Me.presentaddressText.TabIndex = 59
+        Me.presentaddressText.Watermark = "Present Address"
+        '
+        'birthplaceText
+        '
+        Me.birthplaceText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.birthplaceText.ForeColor = System.Drawing.Color.Black
+        Me.birthplaceText.Location = New System.Drawing.Point(48, 67)
+        Me.birthplaceText.Name = "birthplaceText"
+        Me.birthplaceText.Size = New System.Drawing.Size(566, 29)
+        Me.birthplaceText.TabIndex = 58
+        Me.birthplaceText.Watermark = "Birthplace"
+        '
+        'childnameTextfour
+        '
+        Me.childnameTextfour.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTextfour.ForeColor = System.Drawing.Color.Gray
+        Me.childnameTextfour.Location = New System.Drawing.Point(41, 421)
+        Me.childnameTextfour.Name = "childnameTextfour"
+        Me.childnameTextfour.Size = New System.Drawing.Size(386, 29)
+        Me.childnameTextfour.TabIndex = 76
+        Me.childnameTextfour.Watermark = "Child's Name"
+        '
+        'childnameTextthree
+        '
+        Me.childnameTextthree.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTextthree.ForeColor = System.Drawing.Color.Gray
+        Me.childnameTextthree.Location = New System.Drawing.Point(42, 358)
+        Me.childnameTextthree.Name = "childnameTextthree"
+        Me.childnameTextthree.Size = New System.Drawing.Size(386, 29)
+        Me.childnameTextthree.TabIndex = 75
+        Me.childnameTextthree.Watermark = "Child's Name"
+        '
+        'childnameTexttwo
+        '
+        Me.childnameTexttwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTexttwo.ForeColor = System.Drawing.Color.Gray
+        Me.childnameTexttwo.Location = New System.Drawing.Point(41, 296)
+        Me.childnameTexttwo.Name = "childnameTexttwo"
+        Me.childnameTexttwo.Size = New System.Drawing.Size(386, 29)
+        Me.childnameTexttwo.TabIndex = 74
+        Me.childnameTexttwo.Watermark = "Child's Name"
+        '
+        'childnameTextone
+        '
+        Me.childnameTextone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.childnameTextone.ForeColor = System.Drawing.Color.Gray
+        Me.childnameTextone.Location = New System.Drawing.Point(41, 236)
+        Me.childnameTextone.Name = "childnameTextone"
+        Me.childnameTextone.Size = New System.Drawing.Size(386, 29)
+        Me.childnameTextone.TabIndex = 73
+        Me.childnameTextone.Watermark = "Child's Name"
+        '
+        'spousenameText
+        '
+        Me.spousenameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.spousenameText.ForeColor = System.Drawing.Color.Gray
+        Me.spousenameText.Location = New System.Drawing.Point(41, 159)
+        Me.spousenameText.Name = "spousenameText"
+        Me.spousenameText.Size = New System.Drawing.Size(386, 29)
+        Me.spousenameText.TabIndex = 72
+        Me.spousenameText.Watermark = "Spouse's Name"
+        '
+        'mothersnameText
+        '
+        Me.mothersnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mothersnameText.ForeColor = System.Drawing.Color.Gray
+        Me.mothersnameText.Location = New System.Drawing.Point(42, 92)
+        Me.mothersnameText.Name = "mothersnameText"
+        Me.mothersnameText.Size = New System.Drawing.Size(566, 29)
+        Me.mothersnameText.TabIndex = 71
+        Me.mothersnameText.Watermark = "Mother's Name"
+        '
+        'fathersnameText
+        '
+        Me.fathersnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fathersnameText.ForeColor = System.Drawing.Color.Gray
+        Me.fathersnameText.Location = New System.Drawing.Point(42, 24)
+        Me.fathersnameText.Name = "fathersnameText"
+        Me.fathersnameText.Size = New System.Drawing.Size(566, 29)
+        Me.fathersnameText.TabIndex = 70
+        Me.fathersnameText.Watermark = "Father's Name"
+        '
+        'statusreasonText
+        '
+        Me.statusreasonText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statusreasonText.ForeColor = System.Drawing.Color.Gray
+        Me.statusreasonText.Location = New System.Drawing.Point(53, 429)
+        Me.statusreasonText.Name = "statusreasonText"
+        Me.statusreasonText.Size = New System.Drawing.Size(566, 29)
+        Me.statusreasonText.TabIndex = 83
+        Me.statusreasonText.Watermark = "Status Reason"
+        '
+        'rankText
+        '
+        Me.rankText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rankText.ForeColor = System.Drawing.Color.Gray
+        Me.rankText.Location = New System.Drawing.Point(53, 298)
+        Me.rankText.Name = "rankText"
+        Me.rankText.Size = New System.Drawing.Size(566, 29)
+        Me.rankText.TabIndex = 77
+        Me.rankText.Watermark = "Rank"
+        '
+        'positionText
+        '
+        Me.positionText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.positionText.ForeColor = System.Drawing.Color.Gray
+        Me.positionText.Location = New System.Drawing.Point(53, 231)
+        Me.positionText.Name = "positionText"
+        Me.positionText.Size = New System.Drawing.Size(566, 29)
+        Me.positionText.TabIndex = 76
+        Me.positionText.Watermark = "Position"
+        '
+        'departmentText
+        '
+        Me.departmentText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.departmentText.ForeColor = System.Drawing.Color.Gray
+        Me.departmentText.Location = New System.Drawing.Point(53, 159)
+        Me.departmentText.Name = "departmentText"
+        Me.departmentText.Size = New System.Drawing.Size(566, 29)
+        Me.departmentText.TabIndex = 75
+        Me.departmentText.Watermark = "Department/Unit"
+        '
+        'groupText
+        '
+        Me.groupText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.groupText.ForeColor = System.Drawing.Color.Gray
+        Me.groupText.Location = New System.Drawing.Point(53, 83)
+        Me.groupText.Name = "groupText"
+        Me.groupText.Size = New System.Drawing.Size(566, 29)
+        Me.groupText.TabIndex = 74
+        Me.groupText.Watermark = "Group"
+        '
+        'hdmfnumberText
+        '
+        Me.hdmfnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.hdmfnumberText.ForeColor = System.Drawing.Color.Gray
+        Me.hdmfnumberText.Location = New System.Drawing.Point(51, 401)
+        Me.hdmfnumberText.Name = "hdmfnumberText"
+        Me.hdmfnumberText.Size = New System.Drawing.Size(566, 29)
+        Me.hdmfnumberText.TabIndex = 80
+        Me.hdmfnumberText.Watermark = "HDMF Number"
+        '
+        'rtnText
+        '
+        Me.rtnText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtnText.ForeColor = System.Drawing.Color.Gray
+        Me.rtnText.Location = New System.Drawing.Point(51, 326)
+        Me.rtnText.Name = "rtnText"
+        Me.rtnText.Size = New System.Drawing.Size(566, 29)
+        Me.rtnText.TabIndex = 79
+        Me.rtnText.Watermark = "RTN"
+        '
+        'pagibignumberText
+        '
+        Me.pagibignumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pagibignumberText.ForeColor = System.Drawing.Color.Gray
+        Me.pagibignumberText.Location = New System.Drawing.Point(51, 250)
+        Me.pagibignumberText.Name = "pagibignumberText"
+        Me.pagibignumberText.Size = New System.Drawing.Size(566, 29)
+        Me.pagibignumberText.TabIndex = 78
+        Me.pagibignumberText.Watermark = "Pag-ibig Number"
+        '
+        'philhealthnumberText
+        '
+        Me.philhealthnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.philhealthnumberText.ForeColor = System.Drawing.Color.Gray
+        Me.philhealthnumberText.Location = New System.Drawing.Point(51, 175)
+        Me.philhealthnumberText.Name = "philhealthnumberText"
+        Me.philhealthnumberText.Size = New System.Drawing.Size(566, 29)
+        Me.philhealthnumberText.TabIndex = 77
+        Me.philhealthnumberText.Watermark = "Philhealth Number"
+        '
+        'sssnumberText
+        '
+        Me.sssnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sssnumberText.ForeColor = System.Drawing.Color.Gray
+        Me.sssnumberText.Location = New System.Drawing.Point(51, 97)
+        Me.sssnumberText.Name = "sssnumberText"
+        Me.sssnumberText.Size = New System.Drawing.Size(566, 29)
+        Me.sssnumberText.TabIndex = 76
+        Me.sssnumberText.Watermark = "SSS Number"
+        '
+        'tinnumberText
+        '
+        Me.tinnumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tinnumberText.ForeColor = System.Drawing.Color.Gray
+        Me.tinnumberText.Location = New System.Drawing.Point(51, 30)
+        Me.tinnumberText.Name = "tinnumberText"
+        Me.tinnumberText.Size = New System.Drawing.Size(566, 29)
+        Me.tinnumberText.TabIndex = 75
+        Me.tinnumberText.Watermark = "TIN Number"
+        '
+        'nextofkinnameText
+        '
+        Me.nextofkinnameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nextofkinnameText.ForeColor = System.Drawing.Color.Gray
+        Me.nextofkinnameText.Location = New System.Drawing.Point(36, 428)
+        Me.nextofkinnameText.Name = "nextofkinnameText"
+        Me.nextofkinnameText.Size = New System.Drawing.Size(358, 29)
+        Me.nextofkinnameText.TabIndex = 89
+        Me.nextofkinnameText.Watermark = "Next of Kin"
+        '
+        'beneficiaryrelationTextfour
+        '
+        Me.beneficiaryrelationTextfour.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTextfour.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationTextfour.Location = New System.Drawing.Point(36, 362)
+        Me.beneficiaryrelationTextfour.Name = "beneficiaryrelationTextfour"
+        Me.beneficiaryrelationTextfour.Size = New System.Drawing.Size(358, 29)
+        Me.beneficiaryrelationTextfour.TabIndex = 88
+        Me.beneficiaryrelationTextfour.Watermark = "Beneficiary's Relation"
+        '
+        'beneficiarynameTextfour
+        '
+        Me.beneficiarynameTextfour.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTextfour.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameTextfour.Location = New System.Drawing.Point(36, 319)
+        Me.beneficiarynameTextfour.Name = "beneficiarynameTextfour"
+        Me.beneficiarynameTextfour.Size = New System.Drawing.Size(358, 29)
+        Me.beneficiarynameTextfour.TabIndex = 87
+        Me.beneficiarynameTextfour.Watermark = "Beneficiary's Name"
+        '
+        'beneficiaryrelationTextthree
+        '
+        Me.beneficiaryrelationTextthree.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTextthree.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationTextthree.Location = New System.Drawing.Point(36, 258)
+        Me.beneficiaryrelationTextthree.Name = "beneficiaryrelationTextthree"
+        Me.beneficiaryrelationTextthree.Size = New System.Drawing.Size(358, 29)
+        Me.beneficiaryrelationTextthree.TabIndex = 85
+        Me.beneficiaryrelationTextthree.Watermark = "Beneficiary's Relation"
+        '
+        'beneficiarynameTextthree
+        '
+        Me.beneficiarynameTextthree.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTextthree.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameTextthree.Location = New System.Drawing.Point(36, 212)
+        Me.beneficiarynameTextthree.Name = "beneficiarynameTextthree"
+        Me.beneficiarynameTextthree.Size = New System.Drawing.Size(358, 29)
+        Me.beneficiarynameTextthree.TabIndex = 84
+        Me.beneficiarynameTextthree.Watermark = "Beneficiary's Name"
+        '
+        'beneficiaryrelationTexttwo
+        '
+        Me.beneficiaryrelationTexttwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTexttwo.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationTexttwo.Location = New System.Drawing.Point(36, 154)
+        Me.beneficiaryrelationTexttwo.Name = "beneficiaryrelationTexttwo"
+        Me.beneficiaryrelationTexttwo.Size = New System.Drawing.Size(358, 29)
+        Me.beneficiaryrelationTexttwo.TabIndex = 81
+        Me.beneficiaryrelationTexttwo.Watermark = "Beneficiary's Relation"
+        '
+        'beneficiarynameTexttwo
+        '
+        Me.beneficiarynameTexttwo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTexttwo.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameTexttwo.Location = New System.Drawing.Point(36, 115)
+        Me.beneficiarynameTexttwo.Name = "beneficiarynameTexttwo"
+        Me.beneficiarynameTexttwo.Size = New System.Drawing.Size(358, 29)
+        Me.beneficiarynameTexttwo.TabIndex = 80
+        Me.beneficiarynameTexttwo.Watermark = "Beneficiary's Name"
+        '
+        'beneficiaryrelationTextone
+        '
+        Me.beneficiaryrelationTextone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiaryrelationTextone.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiaryrelationTextone.Location = New System.Drawing.Point(36, 58)
+        Me.beneficiaryrelationTextone.Name = "beneficiaryrelationTextone"
+        Me.beneficiaryrelationTextone.Size = New System.Drawing.Size(358, 29)
+        Me.beneficiaryrelationTextone.TabIndex = 79
+        Me.beneficiaryrelationTextone.Watermark = "Beneficiary's Relation"
+        '
+        'beneficiarynameTextone
+        '
+        Me.beneficiarynameTextone.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.beneficiarynameTextone.ForeColor = System.Drawing.Color.Gray
+        Me.beneficiarynameTextone.Location = New System.Drawing.Point(36, 19)
+        Me.beneficiarynameTextone.Name = "beneficiarynameTextone"
+        Me.beneficiarynameTextone.Size = New System.Drawing.Size(358, 29)
+        Me.beneficiarynameTextone.TabIndex = 78
+        Me.beneficiarynameTextone.Watermark = "Beneficiary's Name"
+        '
         'employeenumberText
         '
         Me.employeenumberText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1557,6 +1563,39 @@ Partial Class CreateEmployee201
         Me.lastnameText.Size = New System.Drawing.Size(229, 29)
         Me.lastnameText.TabIndex = 81
         Me.lastnameText.Watermark = "Last Name"
+        '
+        'bdaycheck
+        '
+        Me.bdaycheck.AutoSize = True
+        Me.bdaycheck.Checked = True
+        Me.bdaycheck.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.bdaycheck.Location = New System.Drawing.Point(343, 26)
+        Me.bdaycheck.Name = "bdaycheck"
+        Me.bdaycheck.Size = New System.Drawing.Size(15, 14)
+        Me.bdaycheck.TabIndex = 64
+        Me.bdaycheck.UseVisualStyleBackColor = True
+        '
+        'spousebdaycheck
+        '
+        Me.spousebdaycheck.AutoSize = True
+        Me.spousebdaycheck.Checked = True
+        Me.spousebdaycheck.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.spousebdaycheck.Location = New System.Drawing.Point(811, 169)
+        Me.spousebdaycheck.Name = "spousebdaycheck"
+        Me.spousebdaycheck.Size = New System.Drawing.Size(15, 14)
+        Me.spousebdaycheck.TabIndex = 77
+        Me.spousebdaycheck.UseVisualStyleBackColor = True
+        '
+        'datehiredcheck
+        '
+        Me.datehiredcheck.AutoSize = True
+        Me.datehiredcheck.Checked = True
+        Me.datehiredcheck.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.datehiredcheck.Location = New System.Drawing.Point(366, 25)
+        Me.datehiredcheck.Name = "datehiredcheck"
+        Me.datehiredcheck.Size = New System.Drawing.Size(15, 14)
+        Me.datehiredcheck.TabIndex = 86
+        Me.datehiredcheck.UseVisualStyleBackColor = True
         '
         'CreateEmployee201
         '
@@ -1763,5 +1802,7 @@ Partial Class CreateEmployee201
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents changepicButton As System.Windows.Forms.Button
-
+    Friend WithEvents bdaycheck As CheckBox
+    Friend WithEvents datehiredcheck As CheckBox
+    Friend WithEvents spousebdaycheck As CheckBox
 End Class

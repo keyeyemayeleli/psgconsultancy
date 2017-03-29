@@ -58,7 +58,7 @@ Public Class EvaluationsForm
                         conn.Open()
                         cmd.ExecuteNonQuery()
                         cmd.Parameters.Clear()
-                        Evaltype = ""
+
                         EvalNum = 0
                         MessageBox.Show("Evaluation successfully added", "Evaluations", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Me.Close()
@@ -89,7 +89,7 @@ Public Class EvaluationsForm
                         conn.Open()
                         cmd.ExecuteNonQuery()
                         cmd.Parameters.Clear()
-                        Evaltype = ""
+
                         EvalNum = 0
                         MessageBox.Show("Evaluation successfully edited", "Evaluations", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Me.Close()
@@ -100,14 +100,15 @@ Public Class EvaluationsForm
             End Using
         End If
 
+        EditEmployee.Close()
+        EditEmployee.Show()
 
     End Sub
 
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
-
+    Private Sub evalcancelbutton_Click(sender As Object, e As EventArgs) Handles evalcancelbutton.Click
+        Evaltype = ""
+        Me.Close()
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles fscoreText.TextChanged
 
-    End Sub
 End Class

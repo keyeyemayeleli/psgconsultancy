@@ -23,6 +23,9 @@ Public Class ViewEmployees
                 employeenumberLabel.Text = dt.Rows(0)("employee_id").ToString
                 statusLabel.Text = dt.Rows(0)("status").ToString
                 birthplaceLabel.Text = dt.Rows(0)("birth_place").ToString
+                If Not IsDBNull(dt.Rows(0)("birthday")) And Not dt.Rows(0)("birthday").ToString = "" Then
+                    bdayLabel.Text = dt.Rows(0)("birthday")
+                End If
                 bdayLabel.Text = dt.Rows(0)("birthday").ToString
                 civilstatusLabel.Text = dt.Rows(0)("civil_status").ToString
                 presentaddressLabel.Text = dt.Rows(0)("present_address").ToString
@@ -115,7 +118,9 @@ Public Class ViewEmployees
             monthlyDatagrid.DataSource = ds4
             monthlyDatagrid.DataMember = "employee_ym_evals"
             monthlyDatagrid.Columns("date").HeaderCell.Value = "Month"
-            monthlyDatagrid.Columns("score").HeaderCell.Value = "Score"
+            monthlyDatagrid.Columns("fscore").HeaderCell.Value = "Final Score"
+            monthlyDatagrid.Columns("prscore").HeaderCell.Value = "Performance Rating Score"
+            monthlyDatagrid.Columns("acscore").HeaderCell.Value = "Admin Compliance Score"
             monthlyDatagrid.Columns("remarks").HeaderCell.Value = "Remarks"
             monthlyDatagrid.Columns("employee_id").Visible = False
             monthlyDatagrid.Columns("eval_id").Visible = False
@@ -129,7 +134,9 @@ Public Class ViewEmployees
             yearlyDatadrid.DataSource = ds5
             yearlyDatadrid.DataMember = "employee_ym_evals"
             yearlyDatadrid.Columns("date").HeaderCell.Value = "Month"
-            yearlyDatadrid.Columns("score").HeaderCell.Value = "Score"
+            yearlyDatadrid.Columns("fscore").HeaderCell.Value = "Final Score"
+            yearlyDatadrid.Columns("prscore").HeaderCell.Value = "Performance Rating Score"
+            yearlyDatadrid.Columns("acscore").HeaderCell.Value = "Admin Compliance Score"
             yearlyDatadrid.Columns("remarks").HeaderCell.Value = "Remarks"
             yearlyDatadrid.Columns("employee_id").Visible = False
             yearlyDatadrid.Columns("eval_id").Visible = False
@@ -256,4 +263,6 @@ Public Class ViewEmployees
             MessageBox.Show("You need to select only one file.", "View Employee Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
     End Sub
+
+
 End Class
