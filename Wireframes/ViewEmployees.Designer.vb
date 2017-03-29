@@ -136,6 +136,7 @@ Partial Class ViewEmployees
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.documentsTab = New System.Windows.Forms.TabPage()
+        Me.documentsLV = New System.Windows.Forms.ListView()
         Me.PictureBox31 = New System.Windows.Forms.PictureBox()
         Me.statusLabel = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
@@ -149,7 +150,6 @@ Partial Class ViewEmployees
         Me.backButton = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.documentsLV = New System.Windows.Forms.ListView()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.otherTab.SuspendLayout()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -757,9 +757,9 @@ Partial Class ViewEmployees
         'yearlyTab
         '
         Me.yearlyTab.Controls.Add(Me.yearlyDatadrid)
-        Me.yearlyTab.Location = New System.Drawing.Point(4, 29)
+        Me.yearlyTab.Location = New System.Drawing.Point(4, 22)
         Me.yearlyTab.Name = "yearlyTab"
-        Me.yearlyTab.Size = New System.Drawing.Size(839, 483)
+        Me.yearlyTab.Size = New System.Drawing.Size(839, 490)
         Me.yearlyTab.TabIndex = 7
         Me.yearlyTab.Text = "Yearly Evaluations"
         Me.yearlyTab.UseVisualStyleBackColor = True
@@ -1602,6 +1602,15 @@ Partial Class ViewEmployees
         Me.documentsTab.Text = "Scanned Documents"
         Me.documentsTab.UseVisualStyleBackColor = True
         '
+        'documentsLV
+        '
+        Me.documentsLV.Location = New System.Drawing.Point(0, 0)
+        Me.documentsLV.MultiSelect = False
+        Me.documentsLV.Name = "documentsLV"
+        Me.documentsLV.Size = New System.Drawing.Size(669, 217)
+        Me.documentsLV.TabIndex = 0
+        Me.documentsLV.UseCompatibleStateImageBehavior = False
+        '
         'PictureBox31
         '
         Me.PictureBox31.Image = CType(resources.GetObject("PictureBox31.Image"), System.Drawing.Image)
@@ -1755,15 +1764,6 @@ Partial Class ViewEmployees
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 46
         Me.PictureBox1.TabStop = False
-        '
-        'documentsLV
-        '
-        Me.documentsLV.Location = New System.Drawing.Point(0, 0)
-        Me.documentsLV.MultiSelect = False
-        Me.documentsLV.Name = "documentsLV"
-        Me.documentsLV.Size = New System.Drawing.Size(839, 229)
-        Me.documentsLV.TabIndex = 0
-        Me.documentsLV.UseCompatibleStateImageBehavior = False
         '
         'ViewEmployees
         '

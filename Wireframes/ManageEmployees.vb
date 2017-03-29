@@ -52,6 +52,31 @@ Public Class ManageEmployees
     Private Sub viewEmployee_Click(sender As Object, e As EventArgs) Handles viewEmployee.Click
         If manageemployeesDGV.SelectedRows.Count() = 1 Then
             Employee = manageemployeesDGV.SelectedRows(0).Cells(0).Value.ToString
+
+            Dim datenow As DateTime = DateTime.Now
+            Dim datestr As String = datenow.ToString("yyyy-MM-dd HH:mm:ss")
+            Dim sql5 As String = "INSERT INTO logs (time_stamp, activity_name, account_id) VALUES (@time, @actname, @accid)"
+            Using conn As New SqlConnection(connectionString)
+                Using cmd As New SqlCommand()
+                    With cmd
+                        .Connection = conn
+                        .CommandType = CommandType.Text
+                        .CommandText = sql5
+                        .Parameters.AddWithValue("time", datestr)
+                        .Parameters.AddWithValue("actname", "Viewed 201 file of " + manageemployeesDGV.SelectedRows(0).Cells(1).Value.ToString + ", " + manageemployeesDGV.SelectedRows(0).Cells(2).Value.ToString + " " + manageemployeesDGV.SelectedRows(0).Cells(3).Value.ToString)
+                        .Parameters.AddWithValue("accid", UserID)
+                    End With
+
+                    Try
+                        conn.Open()
+                        cmd.ExecuteNonQuery()
+                        cmd.Parameters.Clear()
+                    Catch ex As Exception
+                        MessageBox.Show(ex.Message.ToString(), "Error Message")
+                    End Try
+                End Using
+            End Using
+
             Dim NewForm As ViewEmployees
             NewForm = New ViewEmployees()
             NewForm.Show()

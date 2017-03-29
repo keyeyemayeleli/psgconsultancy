@@ -6,8 +6,6 @@ Public Class CreateEmployee201
     Private Sub CreateEmployee201_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
 
-
-
         Me.birthdayDate.Format = DateTimePickerFormat.Custom
         birthdayDate.CustomFormat = "MMMM d, yyyy"
 
@@ -76,7 +74,7 @@ Public Class CreateEmployee201
         Dim sql2 As String = "INSERT INTO children (employee_id, child_name, child_birthday) VALUES (@empid, @cname, @cbday)"
         Dim sql3 As String = "INSERT INTO beneficiaries (employee_id, ben_name, ben_birthday, ben_relation) VALUES (@empid, @bname, @bbday, @brel)"
         Dim sql4 As String = "INSERT INTO employee_ym_evals (employee_id, score, date, status, remarks) VALUES (@empid, @score, @date, @status, @remark)"
-
+        Dim sql5 As String = "INSERT INTO logs (time_stamp, activity_name, account_id) VALUES (@time, @actname, @accid)"
 
         Using conn As New SqlConnection(connectionString)
             Using cmd As New SqlCommand()
@@ -330,6 +328,28 @@ Public Class CreateEmployee201
                             End Using
                         Next
                     End If
+
+                    Dim datenow As DateTime = DateTime.Now
+                    Dim datestr As String = datenow.ToString("yyyy-MM-dd HH:mm:ss")
+
+                    Using cmd8 As New SqlCommand()
+                        With cmd8
+                            .Connection = conn
+                            .CommandType = CommandType.Text
+                            .CommandText = sql5
+                            .Parameters.AddWithValue("time", datestr)
+                            .Parameters.AddWithValue("actname", "Created 201 file of " + lastnameText.Text + ", " + givennameText.Text + " " + middlenameText.Text)
+                            .Parameters.AddWithValue("accid", UserID)
+                        End With
+
+                        Try
+                            cmd8.ExecuteNonQuery()
+                            cmd8.Parameters.Clear()
+                        Catch ex As Exception
+                            MessageBox.Show(ex.Message.ToString(), "Error Message")
+                        End Try
+                    End Using
+
 
                     MessageBox.Show("Employee 201 file of " & givennameText.Text & " " & lastnameText.Text & " successfully added!", "Create 201 file", MessageBoxButtons.OK, MessageBoxIcon.Information)
 

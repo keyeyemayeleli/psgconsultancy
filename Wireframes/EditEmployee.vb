@@ -2,7 +2,7 @@
 Imports System.Data.Common
 Imports System.IO
 Public Class EditEmployee
-    Dim picaddress As String
+    Dim picaddress As String = ""
     Private Sub EditEmployee_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
         Me.birthdayDate.Format = DateTimePickerFormat.Custom
@@ -86,7 +86,7 @@ Public Class EditEmployee
                 pagibignumberText.Text = dt.Rows(0)("pagibig_number").ToString
                 rtnText.Text = dt.Rows(0)("RTN").ToString
                 hdmfnumberText.Text = dt.Rows(0)("HDMF_MID_number").ToString
-                If Not IsDBNull(dt.Rows(0)("picture_address")) Then
+                If Not IsDBNull(dt.Rows(0)("picture_address")) And Not dt.Rows(0)("picture_address").ToString = "" Then
                     picbox.BackgroundImage = Image.FromFile(dt.Rows(0)("picture_address").ToString)
                     picbox.BackgroundImageLayout = ImageLayout.Zoom
                     picaddress = dt.Rows(0)("picture_address").ToString
@@ -238,6 +238,7 @@ Public Class EditEmployee
             Dim sql2 As String = "INSERT INTO children (employee_id, child_name, child_birthday) VALUES (@empid, @cname, @cbday)"
             Dim sql3 As String = "INSERT INTO beneficiaries (employee_id, ben_name, ben_birthday, ben_relation) VALUES (@empid, @bname, @bbday, @brel)"
             Dim sql4 As String = "DELETE FROM children WHERE employee_id= @empid; DELETE FROM beneficiaries WHERE employee_id= @empid"
+            Dim sql5 As String = "INSERT INTO logs (time_stamp, activity_name, account_id) VALUES (@time, @actname, @accid)"
 
             Using conn As New SqlConnection(connectionString)
                 Using cmd As New SqlCommand()
@@ -463,6 +464,28 @@ Public Class EditEmployee
                             End Using
                         End If
 
+                        Dim datenow As DateTime = DateTime.Now
+                        Dim datestr As String = datenow.ToString("yyyy-MM-dd HH:mm:ss")
+
+                        Using cmd8 As New SqlCommand()
+                            With cmd8
+                                .Connection = conn
+                                .CommandType = CommandType.Text
+                                .CommandText = sql5
+                                .Parameters.AddWithValue("time", datestr)
+                                .Parameters.AddWithValue("actname", "Edited 201 file of " + lastnameText.Text + ", " + givennameText.Text + " " + middlenameText.Text)
+                                .Parameters.AddWithValue("accid", UserID)
+                            End With
+
+                            Try
+                                cmd8.ExecuteNonQuery()
+                                cmd8.Parameters.Clear()
+                            Catch ex As Exception
+                                MessageBox.Show(ex.Message.ToString(), "Error Message")
+                            End Try
+                        End Using
+
+
                         Dim a As Control
 
                         For Each a In Me.Controls
@@ -519,7 +542,7 @@ Public Class EditEmployee
                     End Using
 
                 Next
-
+                MessageBox.Show("Documents added to 201 file of " & givennameText.Text & " " & lastnameText.Text & ".", "Add document file", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Catch Ex As Exception
                 MessageBox.Show("Cannot read file from disk. Original error: " & Ex.Message)
 

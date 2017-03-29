@@ -38,7 +38,7 @@ Public Class Homepage
     End Sub
 
     Private Sub manageButton_Click(sender As Object, e As EventArgs) Handles manageButton.Click
-
+        Me.Close()
         ManageEmployees.Show()
     End Sub
 
@@ -70,7 +70,7 @@ Public Class Homepage
     Private Sub logoutButton_Click(sender As Object, e As EventArgs) Handles logoutButton.Click
         If MsgBox("Are you sure you want to logout?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
             User = ""
-            Me.Hide()
+            Me.Close()
             Login.Show()
         End If
     End Sub
@@ -83,6 +83,10 @@ Public Class Homepage
         NewForm = Nothing
         Me.Hide()
 
+
+    End Sub
+
+    Private Sub retrieveButton_Click(sender As Object, e As EventArgs) Handles retrieveButton.Click
 
     End Sub
 End Class

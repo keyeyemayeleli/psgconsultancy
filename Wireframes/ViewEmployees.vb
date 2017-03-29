@@ -47,7 +47,7 @@ Public Class ViewEmployees
                 pagibignumberLabel.Text = dt.Rows(0)("pagibig_number").ToString
                 rtnLabel.Text = dt.Rows(0)("RTN").ToString
                 hdmfnumberLabel.Text = dt.Rows(0)("HDMF_MID_number").ToString
-                If Not IsDBNull(dt.Rows(0)("picture_address")) Then
+                If Not IsDBNull(dt.Rows(0)("picture_address")) And Not dt.Rows(0)("picture_address").ToString = "" Then
                     picbox.BackgroundImage = Image.FromFile(dt.Rows(0)("picture_address").ToString)
                     picbox.BackgroundImageLayout = ImageLayout.Zoom
                     picaddress = dt.Rows(0)("picture_address").ToString
@@ -146,7 +146,6 @@ Public Class ViewEmployees
             documentsLV.Columns.Add("Full Name", 0, HorizontalAlignment.Left)
             documentsLV.Columns.Add("Document name", 500, HorizontalAlignment.Left)
 
-
             documentsLV.Columns(0).DisplayIndex = documentsLV.Columns.Count - 1
 
             Dim dt7 As New DataTable()
@@ -155,8 +154,6 @@ Public Class ViewEmployees
             sqlCmd7.Parameters.AddWithValue("@eid", Employee)
 
             dataadapter7.Fill(dt7)
-
-
 
             If dt7.Rows.Count > 0 Then
                 ReDim a(0 To dt7.Rows.Count - 1)
