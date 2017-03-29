@@ -696,10 +696,10 @@ Partial Class EditEmployee
         Me.monthlyevalTab.Controls.Add(Me.deletemevalsbutton)
         Me.monthlyevalTab.Controls.Add(Me.editmevalsbutton)
         Me.monthlyevalTab.Controls.Add(Me.monthlyDatagrid)
-        Me.monthlyevalTab.Location = New System.Drawing.Point(4, 22)
+        Me.monthlyevalTab.Location = New System.Drawing.Point(4, 29)
         Me.monthlyevalTab.Name = "monthlyevalTab"
         Me.monthlyevalTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.monthlyevalTab.Size = New System.Drawing.Size(839, 490)
+        Me.monthlyevalTab.Size = New System.Drawing.Size(839, 483)
         Me.monthlyevalTab.TabIndex = 6
         Me.monthlyevalTab.Text = "Monthly Evaluations"
         Me.monthlyevalTab.UseVisualStyleBackColor = True
@@ -755,9 +755,9 @@ Partial Class EditEmployee
         Me.yearlyevalTab.Controls.Add(Me.deleteyevalsbutton)
         Me.yearlyevalTab.Controls.Add(Me.edityevalsbutton)
         Me.yearlyevalTab.Controls.Add(Me.yearlyDatadrid)
-        Me.yearlyevalTab.Location = New System.Drawing.Point(4, 22)
+        Me.yearlyevalTab.Location = New System.Drawing.Point(4, 29)
         Me.yearlyevalTab.Name = "yearlyevalTab"
-        Me.yearlyevalTab.Size = New System.Drawing.Size(839, 490)
+        Me.yearlyevalTab.Size = New System.Drawing.Size(839, 483)
         Me.yearlyevalTab.TabIndex = 7
         Me.yearlyevalTab.Text = "Yearly Evaluations"
         Me.yearlyevalTab.UseVisualStyleBackColor = True
@@ -814,6 +814,7 @@ Partial Class EditEmployee
         Me.yearlyDatadrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.yearlyDatadrid.Location = New System.Drawing.Point(20, 18)
         Me.yearlyDatadrid.Name = "yearlyDatadrid"
+        Me.yearlyDatadrid.ReadOnly = True
         Me.yearlyDatadrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.yearlyDatadrid.Size = New System.Drawing.Size(798, 393)
         Me.yearlyDatadrid.TabIndex = 1
