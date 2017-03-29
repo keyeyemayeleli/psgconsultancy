@@ -13,18 +13,32 @@ Public Class EvaluationsForm
         If dt.Rows.Count > 0 Then
             employeenumberlabel.Text = dt.Rows(0)("employee_id").ToString
             employeenamelabel.Text = dt.Rows(0)("first_name").ToString + " " + dt.Rows(0)("middle_name").ToString + " " + dt.Rows(0)("last_name").ToString
-            If EvalNum!= -1 Then
+            If EvalNum! = -1 Then
 
             End If
         End If
 
         evaluationtypelabel.Text = Evaltype
 
+        If Evaltype = "monthly" Then
+            evaldateText.Items.Add("1st Month")
+            evaldateText.Items.Add("2nd Month")
+            evaldateText.Items.Add("3rd Month")
+            evaldateText.Items.Add("4th Month")
+            evaldateText.Items.Add("5th Month")
+            evaldateText.Items.Add("6th Month")
+        Else
+            For x As Integer = 0 To 9
+                evaldateText.Items.Add(Date.Now.Year.ToString - x)
+            Next
+        End If
+
+
     End Sub
 
     Private Sub evalsavebutton_Click(sender As Object, e As EventArgs) Handles evalsavebutton.Click
         If EvalNum = -1 Then
-            Dim sql As String = "INSERT INTO employee_ym_evals (employee_id, score, date, status, remarks) VALUES (@empid, @score, @date, @status, @remark)"
+            Dim sql As String = "INSERT INTO employee_ym_evals (employee_id, prscore, acscore, fscore, date, status, remarks) VALUES (@empid, @prscore, @acscore, @fscore, @date, @status, @remark)"
 
             Using conn As New SqlConnection(connectionString)
                 Using cmd As New SqlCommand()
@@ -34,7 +48,9 @@ Public Class EvaluationsForm
                         .CommandText = sql
                         .Parameters.AddWithValue("empid", Employee)
                         .Parameters.AddWithValue("status", evaluationtypelabel.Text)
-                        .Parameters.AddWithValue("score", evalscoretext.Text)
+                        .Parameters.AddWithValue("prscore", prscoreText.Text)
+                        .Parameters.AddWithValue("acscore", acscoreText.Text)
+                        .Parameters.AddWithValue("fscore", fscoreText.Text)
                         .Parameters.AddWithValue("remark", evalremarkstext.Text)
                         .Parameters.AddWithValue("date", evaldateText.Text)
                     End With
@@ -53,7 +69,7 @@ Public Class EvaluationsForm
             End Using
 
         ElseIf EvalNum > 0 Then
-            Dim sql2 As String = "UPDATE employee_ym_evals SET score= @score, remarks= @remark, date= @date WHERE eval_id= @evid"
+            Dim sql2 As String = "UPDATE employee_ym_evals SET fscore= @fscore, acscore= @acscore, prscore= @prscore, remarks= @remark, date= @date WHERE eval_id= @evid"
 
             Using conn As New SqlConnection(connectionString)
                 Using cmd As New SqlCommand()
@@ -61,8 +77,11 @@ Public Class EvaluationsForm
                         .Connection = conn
                         .CommandType = CommandType.Text
                         .CommandText = sql2
-                        .Parameters.AddWithValue("evid", EvalNum)
-                        .Parameters.AddWithValue("score", evalscoretext.Text)
+                        .Parameters.AddWithValue("empid", Employee)
+                        .Parameters.AddWithValue("status", evaluationtypelabel.Text)
+                        .Parameters.AddWithValue("prscore", prscoreText.Text)
+                        .Parameters.AddWithValue("acscore", acscoreText.Text)
+                        .Parameters.AddWithValue("fscore", fscoreText.Text)
                         .Parameters.AddWithValue("remark", evalremarkstext.Text)
                         .Parameters.AddWithValue("date", evaldateText.Text)
                     End With
@@ -84,5 +103,11 @@ Public Class EvaluationsForm
 
     End Sub
 
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
 
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles fscoreText.TextChanged
+
+    End Sub
 End Class
