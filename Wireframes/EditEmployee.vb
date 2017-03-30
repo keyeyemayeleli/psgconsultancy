@@ -521,6 +521,8 @@ Public Class EditEmployee
                                 conn.Open()
                                 cmd2.ExecuteNonQuery()
                                 cmd2.Parameters.Clear()
+                                Dim connection As New SqlConnection(connectionString)
+                                load_documents(connection)
                             Catch ex As Exception
                                 MessageBox.Show(ex.Message.ToString(), "Error Message")
                             End Try
