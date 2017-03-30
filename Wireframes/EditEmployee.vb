@@ -148,79 +148,19 @@ Public Class EditEmployee
                 beneficiarybdayDateone.Text = dt3.Rows(0)("ben_birthday").ToString
             End If
 
-            Dim ds4 As New DataSet()
-            Dim sqlCmd4 As New SqlCommand("SELECT * FROM employee_ym_evals WHERE employee_ID = @eid AND status = 'monthly'", connection)
-            Dim dataadapter4 As New SqlDataAdapter(sqlCmd4)
-            sqlCmd4.Parameters.AddWithValue("@eid", Employee)
-            dataadapter4.Fill(ds4, "employee_ym_evals")
-            monthlyDatagrid.DataSource = ds4
-            monthlyDatagrid.DataMember = "employee_ym_evals"
-            monthlyDatagrid.Columns("date").HeaderCell.Value = "Month"
-            monthlyDatagrid.Columns("fscore").HeaderCell.Value = "Final Score"
-            monthlyDatagrid.Columns("prscore").HeaderCell.Value = "Performance Rating Score"
-            monthlyDatagrid.Columns("acscore").HeaderCell.Value = "Admin Compliance Score"
-            monthlyDatagrid.Columns("remarks").HeaderCell.Value = "Remarks"
-            monthlyDatagrid.Columns("employee_id").Visible = False
-            monthlyDatagrid.Columns("eval_id").Visible = False
-            monthlyDatagrid.Columns("status").Visible = False
 
-            Dim ds5 As New DataSet()
-            Dim sqlCmd5 As New SqlCommand("SELECT * FROM employee_ym_evals WHERE employee_ID = @eid AND status = 'yearly'", connection)
-            Dim dataadapter5 As New SqlDataAdapter(sqlCmd5)
-            sqlCmd5.Parameters.AddWithValue("@eid", Employee)
-            dataadapter5.Fill(ds5, "employee_ym_evals")
-            yearlyDatadrid.DataSource = ds5
-            yearlyDatadrid.DataMember = "employee_ym_evals"
-            yearlyDatadrid.Columns("date").HeaderCell.Value = "Month"
-            yearlyDatadrid.Columns("fscore").HeaderCell.Value = "Final Score"
-            yearlyDatadrid.Columns("prscore").HeaderCell.Value = "Performance Rating Score"
-            yearlyDatadrid.Columns("acscore").HeaderCell.Value = "Admin Compliance Score"
-            yearlyDatadrid.Columns("remarks").HeaderCell.Value = "Remarks"
-            yearlyDatadrid.Columns("employee_id").Visible = False
-            yearlyDatadrid.Columns("eval_id").Visible = False
-            yearlyDatadrid.Columns("status").Visible = False
 
-            Dim imageList1 As New ImageList() With {.ImageSize = New Size(24, 24)}
-            Dim a() As String
-            documentsLV.View = View.Details
-            documentsLV.FullRowSelect = True
-            documentsLV.SmallImageList = imageList1
+
 
             documentsLV.Columns.Add("", 100, HorizontalAlignment.Left)
             documentsLV.Columns.Add("Full Name", 0, HorizontalAlignment.Left)
             documentsLV.Columns.Add("Document name", 500, HorizontalAlignment.Left)
-
+            documentsLV.Columns.Add("Doc ID", 0, HorizontalAlignment.Left)
 
             documentsLV.Columns(0).DisplayIndex = documentsLV.Columns.Count - 1
-
-            Dim dt7 As New DataTable()
-            Dim sqlCmd7 As New SqlCommand("SELECT * FROM documents WHERE employee_ID = @eid", connection)
-            Dim dataadapter7 As New SqlDataAdapter(sqlCmd7)
-            sqlCmd7.Parameters.AddWithValue("@eid", Employee)
-
-            dataadapter7.Fill(dt7)
-
-
-
-            If dt7.Rows.Count > 0 Then
-                ReDim a(0 To dt7.Rows.Count - 1)
-                For i = 0 To dt7.Rows.Count - 1
-                    a(i) = dt7.Rows(i)("document_address").ToString
-                Next
-                imageList1.Images.Clear()
-                For Each file In a
-
-                    imageList1.Images.Add(Icon.ExtractAssociatedIcon(file).ToBitmap)
-                    Dim lvi As New ListViewItem("", imageList1.Images.Count - 1)
-                    lvi.SubItems.Add(file)
-                    lvi.SubItems.Add(IO.Path.GetFileNameWithoutExtension(file))
-
-                    documentsLV.Items.Add(lvi)
-
-
-                Next
-
-            End If
+            load_mevals(connection)
+            load_yevals(connection)
+            load_documents(connection)
 
             connection.Close()
         Catch ex As Exception
@@ -659,6 +599,9 @@ Public Class EditEmployee
                             conn.Open()
                             dcmd.ExecuteNonQuery()
                             dcmd.Parameters.Clear()
+                            MessageBox.Show("Delete evaluation successful", "Delete monthly evaluation", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            Dim connection As New SqlConnection(connectionString)
+                            load_mevals(connection)
                         Catch ex As Exception
                             MessageBox.Show(ex.Message.ToString(), "Error Message")
                         End Try
@@ -710,6 +653,10 @@ Public Class EditEmployee
                             conn.Open()
                             dcmd.ExecuteNonQuery()
                             dcmd.Parameters.Clear()
+                            MessageBox.Show("Delete evaluation successful", "Delete yearly evaluation", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            Dim connection As New SqlConnection(connectionString)
+                            load_yevals(connection)
+
                         Catch ex As Exception
                             MessageBox.Show(ex.Message.ToString(), "Error Message")
                         End Try
@@ -751,4 +698,110 @@ Public Class EditEmployee
             spousebdayDate.Enabled = False
         End If
     End Sub
+
+    Private Sub deletedocbutton_Click(sender As Object, e As EventArgs) Handles deletedocbutton.Click
+        If documentsLV.SelectedItems.Count = 1 Then
+            If MsgBox("Are you sure you want to remove document?", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
+                Dim deletesql As String = "DELETE FROM documents WHERE document_id= @docid"
+
+                Using conn As New SqlConnection(connectionString)
+                    Using dcmd As New SqlCommand()
+                        With dcmd
+                            .Connection = conn
+                            .CommandType = CommandType.Text
+                            .CommandText = deletesql
+                            .Parameters.AddWithValue("docid", documentsLV.SelectedItems(0).SubItems(3).Text)
+                        End With
+                        Try
+                            conn.Open()
+                            dcmd.ExecuteNonQuery()
+                            dcmd.Parameters.Clear()
+                            MessageBox.Show("Remove document successful", "Remove document", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            Dim connection As New SqlConnection(connectionString)
+                            load_documents(connection)
+                        Catch ex As Exception
+                            MessageBox.Show(ex.Message.ToString(), "Error Message")
+                        End Try
+                    End Using
+                End Using
+
+            End If
+        Else
+            MessageBox.Show("You need to select one record.", "Remove Employee Document Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End If
+    End Sub
+
+    Private Function load_documents(connection)
+
+        documentsLV.Items.Clear()
+        Dim imageList1 As New ImageList() With {.ImageSize = New Size(24, 24)}
+        Dim a() As String
+        Dim b() As Integer
+        documentsLV.View = View.Details
+        documentsLV.FullRowSelect = True
+        documentsLV.SmallImageList = imageList1
+
+        Dim dt7 As New DataTable()
+        Dim sqlCmd7 As New SqlCommand("SELECT * FROM documents WHERE employee_ID = @eid", connection)
+        Dim dataadapter7 As New SqlDataAdapter(sqlCmd7)
+        sqlCmd7.Parameters.AddWithValue("@eid", Employee)
+
+        dataadapter7.Fill(dt7)
+        If dt7.Rows.Count > 0 Then
+            ReDim a(0 To dt7.Rows.Count - 1)
+            ReDim b(0 To dt7.Rows.Count - 1)
+            For i = 0 To dt7.Rows.Count - 1
+                a(i) = dt7.Rows(i)("document_address").ToString
+                b(i) = dt7.Rows(i)("document_id").ToString
+            Next
+            imageList1.Images.Clear()
+            For n As Integer = 0 To a.Count - 1
+                imageList1.Images.Add(Icon.ExtractAssociatedIcon(a(n)).ToBitmap)
+                Dim lvi As New ListViewItem("", imageList1.Images.Count - 1)
+                lvi.SubItems.Add(a(n))
+                lvi.SubItems.Add(IO.Path.GetFileNameWithoutExtension(a(n)))
+                lvi.SubItems.Add(b(n))
+                documentsLV.Items.Add(lvi)
+            Next
+
+        End If
+    End Function
+
+    Public Function load_yevals(connection)
+        Dim ds5 As New DataSet()
+        Dim sqlCmd5 As New SqlCommand("SELECT * FROM employee_ym_evals WHERE employee_ID = @eid AND status = 'yearly'", connection)
+        Dim dataadapter5 As New SqlDataAdapter(sqlCmd5)
+        sqlCmd5.Parameters.AddWithValue("@eid", Employee)
+        dataadapter5.Fill(ds5, "employee_ym_evals")
+        yearlyDatadrid.DataSource = ds5
+        yearlyDatadrid.DataMember = "employee_ym_evals"
+        yearlyDatadrid.Columns("date").HeaderCell.Value = "Month"
+        yearlyDatadrid.Columns("fscore").HeaderCell.Value = "Final Score"
+        yearlyDatadrid.Columns("prscore").HeaderCell.Value = "Performance Rating Score"
+        yearlyDatadrid.Columns("acscore").HeaderCell.Value = "Admin Compliance Score"
+        yearlyDatadrid.Columns("remarks").HeaderCell.Value = "Remarks"
+        yearlyDatadrid.Columns("employee_id").Visible = False
+        yearlyDatadrid.Columns("eval_id").Visible = False
+        yearlyDatadrid.Columns("status").Visible = False
+    End Function
+    Public Function load_mevals(connection)
+        Dim ds4 As New DataSet()
+        Dim sqlCmd4 As New SqlCommand("SELECT * FROM employee_ym_evals WHERE employee_ID = @eid AND status = 'monthly'", connection)
+        Dim dataadapter4 As New SqlDataAdapter(sqlCmd4)
+        sqlCmd4.Parameters.AddWithValue("@eid", Employee)
+        dataadapter4.Fill(ds4, "employee_ym_evals")
+        monthlyDatagrid.DataSource = ds4
+        monthlyDatagrid.DataMember = "employee_ym_evals"
+        monthlyDatagrid.Columns("date").HeaderCell.Value = "Month"
+        monthlyDatagrid.Columns("fscore").HeaderCell.Value = "Final Score"
+        monthlyDatagrid.Columns("prscore").HeaderCell.Value = "Performance Rating Score"
+        monthlyDatagrid.Columns("acscore").HeaderCell.Value = "Admin Compliance Score"
+        monthlyDatagrid.Columns("remarks").HeaderCell.Value = "Remarks"
+        monthlyDatagrid.Columns("employee_id").Visible = False
+        monthlyDatagrid.Columns("eval_id").Visible = False
+        monthlyDatagrid.Columns("status").Visible = False
+    End Function
+
+
 End Class
+

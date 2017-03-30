@@ -68,11 +68,15 @@ Public Class CreateEmployee201
 
         If lastnameText.Text = "" Or givennameText.Text = "" Or middlenameText.Text = "" Or statusCombobox.Text = "Status" Or civilstatusCombobox.Text = "Civil Status" Or employeenumberText.Text = "" Then
             MessageBox.Show("Please input all relevant information", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        ElseIf Not IsNumeric(employeenumberText.Text) Then
+            MessageBox.Show("Employee number must be an integer", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        ElseIf picaddress = "" Then
+            MessageBox.Show("No picture available", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            Dim sql As String = "SET IDENTITY_INSERT employee201files ON; INSERT INTO employee201files (employee_id, last_name, first_name, middle_name, status, tin_number, sss_number, philhealth_number, pagibig_number, RTN, HDMF_MID_number, date_hired, company_group, department, position, rank, birthday, birth_place, civil_status, present_address, permanent_address, email, contact_number, telephone_number, fathers_name, mothers_name, spouse_name, spouse_birthday, nextofkin_name, nextofkin_birthday, status_reason, statusreason_date, picture_address) VALUES (@employeeid, @lastname, @firstname, @middlename, @status, @tin, @sss, @philhealth, @pagibig, @rtn, @hdmf, @hiredate, @grp, @dept, @pos, @rank, @bday, @bplace, @civil, @presentadd, @permanentadd, @emailadd, @contactnum, @telnum, @father, @mother, @spouse, @spousebday, @nokname, @nokbday, @statreason, @statreasondate, @pic); SET IDENTITY_INSERT employee201files OFF"
+            Dim sql As String = "Set IDENTITY_INSERT employee201files On; INSERT INTO employee201files (employee_id, last_name, first_name, middle_name, status, tin_number, sss_number, philhealth_number, pagibig_number, RTN, HDMF_MID_number, date_hired, company_group, department, position, rank, birthday, birth_place, civil_status, present_address, permanent_address, email, contact_number, telephone_number, fathers_name, mothers_name, spouse_name, spouse_birthday, nextofkin_name, nextofkin_birthday, status_reason, statusreason_date, picture_address) VALUES (@employeeid, @lastname, @firstname, @middlename, @status, @tin, @sss, @philhealth, @pagibig, @rtn, @hdmf, @hiredate, @grp, @dept, @pos, @rank, @bday, @bplace, @civil, @presentadd, @permanentadd, @emailadd, @contactnum, @telnum, @father, @mother, @spouse, @spousebday, @nokname, @nokbday, @statreason, @statreasondate, @pic); Set IDENTITY_INSERT employee201files OFF"
             Dim sql2 As String = "INSERT INTO children (employee_id, child_name, child_birthday) VALUES (@empid, @cname, @cbday)"
             Dim sql3 As String = "INSERT INTO beneficiaries (employee_id, ben_name, ben_birthday, ben_relation) VALUES (@empid, @bname, @bbday, @brel)"
-            Dim sql4 As String = "INSERT INTO employee_ym_evals (employee_id, score, date, status, remarks) VALUES (@empid, @score, @date, @status, @remark)"
+            Dim sql4 As String = "INSERT INTO employee_ym_evals (employee_id, score, Date, status, remarks) VALUES (@empid, @score, @Date, @status, @remark)"
             Dim sql5 As String = "INSERT INTO logs (time_stamp, activity_name, account_id) VALUES (@time, @actname, @accid)"
 
             Using conn As New SqlConnection(connectionString)
@@ -308,7 +312,7 @@ Public Class CreateEmployee201
                                         .Parameters.AddWithValue("status", "monthly")
                                         .Parameters.AddWithValue("score", monthlyDatagrid.Rows(X).Cells(1).Value)
                                         .Parameters.AddWithValue("remark", monthlyDatagrid.Rows(X).Cells(2).Value)
-                                        .Parameters.AddWithValue("date", monthlyDatagrid.Rows(X).Cells(0).Value)
+                                        .Parameters.AddWithValue("Date", monthlyDatagrid.Rows(X).Cells(0).Value)
                                     End With
 
                                     Try
@@ -332,7 +336,7 @@ Public Class CreateEmployee201
                                         .Parameters.AddWithValue("status", "yearly")
                                         .Parameters.AddWithValue("score", yearlyDatadrid.Rows(X).Cells(1).Value)
                                         .Parameters.AddWithValue("remark", yearlyDatadrid.Rows(X).Cells(2).Value)
-                                        .Parameters.AddWithValue("date", yearlyDatadrid.Rows(X).Cells(0).Value)
+                                        .Parameters.AddWithValue("Date", yearlyDatadrid.Rows(X).Cells(0).Value)
                                     End With
 
                                     Try
